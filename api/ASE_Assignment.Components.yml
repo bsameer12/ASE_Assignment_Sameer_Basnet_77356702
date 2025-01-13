@@ -1,0 +1,139 @@
+### YamlMime:ManagedReference
+items:
+- uid: ASE_Assignment.Components
+  commentId: N:ASE_Assignment.Components
+  id: ASE_Assignment.Components
+  children:
+  - ASE_Assignment.Components.AppArray
+  - ASE_Assignment.Components.AppBoolean
+  - ASE_Assignment.Components.AppCommandFactory
+  - ASE_Assignment.Components.AppCompoundCommand
+  - ASE_Assignment.Components.AppConditionalCommand
+  - ASE_Assignment.Components.AppEnd
+  - ASE_Assignment.Components.AppInt
+  - ASE_Assignment.Components.AppMethod
+  - ASE_Assignment.Components.AppPeek
+  - ASE_Assignment.Components.AppPoke
+  - ASE_Assignment.Components.AppPraser
+  - ASE_Assignment.Components.AppReal
+  - ASE_Assignment.Components.AppStoredProgram
+  - ASE_Assignment.Components.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: ASE_Assignment.Components
+  nameWithType: ASE_Assignment.Components
+  fullName: ASE_Assignment.Components
+  type: Namespace
+  assemblies:
+  - ASE_Assignment
+references:
+- uid: ASE_Assignment.Components.AppArray
+  commentId: T:ASE_Assignment.Components.AppArray
+  parent: ASE_Assignment.Components
+  href: ASE_Assignment.Components.AppArray.html
+  name: AppArray
+  nameWithType: AppArray
+  fullName: ASE_Assignment.Components.AppArray
+- uid: ASE_Assignment.Components.AppBoolean
+  commentId: T:ASE_Assignment.Components.AppBoolean
+  href: ASE_Assignment.Components.AppBoolean.html
+  name: AppBoolean
+  nameWithType: AppBoolean
+  fullName: ASE_Assignment.Components.AppBoolean
+- uid: ASE_Assignment.Components.AppCommandFactory
+  commentId: T:ASE_Assignment.Components.AppCommandFactory
+  href: ASE_Assignment.Components.AppCommandFactory.html
+  name: AppCommandFactory
+  nameWithType: AppCommandFactory
+  fullName: ASE_Assignment.Components.AppCommandFactory
+- uid: ASE_Assignment.Components.AppCompoundCommand
+  commentId: T:ASE_Assignment.Components.AppCompoundCommand
+  parent: ASE_Assignment.Components
+  href: ASE_Assignment.Components.AppCompoundCommand.html
+  name: AppCompoundCommand
+  nameWithType: AppCompoundCommand
+  fullName: ASE_Assignment.Components.AppCompoundCommand
+- uid: ASE_Assignment.Components.AppConditionalCommand
+  commentId: T:ASE_Assignment.Components.AppConditionalCommand
+  parent: ASE_Assignment.Components
+  href: ASE_Assignment.Components.AppConditionalCommand.html
+  name: AppConditionalCommand
+  nameWithType: AppConditionalCommand
+  fullName: ASE_Assignment.Components.AppConditionalCommand
+- uid: ASE_Assignment.Components.AppEnd
+  commentId: T:ASE_Assignment.Components.AppEnd
+  href: ASE_Assignment.Components.AppEnd.html
+  name: AppEnd
+  nameWithType: AppEnd
+  fullName: ASE_Assignment.Components.AppEnd
+- uid: ASE_Assignment.Components.AppInt
+  commentId: T:ASE_Assignment.Components.AppInt
+  href: ASE_Assignment.Components.AppInt.html
+  name: AppInt
+  nameWithType: AppInt
+  fullName: ASE_Assignment.Components.AppInt
+- uid: ASE_Assignment.Components.AppMethod
+  commentId: T:ASE_Assignment.Components.AppMethod
+  href: ASE_Assignment.Components.AppMethod.html
+  name: AppMethod
+  nameWithType: AppMethod
+  fullName: ASE_Assignment.Components.AppMethod
+- uid: ASE_Assignment.Components.AppPeek
+  commentId: T:ASE_Assignment.Components.AppPeek
+  href: ASE_Assignment.Components.AppPeek.html
+  name: AppPeek
+  nameWithType: AppPeek
+  fullName: ASE_Assignment.Components.AppPeek
+- uid: ASE_Assignment.Components.AppPoke
+  commentId: T:ASE_Assignment.Components.AppPoke
+  href: ASE_Assignment.Components.AppPoke.html
+  name: AppPoke
+  nameWithType: AppPoke
+  fullName: ASE_Assignment.Components.AppPoke
+- uid: ASE_Assignment.Components.AppPraser
+  commentId: T:ASE_Assignment.Components.AppPraser
+  href: ASE_Assignment.Components.AppPraser.html
+  name: AppPraser
+  nameWithType: AppPraser
+  fullName: ASE_Assignment.Components.AppPraser
+- uid: ASE_Assignment.Components.AppReal
+  commentId: T:ASE_Assignment.Components.AppReal
+  href: ASE_Assignment.Components.AppReal.html
+  name: AppReal
+  nameWithType: AppReal
+  fullName: ASE_Assignment.Components.AppReal
+- uid: ASE_Assignment.Components.AppStoredProgram
+  commentId: T:ASE_Assignment.Components.AppStoredProgram
+  href: ASE_Assignment.Components.AppStoredProgram.html
+  name: AppStoredProgram
+  nameWithType: AppStoredProgram
+  fullName: ASE_Assignment.Components.AppStoredProgram
+- uid: ASE_Assignment.Components.GlobalConfiguration
+  commentId: T:ASE_Assignment.Components.GlobalConfiguration
+  href: ASE_Assignment.Components.GlobalConfiguration.html
+  name: GlobalConfiguration
+  nameWithType: GlobalConfiguration
+  fullName: ASE_Assignment.Components.GlobalConfiguration
+- uid: ASE_Assignment.Components
+  commentId: N:ASE_Assignment.Components
+  href: ASE_Assignment.html
+  name: ASE_Assignment.Components
+  nameWithType: ASE_Assignment.Components
+  fullName: ASE_Assignment.Components
+  spec.csharp:
+  - uid: ASE_Assignment
+    name: ASE_Assignment
+    href: ASE_Assignment.html
+  - name: .
+  - uid: ASE_Assignment.Components
+    name: Components
+    href: ASE_Assignment.Components.html
+  spec.vb:
+  - uid: ASE_Assignment
+    name: ASE_Assignment
+    href: ASE_Assignment.html
+  - name: .
+  - uid: ASE_Assignment.Components
+    name: Components
+    href: ASE_Assignment.Components.html

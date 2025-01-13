@@ -1,0 +1,44 @@
+### YamlMime:ManagedReference
+items:
+- uid: ASE_Assignment.File_Handler
+  commentId: N:ASE_Assignment.File_Handler
+  id: ASE_Assignment.File_Handler
+  children:
+  - ASE_Assignment.File_Handler.CanvasLoader
+  - ASE_Assignment.File_Handler.CanvasSaver
+  - ASE_Assignment.File_Handler.CommandReader
+  - ASE_Assignment.File_Handler.CommandWriter
+  langs:
+  - csharp
+  - vb
+  name: ASE_Assignment.File_Handler
+  nameWithType: ASE_Assignment.File_Handler
+  fullName: ASE_Assignment.File_Handler
+  type: Namespace
+  assemblies:
+  - ASE_Assignment
+references:
+- uid: ASE_Assignment.File_Handler.CanvasLoader
+  commentId: T:ASE_Assignment.File_Handler.CanvasLoader
+  href: ASE_Assignment.File_Handler.CanvasLoader.html
+  name: CanvasLoader
+  nameWithType: CanvasLoader
+  fullName: ASE_Assignment.File_Handler.CanvasLoader
+- uid: ASE_Assignment.File_Handler.CanvasSaver
+  commentId: T:ASE_Assignment.File_Handler.CanvasSaver
+  href: ASE_Assignment.File_Handler.CanvasSaver.html
+  name: CanvasSaver
+  nameWithType: CanvasSaver
+  fullName: ASE_Assignment.File_Handler.CanvasSaver
+- uid: ASE_Assignment.File_Handler.CommandReader
+  commentId: T:ASE_Assignment.File_Handler.CommandReader
+  href: ASE_Assignment.File_Handler.CommandReader.html
+  name: CommandReader
+  nameWithType: CommandReader
+  fullName: ASE_Assignment.File_Handler.CommandReader
+- uid: ASE_Assignment.File_Handler.CommandWriter
+  commentId: T:ASE_Assignment.File_Handler.CommandWriter
+  href: ASE_Assignment.File_Handler.CommandWriter.html
+  name: CommandWriter
+  nameWithType: CommandWriter
+  fullName: ASE_Assignment.File_Handler.CommandWriter

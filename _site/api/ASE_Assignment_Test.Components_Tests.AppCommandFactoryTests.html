@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class AppCommandFactoryTests | ASE_Assignment_Sameer_Basnet_77356702 </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class AppCommandFactoryTests | ASE_Assignment_Sameer_Basnet_77356702 ">
+      
+      <meta name="description" content="Unit tests for the AppCommandFactory class to verify that it correctly creates instances of command objects based on input strings.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/new/main/apiSpec/new?filename=ASE_Assignment_Test_Components_Tests_AppCommandFactoryTests.md&amp;value=---%0Auid%3A%20ASE_Assignment_Test.Components_Tests.AppCommandFactoryTests%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="ASE_Assignment_Sameer_Basnet_77356702">
+            ASE_Assignment_Sameer_Basnet_77356702
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ASE_Assignment_Test.Components_Tests.AppCommandFactoryTests">
+
+
+
+  <h1 id="ASE_Assignment_Test_Components_Tests_AppCommandFactoryTests" data-uid="ASE_Assignment_Test.Components_Tests.AppCommandFactoryTests" class="text-break">
+Class AppCommandFactoryTests  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/Components_Tests/AppCommandFactoryTests.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="ASE_Assignment_Test.html">ASE_Assignment_Test</a>.<a class="xref" href="ASE_Assignment_Test.Components_Tests.html">Components_Tests</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>ASE_Assignment_Test.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Unit tests for the <code>AppCommandFactory</code> class to verify that it correctly creates instances of command objects based on input strings.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestClass]
+public class AppCommandFactoryTests</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">AppCommandFactoryTests</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="ASE_Assignment_Test_Components_Tests_AppCommandFactoryTests_SetUp_" data-uid="ASE_Assignment_Test.Components_Tests.AppCommandFactoryTests.SetUp*"></a>
+
+  <h3 id="ASE_Assignment_Test_Components_Tests_AppCommandFactoryTests_SetUp" data-uid="ASE_Assignment_Test.Components_Tests.AppCommandFactoryTests.SetUp">
+  SetUp()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/Components_Tests/AppCommandFactoryTests.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes the <code>AppCommandFactory</code> instance before each test.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestInitialize]
+public void SetUp()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Assignment_Test_Components_Tests_AppCommandFactoryTests_TestMakeCommand_Circle_ShouldReturnAppCircle_" data-uid="ASE_Assignment_Test.Components_Tests.AppCommandFactoryTests.TestMakeCommand_Circle_ShouldReturnAppCircle*"></a>
+
+  <h3 id="ASE_Assignment_Test_Components_Tests_AppCommandFactoryTests_TestMakeCommand_Circle_ShouldReturnAppCircle" data-uid="ASE_Assignment_Test.Components_Tests.AppCommandFactoryTests.TestMakeCommand_Circle_ShouldReturnAppCircle">
+  TestMakeCommand_Circle_ShouldReturnAppCircle()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/Components_Tests/AppCommandFactoryTests.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the <code>MakeCommand</code> method to ensure it returns an <code>AppCircle</code> object for the &quot;circle&quot; command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void TestMakeCommand_Circle_ShouldReturnAppCircle()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_Components_Tests_AppCommandFactoryTests_TestMakeCommand_Circle_ShouldReturnAppCircle_examples">Examples</h4>
+  <pre><code class="lang-csharp">string command = "circle";
+ICommand result = factory.MakeCommand(command);
+Assert.IsInstanceOfType(result, typeof(AppCircle));</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_Components_Tests_AppCommandFactoryTests_TestMakeCommand_Circle_ShouldReturnAppCircle_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test verifies that the factory creates the correct command object for drawing a circle.</p>
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Test_Components_Tests_AppCommandFactoryTests_TestMakeCommand_Clear_ShouldReturnClear_" data-uid="ASE_Assignment_Test.Components_Tests.AppCommandFactoryTests.TestMakeCommand_Clear_ShouldReturnClear*"></a>
+
+  <h3 id="ASE_Assignment_Test_Components_Tests_AppCommandFactoryTests_TestMakeCommand_Clear_ShouldReturnClear" data-uid="ASE_Assignment_Test.Components_Tests.AppCommandFactoryTests.TestMakeCommand_Clear_ShouldReturnClear">
+  TestMakeCommand_Clear_ShouldReturnClear()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/Components_Tests/AppCommandFactoryTests.cs/#L231"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the <code>MakeCommand</code> method to ensure it returns a <code>Clear</code> object for the &quot;clear&quot; command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void TestMakeCommand_Clear_ShouldReturnClear()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_Components_Tests_AppCommandFactoryTests_TestMakeCommand_Clear_ShouldReturnClear_examples">Examples</h4>
+  <pre><code class="lang-csharp">string command = "clear";
+ICommand result = factory.MakeCommand(command);
+Assert.IsInstanceOfType(result, typeof(Clear));</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_Components_Tests_AppCommandFactoryTests_TestMakeCommand_Clear_ShouldReturnClear_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test verifies that the factory creates the correct command object for clearing the canvas.</p>
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Test_Components_Tests_AppCommandFactoryTests_TestMakeCommand_DrawTo_ShouldReturnAppDrawTo_" data-uid="ASE_Assignment_Test.Components_Tests.AppCommandFactoryTests.TestMakeCommand_DrawTo_ShouldReturnAppDrawTo*"></a>
+
+  <h3 id="ASE_Assignment_Test_Components_Tests_AppCommandFactoryTests_TestMakeCommand_DrawTo_ShouldReturnAppDrawTo" data-uid="ASE_Assignment_Test.Components_Tests.AppCommandFactoryTests.TestMakeCommand_DrawTo_ShouldReturnAppDrawTo">
+  TestMakeCommand_DrawTo_ShouldReturnAppDrawTo()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/Components_Tests/AppCommandFactoryTests.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the <code>MakeCommand</code> method to ensure it returns an <code>AppDrawTo</code> object for the &quot;drawto&quot; command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void TestMakeCommand_DrawTo_ShouldReturnAppDrawTo()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_Components_Tests_AppCommandFactoryTests_TestMakeCommand_DrawTo_ShouldReturnAppDrawTo_examples">Examples</h4>
+  <pre><code class="lang-csharp">string command = "drawto";
+ICommand result = factory.MakeCommand(command);
+Assert.IsInstanceOfType(result, typeof(AppDrawTo));</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_Components_Tests_AppCommandFactoryTests_TestMakeCommand_DrawTo_ShouldReturnAppDrawTo_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test verifies that the factory creates the correct command object for drawing to a specific position.</p>
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Test_Components_Tests_AppCommandFactoryTests_TestMakeCommand_Fill_ShouldReturnFill_" data-uid="ASE_Assignment_Test.Components_Tests.AppCommandFactoryTests.TestMakeCommand_Fill_ShouldReturnFill*"></a>
+
+  <h3 id="ASE_Assignment_Test_Components_Tests_AppCommandFactoryTests_TestMakeCommand_Fill_ShouldReturnFill" data-uid="ASE_Assignment_Test.Components_Tests.AppCommandFactoryTests.TestMakeCommand_Fill_ShouldReturnFill">
+  TestMakeCommand_Fill_ShouldReturnFill()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/Components_Tests/AppCommandFactoryTests.cs/#L189"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the <code>MakeCommand</code> method to ensure it returns a <code>Fill</code> object for the &quot;fill&quot; command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void TestMakeCommand_Fill_ShouldReturnFill()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_Components_Tests_AppCommandFactoryTests_TestMakeCommand_Fill_ShouldReturnFill_examples">Examples</h4>
+  <pre><code class="lang-csharp">string command = "fill";
+ICommand result = factory.MakeCommand(command);
+Assert.IsInstanceOfType(result, typeof(Fill));</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_Components_Tests_AppCommandFactoryTests_TestMakeCommand_Fill_ShouldReturnFill_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test verifies that the factory creates the correct command object for enabling or disabling fill.</p>
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Test_Components_Tests_AppCommandFactoryTests_TestMakeCommand_InvalidCommand_ShouldThrowFactoryException_" data-uid="ASE_Assignment_Test.Components_Tests.AppCommandFactoryTests.TestMakeCommand_InvalidCommand_ShouldThrowFactoryException*"></a>
+
+  <h3 id="ASE_Assignment_Test_Components_Tests_AppCommandFactoryTests_TestMakeCommand_InvalidCommand_ShouldThrowFactoryException" data-uid="ASE_Assignment_Test.Components_Tests.AppCommandFactoryTests.TestMakeCommand_InvalidCommand_ShouldThrowFactoryException">
+  TestMakeCommand_InvalidCommand_ShouldThrowFactoryException()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/Components_Tests/AppCommandFactoryTests.cs/#L272"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the <code>MakeCommand</code> method to ensure it throws a <code>FactoryException</code> for an invalid command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+[ExpectedException(typeof(FactoryException))]
+public void TestMakeCommand_InvalidCommand_ShouldThrowFactoryException()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_Components_Tests_AppCommandFactoryTests_TestMakeCommand_InvalidCommand_ShouldThrowFactoryException_examples">Examples</h4>
+  <pre><code class="lang-csharp">string command = "invalidcommand";
+factory.MakeCommand(command); // Should throw FactoryException</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_Components_Tests_AppCommandFactoryTests_TestMakeCommand_InvalidCommand_ShouldThrowFactoryException_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test validates that the factory handles unknown commands by throwing a <code>FactoryException</code>.</p>
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Test_Components_Tests_AppCommandFactoryTests_TestMakeCommand_MoveTo_ShouldReturnAppMoveTo_" data-uid="ASE_Assignment_Test.Components_Tests.AppCommandFactoryTests.TestMakeCommand_MoveTo_ShouldReturnAppMoveTo*"></a>
+
+  <h3 id="ASE_Assignment_Test_Components_Tests_AppCommandFactoryTests_TestMakeCommand_MoveTo_ShouldReturnAppMoveTo" data-uid="ASE_Assignment_Test.Components_Tests.AppCommandFactoryTests.TestMakeCommand_MoveTo_ShouldReturnAppMoveTo">
+  TestMakeCommand_MoveTo_ShouldReturnAppMoveTo()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/Components_Tests/AppCommandFactoryTests.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the <code>MakeCommand</code> method to ensure it returns an <code>AppMoveTo</code> object for the &quot;moveto&quot; command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void TestMakeCommand_MoveTo_ShouldReturnAppMoveTo()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_Components_Tests_AppCommandFactoryTests_TestMakeCommand_MoveTo_ShouldReturnAppMoveTo_examples">Examples</h4>
+  <pre><code class="lang-csharp">string command = "moveto";
+ICommand result = factory.MakeCommand(command);
+Assert.IsInstanceOfType(result, typeof(AppMoveTo));</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_Components_Tests_AppCommandFactoryTests_TestMakeCommand_MoveTo_ShouldReturnAppMoveTo_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test verifies that the factory creates the correct command object for moving to a specific position.</p>
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Test_Components_Tests_AppCommandFactoryTests_TestMakeCommand_PenColour_ShouldReturnAppPenColour_" data-uid="ASE_Assignment_Test.Components_Tests.AppCommandFactoryTests.TestMakeCommand_PenColour_ShouldReturnAppPenColour*"></a>
+
+  <h3 id="ASE_Assignment_Test_Components_Tests_AppCommandFactoryTests_TestMakeCommand_PenColour_ShouldReturnAppPenColour" data-uid="ASE_Assignment_Test.Components_Tests.AppCommandFactoryTests.TestMakeCommand_PenColour_ShouldReturnAppPenColour">
+  TestMakeCommand_PenColour_ShouldReturnAppPenColour()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/Components_Tests/AppCommandFactoryTests.cs/#L168"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the <code>MakeCommand</code> method to ensure it returns an <code>AppPenColour</code> object for the &quot;pencolour&quot; command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void TestMakeCommand_PenColour_ShouldReturnAppPenColour()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_Components_Tests_AppCommandFactoryTests_TestMakeCommand_PenColour_ShouldReturnAppPenColour_examples">Examples</h4>
+  <pre><code class="lang-csharp">string command = "pencolour";
+ICommand result = factory.MakeCommand(command);
+Assert.IsInstanceOfType(result, typeof(AppPenColour));</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_Components_Tests_AppCommandFactoryTests_TestMakeCommand_PenColour_ShouldReturnAppPenColour_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test verifies that the factory creates the correct command object for setting the pen color.</p>
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Test_Components_Tests_AppCommandFactoryTests_TestMakeCommand_PenSize_ShouldReturnPenSize_" data-uid="ASE_Assignment_Test.Components_Tests.AppCommandFactoryTests.TestMakeCommand_PenSize_ShouldReturnPenSize*"></a>
+
+  <h3 id="ASE_Assignment_Test_Components_Tests_AppCommandFactoryTests_TestMakeCommand_PenSize_ShouldReturnPenSize" data-uid="ASE_Assignment_Test.Components_Tests.AppCommandFactoryTests.TestMakeCommand_PenSize_ShouldReturnPenSize">
+  TestMakeCommand_PenSize_ShouldReturnPenSize()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/Components_Tests/AppCommandFactoryTests.cs/#L210"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the <code>MakeCommand</code> method to ensure it returns a <code>PenSize</code> object for the &quot;pensize&quot; command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void TestMakeCommand_PenSize_ShouldReturnPenSize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_Components_Tests_AppCommandFactoryTests_TestMakeCommand_PenSize_ShouldReturnPenSize_examples">Examples</h4>
+  <pre><code class="lang-csharp">string command = "pensize";
+ICommand result = factory.MakeCommand(command);
+Assert.IsInstanceOfType(result, typeof(PenSize));</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_Components_Tests_AppCommandFactoryTests_TestMakeCommand_PenSize_ShouldReturnPenSize_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test verifies that the factory creates the correct command object for setting the pen size.</p>
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Test_Components_Tests_AppCommandFactoryTests_TestMakeCommand_Rect_ShouldReturnAppRectangle_" data-uid="ASE_Assignment_Test.Components_Tests.AppCommandFactoryTests.TestMakeCommand_Rect_ShouldReturnAppRectangle*"></a>
+
+  <h3 id="ASE_Assignment_Test_Components_Tests_AppCommandFactoryTests_TestMakeCommand_Rect_ShouldReturnAppRectangle" data-uid="ASE_Assignment_Test.Components_Tests.AppCommandFactoryTests.TestMakeCommand_Rect_ShouldReturnAppRectangle">
+  TestMakeCommand_Rect_ShouldReturnAppRectangle()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/Components_Tests/AppCommandFactoryTests.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the <code>MakeCommand</code> method to ensure it returns an <code>AppRectangle</code> object for the &quot;rect&quot; command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void TestMakeCommand_Rect_ShouldReturnAppRectangle()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_Components_Tests_AppCommandFactoryTests_TestMakeCommand_Rect_ShouldReturnAppRectangle_examples">Examples</h4>
+  <pre><code class="lang-csharp">string command = "rect";
+ICommand result = factory.MakeCommand(command);
+Assert.IsInstanceOfType(result, typeof(AppRectangle));</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_Components_Tests_AppCommandFactoryTests_TestMakeCommand_Rect_ShouldReturnAppRectangle_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test verifies that the factory creates the correct command object for drawing a rectangle.</p>
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Test_Components_Tests_AppCommandFactoryTests_TestMakeCommand_Reset_ShouldReturnReset_" data-uid="ASE_Assignment_Test.Components_Tests.AppCommandFactoryTests.TestMakeCommand_Reset_ShouldReturnReset*"></a>
+
+  <h3 id="ASE_Assignment_Test_Components_Tests_AppCommandFactoryTests_TestMakeCommand_Reset_ShouldReturnReset" data-uid="ASE_Assignment_Test.Components_Tests.AppCommandFactoryTests.TestMakeCommand_Reset_ShouldReturnReset">
+  TestMakeCommand_Reset_ShouldReturnReset()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/Components_Tests/AppCommandFactoryTests.cs/#L252"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the <code>MakeCommand</code> method to ensure it returns a <code>Reset</code> object for the &quot;reset&quot; command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void TestMakeCommand_Reset_ShouldReturnReset()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_Components_Tests_AppCommandFactoryTests_TestMakeCommand_Reset_ShouldReturnReset_examples">Examples</h4>
+  <pre><code class="lang-csharp">string command = "reset";
+ICommand result = factory.MakeCommand(command);
+Assert.IsInstanceOfType(result, typeof(Reset));</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_Components_Tests_AppCommandFactoryTests_TestMakeCommand_Reset_ShouldReturnReset_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test verifies that the factory creates the correct command object for resetting the canvas.</p>
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Test_Components_Tests_AppCommandFactoryTests_TestMakeCommand_Tri_ShouldReturnTriangle_" data-uid="ASE_Assignment_Test.Components_Tests.AppCommandFactoryTests.TestMakeCommand_Tri_ShouldReturnTriangle*"></a>
+
+  <h3 id="ASE_Assignment_Test_Components_Tests_AppCommandFactoryTests_TestMakeCommand_Tri_ShouldReturnTriangle" data-uid="ASE_Assignment_Test.Components_Tests.AppCommandFactoryTests.TestMakeCommand_Tri_ShouldReturnTriangle">
+  TestMakeCommand_Tri_ShouldReturnTriangle()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/Components_Tests/AppCommandFactoryTests.cs/#L105"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the <code>MakeCommand</code> method to ensure it returns a <code>Triangle</code> object for the &quot;tri&quot; command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void TestMakeCommand_Tri_ShouldReturnTriangle()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_Components_Tests_AppCommandFactoryTests_TestMakeCommand_Tri_ShouldReturnTriangle_examples">Examples</h4>
+  <pre><code class="lang-csharp">string command = "tri";
+ICommand result = factory.MakeCommand(command);
+Assert.IsInstanceOfType(result, typeof(Triangle));</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_Components_Tests_AppCommandFactoryTests_TestMakeCommand_Tri_ShouldReturnTriangle_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test verifies that the factory creates the correct command object for drawing a triangle.</p>
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Test_Components_Tests_AppCommandFactoryTests_TestMakeCommand_WriteTo_ShouldReturnWriteTo_" data-uid="ASE_Assignment_Test.Components_Tests.AppCommandFactoryTests.TestMakeCommand_WriteTo_ShouldReturnWriteTo*"></a>
+
+  <h3 id="ASE_Assignment_Test_Components_Tests_AppCommandFactoryTests_TestMakeCommand_WriteTo_ShouldReturnWriteTo" data-uid="ASE_Assignment_Test.Components_Tests.AppCommandFactoryTests.TestMakeCommand_WriteTo_ShouldReturnWriteTo">
+  TestMakeCommand_WriteTo_ShouldReturnWriteTo()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/Components_Tests/AppCommandFactoryTests.cs/#L126"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the <code>MakeCommand</code> method to ensure it returns a <code>WriteTo</code> object for the &quot;writeto&quot; command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void TestMakeCommand_WriteTo_ShouldReturnWriteTo()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_Components_Tests_AppCommandFactoryTests_TestMakeCommand_WriteTo_ShouldReturnWriteTo_examples">Examples</h4>
+  <pre><code class="lang-csharp">string command = "writeto";
+ICommand result = factory.MakeCommand(command);
+Assert.IsInstanceOfType(result, typeof(WriteTo));</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_Components_Tests_AppCommandFactoryTests_TestMakeCommand_WriteTo_ShouldReturnWriteTo_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test verifies that the factory creates the correct command object for writing text.</p>
+</div>
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/Components_Tests/AppCommandFactoryTests.cs/#L15" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

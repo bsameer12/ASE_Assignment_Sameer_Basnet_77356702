@@ -1,0 +1,682 @@
+### YamlMime:ManagedReference
+items:
+- uid: ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests
+  commentId: T:ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests
+  id: AppCompoundCommandTests
+  parent: ASE_Assignment_Test.Components_Tests
+  children:
+  - ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.AppCompoundCommand_CreateMultipleInstances_ShouldNotThrowExceptions
+  - ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.CheckParameters_InvalidParameterContent_ShouldThrowCommandException
+  - ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.CheckParameters_InvalidParameterCount_ShouldThrowCommandException
+  - ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.CheckParameters_ValidIfEndParameter_ShouldPassWithoutException
+  - ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.Compile_ShouldCallBaseCompileMethod
+  - ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.CorrespondingCommand_SetAndGet_ShouldWorkCorrectly
+  - ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.TestInitialize
+  langs:
+  - csharp
+  - vb
+  name: AppCompoundCommandTests
+  nameWithType: AppCompoundCommandTests
+  fullName: ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests
+  type: Class
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/AppCompoundCommandTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: AppCompoundCommandTests
+    path: ASE_Assignment_Test/Components_Tests/AppCompoundCommandTests.cs
+    startLine: 20
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  summary: Unit test class for verifying the functionality of the AppCompoundCommand class.
+  remarks: >-
+    This class contains tests to ensure that the AppCompoundCommand handles compound commands 
+
+    correctly, allowing multiple commands to be grouped and executed as a single entity. 
+
+    The tests validate the creation, parsing, and execution of compound commands under various scenarios.
+  example: []
+  syntax:
+    content: >-
+      [TestClass]
+
+      public class AppCompoundCommandTests
+    content.vb: >-
+      <TestClass>
+
+      Public Class AppCompoundCommandTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.TestInitialize
+  commentId: M:ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.TestInitialize
+  id: TestInitialize
+  parent: ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests
+  langs:
+  - csharp
+  - vb
+  name: TestInitialize()
+  nameWithType: AppCompoundCommandTests.TestInitialize()
+  fullName: ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.TestInitialize()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/AppCompoundCommandTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: TestInitialize
+    path: ASE_Assignment_Test/Components_Tests/AppCompoundCommandTests.cs
+    startLine: 35
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  summary: Initializes the test environment before each test method is executed.
+  remarks: >-
+    Ensures that a new instance of AppCompoundCommand is created for each test 
+
+    to maintain test isolation and consistency.
+  example: []
+  syntax:
+    content: >-
+      [TestInitialize]
+
+      public void TestInitialize()
+    content.vb: >-
+      <TestInitialize>
+
+      Public Sub TestInitialize()
+  overload: ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.TestInitialize*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.AppCompoundCommand_CreateMultipleInstances_ShouldNotThrowExceptions
+  commentId: M:ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.AppCompoundCommand_CreateMultipleInstances_ShouldNotThrowExceptions
+  id: AppCompoundCommand_CreateMultipleInstances_ShouldNotThrowExceptions
+  parent: ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests
+  langs:
+  - csharp
+  - vb
+  name: AppCompoundCommand_CreateMultipleInstances_ShouldNotThrowExceptions()
+  nameWithType: AppCompoundCommandTests.AppCompoundCommand_CreateMultipleInstances_ShouldNotThrowExceptions()
+  fullName: ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.AppCompoundCommand_CreateMultipleInstances_ShouldNotThrowExceptions()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/AppCompoundCommandTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: AppCompoundCommand_CreateMultipleInstances_ShouldNotThrowExceptions
+    path: ASE_Assignment_Test/Components_Tests/AppCompoundCommandTests.cs
+    startLine: 44
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  summary: Tests that multiple instances of the <xref href="ASE_Assignment.Components.AppCompoundCommand" data-throw-if-not-resolved="false"></xref> class can be created without restrictions.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void AppCompoundCommand_CreateMultipleInstances_ShouldNotThrowExceptions()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub AppCompoundCommand_CreateMultipleInstances_ShouldNotThrowExceptions()
+  overload: ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.AppCompoundCommand_CreateMultipleInstances_ShouldNotThrowExceptions*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.CheckParameters_ValidIfEndParameter_ShouldPassWithoutException
+  commentId: M:ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.CheckParameters_ValidIfEndParameter_ShouldPassWithoutException
+  id: CheckParameters_ValidIfEndParameter_ShouldPassWithoutException
+  parent: ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests
+  langs:
+  - csharp
+  - vb
+  name: CheckParameters_ValidIfEndParameter_ShouldPassWithoutException()
+  nameWithType: AppCompoundCommandTests.CheckParameters_ValidIfEndParameter_ShouldPassWithoutException()
+  fullName: ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.CheckParameters_ValidIfEndParameter_ShouldPassWithoutException()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/AppCompoundCommandTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: CheckParameters_ValidIfEndParameter_ShouldPassWithoutException
+    path: ASE_Assignment_Test/Components_Tests/AppCompoundCommandTests.cs
+    startLine: 61
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  summary: Tests the <code>CheckParameters</code> method with a valid "ifEnd" parameter.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void CheckParameters_ValidIfEndParameter_ShouldPassWithoutException()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub CheckParameters_ValidIfEndParameter_ShouldPassWithoutException()
+  overload: ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.CheckParameters_ValidIfEndParameter_ShouldPassWithoutException*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.CheckParameters_InvalidParameterCount_ShouldThrowCommandException
+  commentId: M:ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.CheckParameters_InvalidParameterCount_ShouldThrowCommandException
+  id: CheckParameters_InvalidParameterCount_ShouldThrowCommandException
+  parent: ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests
+  langs:
+  - csharp
+  - vb
+  name: CheckParameters_InvalidParameterCount_ShouldThrowCommandException()
+  nameWithType: AppCompoundCommandTests.CheckParameters_InvalidParameterCount_ShouldThrowCommandException()
+  fullName: ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.CheckParameters_InvalidParameterCount_ShouldThrowCommandException()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/AppCompoundCommandTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: CheckParameters_InvalidParameterCount_ShouldThrowCommandException
+    path: ASE_Assignment_Test/Components_Tests/AppCompoundCommandTests.cs
+    startLine: 74
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  summary: Tests the <code>CheckParameters</code> method with an invalid number of parameters.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      [ExpectedException(typeof(CommandException))]
+
+      public void CheckParameters_InvalidParameterCount_ShouldThrowCommandException()
+    content.vb: >-
+      <TestMethod>
+
+      <ExpectedException(GetType(CommandException))>
+
+      Public Sub CheckParameters_InvalidParameterCount_ShouldThrowCommandException()
+  overload: ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.CheckParameters_InvalidParameterCount_ShouldThrowCommandException*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: BOOSE.CommandException
+- uid: ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.CheckParameters_InvalidParameterContent_ShouldThrowCommandException
+  commentId: M:ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.CheckParameters_InvalidParameterContent_ShouldThrowCommandException
+  id: CheckParameters_InvalidParameterContent_ShouldThrowCommandException
+  parent: ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests
+  langs:
+  - csharp
+  - vb
+  name: CheckParameters_InvalidParameterContent_ShouldThrowCommandException()
+  nameWithType: AppCompoundCommandTests.CheckParameters_InvalidParameterContent_ShouldThrowCommandException()
+  fullName: ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.CheckParameters_InvalidParameterContent_ShouldThrowCommandException()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/AppCompoundCommandTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: CheckParameters_InvalidParameterContent_ShouldThrowCommandException
+    path: ASE_Assignment_Test/Components_Tests/AppCompoundCommandTests.cs
+    startLine: 88
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  summary: Tests the <code>CheckParameters</code> method with an invalid parameter content.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      [ExpectedException(typeof(CommandException))]
+
+      public void CheckParameters_InvalidParameterContent_ShouldThrowCommandException()
+    content.vb: >-
+      <TestMethod>
+
+      <ExpectedException(GetType(CommandException))>
+
+      Public Sub CheckParameters_InvalidParameterContent_ShouldThrowCommandException()
+  overload: ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.CheckParameters_InvalidParameterContent_ShouldThrowCommandException*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: BOOSE.CommandException
+- uid: ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.CorrespondingCommand_SetAndGet_ShouldWorkCorrectly
+  commentId: M:ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.CorrespondingCommand_SetAndGet_ShouldWorkCorrectly
+  id: CorrespondingCommand_SetAndGet_ShouldWorkCorrectly
+  parent: ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests
+  langs:
+  - csharp
+  - vb
+  name: CorrespondingCommand_SetAndGet_ShouldWorkCorrectly()
+  nameWithType: AppCompoundCommandTests.CorrespondingCommand_SetAndGet_ShouldWorkCorrectly()
+  fullName: ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.CorrespondingCommand_SetAndGet_ShouldWorkCorrectly()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/AppCompoundCommandTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: CorrespondingCommand_SetAndGet_ShouldWorkCorrectly
+    path: ASE_Assignment_Test/Components_Tests/AppCompoundCommandTests.cs
+    startLine: 102
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  summary: Tests that the <code>CorrespondingCommand</code> property can be set and retrieved correctly.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void CorrespondingCommand_SetAndGet_ShouldWorkCorrectly()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub CorrespondingCommand_SetAndGet_ShouldWorkCorrectly()
+  overload: ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.CorrespondingCommand_SetAndGet_ShouldWorkCorrectly*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.Compile_ShouldCallBaseCompileMethod
+  commentId: M:ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.Compile_ShouldCallBaseCompileMethod
+  id: Compile_ShouldCallBaseCompileMethod
+  parent: ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests
+  langs:
+  - csharp
+  - vb
+  name: Compile_ShouldCallBaseCompileMethod()
+  nameWithType: AppCompoundCommandTests.Compile_ShouldCallBaseCompileMethod()
+  fullName: ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.Compile_ShouldCallBaseCompileMethod()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/AppCompoundCommandTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: Compile_ShouldCallBaseCompileMethod
+    path: ASE_Assignment_Test/Components_Tests/AppCompoundCommandTests.cs
+    startLine: 118
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  summary: Tests the <code>Compile</code> method to ensure it calls the base class implementation.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Compile_ShouldCallBaseCompileMethod()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Compile_ShouldCallBaseCompileMethod()
+  overload: ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.Compile_ShouldCallBaseCompileMethod*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+references:
+- uid: ASE_Assignment_Test.Components_Tests
+  commentId: N:ASE_Assignment_Test.Components_Tests
+  href: ASE_Assignment_Test.html
+  name: ASE_Assignment_Test.Components_Tests
+  nameWithType: ASE_Assignment_Test.Components_Tests
+  fullName: ASE_Assignment_Test.Components_Tests
+  spec.csharp:
+  - uid: ASE_Assignment_Test
+    name: ASE_Assignment_Test
+    href: ASE_Assignment_Test.html
+  - name: .
+  - uid: ASE_Assignment_Test.Components_Tests
+    name: Components_Tests
+    href: ASE_Assignment_Test.Components_Tests.html
+  spec.vb:
+  - uid: ASE_Assignment_Test
+    name: ASE_Assignment_Test
+    href: ASE_Assignment_Test.html
+  - name: .
+  - uid: ASE_Assignment_Test.Components_Tests
+    name: Components_Tests
+    href: ASE_Assignment_Test.Components_Tests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.TestInitialize*
+  commentId: Overload:ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.TestInitialize
+  href: ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.html#ASE_Assignment_Test_Components_Tests_AppCompoundCommandTests_TestInitialize
+  name: TestInitialize
+  nameWithType: AppCompoundCommandTests.TestInitialize
+  fullName: ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.TestInitialize
+- uid: ASE_Assignment.Components.AppCompoundCommand
+  commentId: T:ASE_Assignment.Components.AppCompoundCommand
+  parent: ASE_Assignment.Components
+  href: ASE_Assignment.Components.AppCompoundCommand.html
+  name: AppCompoundCommand
+  nameWithType: AppCompoundCommand
+  fullName: ASE_Assignment.Components.AppCompoundCommand
+- uid: ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.AppCompoundCommand_CreateMultipleInstances_ShouldNotThrowExceptions*
+  commentId: Overload:ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.AppCompoundCommand_CreateMultipleInstances_ShouldNotThrowExceptions
+  href: ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.html#ASE_Assignment_Test_Components_Tests_AppCompoundCommandTests_AppCompoundCommand_CreateMultipleInstances_ShouldNotThrowExceptions
+  name: AppCompoundCommand_CreateMultipleInstances_ShouldNotThrowExceptions
+  nameWithType: AppCompoundCommandTests.AppCompoundCommand_CreateMultipleInstances_ShouldNotThrowExceptions
+  fullName: ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.AppCompoundCommand_CreateMultipleInstances_ShouldNotThrowExceptions
+- uid: ASE_Assignment.Components
+  commentId: N:ASE_Assignment.Components
+  href: ASE_Assignment.html
+  name: ASE_Assignment.Components
+  nameWithType: ASE_Assignment.Components
+  fullName: ASE_Assignment.Components
+  spec.csharp:
+  - uid: ASE_Assignment
+    name: ASE_Assignment
+    href: ASE_Assignment.html
+  - name: .
+  - uid: ASE_Assignment.Components
+    name: Components
+    href: ASE_Assignment.Components.html
+  spec.vb:
+  - uid: ASE_Assignment
+    name: ASE_Assignment
+    href: ASE_Assignment.html
+  - name: .
+  - uid: ASE_Assignment.Components
+    name: Components
+    href: ASE_Assignment.Components.html
+- uid: ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.CheckParameters_ValidIfEndParameter_ShouldPassWithoutException*
+  commentId: Overload:ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.CheckParameters_ValidIfEndParameter_ShouldPassWithoutException
+  href: ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.html#ASE_Assignment_Test_Components_Tests_AppCompoundCommandTests_CheckParameters_ValidIfEndParameter_ShouldPassWithoutException
+  name: CheckParameters_ValidIfEndParameter_ShouldPassWithoutException
+  nameWithType: AppCompoundCommandTests.CheckParameters_ValidIfEndParameter_ShouldPassWithoutException
+  fullName: ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.CheckParameters_ValidIfEndParameter_ShouldPassWithoutException
+- uid: ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.CheckParameters_InvalidParameterCount_ShouldThrowCommandException*
+  commentId: Overload:ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.CheckParameters_InvalidParameterCount_ShouldThrowCommandException
+  href: ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.html#ASE_Assignment_Test_Components_Tests_AppCompoundCommandTests_CheckParameters_InvalidParameterCount_ShouldThrowCommandException
+  name: CheckParameters_InvalidParameterCount_ShouldThrowCommandException
+  nameWithType: AppCompoundCommandTests.CheckParameters_InvalidParameterCount_ShouldThrowCommandException
+  fullName: ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.CheckParameters_InvalidParameterCount_ShouldThrowCommandException
+- uid: ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.CheckParameters_InvalidParameterContent_ShouldThrowCommandException*
+  commentId: Overload:ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.CheckParameters_InvalidParameterContent_ShouldThrowCommandException
+  href: ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.html#ASE_Assignment_Test_Components_Tests_AppCompoundCommandTests_CheckParameters_InvalidParameterContent_ShouldThrowCommandException
+  name: CheckParameters_InvalidParameterContent_ShouldThrowCommandException
+  nameWithType: AppCompoundCommandTests.CheckParameters_InvalidParameterContent_ShouldThrowCommandException
+  fullName: ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.CheckParameters_InvalidParameterContent_ShouldThrowCommandException
+- uid: ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.CorrespondingCommand_SetAndGet_ShouldWorkCorrectly*
+  commentId: Overload:ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.CorrespondingCommand_SetAndGet_ShouldWorkCorrectly
+  href: ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.html#ASE_Assignment_Test_Components_Tests_AppCompoundCommandTests_CorrespondingCommand_SetAndGet_ShouldWorkCorrectly
+  name: CorrespondingCommand_SetAndGet_ShouldWorkCorrectly
+  nameWithType: AppCompoundCommandTests.CorrespondingCommand_SetAndGet_ShouldWorkCorrectly
+  fullName: ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.CorrespondingCommand_SetAndGet_ShouldWorkCorrectly
+- uid: ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.Compile_ShouldCallBaseCompileMethod*
+  commentId: Overload:ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.Compile_ShouldCallBaseCompileMethod
+  href: ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.html#ASE_Assignment_Test_Components_Tests_AppCompoundCommandTests_Compile_ShouldCallBaseCompileMethod
+  name: Compile_ShouldCallBaseCompileMethod
+  nameWithType: AppCompoundCommandTests.Compile_ShouldCallBaseCompileMethod
+  fullName: ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests.Compile_ShouldCallBaseCompileMethod

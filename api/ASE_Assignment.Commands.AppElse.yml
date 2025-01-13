@@ -1,0 +1,1086 @@
+### YamlMime:ManagedReference
+items:
+- uid: ASE_Assignment.Commands.AppElse
+  commentId: T:ASE_Assignment.Commands.AppElse
+  id: AppElse
+  parent: ASE_Assignment.Commands
+  children:
+  - ASE_Assignment.Commands.AppElse.#ctor
+  - ASE_Assignment.Commands.AppElse.CheckParameters(System.String[])
+  - ASE_Assignment.Commands.AppElse.Compile
+  - ASE_Assignment.Commands.AppElse.CorrespondingEnd
+  - ASE_Assignment.Commands.AppElse.Execute
+  langs:
+  - csharp
+  - vb
+  name: AppElse
+  nameWithType: AppElse
+  fullName: ASE_Assignment.Commands.AppElse
+  type: Class
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment/Commands/AppElse.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: AppElse
+    path: ASE_Assignment/Commands/AppElse.cs
+    startLine: 27
+  assemblies:
+  - ASE_Assignment
+  namespace: ASE_Assignment.Commands
+  summary: Represents the "Else" command in a program, providing branching logic for conditional execution.
+  remarks: >-
+    The <xref href="ASE_Assignment.Commands.AppElse" data-throw-if-not-resolved="false"></xref> class works in conjunction with conditional commands like "If" to define
+
+    an alternate block of commands to execute when the primary condition is false. It validates its
+
+    parameters, sets up execution flow, and determines when to skip or execute the "Else" block.
+  example:
+  - >-
+    The following demonstrates how to use the <xref href="ASE_Assignment.Commands.AppElse" data-throw-if-not-resolved="false"></xref> class in a program:
+
+    <pre><code class="lang-csharp">AppElse elseCommand = new AppElse();
+
+    elseCommand.Set(program, "else");
+
+    elseCommand.Compile();
+
+    elseCommand.Execute();</code></pre>
+  syntax:
+    content: 'public class AppElse : AppCompoundCommand, ICommand'
+    content.vb: Public Class AppElse Inherits AppCompoundCommand Implements ICommand
+  inheritance:
+  - System.Object
+  - BOOSE.Command
+  - BOOSE.Evaluation
+  - BOOSE.Boolean
+  - BOOSE.ConditionalCommand
+  - ASE_Assignment.Components.AppConditionalCommand
+  - ASE_Assignment.Components.AppCompoundCommand
+  implements:
+  - BOOSE.ICommand
+  inheritedMembers:
+  - ASE_Assignment.Components.AppCompoundCommand.CorrespondingCommand
+  - ASE_Assignment.Components.AppCompoundCommand.ResetOrDecreaseCount(System.Int32)
+  - BOOSE.ConditionalCommand.endLineNumber
+  - BOOSE.ConditionalCommand.EndLineNumber
+  - BOOSE.ConditionalCommand.Condition
+  - BOOSE.ConditionalCommand.LineNumber
+  - BOOSE.ConditionalCommand.CondType
+  - BOOSE.ConditionalCommand.ReturnLineNumber
+  - BOOSE.Boolean.Restrictions
+  - BOOSE.Boolean.BoolValue
+  - BOOSE.Evaluation.expression
+  - BOOSE.Evaluation.evaluatedExpression
+  - BOOSE.Evaluation.varName
+  - BOOSE.Evaluation.value
+  - BOOSE.Evaluation.ProcessExpression(System.String)
+  - BOOSE.Evaluation.Expression
+  - BOOSE.Evaluation.VarName
+  - BOOSE.Evaluation.Value
+  - BOOSE.Evaluation.Local
+  - BOOSE.Command.program
+  - BOOSE.Command.parameterList
+  - BOOSE.Command.parameters
+  - BOOSE.Command.paramsint
+  - BOOSE.Command.Set(BOOSE.StoredProgram,System.String)
+  - BOOSE.Command.ProcessParameters(System.String)
+  - BOOSE.Command.ToString
+  - BOOSE.Command.Program
+  - BOOSE.Command.Name
+  - BOOSE.Command.ParameterList
+  - BOOSE.Command.Parameters
+  - BOOSE.Command.Paramsint
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: ASE_Assignment.Commands.AppElse.CorrespondingEnd
+  commentId: P:ASE_Assignment.Commands.AppElse.CorrespondingEnd
+  id: CorrespondingEnd
+  parent: ASE_Assignment.Commands.AppElse
+  langs:
+  - csharp
+  - vb
+  name: CorrespondingEnd
+  nameWithType: AppElse.CorrespondingEnd
+  fullName: ASE_Assignment.Commands.AppElse.CorrespondingEnd
+  type: Property
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment/Commands/AppElse.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: CorrespondingEnd
+    path: ASE_Assignment/Commands/AppElse.cs
+    startLine: 46
+  assemblies:
+  - ASE_Assignment
+  namespace: ASE_Assignment.Commands
+  summary: Gets or sets the corresponding <xref href="BOOSE.End" data-throw-if-not-resolved="false"></xref> command for this "Else" block.
+  remarks: >-
+    This property provides access to the linked <xref href="BOOSE.End" data-throw-if-not-resolved="false"></xref> command, allowing the program to
+
+    manage the flow of execution through the conditional structure.
+  example: []
+  syntax:
+    content: public End CorrespondingEnd { get; set; }
+    parameters: []
+    return:
+      type: BOOSE.End
+      description: The <xref href="BOOSE.End" data-throw-if-not-resolved="false"></xref> command associated with this "Else" command.
+    content.vb: Public Property CorrespondingEnd As [End]
+  overload: ASE_Assignment.Commands.AppElse.CorrespondingEnd*
+- uid: ASE_Assignment.Commands.AppElse.#ctor
+  commentId: M:ASE_Assignment.Commands.AppElse.#ctor
+  id: '#ctor'
+  parent: ASE_Assignment.Commands.AppElse
+  langs:
+  - csharp
+  - vb
+  name: AppElse()
+  nameWithType: AppElse.AppElse()
+  fullName: ASE_Assignment.Commands.AppElse.AppElse()
+  type: Constructor
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment/Commands/AppElse.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: .ctor
+    path: ASE_Assignment/Commands/AppElse.cs
+    startLine: 59
+  assemblies:
+  - ASE_Assignment
+  namespace: ASE_Assignment.Commands
+  summary: Initializes a new instance of the <xref href="ASE_Assignment.Commands.AppElse" data-throw-if-not-resolved="false"></xref> class.
+  remarks: >-
+    The constructor does not impose any instance restrictions. It simply creates a new "Else" command
+
+    to be added to the program's command stack.
+  example: []
+  syntax:
+    content: public AppElse()
+    content.vb: Public Sub New()
+  overload: ASE_Assignment.Commands.AppElse.#ctor*
+  nameWithType.vb: AppElse.New()
+  fullName.vb: ASE_Assignment.Commands.AppElse.New()
+  name.vb: New()
+- uid: ASE_Assignment.Commands.AppElse.CheckParameters(System.String[])
+  commentId: M:ASE_Assignment.Commands.AppElse.CheckParameters(System.String[])
+  id: CheckParameters(System.String[])
+  parent: ASE_Assignment.Commands.AppElse
+  langs:
+  - csharp
+  - vb
+  name: CheckParameters(string[])
+  nameWithType: AppElse.CheckParameters(string[])
+  fullName: ASE_Assignment.Commands.AppElse.CheckParameters(string[])
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment/Commands/AppElse.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: CheckParameters
+    path: ASE_Assignment/Commands/AppElse.cs
+    startLine: 79
+  assemblies:
+  - ASE_Assignment
+  namespace: ASE_Assignment.Commands
+  syntax:
+    content: public override void CheckParameters(string[] parameters)
+    parameters:
+    - id: parameters
+      type: System.String[]
+    content.vb: Public Overrides Sub CheckParameters(parameters As String())
+  overridden: ASE_Assignment.Components.AppCompoundCommand.CheckParameters(System.String[])
+  overload: ASE_Assignment.Commands.AppElse.CheckParameters*
+  nameWithType.vb: AppElse.CheckParameters(String())
+  fullName.vb: ASE_Assignment.Commands.AppElse.CheckParameters(String())
+  name.vb: CheckParameters(String())
+- uid: ASE_Assignment.Commands.AppElse.Compile
+  commentId: M:ASE_Assignment.Commands.AppElse.Compile
+  id: Compile
+  parent: ASE_Assignment.Commands.AppElse
+  langs:
+  - csharp
+  - vb
+  name: Compile()
+  nameWithType: AppElse.Compile()
+  fullName: ASE_Assignment.Commands.AppElse.Compile()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment/Commands/AppElse.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: Compile
+    path: ASE_Assignment/Commands/AppElse.cs
+    startLine: 103
+  assemblies:
+  - ASE_Assignment
+  namespace: ASE_Assignment.Commands
+  summary: Compiles the "Else" command and sets up its execution flow.
+  remarks: >-
+    This method links the "Else" command to its corresponding conditional command (e.g., "If"),
+
+    assigns the line numbers for execution flow, and ensures the structure of the conditional block is valid.
+  example:
+  - <pre><code class="lang-csharp">elseCommand.Compile();</code></pre>
+  syntax:
+    content: public override void Compile()
+    content.vb: Public Overrides Sub Compile()
+  overridden: ASE_Assignment.Components.AppCompoundCommand.Compile
+  overload: ASE_Assignment.Commands.AppElse.Compile*
+  exceptions:
+  - type: BOOSE.CommandException
+    commentId: T:BOOSE.CommandException
+    description: Thrown if the program structure is invalid or if the corresponding conditional command is missing.
+- uid: ASE_Assignment.Commands.AppElse.Execute
+  commentId: M:ASE_Assignment.Commands.AppElse.Execute
+  id: Execute
+  parent: ASE_Assignment.Commands.AppElse
+  langs:
+  - csharp
+  - vb
+  name: Execute()
+  nameWithType: AppElse.Execute()
+  fullName: ASE_Assignment.Commands.AppElse.Execute()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment/Commands/AppElse.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: Execute
+    path: ASE_Assignment/Commands/AppElse.cs
+    startLine: 129
+  assemblies:
+  - ASE_Assignment
+  namespace: ASE_Assignment.Commands
+  summary: Executes the "Else" command during runtime.
+  remarks: >-
+    This method determines whether to execute the commands within the "Else" block or skip them.
+
+    If the condition of the corresponding command is true, it skips the "Else" block by jumping
+
+    to the end line number.
+  example:
+  - <pre><code class="lang-csharp">elseCommand.Execute();</code></pre>
+  syntax:
+    content: public override void Execute()
+    content.vb: Public Overrides Sub Execute()
+  overridden: ASE_Assignment.Components.AppConditionalCommand.Execute
+  overload: ASE_Assignment.Commands.AppElse.Execute*
+references:
+- uid: ASE_Assignment.Commands.AppElse
+  commentId: T:ASE_Assignment.Commands.AppElse
+  href: ASE_Assignment.Commands.AppElse.html
+  name: AppElse
+  nameWithType: AppElse
+  fullName: ASE_Assignment.Commands.AppElse
+- uid: ASE_Assignment.Commands
+  commentId: N:ASE_Assignment.Commands
+  href: ASE_Assignment.html
+  name: ASE_Assignment.Commands
+  nameWithType: ASE_Assignment.Commands
+  fullName: ASE_Assignment.Commands
+  spec.csharp:
+  - uid: ASE_Assignment
+    name: ASE_Assignment
+    href: ASE_Assignment.html
+  - name: .
+  - uid: ASE_Assignment.Commands
+    name: Commands
+    href: ASE_Assignment.Commands.html
+  spec.vb:
+  - uid: ASE_Assignment
+    name: ASE_Assignment
+    href: ASE_Assignment.html
+  - name: .
+  - uid: ASE_Assignment.Commands
+    name: Commands
+    href: ASE_Assignment.Commands.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: BOOSE.Command
+  commentId: T:BOOSE.Command
+  parent: BOOSE
+  isExternal: true
+  name: Command
+  nameWithType: Command
+  fullName: BOOSE.Command
+- uid: BOOSE.Evaluation
+  commentId: T:BOOSE.Evaluation
+  parent: BOOSE
+  isExternal: true
+  name: Evaluation
+  nameWithType: Evaluation
+  fullName: BOOSE.Evaluation
+- uid: BOOSE.Boolean
+  commentId: T:BOOSE.Boolean
+  parent: BOOSE
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: BOOSE.Boolean
+- uid: BOOSE.ConditionalCommand
+  commentId: T:BOOSE.ConditionalCommand
+  parent: BOOSE
+  isExternal: true
+  name: ConditionalCommand
+  nameWithType: ConditionalCommand
+  fullName: BOOSE.ConditionalCommand
+- uid: ASE_Assignment.Components.AppConditionalCommand
+  commentId: T:ASE_Assignment.Components.AppConditionalCommand
+  parent: ASE_Assignment.Components
+  href: ASE_Assignment.Components.AppConditionalCommand.html
+  name: AppConditionalCommand
+  nameWithType: AppConditionalCommand
+  fullName: ASE_Assignment.Components.AppConditionalCommand
+- uid: ASE_Assignment.Components.AppCompoundCommand
+  commentId: T:ASE_Assignment.Components.AppCompoundCommand
+  parent: ASE_Assignment.Components
+  href: ASE_Assignment.Components.AppCompoundCommand.html
+  name: AppCompoundCommand
+  nameWithType: AppCompoundCommand
+  fullName: ASE_Assignment.Components.AppCompoundCommand
+- uid: BOOSE.ICommand
+  commentId: T:BOOSE.ICommand
+  parent: BOOSE
+  isExternal: true
+  name: ICommand
+  nameWithType: ICommand
+  fullName: BOOSE.ICommand
+- uid: ASE_Assignment.Components.AppCompoundCommand.CorrespondingCommand
+  commentId: P:ASE_Assignment.Components.AppCompoundCommand.CorrespondingCommand
+  parent: ASE_Assignment.Components.AppCompoundCommand
+  href: ASE_Assignment.Components.AppCompoundCommand.html#ASE_Assignment_Components_AppCompoundCommand_CorrespondingCommand
+  name: CorrespondingCommand
+  nameWithType: AppCompoundCommand.CorrespondingCommand
+  fullName: ASE_Assignment.Components.AppCompoundCommand.CorrespondingCommand
+- uid: ASE_Assignment.Components.AppCompoundCommand.ResetOrDecreaseCount(System.Int32)
+  commentId: M:ASE_Assignment.Components.AppCompoundCommand.ResetOrDecreaseCount(System.Int32)
+  parent: ASE_Assignment.Components.AppCompoundCommand
+  isExternal: true
+  href: ASE_Assignment.Components.AppCompoundCommand.html#ASE_Assignment_Components_AppCompoundCommand_ResetOrDecreaseCount_System_Int32_
+  name: ResetOrDecreaseCount(int)
+  nameWithType: AppCompoundCommand.ResetOrDecreaseCount(int)
+  fullName: ASE_Assignment.Components.AppCompoundCommand.ResetOrDecreaseCount(int)
+  nameWithType.vb: AppCompoundCommand.ResetOrDecreaseCount(Integer)
+  fullName.vb: ASE_Assignment.Components.AppCompoundCommand.ResetOrDecreaseCount(Integer)
+  name.vb: ResetOrDecreaseCount(Integer)
+  spec.csharp:
+  - uid: ASE_Assignment.Components.AppCompoundCommand.ResetOrDecreaseCount(System.Int32)
+    name: ResetOrDecreaseCount
+    href: ASE_Assignment.Components.AppCompoundCommand.html#ASE_Assignment_Components_AppCompoundCommand_ResetOrDecreaseCount_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: ASE_Assignment.Components.AppCompoundCommand.ResetOrDecreaseCount(System.Int32)
+    name: ResetOrDecreaseCount
+    href: ASE_Assignment.Components.AppCompoundCommand.html#ASE_Assignment_Components_AppCompoundCommand_ResetOrDecreaseCount_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: BOOSE.ConditionalCommand.endLineNumber
+  commentId: F:BOOSE.ConditionalCommand.endLineNumber
+  parent: BOOSE.ConditionalCommand
+  isExternal: true
+  name: endLineNumber
+  nameWithType: ConditionalCommand.endLineNumber
+  fullName: BOOSE.ConditionalCommand.endLineNumber
+- uid: BOOSE.ConditionalCommand.EndLineNumber
+  commentId: P:BOOSE.ConditionalCommand.EndLineNumber
+  parent: BOOSE.ConditionalCommand
+  isExternal: true
+  name: EndLineNumber
+  nameWithType: ConditionalCommand.EndLineNumber
+  fullName: BOOSE.ConditionalCommand.EndLineNumber
+- uid: BOOSE.ConditionalCommand.Condition
+  commentId: P:BOOSE.ConditionalCommand.Condition
+  parent: BOOSE.ConditionalCommand
+  isExternal: true
+  name: Condition
+  nameWithType: ConditionalCommand.Condition
+  fullName: BOOSE.ConditionalCommand.Condition
+- uid: BOOSE.ConditionalCommand.LineNumber
+  commentId: P:BOOSE.ConditionalCommand.LineNumber
+  parent: BOOSE.ConditionalCommand
+  isExternal: true
+  name: LineNumber
+  nameWithType: ConditionalCommand.LineNumber
+  fullName: BOOSE.ConditionalCommand.LineNumber
+- uid: BOOSE.ConditionalCommand.CondType
+  commentId: P:BOOSE.ConditionalCommand.CondType
+  parent: BOOSE.ConditionalCommand
+  isExternal: true
+  name: CondType
+  nameWithType: ConditionalCommand.CondType
+  fullName: BOOSE.ConditionalCommand.CondType
+- uid: BOOSE.ConditionalCommand.ReturnLineNumber
+  commentId: P:BOOSE.ConditionalCommand.ReturnLineNumber
+  parent: BOOSE.ConditionalCommand
+  isExternal: true
+  name: ReturnLineNumber
+  nameWithType: ConditionalCommand.ReturnLineNumber
+  fullName: BOOSE.ConditionalCommand.ReturnLineNumber
+- uid: BOOSE.Boolean.Restrictions
+  commentId: M:BOOSE.Boolean.Restrictions
+  parent: BOOSE.Boolean
+  isExternal: true
+  name: Restrictions()
+  nameWithType: Boolean.Restrictions()
+  fullName: BOOSE.Boolean.Restrictions()
+  spec.csharp:
+  - uid: BOOSE.Boolean.Restrictions
+    name: Restrictions
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BOOSE.Boolean.Restrictions
+    name: Restrictions
+    isExternal: true
+  - name: (
+  - name: )
+- uid: BOOSE.Boolean.BoolValue
+  commentId: P:BOOSE.Boolean.BoolValue
+  parent: BOOSE.Boolean
+  isExternal: true
+  name: BoolValue
+  nameWithType: Boolean.BoolValue
+  fullName: BOOSE.Boolean.BoolValue
+- uid: BOOSE.Evaluation.expression
+  commentId: F:BOOSE.Evaluation.expression
+  parent: BOOSE.Evaluation
+  isExternal: true
+  name: expression
+  nameWithType: Evaluation.expression
+  fullName: BOOSE.Evaluation.expression
+- uid: BOOSE.Evaluation.evaluatedExpression
+  commentId: F:BOOSE.Evaluation.evaluatedExpression
+  parent: BOOSE.Evaluation
+  isExternal: true
+  name: evaluatedExpression
+  nameWithType: Evaluation.evaluatedExpression
+  fullName: BOOSE.Evaluation.evaluatedExpression
+- uid: BOOSE.Evaluation.varName
+  commentId: F:BOOSE.Evaluation.varName
+  parent: BOOSE.Evaluation
+  isExternal: true
+  name: varName
+  nameWithType: Evaluation.varName
+  fullName: BOOSE.Evaluation.varName
+- uid: BOOSE.Evaluation.value
+  commentId: F:BOOSE.Evaluation.value
+  parent: BOOSE.Evaluation
+  isExternal: true
+  name: value
+  nameWithType: Evaluation.value
+  fullName: BOOSE.Evaluation.value
+- uid: BOOSE.Evaluation.ProcessExpression(System.String)
+  commentId: M:BOOSE.Evaluation.ProcessExpression(System.String)
+  parent: BOOSE.Evaluation
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: ProcessExpression(string)
+  nameWithType: Evaluation.ProcessExpression(string)
+  fullName: BOOSE.Evaluation.ProcessExpression(string)
+  nameWithType.vb: Evaluation.ProcessExpression(String)
+  fullName.vb: BOOSE.Evaluation.ProcessExpression(String)
+  name.vb: ProcessExpression(String)
+  spec.csharp:
+  - uid: BOOSE.Evaluation.ProcessExpression(System.String)
+    name: ProcessExpression
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: BOOSE.Evaluation.ProcessExpression(System.String)
+    name: ProcessExpression
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: BOOSE.Evaluation.Expression
+  commentId: P:BOOSE.Evaluation.Expression
+  parent: BOOSE.Evaluation
+  isExternal: true
+  name: Expression
+  nameWithType: Evaluation.Expression
+  fullName: BOOSE.Evaluation.Expression
+- uid: BOOSE.Evaluation.VarName
+  commentId: P:BOOSE.Evaluation.VarName
+  parent: BOOSE.Evaluation
+  isExternal: true
+  name: VarName
+  nameWithType: Evaluation.VarName
+  fullName: BOOSE.Evaluation.VarName
+- uid: BOOSE.Evaluation.Value
+  commentId: P:BOOSE.Evaluation.Value
+  parent: BOOSE.Evaluation
+  isExternal: true
+  name: Value
+  nameWithType: Evaluation.Value
+  fullName: BOOSE.Evaluation.Value
+- uid: BOOSE.Evaluation.Local
+  commentId: P:BOOSE.Evaluation.Local
+  parent: BOOSE.Evaluation
+  isExternal: true
+  name: Local
+  nameWithType: Evaluation.Local
+  fullName: BOOSE.Evaluation.Local
+- uid: BOOSE.Command.program
+  commentId: F:BOOSE.Command.program
+  parent: BOOSE.Command
+  isExternal: true
+  name: program
+  nameWithType: Command.program
+  fullName: BOOSE.Command.program
+- uid: BOOSE.Command.parameterList
+  commentId: F:BOOSE.Command.parameterList
+  parent: BOOSE.Command
+  isExternal: true
+  name: parameterList
+  nameWithType: Command.parameterList
+  fullName: BOOSE.Command.parameterList
+- uid: BOOSE.Command.parameters
+  commentId: F:BOOSE.Command.parameters
+  parent: BOOSE.Command
+  isExternal: true
+  name: parameters
+  nameWithType: Command.parameters
+  fullName: BOOSE.Command.parameters
+- uid: BOOSE.Command.paramsint
+  commentId: F:BOOSE.Command.paramsint
+  parent: BOOSE.Command
+  isExternal: true
+  name: paramsint
+  nameWithType: Command.paramsint
+  fullName: BOOSE.Command.paramsint
+- uid: BOOSE.Command.Set(BOOSE.StoredProgram,System.String)
+  commentId: M:BOOSE.Command.Set(BOOSE.StoredProgram,System.String)
+  parent: BOOSE.Command
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Set(StoredProgram, string)
+  nameWithType: Command.Set(StoredProgram, string)
+  fullName: BOOSE.Command.Set(BOOSE.StoredProgram, string)
+  nameWithType.vb: Command.Set(StoredProgram, String)
+  fullName.vb: BOOSE.Command.Set(BOOSE.StoredProgram, String)
+  name.vb: Set(StoredProgram, String)
+  spec.csharp:
+  - uid: BOOSE.Command.Set(BOOSE.StoredProgram,System.String)
+    name: Set
+    isExternal: true
+  - name: (
+  - uid: BOOSE.StoredProgram
+    name: StoredProgram
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: BOOSE.Command.Set(BOOSE.StoredProgram,System.String)
+    name: Set
+    isExternal: true
+  - name: (
+  - uid: BOOSE.StoredProgram
+    name: StoredProgram
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: BOOSE.Command.ProcessParameters(System.String)
+  commentId: M:BOOSE.Command.ProcessParameters(System.String)
+  parent: BOOSE.Command
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: ProcessParameters(string)
+  nameWithType: Command.ProcessParameters(string)
+  fullName: BOOSE.Command.ProcessParameters(string)
+  nameWithType.vb: Command.ProcessParameters(String)
+  fullName.vb: BOOSE.Command.ProcessParameters(String)
+  name.vb: ProcessParameters(String)
+  spec.csharp:
+  - uid: BOOSE.Command.ProcessParameters(System.String)
+    name: ProcessParameters
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: BOOSE.Command.ProcessParameters(System.String)
+    name: ProcessParameters
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: BOOSE.Command.ToString
+  commentId: M:BOOSE.Command.ToString
+  parent: BOOSE.Command
+  isExternal: true
+  name: ToString()
+  nameWithType: Command.ToString()
+  fullName: BOOSE.Command.ToString()
+  spec.csharp:
+  - uid: BOOSE.Command.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BOOSE.Command.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+- uid: BOOSE.Command.Program
+  commentId: P:BOOSE.Command.Program
+  parent: BOOSE.Command
+  isExternal: true
+  name: Program
+  nameWithType: Command.Program
+  fullName: BOOSE.Command.Program
+- uid: BOOSE.Command.Name
+  commentId: P:BOOSE.Command.Name
+  parent: BOOSE.Command
+  isExternal: true
+  name: Name
+  nameWithType: Command.Name
+  fullName: BOOSE.Command.Name
+- uid: BOOSE.Command.ParameterList
+  commentId: P:BOOSE.Command.ParameterList
+  parent: BOOSE.Command
+  isExternal: true
+  name: ParameterList
+  nameWithType: Command.ParameterList
+  fullName: BOOSE.Command.ParameterList
+- uid: BOOSE.Command.Parameters
+  commentId: P:BOOSE.Command.Parameters
+  parent: BOOSE.Command
+  isExternal: true
+  name: Parameters
+  nameWithType: Command.Parameters
+  fullName: BOOSE.Command.Parameters
+- uid: BOOSE.Command.Paramsint
+  commentId: P:BOOSE.Command.Paramsint
+  parent: BOOSE.Command
+  isExternal: true
+  name: Paramsint
+  nameWithType: Command.Paramsint
+  fullName: BOOSE.Command.Paramsint
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BOOSE
+  commentId: N:BOOSE
+  isExternal: true
+  name: BOOSE
+  nameWithType: BOOSE
+  fullName: BOOSE
+- uid: ASE_Assignment.Components
+  commentId: N:ASE_Assignment.Components
+  href: ASE_Assignment.html
+  name: ASE_Assignment.Components
+  nameWithType: ASE_Assignment.Components
+  fullName: ASE_Assignment.Components
+  spec.csharp:
+  - uid: ASE_Assignment
+    name: ASE_Assignment
+    href: ASE_Assignment.html
+  - name: .
+  - uid: ASE_Assignment.Components
+    name: Components
+    href: ASE_Assignment.Components.html
+  spec.vb:
+  - uid: ASE_Assignment
+    name: ASE_Assignment
+    href: ASE_Assignment.html
+  - name: .
+  - uid: ASE_Assignment.Components
+    name: Components
+    href: ASE_Assignment.Components.html
+- uid: BOOSE.End
+  commentId: T:BOOSE.End
+  parent: BOOSE
+  isExternal: true
+  name: End
+  nameWithType: End
+  fullName: BOOSE.End
+- uid: ASE_Assignment.Commands.AppElse.CorrespondingEnd*
+  commentId: Overload:ASE_Assignment.Commands.AppElse.CorrespondingEnd
+  href: ASE_Assignment.Commands.AppElse.html#ASE_Assignment_Commands_AppElse_CorrespondingEnd
+  name: CorrespondingEnd
+  nameWithType: AppElse.CorrespondingEnd
+  fullName: ASE_Assignment.Commands.AppElse.CorrespondingEnd
+- uid: ASE_Assignment.Commands.AppElse.#ctor*
+  commentId: Overload:ASE_Assignment.Commands.AppElse.#ctor
+  href: ASE_Assignment.Commands.AppElse.html#ASE_Assignment_Commands_AppElse__ctor
+  name: AppElse
+  nameWithType: AppElse.AppElse
+  fullName: ASE_Assignment.Commands.AppElse.AppElse
+  nameWithType.vb: AppElse.New
+  fullName.vb: ASE_Assignment.Commands.AppElse.New
+  name.vb: New
+- uid: ASE_Assignment.Components.AppCompoundCommand.CheckParameters(System.String[])
+  commentId: M:ASE_Assignment.Components.AppCompoundCommand.CheckParameters(System.String[])
+  parent: ASE_Assignment.Components.AppCompoundCommand
+  isExternal: true
+  href: ASE_Assignment.Components.AppCompoundCommand.html#ASE_Assignment_Components_AppCompoundCommand_CheckParameters_System_String___
+  name: CheckParameters(string[])
+  nameWithType: AppCompoundCommand.CheckParameters(string[])
+  fullName: ASE_Assignment.Components.AppCompoundCommand.CheckParameters(string[])
+  nameWithType.vb: AppCompoundCommand.CheckParameters(String())
+  fullName.vb: ASE_Assignment.Components.AppCompoundCommand.CheckParameters(String())
+  name.vb: CheckParameters(String())
+  spec.csharp:
+  - uid: ASE_Assignment.Components.AppCompoundCommand.CheckParameters(System.String[])
+    name: CheckParameters
+    href: ASE_Assignment.Components.AppCompoundCommand.html#ASE_Assignment_Components_AppCompoundCommand_CheckParameters_System_String___
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: ASE_Assignment.Components.AppCompoundCommand.CheckParameters(System.String[])
+    name: CheckParameters
+    href: ASE_Assignment.Components.AppCompoundCommand.html#ASE_Assignment_Components_AppCompoundCommand_CheckParameters_System_String___
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+  - name: )
+- uid: ASE_Assignment.Commands.AppElse.CheckParameters*
+  commentId: Overload:ASE_Assignment.Commands.AppElse.CheckParameters
+  href: ASE_Assignment.Commands.AppElse.html#ASE_Assignment_Commands_AppElse_CheckParameters_System_String___
+  name: CheckParameters
+  nameWithType: AppElse.CheckParameters
+  fullName: ASE_Assignment.Commands.AppElse.CheckParameters
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: BOOSE.CommandException
+  commentId: T:BOOSE.CommandException
+  parent: BOOSE
+  isExternal: true
+  name: CommandException
+  nameWithType: CommandException
+  fullName: BOOSE.CommandException
+- uid: ASE_Assignment.Components.AppCompoundCommand.Compile
+  commentId: M:ASE_Assignment.Components.AppCompoundCommand.Compile
+  parent: ASE_Assignment.Components.AppCompoundCommand
+  href: ASE_Assignment.Components.AppCompoundCommand.html#ASE_Assignment_Components_AppCompoundCommand_Compile
+  name: Compile()
+  nameWithType: AppCompoundCommand.Compile()
+  fullName: ASE_Assignment.Components.AppCompoundCommand.Compile()
+  spec.csharp:
+  - uid: ASE_Assignment.Components.AppCompoundCommand.Compile
+    name: Compile
+    href: ASE_Assignment.Components.AppCompoundCommand.html#ASE_Assignment_Components_AppCompoundCommand_Compile
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: ASE_Assignment.Components.AppCompoundCommand.Compile
+    name: Compile
+    href: ASE_Assignment.Components.AppCompoundCommand.html#ASE_Assignment_Components_AppCompoundCommand_Compile
+  - name: (
+  - name: )
+- uid: ASE_Assignment.Commands.AppElse.Compile*
+  commentId: Overload:ASE_Assignment.Commands.AppElse.Compile
+  href: ASE_Assignment.Commands.AppElse.html#ASE_Assignment_Commands_AppElse_Compile
+  name: Compile
+  nameWithType: AppElse.Compile
+  fullName: ASE_Assignment.Commands.AppElse.Compile
+- uid: ASE_Assignment.Components.AppConditionalCommand.Execute
+  commentId: M:ASE_Assignment.Components.AppConditionalCommand.Execute
+  parent: ASE_Assignment.Components.AppConditionalCommand
+  href: ASE_Assignment.Components.AppConditionalCommand.html#ASE_Assignment_Components_AppConditionalCommand_Execute
+  name: Execute()
+  nameWithType: AppConditionalCommand.Execute()
+  fullName: ASE_Assignment.Components.AppConditionalCommand.Execute()
+  spec.csharp:
+  - uid: ASE_Assignment.Components.AppConditionalCommand.Execute
+    name: Execute
+    href: ASE_Assignment.Components.AppConditionalCommand.html#ASE_Assignment_Components_AppConditionalCommand_Execute
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: ASE_Assignment.Components.AppConditionalCommand.Execute
+    name: Execute
+    href: ASE_Assignment.Components.AppConditionalCommand.html#ASE_Assignment_Components_AppConditionalCommand_Execute
+  - name: (
+  - name: )
+- uid: ASE_Assignment.Commands.AppElse.Execute*
+  commentId: Overload:ASE_Assignment.Commands.AppElse.Execute
+  href: ASE_Assignment.Commands.AppElse.html#ASE_Assignment_Commands_AppElse_Execute
+  name: Execute
+  nameWithType: AppElse.Execute
+  fullName: ASE_Assignment.Commands.AppElse.Execute

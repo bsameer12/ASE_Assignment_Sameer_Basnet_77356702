@@ -1,0 +1,1511 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class AppStoredProgram | ASE_Assignment_Sameer_Basnet_77356702 </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class AppStoredProgram | ASE_Assignment_Sameer_Basnet_77356702 ">
+      
+      <meta name="description" content="Represents a stored program that can be executed on a canvas, supporting variables, methods, and conditional commands.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/new/main/apiSpec/new?filename=ASE_Assignment_Components_AppStoredProgram.md&amp;value=---%0Auid%3A%20ASE_Assignment.Components.AppStoredProgram%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="ASE_Assignment_Sameer_Basnet_77356702">
+            ASE_Assignment_Sameer_Basnet_77356702
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ASE_Assignment.Components.AppStoredProgram">
+
+
+
+  <h1 id="ASE_Assignment_Components_AppStoredProgram" data-uid="ASE_Assignment.Components.AppStoredProgram" class="text-break">
+Class AppStoredProgram  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment/Components/AppStoredPrograms.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="ASE_Assignment.html">ASE_Assignment</a>.<a class="xref" href="ASE_Assignment.Components.html">Components</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>ASE_Assignment.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents a stored program that can be executed on a canvas, supporting variables, methods, and conditional commands.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AppStoredProgram : StoredProgram, IList, ICollection, IEnumerable, ICloneable, IStoredProgram</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist">ArrayList</a></div>
+      <div><span class="xref">StoredProgram</span></div>
+      <div><span class="xref">AppStoredProgram</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ilist">IList</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.icollection">ICollection</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+      <div><span class="xref">IStoredProgram</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <span class="xref">StoredProgram.FindVariable(Evaluation)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.adapter">ArrayList.Adapter(IList)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.add">ArrayList.Add(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.addrange">ArrayList.AddRange(ICollection)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.binarysearch#system-collections-arraylist-binarysearch(system-int32-system-int32-system-object-system-collections-icomparer)">ArrayList.BinarySearch(int, int, object, IComparer)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.binarysearch#system-collections-arraylist-binarysearch(system-object)">ArrayList.BinarySearch(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.binarysearch#system-collections-arraylist-binarysearch(system-object-system-collections-icomparer)">ArrayList.BinarySearch(object, IComparer)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.clear">ArrayList.Clear()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.clone">ArrayList.Clone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.contains">ArrayList.Contains(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.copyto#system-collections-arraylist-copyto(system-array)">ArrayList.CopyTo(Array)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.copyto#system-collections-arraylist-copyto(system-array-system-int32)">ArrayList.CopyTo(Array, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.copyto#system-collections-arraylist-copyto(system-int32-system-array-system-int32-system-int32)">ArrayList.CopyTo(int, Array, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.fixedsize#system-collections-arraylist-fixedsize(system-collections-arraylist)">ArrayList.FixedSize(ArrayList)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.fixedsize#system-collections-arraylist-fixedsize(system-collections-ilist)">ArrayList.FixedSize(IList)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.getenumerator#system-collections-arraylist-getenumerator">ArrayList.GetEnumerator()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.getenumerator#system-collections-arraylist-getenumerator(system-int32-system-int32)">ArrayList.GetEnumerator(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.getrange">ArrayList.GetRange(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.indexof#system-collections-arraylist-indexof(system-object)">ArrayList.IndexOf(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.indexof#system-collections-arraylist-indexof(system-object-system-int32)">ArrayList.IndexOf(object, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.indexof#system-collections-arraylist-indexof(system-object-system-int32-system-int32)">ArrayList.IndexOf(object, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.insert">ArrayList.Insert(int, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.insertrange">ArrayList.InsertRange(int, ICollection)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.lastindexof#system-collections-arraylist-lastindexof(system-object)">ArrayList.LastIndexOf(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.lastindexof#system-collections-arraylist-lastindexof(system-object-system-int32)">ArrayList.LastIndexOf(object, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.lastindexof#system-collections-arraylist-lastindexof(system-object-system-int32-system-int32)">ArrayList.LastIndexOf(object, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.readonly#system-collections-arraylist-readonly(system-collections-arraylist)">ArrayList.ReadOnly(ArrayList)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.readonly#system-collections-arraylist-readonly(system-collections-ilist)">ArrayList.ReadOnly(IList)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.remove">ArrayList.Remove(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.removeat">ArrayList.RemoveAt(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.removerange">ArrayList.RemoveRange(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.repeat">ArrayList.Repeat(object, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.reverse#system-collections-arraylist-reverse">ArrayList.Reverse()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.reverse#system-collections-arraylist-reverse(system-int32-system-int32)">ArrayList.Reverse(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.setrange">ArrayList.SetRange(int, ICollection)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.sort#system-collections-arraylist-sort">ArrayList.Sort()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.sort#system-collections-arraylist-sort(system-collections-icomparer)">ArrayList.Sort(IComparer)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.sort#system-collections-arraylist-sort(system-int32-system-int32-system-collections-icomparer)">ArrayList.Sort(int, int, IComparer)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.synchronized#system-collections-arraylist-synchronized(system-collections-arraylist)">ArrayList.Synchronized(ArrayList)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.synchronized#system-collections-arraylist-synchronized(system-collections-ilist)">ArrayList.Synchronized(IList)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.toarray#system-collections-arraylist-toarray">ArrayList.ToArray()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.toarray#system-collections-arraylist-toarray(system-type)">ArrayList.ToArray(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.trimtosize">ArrayList.TrimToSize()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.capacity">ArrayList.Capacity</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.count">ArrayList.Count</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.isfixedsize">ArrayList.IsFixedSize</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.isreadonly">ArrayList.IsReadOnly</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.issynchronized">ArrayList.IsSynchronized</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">ArrayList.this[int]</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.syncroot">ArrayList.SyncRoot</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="ASE_Assignment_Components_AppStoredProgram_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>The <a class="xref" href="ASE_Assignment.Components.AppStoredProgram.html">AppStoredProgram</a> class extends the functionality of the <span class="xref">BOOSE.StoredProgram</span> class.
+It provides infrastructure for managing and executing commands, handling variables, methods, and conditional commands.
+Additionally, it supports syntax validation and execution tracking using a program counter.</p>
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="ASE_Assignment_Components_AppStoredProgram__ctor_" data-uid="ASE_Assignment.Components.AppStoredProgram.#ctor*"></a>
+
+  <h3 id="ASE_Assignment_Components_AppStoredProgram__ctor_BOOSE_ICanvas_" data-uid="ASE_Assignment.Components.AppStoredProgram.#ctor(BOOSE.ICanvas)">
+  AppStoredProgram(ICanvas)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment/Components/AppStoredPrograms.cs/#L113"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="ASE_Assignment.Components.AppStoredProgram.html">AppStoredProgram</a> class with a specified canvas.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AppStoredProgram(ICanvas _canvas)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>_canvas</code> <span class="xref">ICanvas</span></dt>
+    <dd><p>The <span class="xref">BOOSE.ICanvas</span> on which the program will be executed.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Components_AppStoredProgram__ctor_BOOSE_ICanvas__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This constructor initializes the program with the specified canvas, enabling commands to render
+or interact visually. It also resets the program's internal state to ensure a clean start for execution.</p>
+</div>
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="ASE_Assignment_Components_AppStoredProgram_SyntaxOk" data-uid="ASE_Assignment.Components.AppStoredProgram.SyntaxOk">
+  SyntaxOk
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment/Components/AppStoredPrograms.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether the program's syntax is valid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SyntaxOk</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Components_AppStoredProgram_SyntaxOk_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This flag is set to <code>true</code> when all commands in the program are successfully validated during parsing.
+It is used to prevent execution of programs with syntax errors.</p>
+</div>
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="ASE_Assignment_Components_AppStoredProgram_PC_" data-uid="ASE_Assignment.Components.AppStoredProgram.PC*"></a>
+
+  <h3 id="ASE_Assignment_Components_AppStoredProgram_PC" data-uid="ASE_Assignment.Components.AppStoredProgram.PC">
+  PC
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment/Components/AppStoredPrograms.cs/#L92"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the program counter, which determines the current command to execute.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int PC { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ASE_Assignment_Components_AppStoredProgram_PC_examples">Examples</h4>
+  <p>The following example demonstrates how to set and retrieve the program counter:</p>
+<pre><code class="lang-csharp">AppStoredProgram program = new AppStoredProgram();
+program.PC = 5; // Set the program counter to command at index 5
+int currentCommand = program.PC; // Get the current program counter value</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Components_AppStoredProgram_PC_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The program counter is used to track the position of the currently executing command in the program.
+It can be updated to jump to specific commands during conditional or loop operations.</p>
+</div>
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="ASE_Assignment_Components_AppStoredProgram_Add_" data-uid="ASE_Assignment.Components.AppStoredProgram.Add*"></a>
+
+  <h3 id="ASE_Assignment_Components_AppStoredProgram_Add_BOOSE_Command_" data-uid="ASE_Assignment.Components.AppStoredProgram.Add(BOOSE.Command)">
+  Add(Command)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment/Components/AppStoredPrograms.cs/#L690"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a command to the program.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int Add(Command C)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>C</code> <span class="xref">Command</span></dt>
+    <dd><p>The <span class="xref">BOOSE.Command</span> to add to the program.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The index of the added command in the program's command list.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Components_AppStoredProgram_Add_BOOSE_Command__examples">Examples</h4>
+  <p>The following example demonstrates how to add a command to the program:</p>
+<pre><code class="lang-csharp">Command drawCommand = new DrawCommand();
+program.Add(drawCommand);</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Components_AppStoredProgram_Add_BOOSE_Command__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method adds a command to the program and associates it with the canvas if it is a <span class="xref">BOOSE.CanvasCommand</span>.
+If the command is null, a <span class="xref">BOOSE.StoredProgramException</span> is thrown.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">StoredProgramException</span></dt>
+    <dd><p>Thrown when attempting to add a null command.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="ASE_Assignment_Components_AppStoredProgram_AddMethod_" data-uid="ASE_Assignment.Components.AppStoredProgram.AddMethod*"></a>
+
+  <h3 id="ASE_Assignment_Components_AppStoredProgram_AddMethod_BOOSE_Method_" data-uid="ASE_Assignment.Components.AppStoredProgram.AddMethod(BOOSE.Method)">
+  AddMethod(Method)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment/Components/AppStoredPrograms.cs/#L136"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a method to the program's list of methods.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void AddMethod(Method M)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>M</code> <span class="xref">Method</span></dt>
+    <dd><p>The <span class="xref">BOOSE.Method</span> instance to add to the program.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Components_AppStoredProgram_AddMethod_BOOSE_Method__examples">Examples</h4>
+  <p>The following example demonstrates how to add a method to the program:</p>
+<pre><code class="lang-csharp">AppStoredProgram program = new AppStoredProgram(canvas);
+Method calculateMethod = new Method { MethodName = "Calculate", Type = "void" };
+program.AddMethod(calculateMethod);</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Components_AppStoredProgram_AddMethod_BOOSE_Method__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method appends the specified method to the internal list of methods. Methods added to this list
+can be invoked and executed within the program. It does not perform duplicate checks or validation.</p>
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Components_AppStoredProgram_AddVariable_" data-uid="ASE_Assignment.Components.AppStoredProgram.AddVariable*"></a>
+
+  <h3 id="ASE_Assignment_Components_AppStoredProgram_AddVariable_BOOSE_Evaluation_" data-uid="ASE_Assignment.Components.AppStoredProgram.AddVariable(BOOSE.Evaluation)">
+  AddVariable(Evaluation)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment/Components/AppStoredPrograms.cs/#L226"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a variable to the program's list of variables if it does not already exist.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void AddVariable(Evaluation Variable)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Variable</code> <span class="xref">Evaluation</span></dt>
+    <dd><p>The <span class="xref">BOOSE.Evaluation</span> instance to add.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Components_AppStoredProgram_AddVariable_BOOSE_Evaluation__examples">Examples</h4>
+  <p>The following example demonstrates how to add a variable to the program:</p>
+<pre><code class="lang-csharp">AppStoredProgram program = new AppStoredProgram(canvas);
+Evaluation myVariable = new AppInt { VarName = "x", Value = 10 };
+program.AddVariable(myVariable);</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Components_AppStoredProgram_AddVariable_BOOSE_Evaluation__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method checks if a variable with the same name already exists in the program's variable list.
+If the variable does not exist, it adds the new variable. This prevents duplicate variables from being added.</p>
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Components_AppStoredProgram_Commandsleft_" data-uid="ASE_Assignment.Components.AppStoredProgram.Commandsleft*"></a>
+
+  <h3 id="ASE_Assignment_Components_AppStoredProgram_Commandsleft" data-uid="ASE_Assignment.Components.AppStoredProgram.Commandsleft">
+  Commandsleft()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment/Components/AppStoredPrograms.cs/#L760"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if there are any commands left to execute in the program.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Commandsleft()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if there are commands left to execute; otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Components_AppStoredProgram_Commandsleft_examples">Examples</h4>
+  <p>The following example demonstrates how to check for remaining commands:</p>
+<pre><code class="lang-csharp">bool hasCommands = program.Commandsleft();</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Components_AppStoredProgram_Commandsleft_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method determines if the program counter has reached the end of the command list.
+It is used to control the flow of execution in the program.</p>
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Components_AppStoredProgram_DeleteVariable_" data-uid="ASE_Assignment.Components.AppStoredProgram.DeleteVariable*"></a>
+
+  <h3 id="ASE_Assignment_Components_AppStoredProgram_DeleteVariable_System_String_" data-uid="ASE_Assignment.Components.AppStoredProgram.DeleteVariable(System.String)">
+  DeleteVariable(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment/Components/AppStoredPrograms.cs/#L489"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deletes a variable from the program's variable list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void DeleteVariable(string varName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>varName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the variable to delete.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Components_AppStoredProgram_DeleteVariable_System_String__examples">Examples</h4>
+  <p>The following example demonstrates how to delete a variable:</p>
+<pre><code class="lang-csharp">program.DeleteVariable("x");</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Components_AppStoredProgram_DeleteVariable_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method locates the variable by its name and removes it from the program's variable list.
+If the variable does not exist, no action is taken.</p>
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Components_AppStoredProgram_EvaluateExpression_" data-uid="ASE_Assignment.Components.AppStoredProgram.EvaluateExpression*"></a>
+
+  <h3 id="ASE_Assignment_Components_AppStoredProgram_EvaluateExpression_System_String_" data-uid="ASE_Assignment.Components.AppStoredProgram.EvaluateExpression(System.String)">
+  EvaluateExpression(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment/Components/AppStoredPrograms.cs/#L586"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Evaluates a mathematical or logical expression and returns the result.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string EvaluateExpression(string Exp)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Exp</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The expression to evaluate.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The result of the evaluated expression.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Components_AppStoredProgram_EvaluateExpression_System_String__examples">Examples</h4>
+  <p>The following example demonstrates how to evaluate a mathematical expression:</p>
+<pre><code class="lang-csharp">string result = program.EvaluateExpression("5 + 3");</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Components_AppStoredProgram_EvaluateExpression_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method processes mathematical and logical expressions, resolving variables,
+and calculating the final result using a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.data.datatable">DataTable</a> for computation.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">StoredProgramException</span></dt>
+    <dd><p>Thrown if the expression syntax is invalid or if evaluation fails.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="ASE_Assignment_Components_AppStoredProgram_EvaluateExpressionWithString_" data-uid="ASE_Assignment.Components.AppStoredProgram.EvaluateExpressionWithString*"></a>
+
+  <h3 id="ASE_Assignment_Components_AppStoredProgram_EvaluateExpressionWithString_System_String_" data-uid="ASE_Assignment.Components.AppStoredProgram.EvaluateExpressionWithString(System.String)">
+  EvaluateExpressionWithString(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment/Components/AppStoredPrograms.cs/#L546"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Evaluates an expression and returns the result as a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string EvaluateExpressionWithString(string expression)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>expression</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The expression to evaluate.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The evaluated result as a string.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Components_AppStoredProgram_EvaluateExpressionWithString_System_String__examples">Examples</h4>
+  <p>The following example demonstrates how to evaluate an expression:</p>
+<pre><code class="lang-csharp">string result = program.EvaluateExpressionWithString("\"Hello \" + x");</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Components_AppStoredProgram_EvaluateExpressionWithString_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method evaluates an expression by splitting it into parts, resolving variables, and
+calculating the result. It trims and processes each part of the expression.</p>
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Components_AppStoredProgram_FindVariable_" data-uid="ASE_Assignment.Components.AppStoredProgram.FindVariable*"></a>
+
+  <h3 id="ASE_Assignment_Components_AppStoredProgram_FindVariable_System_String_" data-uid="ASE_Assignment.Components.AppStoredProgram.FindVariable(System.String)">
+  FindVariable(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment/Components/AppStoredPrograms.cs/#L315"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves a variable by its index in the variable list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int FindVariable(string varName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>varName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The <span class="xref">BOOSE.Evaluation</span> instance at the specified index.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Components_AppStoredProgram_FindVariable_System_String__examples">Examples</h4>
+  <p>The following example demonstrates how to retrieve a variable by its index:</p>
+<pre><code class="lang-csharp">Evaluation variable = program.GetVariable(0);
+Console.WriteLine($"Variable Name: {variable.VarName}");</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Components_AppStoredProgram_FindVariable_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method retrieves a variable by its index in the program's variable list.
+If the index is out of bounds, a <span class="xref">BOOSE.StoredProgramException</span> is thrown.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">StoredProgramException</span></dt>
+    <dd><p>Thrown when the index is greater than or equal to the number of variables.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="ASE_Assignment_Components_AppStoredProgram_GetMethod_" data-uid="ASE_Assignment.Components.AppStoredProgram.GetMethod*"></a>
+
+  <h3 id="ASE_Assignment_Components_AppStoredProgram_GetMethod_System_String_" data-uid="ASE_Assignment.Components.AppStoredProgram.GetMethod(System.String)">
+  GetMethod(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment/Components/AppStoredPrograms.cs/#L173"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves a method by its name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Method GetMethod(string MethodName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>MethodName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the method to retrieve.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Method</span></dt>
+    <dd><p>The <span class="xref">BOOSE.Method</span> instance corresponding to the given name.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Components_AppStoredProgram_GetMethod_System_String__examples">Examples</h4>
+  <p>The following example demonstrates how to retrieve a method by its name:</p>
+<pre><code class="lang-csharp">Method myMethod = program.GetMethod("Calculate");</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Components_AppStoredProgram_GetMethod_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method searches the program's list of methods by name and returns the corresponding method.
+If the method is not found, a <span class="xref">BOOSE.StoredProgramException</span> is thrown.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">StoredProgramException</span></dt>
+    <dd><p>Thrown when a method with the specified name does not exist in the program's list of methods.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="ASE_Assignment_Components_AppStoredProgram_GetVarValue_" data-uid="ASE_Assignment.Components.AppStoredProgram.GetVarValue*"></a>
+
+  <h3 id="ASE_Assignment_Components_AppStoredProgram_GetVarValue_System_String_" data-uid="ASE_Assignment.Components.AppStoredProgram.GetVarValue(System.String)">
+  GetVarValue(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment/Components/AppStoredPrograms.cs/#L370"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the value of a variable as a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string GetVarValue(string varName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>varName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the variable to retrieve the value for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The value of the variable as a string.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Components_AppStoredProgram_GetVarValue_System_String__examples">Examples</h4>
+  <p>The following example demonstrates how to retrieve the value of a variable:</p>
+<pre><code class="lang-csharp">string value = program.GetVarValue("x");
+Console.WriteLine($"Variable Value: {value}");</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Components_AppStoredProgram_GetVarValue_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method searches for a variable by its name and returns its value as a string. If the variable is of type <a class="xref" href="ASE_Assignment.Components.AppReal.html">AppReal</a>,
+its value is converted to a string using <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double.tostring#system-double-tostring">ToString()</a>. If the variable does not exist, a <span class="xref">BOOSE.StoredProgramException</span> is thrown.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">StoredProgramException</span></dt>
+    <dd><p>Thrown when a variable with the specified name does not exist.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="ASE_Assignment_Components_AppStoredProgram_GetVariable_" data-uid="ASE_Assignment.Components.AppStoredProgram.GetVariable*"></a>
+
+  <h3 id="ASE_Assignment_Components_AppStoredProgram_GetVariable_System_Int32_" data-uid="ASE_Assignment.Components.AppStoredProgram.GetVariable(System.Int32)">
+  GetVariable(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment/Components/AppStoredPrograms.cs/#L285"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves a variable by its index in the variable list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Evaluation GetVariable(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The index of the variable to retrieve.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Evaluation</span></dt>
+    <dd><p>The <span class="xref">BOOSE.Evaluation</span> instance at the specified index.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Components_AppStoredProgram_GetVariable_System_Int32__examples">Examples</h4>
+  <p>The following example demonstrates how to retrieve a variable by its index:</p>
+<pre><code class="lang-csharp">Evaluation variable = program.GetVariable(0);
+Console.WriteLine($"Variable Name: {variable.VarName}");</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Components_AppStoredProgram_GetVariable_System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method retrieves a variable by its index in the program's variable list.
+If the index is out of bounds, a <span class="xref">BOOSE.StoredProgramException</span> is thrown.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">StoredProgramException</span></dt>
+    <dd><p>Thrown when the index is greater than or equal to the number of variables.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="ASE_Assignment_Components_AppStoredProgram_GetVariable_" data-uid="ASE_Assignment.Components.AppStoredProgram.GetVariable*"></a>
+
+  <h3 id="ASE_Assignment_Components_AppStoredProgram_GetVariable_System_String_" data-uid="ASE_Assignment.Components.AppStoredProgram.GetVariable(System.String)">
+  GetVariable(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment/Components/AppStoredPrograms.cs/#L253"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves a variable by its name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Evaluation GetVariable(string VarName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>VarName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the variable to retrieve.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Evaluation</span></dt>
+    <dd><p>The <span class="xref">BOOSE.Evaluation</span> instance corresponding to the given name.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Components_AppStoredProgram_GetVariable_System_String__examples">Examples</h4>
+  <p>The following example demonstrates how to retrieve a variable by its name:</p>
+<pre><code class="lang-csharp">Evaluation variable = program.GetVariable("x");
+Console.WriteLine($"Variable Value: {variable.Value}");</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Components_AppStoredProgram_GetVariable_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method searches for a variable by its name in the program's variable list and returns the corresponding instance.
+If the variable is not found, a <span class="xref">BOOSE.StoredProgramException</span> is thrown.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">StoredProgramException</span></dt>
+    <dd><p>Thrown when a variable with the specified name does not exist.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="ASE_Assignment_Components_AppStoredProgram_IsExpression_" data-uid="ASE_Assignment.Components.AppStoredProgram.IsExpression*"></a>
+
+  <h3 id="ASE_Assignment_Components_AppStoredProgram_IsExpression_System_String_" data-uid="ASE_Assignment.Components.AppStoredProgram.IsExpression(System.String)">
+  IsExpression(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment/Components/AppStoredPrograms.cs/#L514"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if the given string is a valid expression.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsExpression(string expression)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>expression</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The string to evaluate as an expression.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if the string is a valid expression; otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Components_AppStoredProgram_IsExpression_System_String__examples">Examples</h4>
+  <p>The following example demonstrates how to check if a string is a valid expression:</p>
+<pre><code class="lang-csharp">bool isExpression = program.IsExpression("x + 5");</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Components_AppStoredProgram_IsExpression_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>A valid expression is determined based on its syntax and content. Expressions that contain operators
+(+, -, *, /) or cannot be parsed as integers are considered valid. Strings containing &quot;Invalid&quot; are
+explicitly marked as invalid.</p>
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Components_AppStoredProgram_NextCommand_" data-uid="ASE_Assignment.Components.AppStoredProgram.NextCommand*"></a>
+
+  <h3 id="ASE_Assignment_Components_AppStoredProgram_NextCommand" data-uid="ASE_Assignment.Components.AppStoredProgram.NextCommand">
+  NextCommand()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment/Components/AppStoredPrograms.cs/#L719"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the next command from the program.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override object NextCommand()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The next command to execute.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Components_AppStoredProgram_NextCommand_examples">Examples</h4>
+  <p>The following example demonstrates how to retrieve the next command:</p>
+<pre><code class="lang-csharp">ICommand nextCommand = (ICommand)program.NextCommand();</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Components_AppStoredProgram_NextCommand_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method retrieves the command at the current program counter position
+and increments the program counter. It is used to sequentially process commands during execution.</p>
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Components_AppStoredProgram_Pop_" data-uid="ASE_Assignment.Components.AppStoredProgram.Pop*"></a>
+
+  <h3 id="ASE_Assignment_Components_AppStoredProgram_Pop" data-uid="ASE_Assignment.Components.AppStoredProgram.Pop">
+  Pop()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment/Components/AppStoredPrograms.cs/#L659"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Pops a conditional command from the stack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override ConditionalCommand Pop()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ConditionalCommand</span></dt>
+    <dd><p>The <span class="xref">BOOSE.ConditionalCommand</span> popped from the stack.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Components_AppStoredProgram_Pop_examples">Examples</h4>
+  <p>The following example demonstrates how to pop a conditional command:</p>
+<pre><code class="lang-csharp">ConditionalCommand command = program.Pop();</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Components_AppStoredProgram_Pop_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method removes and returns the topmost conditional command from the stack.
+If the stack is empty, a <span class="xref">BOOSE.StoredProgramException</span> is thrown.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">StoredProgramException</span></dt>
+    <dd><p>Thrown when attempting to pop from an empty stack.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="ASE_Assignment_Components_AppStoredProgram_Push_" data-uid="ASE_Assignment.Components.AppStoredProgram.Push*"></a>
+
+  <h3 id="ASE_Assignment_Components_AppStoredProgram_Push_BOOSE_ConditionalCommand_" data-uid="ASE_Assignment.Components.AppStoredProgram.Push(BOOSE.ConditionalCommand)">
+  Push(ConditionalCommand)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment/Components/AppStoredPrograms.cs/#L637"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Pushes a conditional command onto the stack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Push(ConditionalCommand Com)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Com</code> <span class="xref">ConditionalCommand</span></dt>
+    <dd><p>The <span class="xref">BOOSE.ConditionalCommand</span> to push onto the stack.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Components_AppStoredProgram_Push_BOOSE_ConditionalCommand__examples">Examples</h4>
+  <p>The following example demonstrates how to push a conditional command onto the stack:</p>
+<pre><code class="lang-csharp">ConditionalCommand command = new AppIf();
+program.Push(command);</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Components_AppStoredProgram_Push_BOOSE_ConditionalCommand__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method adds a conditional command (e.g., &quot;if&quot;, &quot;while&quot;) to the stack.
+It is used to manage control flow in the program, ensuring proper nesting of commands.</p>
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Components_AppStoredProgram_ResetProgram_" data-uid="ASE_Assignment.Components.AppStoredProgram.ResetProgram*"></a>
+
+  <h3 id="ASE_Assignment_Components_AppStoredProgram_ResetProgram" data-uid="ASE_Assignment.Components.AppStoredProgram.ResetProgram">
+  ResetProgram()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment/Components/AppStoredPrograms.cs/#L737"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Resets the program to its initial state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ResetProgram()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Components_AppStoredProgram_ResetProgram_examples">Examples</h4>
+  <p>The following example demonstrates how to reset the program:</p>
+<pre><code class="lang-csharp">program.ResetProgram();</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Components_AppStoredProgram_ResetProgram_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method clears the canvas, resets the program counter to zero, and clears the variables.
+It is used to prepare the program for a fresh start or re-execution.</p>
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Components_AppStoredProgram_Run_" data-uid="ASE_Assignment.Components.AppStoredProgram.Run*"></a>
+
+  <h3 id="ASE_Assignment_Components_AppStoredProgram_Run" data-uid="ASE_Assignment.Components.AppStoredProgram.Run">
+  Run()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment/Components/AppStoredPrograms.cs/#L782"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Executes the program by processing each command sequentially.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Run()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Components_AppStoredProgram_Run_examples">Examples</h4>
+  <p>The following example demonstrates how to execute a program:</p>
+<pre><code class="lang-csharp">program.Run();</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Components_AppStoredProgram_Run_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method iterates through the commands in the program, executing them one by one.
+If an exception occurs during execution, it is logged, and the program's syntax status is marked as invalid.
+Additionally, it ensures that the stack of conditional commands is balanced by the end of execution.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">StoredProgramException</span></dt>
+    <dd><p>Thrown if unbalanced conditional commands are detected.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="ASE_Assignment_Components_AppStoredProgram_UpdateVariable_" data-uid="ASE_Assignment.Components.AppStoredProgram.UpdateVariable*"></a>
+
+  <h3 id="ASE_Assignment_Components_AppStoredProgram_UpdateVariable_System_String_System_Boolean_" data-uid="ASE_Assignment.Components.AppStoredProgram.UpdateVariable(System.String,System.Boolean)">
+  UpdateVariable(string, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment/Components/AppStoredPrograms.cs/#L464"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Updates the value of a boolean variable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void UpdateVariable(string varName, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>varName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the variable to update.</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>The new boolean value to assign to the variable.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Components_AppStoredProgram_UpdateVariable_System_String_System_Boolean__examples">Examples</h4>
+  <p>The following example demonstrates how to update a boolean variable:</p>
+<pre><code class="lang-csharp">program.UpdateVariable("isTrue", true);</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Components_AppStoredProgram_UpdateVariable_System_String_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method locates the variable by its name and ensures it is a boolean variable (<a class="xref" href="ASE_Assignment.Components.AppBoolean.html">AppBoolean</a>).
+If the variable is not of type <a class="xref" href="ASE_Assignment.Components.AppBoolean.html">AppBoolean</a>, a <span class="xref">BOOSE.CommandException</span> is thrown.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">CommandException</span></dt>
+    <dd><p>Thrown if the variable is not of type <a class="xref" href="ASE_Assignment.Components.AppBoolean.html">AppBoolean</a>.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="ASE_Assignment_Components_AppStoredProgram_UpdateVariable_" data-uid="ASE_Assignment.Components.AppStoredProgram.UpdateVariable*"></a>
+
+  <h3 id="ASE_Assignment_Components_AppStoredProgram_UpdateVariable_System_String_System_Double_" data-uid="ASE_Assignment.Components.AppStoredProgram.UpdateVariable(System.String,System.Double)">
+  UpdateVariable(string, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment/Components/AppStoredPrograms.cs/#L435"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Updates the value of a real (double) variable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void UpdateVariable(string varName, double value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>varName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the variable to update.</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The new double value to assign to the variable.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Components_AppStoredProgram_UpdateVariable_System_String_System_Double__examples">Examples</h4>
+  <p>The following example demonstrates how to update a real variable:</p>
+<pre><code class="lang-csharp">program.UpdateVariable("y", 3.14);</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Components_AppStoredProgram_UpdateVariable_System_String_System_Double__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method locates the variable by its name and ensures it is a real variable (<a class="xref" href="ASE_Assignment.Components.AppReal.html">AppReal</a>).
+If the variable is not of type <a class="xref" href="ASE_Assignment.Components.AppReal.html">AppReal</a>, a <span class="xref">BOOSE.CommandException</span> is thrown.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">CommandException</span></dt>
+    <dd><p>Thrown if the variable is not of type <a class="xref" href="ASE_Assignment.Components.AppReal.html">AppReal</a>.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="ASE_Assignment_Components_AppStoredProgram_UpdateVariable_" data-uid="ASE_Assignment.Components.AppStoredProgram.UpdateVariable*"></a>
+
+  <h3 id="ASE_Assignment_Components_AppStoredProgram_UpdateVariable_System_String_System_Int32_" data-uid="ASE_Assignment.Components.AppStoredProgram.UpdateVariable(System.String,System.Int32)">
+  UpdateVariable(string, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment/Components/AppStoredPrograms.cs/#L403"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Updates the value of an integer variable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void UpdateVariable(string varName, int value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>varName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the variable to update.</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The new integer value to assign to the variable.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Components_AppStoredProgram_UpdateVariable_System_String_System_Int32__examples">Examples</h4>
+  <p>The following example demonstrates how to update an integer variable:</p>
+<pre><code class="lang-csharp">program.UpdateVariable("x", 42);</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Components_AppStoredProgram_UpdateVariable_System_String_System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method locates the variable by its name, verifies it is an integer variable (<a class="xref" href="ASE_Assignment.Components.AppInt.html">AppInt</a>),
+and updates its value. If the variable is not of type <a class="xref" href="ASE_Assignment.Components.AppInt.html">AppInt</a>, it falls back to updating
+the base <span class="xref">BOOSE.Evaluation</span> value property.</p>
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Components_AppStoredProgram_VariableExists_" data-uid="ASE_Assignment.Components.AppStoredProgram.VariableExists*"></a>
+
+  <h3 id="ASE_Assignment_Components_AppStoredProgram_VariableExists_System_String_" data-uid="ASE_Assignment.Components.AppStoredProgram.VariableExists(System.String)">
+  VariableExists(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment/Components/AppStoredPrograms.cs/#L346"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if a variable exists in the program by its name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool VariableExists(string varName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>varName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the variable to check.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if the variable exists; otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Components_AppStoredProgram_VariableExists_System_String__examples">Examples</h4>
+  <p>The following example demonstrates how to check if a variable exists:</p>
+<pre><code class="lang-csharp">bool exists = program.VariableExists("x");
+Console.WriteLine($"Variable exists: {exists}");</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Components_AppStoredProgram_VariableExists_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method uses <a class="xref" href="ASE_Assignment.Components.AppStoredProgram.html#ASE_Assignment_Components_AppStoredProgram_FindVariable_System_String_">FindVariable(string)</a> to determine if a variable with the specified name exists in the program's variable list.</p>
+</div>
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment/Components/AppStoredPrograms.cs/#L21" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

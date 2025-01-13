@@ -1,0 +1,249 @@
+### YamlMime:TableOfContent
+items:
+- uid: ASE_Assignment
+  name: ASE_Assignment
+  type: Namespace
+  items:
+  - uid: ASE_Assignment.AboutUs
+    name: AboutUs
+    type: Class
+  - uid: ASE_Assignment.Form1
+    name: Form1
+    type: Class
+  - uid: ASE_Assignment.UserGuide
+    name: UserGuide
+    type: Class
+- uid: ASE_Assignment.AppCanvas
+  name: ASE_Assignment.AppCanvas
+  type: Namespace
+  items:
+  - uid: ASE_Assignment.AppCanvas.MyAppCanvas
+    name: MyAppCanvas
+    type: Class
+- uid: ASE_Assignment.Commands
+  name: ASE_Assignment.Commands
+  type: Namespace
+  items:
+  - uid: ASE_Assignment.Commands.AppCast
+    name: AppCast
+    type: Class
+  - uid: ASE_Assignment.Commands.AppCircle
+    name: AppCircle
+    type: Class
+  - uid: ASE_Assignment.Commands.AppDrawTo
+    name: AppDrawTo
+    type: Class
+  - uid: ASE_Assignment.Commands.AppElse
+    name: AppElse
+    type: Class
+  - uid: ASE_Assignment.Commands.AppFor
+    name: AppFor
+    type: Class
+  - uid: ASE_Assignment.Commands.AppIf
+    name: AppIf
+    type: Class
+  - uid: ASE_Assignment.Commands.AppMoveTo
+    name: AppMoveTo
+    type: Class
+  - uid: ASE_Assignment.Commands.AppPenColour
+    name: AppPenColour
+    type: Class
+  - uid: ASE_Assignment.Commands.AppRectangle
+    name: AppRectangle
+    type: Class
+  - uid: ASE_Assignment.Commands.AppWhile
+    name: AppWhile
+    type: Class
+  - uid: ASE_Assignment.Commands.Clear
+    name: Clear
+    type: Class
+  - uid: ASE_Assignment.Commands.Fill
+    name: Fill
+    type: Class
+  - uid: ASE_Assignment.Commands.PenSize
+    name: PenSize
+    type: Class
+  - uid: ASE_Assignment.Commands.Reset
+    name: Reset
+    type: Class
+  - uid: ASE_Assignment.Commands.Triangle
+    name: Triangle
+    type: Class
+  - uid: ASE_Assignment.Commands.WriteTo
+    name: WriteTo
+    type: Class
+- uid: ASE_Assignment.Components
+  name: ASE_Assignment.Components
+  type: Namespace
+  items:
+  - uid: ASE_Assignment.Components.AppArray
+    name: AppArray
+    type: Class
+  - uid: ASE_Assignment.Components.AppBoolean
+    name: AppBoolean
+    type: Class
+  - uid: ASE_Assignment.Components.AppCommandFactory
+    name: AppCommandFactory
+    type: Class
+  - uid: ASE_Assignment.Components.AppCompoundCommand
+    name: AppCompoundCommand
+    type: Class
+  - uid: ASE_Assignment.Components.AppConditionalCommand
+    name: AppConditionalCommand
+    type: Class
+  - uid: ASE_Assignment.Components.AppEnd
+    name: AppEnd
+    type: Class
+  - uid: ASE_Assignment.Components.AppInt
+    name: AppInt
+    type: Class
+  - uid: ASE_Assignment.Components.AppMethod
+    name: AppMethod
+    type: Class
+  - uid: ASE_Assignment.Components.AppPeek
+    name: AppPeek
+    type: Class
+  - uid: ASE_Assignment.Components.AppPoke
+    name: AppPoke
+    type: Class
+  - uid: ASE_Assignment.Components.AppPraser
+    name: AppPraser
+    type: Class
+  - uid: ASE_Assignment.Components.AppReal
+    name: AppReal
+    type: Class
+  - uid: ASE_Assignment.Components.AppStoredProgram
+    name: AppStoredProgram
+    type: Class
+  - uid: ASE_Assignment.Components.GlobalConfiguration
+    name: GlobalConfiguration
+    type: Class
+- uid: ASE_Assignment.File_Handler
+  name: ASE_Assignment.File_Handler
+  type: Namespace
+  items:
+  - uid: ASE_Assignment.File_Handler.CanvasLoader
+    name: CanvasLoader
+    type: Class
+  - uid: ASE_Assignment.File_Handler.CanvasSaver
+    name: CanvasSaver
+    type: Class
+  - uid: ASE_Assignment.File_Handler.CommandReader
+    name: CommandReader
+    type: Class
+  - uid: ASE_Assignment.File_Handler.CommandWriter
+    name: CommandWriter
+    type: Class
+- uid: ASE_Assignment_Test
+  name: ASE_Assignment_Test
+  type: Namespace
+  items:
+  - uid: ASE_Assignment_Test.CommandUnitTests
+    name: CommandUnitTests
+    type: Class
+  - uid: ASE_Assignment_Test.MyAppCanvasTest
+    name: MyAppCanvasTest
+    type: Class
+- uid: ASE_Assignment_Test.CommandsTests
+  name: ASE_Assignment_Test.CommandsTests
+  type: Namespace
+  items:
+  - uid: ASE_Assignment_Test.CommandsTests.AppCircleTest
+    name: AppCircleTest
+    type: Class
+  - uid: ASE_Assignment_Test.CommandsTests.AppDrawToTests
+    name: AppDrawToTests
+    type: Class
+  - uid: ASE_Assignment_Test.CommandsTests.AppElseTests
+    name: AppElseTests
+    type: Class
+  - uid: ASE_Assignment_Test.CommandsTests.AppIfTests
+    name: AppIfTests
+    type: Class
+  - uid: ASE_Assignment_Test.CommandsTests.AppMoveToTests
+    name: AppMoveToTests
+    type: Class
+  - uid: ASE_Assignment_Test.CommandsTests.AppPenColourTests
+    name: AppPenColourTests
+    type: Class
+  - uid: ASE_Assignment_Test.CommandsTests.AppRectangleTests
+    name: AppRectangleTests
+    type: Class
+  - uid: ASE_Assignment_Test.CommandsTests.AppWhileTests
+    name: AppWhileTests
+    type: Class
+  - uid: ASE_Assignment_Test.CommandsTests.ClearTests
+    name: ClearTests
+    type: Class
+  - uid: ASE_Assignment_Test.CommandsTests.FillTests
+    name: FillTests
+    type: Class
+  - uid: ASE_Assignment_Test.CommandsTests.PenSizeTests
+    name: PenSizeTests
+    type: Class
+  - uid: ASE_Assignment_Test.CommandsTests.ResetTests
+    name: ResetTests
+    type: Class
+  - uid: ASE_Assignment_Test.CommandsTests.TriangleTests
+    name: TriangleTests
+    type: Class
+  - uid: ASE_Assignment_Test.CommandsTests.WriteToTests
+    name: WriteToTests
+    type: Class
+- uid: ASE_Assignment_Test.Components_Tests
+  name: ASE_Assignment_Test.Components_Tests
+  type: Namespace
+  items:
+  - uid: ASE_Assignment_Test.Components_Tests.AppArrayTests
+    name: AppArrayTests
+    type: Class
+  - uid: ASE_Assignment_Test.Components_Tests.AppBooleanTests
+    name: AppBooleanTests
+    type: Class
+  - uid: ASE_Assignment_Test.Components_Tests.AppCommandFactoryTests
+    name: AppCommandFactoryTests
+    type: Class
+  - uid: ASE_Assignment_Test.Components_Tests.AppCompoundCommandTests
+    name: AppCompoundCommandTests
+    type: Class
+  - uid: ASE_Assignment_Test.Components_Tests.AppConditionalCommandTests
+    name: AppConditionalCommandTests
+    type: Class
+  - uid: ASE_Assignment_Test.Components_Tests.AppEndTests
+    name: AppEndTests
+    type: Class
+  - uid: ASE_Assignment_Test.Components_Tests.AppForTests
+    name: AppForTests
+    type: Class
+  - uid: ASE_Assignment_Test.Components_Tests.AppIntTests
+    name: AppIntTests
+    type: Class
+  - uid: ASE_Assignment_Test.Components_Tests.AppMethodTests
+    name: AppMethodTests
+    type: Class
+  - uid: ASE_Assignment_Test.Components_Tests.AppPeekTests
+    name: AppPeekTests
+    type: Class
+  - uid: ASE_Assignment_Test.Components_Tests.AppPokeTests
+    name: AppPokeTests
+    type: Class
+  - uid: ASE_Assignment_Test.Components_Tests.AppPraserTests
+    name: AppPraserTests
+    type: Class
+  - uid: ASE_Assignment_Test.Components_Tests.AppRealTests
+    name: AppRealTests
+    type: Class
+  - uid: ASE_Assignment_Test.Components_Tests.AppStoredProgramTests
+    name: AppStoredProgramTests
+    type: Class
+  - uid: ASE_Assignment_Test.Components_Tests.GlobalConfigurationTest
+    name: GlobalConfigurationTest
+    type: Class
+- uid: Console_App
+  name: Console_App
+  type: Namespace
+  items:
+  - uid: Console_App.ConsoleDrawingApp
+    name: ConsoleDrawingApp
+    type: Class
+memberLayout: SamePage

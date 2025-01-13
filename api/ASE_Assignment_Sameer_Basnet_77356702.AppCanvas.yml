@@ -1,0 +1,46 @@
+### YamlMime:ManagedReference
+items:
+- uid: ASE_Assignment_Sameer_Basnet_77356702.AppCanvas
+  commentId: N:ASE_Assignment_Sameer_Basnet_77356702.AppCanvas
+  id: ASE_Assignment_Sameer_Basnet_77356702.AppCanvas
+  children:
+  - ASE_Assignment_Sameer_Basnet_77356702.AppCanvas.MyAppCanvas
+  langs:
+  - csharp
+  - vb
+  name: ASE_Assignment_Sameer_Basnet_77356702.AppCanvas
+  nameWithType: ASE_Assignment_Sameer_Basnet_77356702.AppCanvas
+  fullName: ASE_Assignment_Sameer_Basnet_77356702.AppCanvas
+  type: Namespace
+  assemblies:
+  - ASE_Assignment_Sameer_Basnet_77356702
+references:
+- uid: ASE_Assignment_Sameer_Basnet_77356702.AppCanvas.MyAppCanvas
+  commentId: T:ASE_Assignment_Sameer_Basnet_77356702.AppCanvas.MyAppCanvas
+  parent: ASE_Assignment_Sameer_Basnet_77356702.AppCanvas
+  href: ASE_Assignment_Sameer_Basnet_77356702.AppCanvas.MyAppCanvas.html
+  name: MyAppCanvas
+  nameWithType: MyAppCanvas
+  fullName: ASE_Assignment_Sameer_Basnet_77356702.AppCanvas.MyAppCanvas
+- uid: ASE_Assignment_Sameer_Basnet_77356702.AppCanvas
+  commentId: N:ASE_Assignment_Sameer_Basnet_77356702.AppCanvas
+  href: ASE_Assignment_Sameer_Basnet_77356702.html
+  name: ASE_Assignment_Sameer_Basnet_77356702.AppCanvas
+  nameWithType: ASE_Assignment_Sameer_Basnet_77356702.AppCanvas
+  fullName: ASE_Assignment_Sameer_Basnet_77356702.AppCanvas
+  spec.csharp:
+  - uid: ASE_Assignment_Sameer_Basnet_77356702
+    name: ASE_Assignment_Sameer_Basnet_77356702
+    href: ASE_Assignment_Sameer_Basnet_77356702.html
+  - name: .
+  - uid: ASE_Assignment_Sameer_Basnet_77356702.AppCanvas
+    name: AppCanvas
+    href: ASE_Assignment_Sameer_Basnet_77356702.AppCanvas.html
+  spec.vb:
+  - uid: ASE_Assignment_Sameer_Basnet_77356702
+    name: ASE_Assignment_Sameer_Basnet_77356702
+    href: ASE_Assignment_Sameer_Basnet_77356702.html
+  - name: .
+  - uid: ASE_Assignment_Sameer_Basnet_77356702.AppCanvas
+    name: AppCanvas
+    href: ASE_Assignment_Sameer_Basnet_77356702.AppCanvas.html

@@ -1,0 +1,619 @@
+### YamlMime:ManagedReference
+items:
+- uid: ASE_Assignment.File_Handler.CanvasLoader
+  commentId: T:ASE_Assignment.File_Handler.CanvasLoader
+  id: CanvasLoader
+  parent: ASE_Assignment.File_Handler
+  children:
+  - ASE_Assignment.File_Handler.CanvasLoader.#ctor
+  - ASE_Assignment.File_Handler.CanvasLoader.LoadCanvas
+  langs:
+  - csharp
+  - vb
+  name: CanvasLoader
+  nameWithType: CanvasLoader
+  fullName: ASE_Assignment.File_Handler.CanvasLoader
+  type: Class
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment/File_Handler/CanvasLoader.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: CanvasLoader
+    path: ASE_Assignment/File_Handler/CanvasLoader.cs
+    startLine: 18
+  assemblies:
+  - ASE_Assignment
+  namespace: ASE_Assignment.File_Handler
+  summary: >-
+    Represents a class that provides functionality to load a canvas image
+
+    from the file system using a graphical file dialog.
+  remarks: >-
+    The <xref href="ASE_Assignment.File_Handler.CanvasLoader" data-throw-if-not-resolved="false"></xref> class uses a Windows Forms <xref href="System.Windows.Forms.OpenFileDialog" data-throw-if-not-resolved="false"></xref>
+
+    to allow the user to select an image file (PNG, JPEG, BMP) to load into the application.
+
+    The selected file is loaded as a <xref href="System.Drawing.Bitmap" data-throw-if-not-resolved="false"></xref> object.
+
+    If the user cancels the dialog or an error occurs during loading, the method returns <code>null</code>.
+  example: []
+  syntax:
+    content: public class CanvasLoader
+    content.vb: Public Class CanvasLoader
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: ASE_Assignment.File_Handler.CanvasLoader.#ctor
+  commentId: M:ASE_Assignment.File_Handler.CanvasLoader.#ctor
+  id: '#ctor'
+  parent: ASE_Assignment.File_Handler.CanvasLoader
+  langs:
+  - csharp
+  - vb
+  name: CanvasLoader()
+  nameWithType: CanvasLoader.CanvasLoader()
+  fullName: ASE_Assignment.File_Handler.CanvasLoader.CanvasLoader()
+  type: Constructor
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment/File_Handler/CanvasLoader.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: .ctor
+    path: ASE_Assignment/File_Handler/CanvasLoader.cs
+    startLine: 28
+  assemblies:
+  - ASE_Assignment
+  namespace: ASE_Assignment.File_Handler
+  summary: Initializes a new instance of the <xref href="ASE_Assignment.File_Handler.CanvasLoader" data-throw-if-not-resolved="false"></xref> class.
+  remarks: >-
+    This constructor initializes the class without requiring any parameters.
+
+    The class provides the capability to load an image through a user-interactive
+
+    dialog, which can be invoked using the <xref href="ASE_Assignment.File_Handler.CanvasLoader.LoadCanvas" data-throw-if-not-resolved="false"></xref> method.
+  example: []
+  syntax:
+    content: public CanvasLoader()
+    content.vb: Public Sub New()
+  overload: ASE_Assignment.File_Handler.CanvasLoader.#ctor*
+  nameWithType.vb: CanvasLoader.New()
+  fullName.vb: ASE_Assignment.File_Handler.CanvasLoader.New()
+  name.vb: New()
+- uid: ASE_Assignment.File_Handler.CanvasLoader.LoadCanvas
+  commentId: M:ASE_Assignment.File_Handler.CanvasLoader.LoadCanvas
+  id: LoadCanvas
+  parent: ASE_Assignment.File_Handler.CanvasLoader
+  langs:
+  - csharp
+  - vb
+  name: LoadCanvas()
+  nameWithType: CanvasLoader.LoadCanvas()
+  fullName: ASE_Assignment.File_Handler.CanvasLoader.LoadCanvas()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment/File_Handler/CanvasLoader.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: LoadCanvas
+    path: ASE_Assignment/File_Handler/CanvasLoader.cs
+    startLine: 71
+  assemblies:
+  - ASE_Assignment
+  namespace: ASE_Assignment.File_Handler
+  summary: Opens a file dialog to allow the user to select an image file to load as a canvas.
+  remarks: >-
+    The method displays an <xref href="System.Windows.Forms.OpenFileDialog" data-throw-if-not-resolved="false"></xref> configured to filter for common image file formats
+
+    (PNG, JPEG, BMP). If the user selects a file, the method attempts to load it as a <xref href="System.Drawing.Bitmap" data-throw-if-not-resolved="false"></xref>.
+
+    <ul><li>Returns a <xref href="System.Drawing.Bitmap" data-throw-if-not-resolved="false"></xref> if the image loads successfully.</li><li>Returns <code>null</code> if the user cancels the dialog or an error occurs.</li></ul><p>
+
+    If the image fails to load due to an invalid file or other issues, an error message is shown
+
+    using <xref href="System.Windows.Forms.MessageBox.Show(System.String%2cSystem.String%2cSystem.Windows.Forms.MessageBoxButtons%2cSystem.Windows.Forms.MessageBoxIcon%2cSystem.Windows.Forms.MessageBoxDefaultButton%2cSystem.Windows.Forms.MessageBoxOptions%2cSystem.Boolean)" data-throw-if-not-resolved="false"></xref> with detailed exception information.
+
+    </p><example>
+
+    The following example demonstrates how to use the <xref href="ASE_Assignment.File_Handler.CanvasLoader.LoadCanvas" data-throw-if-not-resolved="false"></xref> method:
+
+    <pre><code class="lang-csharp">CanvasLoader loader = new CanvasLoader();
+
+    Bitmap canvas = loader.LoadCanvas();
+
+    if (canvas != null)
+
+    {
+        // Successfully loaded the canvas
+        pictureBox.Image = canvas;
+    }
+
+    else
+
+    {
+        // The user canceled or an error occurred
+        MessageBox.Show("No canvas was loaded.");
+    }</code></pre></example>
+  example: []
+  syntax:
+    content: public Bitmap LoadCanvas()
+    return:
+      type: System.Drawing.Bitmap
+      description: A <xref href="System.Drawing.Bitmap" data-throw-if-not-resolved="false"></xref> object representing the loaded image if successful; otherwise, <code>null</code>.
+    content.vb: Public Function LoadCanvas() As Bitmap
+  overload: ASE_Assignment.File_Handler.CanvasLoader.LoadCanvas*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown internally if the file selected by the user is invalid or cannot be loaded as a <xref href="System.Drawing.Bitmap" data-throw-if-not-resolved="false"></xref>.
+  - type: System.OutOfMemoryException
+    commentId: T:System.OutOfMemoryException
+    description: Thrown internally if the file is too large or the system is out of memory.
+references:
+- uid: ASE_Assignment.File_Handler.CanvasLoader
+  commentId: T:ASE_Assignment.File_Handler.CanvasLoader
+  href: ASE_Assignment.File_Handler.CanvasLoader.html
+  name: CanvasLoader
+  nameWithType: CanvasLoader
+  fullName: ASE_Assignment.File_Handler.CanvasLoader
+- uid: System.Windows.Forms.OpenFileDialog
+  commentId: T:System.Windows.Forms.OpenFileDialog
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.forms.openfiledialog
+  name: OpenFileDialog
+  nameWithType: OpenFileDialog
+  fullName: System.Windows.Forms.OpenFileDialog
+- uid: System.Drawing.Bitmap
+  commentId: T:System.Drawing.Bitmap
+  parent: System.Drawing
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.drawing.bitmap
+  name: Bitmap
+  nameWithType: Bitmap
+  fullName: System.Drawing.Bitmap
+- uid: ASE_Assignment.File_Handler
+  commentId: N:ASE_Assignment.File_Handler
+  href: ASE_Assignment.html
+  name: ASE_Assignment.File_Handler
+  nameWithType: ASE_Assignment.File_Handler
+  fullName: ASE_Assignment.File_Handler
+  spec.csharp:
+  - uid: ASE_Assignment
+    name: ASE_Assignment
+    href: ASE_Assignment.html
+  - name: .
+  - uid: ASE_Assignment.File_Handler
+    name: File_Handler
+    href: ASE_Assignment.File_Handler.html
+  spec.vb:
+  - uid: ASE_Assignment
+    name: ASE_Assignment
+    href: ASE_Assignment.html
+  - name: .
+  - uid: ASE_Assignment.File_Handler
+    name: File_Handler
+    href: ASE_Assignment.File_Handler.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Drawing
+  commentId: N:System.Drawing
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Drawing
+  nameWithType: System.Drawing
+  fullName: System.Drawing
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Drawing
+    name: Drawing
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Drawing
+    name: Drawing
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ASE_Assignment.File_Handler.CanvasLoader.LoadCanvas
+  commentId: M:ASE_Assignment.File_Handler.CanvasLoader.LoadCanvas
+  href: ASE_Assignment.File_Handler.CanvasLoader.html#ASE_Assignment_File_Handler_CanvasLoader_LoadCanvas
+  name: LoadCanvas()
+  nameWithType: CanvasLoader.LoadCanvas()
+  fullName: ASE_Assignment.File_Handler.CanvasLoader.LoadCanvas()
+  spec.csharp:
+  - uid: ASE_Assignment.File_Handler.CanvasLoader.LoadCanvas
+    name: LoadCanvas
+    href: ASE_Assignment.File_Handler.CanvasLoader.html#ASE_Assignment_File_Handler_CanvasLoader_LoadCanvas
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: ASE_Assignment.File_Handler.CanvasLoader.LoadCanvas
+    name: LoadCanvas
+    href: ASE_Assignment.File_Handler.CanvasLoader.html#ASE_Assignment_File_Handler_CanvasLoader_LoadCanvas
+  - name: (
+  - name: )
+- uid: ASE_Assignment.File_Handler.CanvasLoader.#ctor*
+  commentId: Overload:ASE_Assignment.File_Handler.CanvasLoader.#ctor
+  href: ASE_Assignment.File_Handler.CanvasLoader.html#ASE_Assignment_File_Handler_CanvasLoader__ctor
+  name: CanvasLoader
+  nameWithType: CanvasLoader.CanvasLoader
+  fullName: ASE_Assignment.File_Handler.CanvasLoader.CanvasLoader
+  nameWithType.vb: CanvasLoader.New
+  fullName.vb: ASE_Assignment.File_Handler.CanvasLoader.New
+  name.vb: New
+- uid: System.Windows.Forms.MessageBox.Show(System.String,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton,System.Windows.Forms.MessageBoxOptions,System.Boolean)
+  commentId: M:System.Windows.Forms.MessageBox.Show(System.String,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton,System.Windows.Forms.MessageBoxOptions,System.Boolean)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.forms.messagebox.show#system-windows-forms-messagebox-show(system-string-system-string-system-windows-forms-messageboxbuttons-system-windows-forms-messageboxicon-system-windows-forms-messageboxdefaultbutton-system-windows-forms-messageboxoptions-system-boolean)
+  name: Show(string, string, MessageBoxButtons, MessageBoxIcon, MessageBoxDefaultButton, MessageBoxOptions, bool)
+  nameWithType: MessageBox.Show(string, string, MessageBoxButtons, MessageBoxIcon, MessageBoxDefaultButton, MessageBoxOptions, bool)
+  fullName: System.Windows.Forms.MessageBox.Show(string, string, System.Windows.Forms.MessageBoxButtons, System.Windows.Forms.MessageBoxIcon, System.Windows.Forms.MessageBoxDefaultButton, System.Windows.Forms.MessageBoxOptions, bool)
+  nameWithType.vb: MessageBox.Show(String, String, MessageBoxButtons, MessageBoxIcon, MessageBoxDefaultButton, MessageBoxOptions, Boolean)
+  fullName.vb: System.Windows.Forms.MessageBox.Show(String, String, System.Windows.Forms.MessageBoxButtons, System.Windows.Forms.MessageBoxIcon, System.Windows.Forms.MessageBoxDefaultButton, System.Windows.Forms.MessageBoxOptions, Boolean)
+  name.vb: Show(String, String, MessageBoxButtons, MessageBoxIcon, MessageBoxDefaultButton, MessageBoxOptions, Boolean)
+  spec.csharp:
+  - uid: System.Windows.Forms.MessageBox.Show(System.String,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton,System.Windows.Forms.MessageBoxOptions,System.Boolean)
+    name: Show
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.forms.messagebox.show#system-windows-forms-messagebox-show(system-string-system-string-system-windows-forms-messageboxbuttons-system-windows-forms-messageboxicon-system-windows-forms-messageboxdefaultbutton-system-windows-forms-messageboxoptions-system-boolean)
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Windows.Forms.MessageBoxButtons
+    name: MessageBoxButtons
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.forms.messageboxbuttons
+  - name: ','
+  - name: " "
+  - uid: System.Windows.Forms.MessageBoxIcon
+    name: MessageBoxIcon
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.forms.messageboxicon
+  - name: ','
+  - name: " "
+  - uid: System.Windows.Forms.MessageBoxDefaultButton
+    name: MessageBoxDefaultButton
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.forms.messageboxdefaultbutton
+  - name: ','
+  - name: " "
+  - uid: System.Windows.Forms.MessageBoxOptions
+    name: MessageBoxOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.forms.messageboxoptions
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: System.Windows.Forms.MessageBox.Show(System.String,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton,System.Windows.Forms.MessageBoxOptions,System.Boolean)
+    name: Show
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.forms.messagebox.show#system-windows-forms-messagebox-show(system-string-system-string-system-windows-forms-messageboxbuttons-system-windows-forms-messageboxicon-system-windows-forms-messageboxdefaultbutton-system-windows-forms-messageboxoptions-system-boolean)
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Windows.Forms.MessageBoxButtons
+    name: MessageBoxButtons
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.forms.messageboxbuttons
+  - name: ','
+  - name: " "
+  - uid: System.Windows.Forms.MessageBoxIcon
+    name: MessageBoxIcon
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.forms.messageboxicon
+  - name: ','
+  - name: " "
+  - uid: System.Windows.Forms.MessageBoxDefaultButton
+    name: MessageBoxDefaultButton
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.forms.messageboxdefaultbutton
+  - name: ','
+  - name: " "
+  - uid: System.Windows.Forms.MessageBoxOptions
+    name: MessageBoxOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.forms.messageboxoptions
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: System.OutOfMemoryException
+  commentId: T:System.OutOfMemoryException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.outofmemoryexception
+  name: OutOfMemoryException
+  nameWithType: OutOfMemoryException
+  fullName: System.OutOfMemoryException
+- uid: ASE_Assignment.File_Handler.CanvasLoader.LoadCanvas*
+  commentId: Overload:ASE_Assignment.File_Handler.CanvasLoader.LoadCanvas
+  href: ASE_Assignment.File_Handler.CanvasLoader.html#ASE_Assignment_File_Handler_CanvasLoader_LoadCanvas
+  name: LoadCanvas
+  nameWithType: CanvasLoader.LoadCanvas
+  fullName: ASE_Assignment.File_Handler.CanvasLoader.LoadCanvas

@@ -1,0 +1,44 @@
+### YamlMime:ManagedReference
+items:
+- uid: ASE_Assignment_Sameer_Basnet_77356702.Components
+  commentId: N:ASE_Assignment_Sameer_Basnet_77356702.Components
+  id: ASE_Assignment_Sameer_Basnet_77356702.Components
+  children:
+  - ASE_Assignment_Sameer_Basnet_77356702.Components.AppCommandFactory
+  - ASE_Assignment_Sameer_Basnet_77356702.Components.AppPraser
+  - ASE_Assignment_Sameer_Basnet_77356702.Components.AppStoredProgram
+  - ASE_Assignment_Sameer_Basnet_77356702.Components.GlobalConfiguration
+  langs:
+  - csharp
+  - vb
+  name: ASE_Assignment_Sameer_Basnet_77356702.Components
+  nameWithType: ASE_Assignment_Sameer_Basnet_77356702.Components
+  fullName: ASE_Assignment_Sameer_Basnet_77356702.Components
+  type: Namespace
+  assemblies:
+  - ASE_Assignment_Sameer_Basnet_77356702
+references:
+- uid: ASE_Assignment_Sameer_Basnet_77356702.Components.AppCommandFactory
+  commentId: T:ASE_Assignment_Sameer_Basnet_77356702.Components.AppCommandFactory
+  href: ASE_Assignment_Sameer_Basnet_77356702.Components.AppCommandFactory.html
+  name: AppCommandFactory
+  nameWithType: AppCommandFactory
+  fullName: ASE_Assignment_Sameer_Basnet_77356702.Components.AppCommandFactory
+- uid: ASE_Assignment_Sameer_Basnet_77356702.Components.AppPraser
+  commentId: T:ASE_Assignment_Sameer_Basnet_77356702.Components.AppPraser
+  href: ASE_Assignment_Sameer_Basnet_77356702.Components.AppPraser.html
+  name: AppPraser
+  nameWithType: AppPraser
+  fullName: ASE_Assignment_Sameer_Basnet_77356702.Components.AppPraser
+- uid: ASE_Assignment_Sameer_Basnet_77356702.Components.AppStoredProgram
+  commentId: T:ASE_Assignment_Sameer_Basnet_77356702.Components.AppStoredProgram
+  href: ASE_Assignment_Sameer_Basnet_77356702.Components.AppStoredProgram.html
+  name: AppStoredProgram
+  nameWithType: AppStoredProgram
+  fullName: ASE_Assignment_Sameer_Basnet_77356702.Components.AppStoredProgram
+- uid: ASE_Assignment_Sameer_Basnet_77356702.Components.GlobalConfiguration
+  commentId: T:ASE_Assignment_Sameer_Basnet_77356702.Components.GlobalConfiguration
+  href: ASE_Assignment_Sameer_Basnet_77356702.Components.GlobalConfiguration.html
+  name: GlobalConfiguration
+  nameWithType: GlobalConfiguration
+  fullName: ASE_Assignment_Sameer_Basnet_77356702.Components.GlobalConfiguration

@@ -1,0 +1,549 @@
+### YamlMime:ManagedReference
+items:
+- uid: ASE_Assignment_Test.CommandsTests.AppMoveToTests
+  commentId: T:ASE_Assignment_Test.CommandsTests.AppMoveToTests
+  id: AppMoveToTests
+  parent: ASE_Assignment_Test.CommandsTests
+  children:
+  - ASE_Assignment_Test.CommandsTests.AppMoveToTests.AppMoveTo_DefaultConstructor_ShouldInitializeWithDefaultValues
+  - ASE_Assignment_Test.CommandsTests.AppMoveToTests.AppMoveTo_ParameterizedConstructor_ValidParameters_ShouldInitializeCorrectly
+  - ASE_Assignment_Test.CommandsTests.AppMoveToTests.CheckParameters_IncorrectNumberOfParameters_ShouldLogCommandException
+  - ASE_Assignment_Test.CommandsTests.AppMoveToTests.CheckParameters_ValidCoordinates_ShouldNotLogError
+  - ASE_Assignment_Test.CommandsTests.AppMoveToTests.TestInitialize
+  langs:
+  - csharp
+  - vb
+  name: AppMoveToTests
+  nameWithType: AppMoveToTests
+  fullName: ASE_Assignment_Test.CommandsTests.AppMoveToTests
+  type: Class
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/CommandsTests/AppMoveToTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: AppMoveToTests
+    path: ASE_Assignment_Test/CommandsTests/AppMoveToTests.cs
+    startLine: 15
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.CommandsTests
+  summary: Unit tests for the <code>AppMoveTo</code> class to validate its behavior and functionality with various inputs.
+  example: []
+  syntax:
+    content: >-
+      [TestClass]
+
+      public class AppMoveToTests
+    content.vb: >-
+      <TestClass>
+
+      Public Class AppMoveToTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.CommandsTests.AppMoveToTests.TestInitialize
+  commentId: M:ASE_Assignment_Test.CommandsTests.AppMoveToTests.TestInitialize
+  id: TestInitialize
+  parent: ASE_Assignment_Test.CommandsTests.AppMoveToTests
+  langs:
+  - csharp
+  - vb
+  name: TestInitialize()
+  nameWithType: AppMoveToTests.TestInitialize()
+  fullName: ASE_Assignment_Test.CommandsTests.AppMoveToTests.TestInitialize()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/CommandsTests/AppMoveToTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: TestInitialize
+    path: ASE_Assignment_Test/CommandsTests/AppMoveToTests.cs
+    startLine: 46
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.CommandsTests
+  summary: Initializes the test environment before each test.
+  remarks: >-
+    This method resets the global exception message, initializes a mock <code>Canvas</code>, 
+
+    and creates an instance of <code>AppMoveTo</code> with valid default coordinates.
+  example: []
+  syntax:
+    content: >-
+      [TestInitialize]
+
+      public void TestInitialize()
+    content.vb: >-
+      <TestInitialize>
+
+      Public Sub TestInitialize()
+  overload: ASE_Assignment_Test.CommandsTests.AppMoveToTests.TestInitialize*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.CommandsTests.AppMoveToTests.AppMoveTo_DefaultConstructor_ShouldInitializeWithDefaultValues
+  commentId: M:ASE_Assignment_Test.CommandsTests.AppMoveToTests.AppMoveTo_DefaultConstructor_ShouldInitializeWithDefaultValues
+  id: AppMoveTo_DefaultConstructor_ShouldInitializeWithDefaultValues
+  parent: ASE_Assignment_Test.CommandsTests.AppMoveToTests
+  langs:
+  - csharp
+  - vb
+  name: AppMoveTo_DefaultConstructor_ShouldInitializeWithDefaultValues()
+  nameWithType: AppMoveToTests.AppMoveTo_DefaultConstructor_ShouldInitializeWithDefaultValues()
+  fullName: ASE_Assignment_Test.CommandsTests.AppMoveToTests.AppMoveTo_DefaultConstructor_ShouldInitializeWithDefaultValues()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/CommandsTests/AppMoveToTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: AppMoveTo_DefaultConstructor_ShouldInitializeWithDefaultValues
+    path: ASE_Assignment_Test/CommandsTests/AppMoveToTests.cs
+    startLine: 90
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.CommandsTests
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void AppMoveTo_DefaultConstructor_ShouldInitializeWithDefaultValues()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub AppMoveTo_DefaultConstructor_ShouldInitializeWithDefaultValues()
+  overload: ASE_Assignment_Test.CommandsTests.AppMoveToTests.AppMoveTo_DefaultConstructor_ShouldInitializeWithDefaultValues*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.CommandsTests.AppMoveToTests.AppMoveTo_ParameterizedConstructor_ValidParameters_ShouldInitializeCorrectly
+  commentId: M:ASE_Assignment_Test.CommandsTests.AppMoveToTests.AppMoveTo_ParameterizedConstructor_ValidParameters_ShouldInitializeCorrectly
+  id: AppMoveTo_ParameterizedConstructor_ValidParameters_ShouldInitializeCorrectly
+  parent: ASE_Assignment_Test.CommandsTests.AppMoveToTests
+  langs:
+  - csharp
+  - vb
+  name: AppMoveTo_ParameterizedConstructor_ValidParameters_ShouldInitializeCorrectly()
+  nameWithType: AppMoveToTests.AppMoveTo_ParameterizedConstructor_ValidParameters_ShouldInitializeCorrectly()
+  fullName: ASE_Assignment_Test.CommandsTests.AppMoveToTests.AppMoveTo_ParameterizedConstructor_ValidParameters_ShouldInitializeCorrectly()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/CommandsTests/AppMoveToTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: AppMoveTo_ParameterizedConstructor_ValidParameters_ShouldInitializeCorrectly
+    path: ASE_Assignment_Test/CommandsTests/AppMoveToTests.cs
+    startLine: 114
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.CommandsTests
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void AppMoveTo_ParameterizedConstructor_ValidParameters_ShouldInitializeCorrectly()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub AppMoveTo_ParameterizedConstructor_ValidParameters_ShouldInitializeCorrectly()
+  overload: ASE_Assignment_Test.CommandsTests.AppMoveToTests.AppMoveTo_ParameterizedConstructor_ValidParameters_ShouldInitializeCorrectly*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.CommandsTests.AppMoveToTests.CheckParameters_ValidCoordinates_ShouldNotLogError
+  commentId: M:ASE_Assignment_Test.CommandsTests.AppMoveToTests.CheckParameters_ValidCoordinates_ShouldNotLogError
+  id: CheckParameters_ValidCoordinates_ShouldNotLogError
+  parent: ASE_Assignment_Test.CommandsTests.AppMoveToTests
+  langs:
+  - csharp
+  - vb
+  name: CheckParameters_ValidCoordinates_ShouldNotLogError()
+  nameWithType: AppMoveToTests.CheckParameters_ValidCoordinates_ShouldNotLogError()
+  fullName: ASE_Assignment_Test.CommandsTests.AppMoveToTests.CheckParameters_ValidCoordinates_ShouldNotLogError()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/CommandsTests/AppMoveToTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: CheckParameters_ValidCoordinates_ShouldNotLogError
+    path: ASE_Assignment_Test/CommandsTests/AppMoveToTests.cs
+    startLine: 140
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.CommandsTests
+  summary: Tests the <code>CheckParameters</code> method with valid coordinates to ensure no error is logged.
+  remarks: Validates that providing valid integer coordinates does not result in an error message.
+  example:
+  - >-
+    <pre><code class="lang-csharp">string[] validParameters = { "200", "200" };
+
+    appMoveTo.CheckParameters(validParameters);
+
+    Assert.AreEqual(string.Empty, GlobalConfiguration.OutputExceptionMsg);</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void CheckParameters_ValidCoordinates_ShouldNotLogError()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub CheckParameters_ValidCoordinates_ShouldNotLogError()
+  overload: ASE_Assignment_Test.CommandsTests.AppMoveToTests.CheckParameters_ValidCoordinates_ShouldNotLogError*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.CommandsTests.AppMoveToTests.CheckParameters_IncorrectNumberOfParameters_ShouldLogCommandException
+  commentId: M:ASE_Assignment_Test.CommandsTests.AppMoveToTests.CheckParameters_IncorrectNumberOfParameters_ShouldLogCommandException
+  id: CheckParameters_IncorrectNumberOfParameters_ShouldLogCommandException
+  parent: ASE_Assignment_Test.CommandsTests.AppMoveToTests
+  langs:
+  - csharp
+  - vb
+  name: CheckParameters_IncorrectNumberOfParameters_ShouldLogCommandException()
+  nameWithType: AppMoveToTests.CheckParameters_IncorrectNumberOfParameters_ShouldLogCommandException()
+  fullName: ASE_Assignment_Test.CommandsTests.AppMoveToTests.CheckParameters_IncorrectNumberOfParameters_ShouldLogCommandException()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/CommandsTests/AppMoveToTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: CheckParameters_IncorrectNumberOfParameters_ShouldLogCommandException
+    path: ASE_Assignment_Test/CommandsTests/AppMoveToTests.cs
+    startLine: 162
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.CommandsTests
+  summary: Tests the <code>CheckParameters</code> method with an incorrect number of parameters to ensure an error is logged.
+  remarks: Validates that providing fewer or more parameters than expected results in an appropriate error message.
+  example:
+  - >-
+    <pre><code class="lang-csharp">string[] invalidParameters = { "100" };
+
+    appMoveTo.CheckParameters(invalidParameters);
+
+    StringAssert.Contains(GlobalConfiguration.OutputExceptionMsg, "Invalid number of parameters for AppMoveTo.");</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void CheckParameters_IncorrectNumberOfParameters_ShouldLogCommandException()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub CheckParameters_IncorrectNumberOfParameters_ShouldLogCommandException()
+  overload: ASE_Assignment_Test.CommandsTests.AppMoveToTests.CheckParameters_IncorrectNumberOfParameters_ShouldLogCommandException*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+references:
+- uid: ASE_Assignment_Test.CommandsTests
+  commentId: N:ASE_Assignment_Test.CommandsTests
+  href: ASE_Assignment_Test.html
+  name: ASE_Assignment_Test.CommandsTests
+  nameWithType: ASE_Assignment_Test.CommandsTests
+  fullName: ASE_Assignment_Test.CommandsTests
+  spec.csharp:
+  - uid: ASE_Assignment_Test
+    name: ASE_Assignment_Test
+    href: ASE_Assignment_Test.html
+  - name: .
+  - uid: ASE_Assignment_Test.CommandsTests
+    name: CommandsTests
+    href: ASE_Assignment_Test.CommandsTests.html
+  spec.vb:
+  - uid: ASE_Assignment_Test
+    name: ASE_Assignment_Test
+    href: ASE_Assignment_Test.html
+  - name: .
+  - uid: ASE_Assignment_Test.CommandsTests
+    name: CommandsTests
+    href: ASE_Assignment_Test.CommandsTests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ASE_Assignment_Test.CommandsTests.AppMoveToTests.TestInitialize*
+  commentId: Overload:ASE_Assignment_Test.CommandsTests.AppMoveToTests.TestInitialize
+  href: ASE_Assignment_Test.CommandsTests.AppMoveToTests.html#ASE_Assignment_Test_CommandsTests_AppMoveToTests_TestInitialize
+  name: TestInitialize
+  nameWithType: AppMoveToTests.TestInitialize
+  fullName: ASE_Assignment_Test.CommandsTests.AppMoveToTests.TestInitialize
+- uid: ASE_Assignment_Test.CommandsTests.AppMoveToTests.AppMoveTo_DefaultConstructor_ShouldInitializeWithDefaultValues*
+  commentId: Overload:ASE_Assignment_Test.CommandsTests.AppMoveToTests.AppMoveTo_DefaultConstructor_ShouldInitializeWithDefaultValues
+  href: ASE_Assignment_Test.CommandsTests.AppMoveToTests.html#ASE_Assignment_Test_CommandsTests_AppMoveToTests_AppMoveTo_DefaultConstructor_ShouldInitializeWithDefaultValues
+  name: AppMoveTo_DefaultConstructor_ShouldInitializeWithDefaultValues
+  nameWithType: AppMoveToTests.AppMoveTo_DefaultConstructor_ShouldInitializeWithDefaultValues
+  fullName: ASE_Assignment_Test.CommandsTests.AppMoveToTests.AppMoveTo_DefaultConstructor_ShouldInitializeWithDefaultValues
+- uid: ASE_Assignment_Test.CommandsTests.AppMoveToTests.AppMoveTo_ParameterizedConstructor_ValidParameters_ShouldInitializeCorrectly*
+  commentId: Overload:ASE_Assignment_Test.CommandsTests.AppMoveToTests.AppMoveTo_ParameterizedConstructor_ValidParameters_ShouldInitializeCorrectly
+  href: ASE_Assignment_Test.CommandsTests.AppMoveToTests.html#ASE_Assignment_Test_CommandsTests_AppMoveToTests_AppMoveTo_ParameterizedConstructor_ValidParameters_ShouldInitializeCorrectly
+  name: AppMoveTo_ParameterizedConstructor_ValidParameters_ShouldInitializeCorrectly
+  nameWithType: AppMoveToTests.AppMoveTo_ParameterizedConstructor_ValidParameters_ShouldInitializeCorrectly
+  fullName: ASE_Assignment_Test.CommandsTests.AppMoveToTests.AppMoveTo_ParameterizedConstructor_ValidParameters_ShouldInitializeCorrectly
+- uid: ASE_Assignment_Test.CommandsTests.AppMoveToTests.CheckParameters_ValidCoordinates_ShouldNotLogError*
+  commentId: Overload:ASE_Assignment_Test.CommandsTests.AppMoveToTests.CheckParameters_ValidCoordinates_ShouldNotLogError
+  href: ASE_Assignment_Test.CommandsTests.AppMoveToTests.html#ASE_Assignment_Test_CommandsTests_AppMoveToTests_CheckParameters_ValidCoordinates_ShouldNotLogError
+  name: CheckParameters_ValidCoordinates_ShouldNotLogError
+  nameWithType: AppMoveToTests.CheckParameters_ValidCoordinates_ShouldNotLogError
+  fullName: ASE_Assignment_Test.CommandsTests.AppMoveToTests.CheckParameters_ValidCoordinates_ShouldNotLogError
+- uid: ASE_Assignment_Test.CommandsTests.AppMoveToTests.CheckParameters_IncorrectNumberOfParameters_ShouldLogCommandException*
+  commentId: Overload:ASE_Assignment_Test.CommandsTests.AppMoveToTests.CheckParameters_IncorrectNumberOfParameters_ShouldLogCommandException
+  href: ASE_Assignment_Test.CommandsTests.AppMoveToTests.html#ASE_Assignment_Test_CommandsTests_AppMoveToTests_CheckParameters_IncorrectNumberOfParameters_ShouldLogCommandException
+  name: CheckParameters_IncorrectNumberOfParameters_ShouldLogCommandException
+  nameWithType: AppMoveToTests.CheckParameters_IncorrectNumberOfParameters_ShouldLogCommandException
+  fullName: ASE_Assignment_Test.CommandsTests.AppMoveToTests.CheckParameters_IncorrectNumberOfParameters_ShouldLogCommandException

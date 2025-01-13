@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Console_App
+  commentId: N:Console_App
+  id: Console_App
+  children:
+  - Console_App.ConsoleDrawingApp
+  langs:
+  - csharp
+  - vb
+  name: Console_App
+  nameWithType: Console_App
+  fullName: Console_App
+  type: Namespace
+  assemblies:
+  - Console_App
+references:
+- uid: Console_App.ConsoleDrawingApp
+  commentId: T:Console_App.ConsoleDrawingApp
+  href: Console_App.ConsoleDrawingApp.html
+  name: ConsoleDrawingApp
+  nameWithType: ConsoleDrawingApp
+  fullName: Console_App.ConsoleDrawingApp

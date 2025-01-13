@@ -1,0 +1,2954 @@
+### YamlMime:ManagedReference
+items:
+- uid: ASE_Assignment_Test.MyAppCanvasTest
+  commentId: T:ASE_Assignment_Test.MyAppCanvasTest
+  id: MyAppCanvasTest
+  parent: ASE_Assignment_Test
+  children:
+  - ASE_Assignment_Test.MyAppCanvasTest.Circle_NegativeRadius_ShouldLogWarning
+  - ASE_Assignment_Test.MyAppCanvasTest.Circle_ValidRadiusFilled_ShouldDrawFilledCircle
+  - ASE_Assignment_Test.MyAppCanvasTest.Circle_ValidRadiusOutlined_ShouldDrawOutlinedCircle
+  - ASE_Assignment_Test.MyAppCanvasTest.Clear_MultipleTimes_ShouldMaintainWhiteBackground
+  - ASE_Assignment_Test.MyAppCanvasTest.Clear_ShouldResetCanvasToWhite
+  - ASE_Assignment_Test.MyAppCanvasTest.DrawTo_ExceedingCanvas_ShouldLogWarning
+  - ASE_Assignment_Test.MyAppCanvasTest.DrawTo_NegativeCoordinates_ShouldLogWarning
+  - ASE_Assignment_Test.MyAppCanvasTest.DrawTo_ValidCoordinates_ShouldDrawLineAndUpdatePosition
+  - ASE_Assignment_Test.MyAppCanvasTest.Filled_SetToFalse_ShouldDisableFill
+  - ASE_Assignment_Test.MyAppCanvasTest.Filled_SetToTrue_ShouldEnableFill
+  - ASE_Assignment_Test.MyAppCanvasTest.Filled_ToggleFillValue_ShouldUpdateBothProperties
+  - ASE_Assignment_Test.MyAppCanvasTest.MoveTo_ExceedingCanvasBoundaries_ShouldLogWarning
+  - ASE_Assignment_Test.MyAppCanvasTest.MoveTo_NegativeCoordinates_ShouldLogWarning
+  - ASE_Assignment_Test.MyAppCanvasTest.MoveTo_ValidCoordinates_ShouldUpdatePosition
+  - ASE_Assignment_Test.MyAppCanvasTest.PenColour_SetInvalidType_ShouldLogWarningAndSetDefault
+  - ASE_Assignment_Test.MyAppCanvasTest.PenColour_SetValidColor_ShouldUpdatePenColour
+  - ASE_Assignment_Test.MyAppCanvasTest.PenSize_SetNegativeValue_ShouldLogWarningAndSetDefault
+  - ASE_Assignment_Test.MyAppCanvasTest.PenSize_SetValidValue_ShouldUpdatePenSize
+  - ASE_Assignment_Test.MyAppCanvasTest.PenSize_SetZero_ShouldLogWarningAndSetDefault
+  - ASE_Assignment_Test.MyAppCanvasTest.Rect_NegativeDimensions_ShouldLogWarning
+  - ASE_Assignment_Test.MyAppCanvasTest.Rect_ValidDimensionsFilled_ShouldDrawFilledRectangle
+  - ASE_Assignment_Test.MyAppCanvasTest.Rect_ValidDimensionsOutlined_ShouldDrawOutlinedRectangle
+  - ASE_Assignment_Test.MyAppCanvasTest.Reset_AfterMultipleDrawOperations_ShouldClearAndReset
+  - ASE_Assignment_Test.MyAppCanvasTest.Reset_ShouldSetPositionToZeroAndSetDefaults
+  - ASE_Assignment_Test.MyAppCanvasTest.SetCanvas_NullBitmap_ShouldLogWarning
+  - ASE_Assignment_Test.MyAppCanvasTest.SetCanvas_NullGraphics_ShouldLogWarning
+  - ASE_Assignment_Test.MyAppCanvasTest.SetCanvas_ValidBitmapAndGraphics_ShouldInitializeCanvas
+  - ASE_Assignment_Test.MyAppCanvasTest.Set_DimensionsExceedingMaximum_ShouldLogWarning
+  - ASE_Assignment_Test.MyAppCanvasTest.Set_NegativeDimensions_ShouldLogWarning
+  - ASE_Assignment_Test.MyAppCanvasTest.Set_ValidDimensions_ShouldInitializeCanvas
+  - ASE_Assignment_Test.MyAppCanvasTest.Setup
+  - ASE_Assignment_Test.MyAppCanvasTest.Tri_ExceedingCanvasBoundaries_ShouldLogWarning
+  - ASE_Assignment_Test.MyAppCanvasTest.Tri_ValidDimensionsFilled_ShouldDrawFilledTriangle
+  - ASE_Assignment_Test.MyAppCanvasTest.Tri_ValidDimensionsOutlined_ShouldDrawOutlinedTriangle
+  - ASE_Assignment_Test.MyAppCanvasTest.WriteText_NullText_ShouldLogWarning
+  - ASE_Assignment_Test.MyAppCanvasTest.WriteText_ValidText_ShouldDrawText
+  - ASE_Assignment_Test.MyAppCanvasTest.Xpos_SetNegativeValue_ShouldLogWarningAndSetDefault
+  - ASE_Assignment_Test.MyAppCanvasTest.Xpos_SetValidValue_ShouldUpdatePosition
+  - ASE_Assignment_Test.MyAppCanvasTest.Xpos_SetValueExceedingCanvas_ShouldLogWarningAndSetDefault
+  - ASE_Assignment_Test.MyAppCanvasTest.Ypos_SetNegativeValue_ShouldLogWarningAndSetDefault
+  - ASE_Assignment_Test.MyAppCanvasTest.Ypos_SetValidValue_ShouldUpdatePosition
+  - ASE_Assignment_Test.MyAppCanvasTest.Ypos_SetValueExceedingCanvas_ShouldLogWarningAndSetDefault
+  - ASE_Assignment_Test.MyAppCanvasTest.getBitmap_AfterDrawing_ShouldReturnUpdatedBitmap
+  langs:
+  - csharp
+  - vb
+  name: MyAppCanvasTest
+  nameWithType: MyAppCanvasTest
+  fullName: ASE_Assignment_Test.MyAppCanvasTest
+  type: Class
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: MyAppCanvasTest
+    path: ASE_Assignment_Test/MyAppCanvasTest.cs
+    startLine: 13
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test
+  summary: >-
+    Unit tests for the MyAppCanvas class to validate its functionality, 
+
+    including boundary conditions, error handling, and expected behaviors.
+  example: []
+  syntax:
+    content: >-
+      [TestClass]
+
+      public class MyAppCanvasTest
+    content.vb: >-
+      <TestClass>
+
+      Public Class MyAppCanvasTest
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.MyAppCanvasTest.Setup
+  commentId: M:ASE_Assignment_Test.MyAppCanvasTest.Setup
+  id: Setup
+  parent: ASE_Assignment_Test.MyAppCanvasTest
+  langs:
+  - csharp
+  - vb
+  name: Setup()
+  nameWithType: MyAppCanvasTest.Setup()
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.Setup()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: Setup
+    path: ASE_Assignment_Test/MyAppCanvasTest.cs
+    startLine: 24
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test
+  summary: Instance of MyAppCanvas used in tests.
+  example: []
+  syntax:
+    content: >-
+      [TestInitialize]
+
+      public void Setup()
+    content.vb: >-
+      <TestInitialize>
+
+      Public Sub Setup()
+  overload: ASE_Assignment_Test.MyAppCanvasTest.Setup*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.MyAppCanvasTest.Xpos_SetNegativeValue_ShouldLogWarningAndSetDefault
+  commentId: M:ASE_Assignment_Test.MyAppCanvasTest.Xpos_SetNegativeValue_ShouldLogWarningAndSetDefault
+  id: Xpos_SetNegativeValue_ShouldLogWarningAndSetDefault
+  parent: ASE_Assignment_Test.MyAppCanvasTest
+  langs:
+  - csharp
+  - vb
+  name: Xpos_SetNegativeValue_ShouldLogWarningAndSetDefault()
+  nameWithType: MyAppCanvasTest.Xpos_SetNegativeValue_ShouldLogWarningAndSetDefault()
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.Xpos_SetNegativeValue_ShouldLogWarningAndSetDefault()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: Xpos_SetNegativeValue_ShouldLogWarningAndSetDefault
+    path: ASE_Assignment_Test/MyAppCanvasTest.cs
+    startLine: 49
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test
+  summary: Tests the behavior of the <code>Xpos</code> property setter when an invalid negative value is assigned.
+  remarks: >-
+    This test ensures that when a negative value is set to the <code>Xpos</code> property:
+
+    <ul><li>A warning message is logged, specifying the invalid value and the valid range.</li><li>The <code>Xpos</code> property is reset to its default value (assumed to be 0).</li></ul>
+  example:
+  - >-
+    <pre><code class="lang-csharp">int invalidX = -50;
+
+    string expectedMessage = $"\nError setting X position: Invalid X position: {invalidX}. Must be between 0 and {canvas.YSIDE}.";
+
+    canvas.Xpos = invalidX;
+
+    Assert.AreEqual(0, canvas.Xpos);</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Xpos_SetNegativeValue_ShouldLogWarningAndSetDefault()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Xpos_SetNegativeValue_ShouldLogWarningAndSetDefault()
+  overload: ASE_Assignment_Test.MyAppCanvasTest.Xpos_SetNegativeValue_ShouldLogWarningAndSetDefault*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.MyAppCanvasTest.Xpos_SetValueExceedingCanvas_ShouldLogWarningAndSetDefault
+  commentId: M:ASE_Assignment_Test.MyAppCanvasTest.Xpos_SetValueExceedingCanvas_ShouldLogWarningAndSetDefault
+  id: Xpos_SetValueExceedingCanvas_ShouldLogWarningAndSetDefault
+  parent: ASE_Assignment_Test.MyAppCanvasTest
+  langs:
+  - csharp
+  - vb
+  name: Xpos_SetValueExceedingCanvas_ShouldLogWarningAndSetDefault()
+  nameWithType: MyAppCanvasTest.Xpos_SetValueExceedingCanvas_ShouldLogWarningAndSetDefault()
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.Xpos_SetValueExceedingCanvas_ShouldLogWarningAndSetDefault()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: Xpos_SetValueExceedingCanvas_ShouldLogWarningAndSetDefault
+    path: ASE_Assignment_Test/MyAppCanvasTest.cs
+    startLine: 82
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test
+  summary: Tests the behavior of the <code>Xpos</code> property setter when a value exceeding the canvas boundary is assigned.
+  remarks: >-
+    This test ensures that when a value greater than the maximum allowable boundary (represented by <code>canvas.YSIDE</code>) is set to the <code>Xpos</code> property:
+
+    <ul><li>A warning message is logged, specifying the invalid value and the valid range.</li><li>The <code>Xpos</code> property is reset to its default value (assumed to be 0).</li></ul>
+  example:
+  - >-
+    <pre><code class="lang-csharp">int invalidX = canvas.YSIDE + 10;
+
+    string expectedMessage = $"\nError setting X position: Invalid X position: {invalidX}. Must be between 0 and {canvas.YSIDE}.";
+
+    canvas.Xpos = invalidX;
+
+    Assert.AreEqual(0, canvas.Xpos);</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Xpos_SetValueExceedingCanvas_ShouldLogWarningAndSetDefault()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Xpos_SetValueExceedingCanvas_ShouldLogWarningAndSetDefault()
+  overload: ASE_Assignment_Test.MyAppCanvasTest.Xpos_SetValueExceedingCanvas_ShouldLogWarningAndSetDefault*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.MyAppCanvasTest.Ypos_SetNegativeValue_ShouldLogWarningAndSetDefault
+  commentId: M:ASE_Assignment_Test.MyAppCanvasTest.Ypos_SetNegativeValue_ShouldLogWarningAndSetDefault
+  id: Ypos_SetNegativeValue_ShouldLogWarningAndSetDefault
+  parent: ASE_Assignment_Test.MyAppCanvasTest
+  langs:
+  - csharp
+  - vb
+  name: Ypos_SetNegativeValue_ShouldLogWarningAndSetDefault()
+  nameWithType: MyAppCanvasTest.Ypos_SetNegativeValue_ShouldLogWarningAndSetDefault()
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.Ypos_SetNegativeValue_ShouldLogWarningAndSetDefault()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: Ypos_SetNegativeValue_ShouldLogWarningAndSetDefault
+    path: ASE_Assignment_Test/MyAppCanvasTest.cs
+    startLine: 115
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test
+  summary: Tests the behavior of the <code>Ypos</code> property setter when an invalid negative value is assigned.
+  remarks: >-
+    This test ensures that when a negative value is set to the <code>Ypos</code> property:
+
+    <ul><li>A warning message is logged, specifying the invalid value and the valid range.</li><li>The <code>Ypos</code> property is reset to its default value (assumed to be 0).</li></ul>
+  example:
+  - >-
+    <pre><code class="lang-csharp">int invalidY = -75;
+
+    string expectedMessage = $"\nError setting Y position: Invalid Y position: {invalidY}. Must be between 0 and {canvas.YSIDE}.";
+
+    canvas.Ypos = invalidY;
+
+    Assert.AreEqual(0, canvas.Ypos);</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Ypos_SetNegativeValue_ShouldLogWarningAndSetDefault()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Ypos_SetNegativeValue_ShouldLogWarningAndSetDefault()
+  overload: ASE_Assignment_Test.MyAppCanvasTest.Ypos_SetNegativeValue_ShouldLogWarningAndSetDefault*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.MyAppCanvasTest.Ypos_SetValueExceedingCanvas_ShouldLogWarningAndSetDefault
+  commentId: M:ASE_Assignment_Test.MyAppCanvasTest.Ypos_SetValueExceedingCanvas_ShouldLogWarningAndSetDefault
+  id: Ypos_SetValueExceedingCanvas_ShouldLogWarningAndSetDefault
+  parent: ASE_Assignment_Test.MyAppCanvasTest
+  langs:
+  - csharp
+  - vb
+  name: Ypos_SetValueExceedingCanvas_ShouldLogWarningAndSetDefault()
+  nameWithType: MyAppCanvasTest.Ypos_SetValueExceedingCanvas_ShouldLogWarningAndSetDefault()
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.Ypos_SetValueExceedingCanvas_ShouldLogWarningAndSetDefault()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: Ypos_SetValueExceedingCanvas_ShouldLogWarningAndSetDefault
+    path: ASE_Assignment_Test/MyAppCanvasTest.cs
+    startLine: 148
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test
+  summary: Tests the behavior of the <code>Ypos</code> property setter when a value exceeding the canvas boundary is assigned.
+  remarks: >-
+    This test ensures that when a value greater than the maximum allowable boundary (represented by <code>canvas.YSIDE</code>) is set to the <code>Ypos</code> property:
+
+    <ul><li>A warning message is logged, specifying the invalid value and the valid range.</li><li>The <code>Ypos</code> property is reset to its default value (assumed to be 0).</li></ul>
+  example:
+  - >-
+    <pre><code class="lang-csharp">int invalidY = canvas.YSIDE + 20; // Exceeds YCanvasSize for testing
+
+    string expectedMessage = $"\nError setting Y position: Invalid Y position: {invalidY}. Must be between 0 and {canvas.YSIDE}.";
+
+    canvas.Ypos = invalidY;
+
+    Assert.AreEqual(0, canvas.Ypos);</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Ypos_SetValueExceedingCanvas_ShouldLogWarningAndSetDefault()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Ypos_SetValueExceedingCanvas_ShouldLogWarningAndSetDefault()
+  overload: ASE_Assignment_Test.MyAppCanvasTest.Ypos_SetValueExceedingCanvas_ShouldLogWarningAndSetDefault*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.MyAppCanvasTest.PenSize_SetValidValue_ShouldUpdatePenSize
+  commentId: M:ASE_Assignment_Test.MyAppCanvasTest.PenSize_SetValidValue_ShouldUpdatePenSize
+  id: PenSize_SetValidValue_ShouldUpdatePenSize
+  parent: ASE_Assignment_Test.MyAppCanvasTest
+  langs:
+  - csharp
+  - vb
+  name: PenSize_SetValidValue_ShouldUpdatePenSize()
+  nameWithType: MyAppCanvasTest.PenSize_SetValidValue_ShouldUpdatePenSize()
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.PenSize_SetValidValue_ShouldUpdatePenSize()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: PenSize_SetValidValue_ShouldUpdatePenSize
+    path: ASE_Assignment_Test/MyAppCanvasTest.cs
+    startLine: 180
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test
+  summary: Tests the behavior of the <code>PenSize</code> property setter when a valid value is assigned.
+  remarks: >-
+    This test ensures that when a valid pen size value is set to the <code>PenSize</code> property:
+
+    <ul><li>The <code>PenSize</code> property is successfully updated to the assigned value.</li><li>No errors or warnings are logged.</li></ul>
+  example:
+  - >-
+    <pre><code class="lang-csharp">int validPenSize = 5;
+
+    canvas.PenSize = validPenSize;
+
+    Assert.AreEqual(validPenSize, canvas.PenSize);</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void PenSize_SetValidValue_ShouldUpdatePenSize()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub PenSize_SetValidValue_ShouldUpdatePenSize()
+  overload: ASE_Assignment_Test.MyAppCanvasTest.PenSize_SetValidValue_ShouldUpdatePenSize*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.MyAppCanvasTest.Xpos_SetValidValue_ShouldUpdatePosition
+  commentId: M:ASE_Assignment_Test.MyAppCanvasTest.Xpos_SetValidValue_ShouldUpdatePosition
+  id: Xpos_SetValidValue_ShouldUpdatePosition
+  parent: ASE_Assignment_Test.MyAppCanvasTest
+  langs:
+  - csharp
+  - vb
+  name: Xpos_SetValidValue_ShouldUpdatePosition()
+  nameWithType: MyAppCanvasTest.Xpos_SetValidValue_ShouldUpdatePosition()
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.Xpos_SetValidValue_ShouldUpdatePosition()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: Xpos_SetValidValue_ShouldUpdatePosition
+    path: ASE_Assignment_Test/MyAppCanvasTest.cs
+    startLine: 212
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test
+  summary: Tests the behavior of the <code>Xpos</code> property setter when a valid value within the canvas boundary is assigned.
+  remarks: >-
+    This test ensures that when a valid X position value is set to the <code>Xpos</code> property:
+
+    <ul><li>The <code>Xpos</code> property is successfully updated to the assigned value.</li><li>The value is within the valid range defined by the canvas size (<code>XSIDE</code>).</li></ul>
+  example:
+  - >-
+    <pre><code class="lang-csharp">int validX = 100;
+
+    canvas.XSIDE = 500; // Ensure canvas size is set appropriately
+
+    canvas.Xpos = validX;
+
+    Assert.AreEqual(validX, canvas.Xpos);</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Xpos_SetValidValue_ShouldUpdatePosition()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Xpos_SetValidValue_ShouldUpdatePosition()
+  overload: ASE_Assignment_Test.MyAppCanvasTest.Xpos_SetValidValue_ShouldUpdatePosition*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.MyAppCanvasTest.Ypos_SetValidValue_ShouldUpdatePosition
+  commentId: M:ASE_Assignment_Test.MyAppCanvasTest.Ypos_SetValidValue_ShouldUpdatePosition
+  id: Ypos_SetValidValue_ShouldUpdatePosition
+  parent: ASE_Assignment_Test.MyAppCanvasTest
+  langs:
+  - csharp
+  - vb
+  name: Ypos_SetValidValue_ShouldUpdatePosition()
+  nameWithType: MyAppCanvasTest.Ypos_SetValidValue_ShouldUpdatePosition()
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.Ypos_SetValidValue_ShouldUpdatePosition()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: Ypos_SetValidValue_ShouldUpdatePosition
+    path: ASE_Assignment_Test/MyAppCanvasTest.cs
+    startLine: 245
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test
+  summary: Tests the behavior of the <code>Ypos</code> property setter when a valid value within the canvas boundary is assigned.
+  remarks: >-
+    This test ensures that when a valid Y position value is set to the <code>Ypos</code> property:
+
+    <ul><li>The <code>Ypos</code> property is successfully updated to the assigned value.</li><li>The value is within the valid range defined by the canvas size (<code>YSIDE</code>).</li></ul>
+  example:
+  - >-
+    <pre><code class="lang-csharp">int validY = 150;
+
+    canvas.YSIDE = 500; // Ensure canvas size is set appropriately
+
+    canvas.Ypos = validY;
+
+    Assert.AreEqual(validY, canvas.Ypos);</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Ypos_SetValidValue_ShouldUpdatePosition()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Ypos_SetValidValue_ShouldUpdatePosition()
+  overload: ASE_Assignment_Test.MyAppCanvasTest.Ypos_SetValidValue_ShouldUpdatePosition*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.MyAppCanvasTest.PenSize_SetZero_ShouldLogWarningAndSetDefault
+  commentId: M:ASE_Assignment_Test.MyAppCanvasTest.PenSize_SetZero_ShouldLogWarningAndSetDefault
+  id: PenSize_SetZero_ShouldLogWarningAndSetDefault
+  parent: ASE_Assignment_Test.MyAppCanvasTest
+  langs:
+  - csharp
+  - vb
+  name: PenSize_SetZero_ShouldLogWarningAndSetDefault()
+  nameWithType: MyAppCanvasTest.PenSize_SetZero_ShouldLogWarningAndSetDefault()
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.PenSize_SetZero_ShouldLogWarningAndSetDefault()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: PenSize_SetZero_ShouldLogWarningAndSetDefault
+    path: ASE_Assignment_Test/MyAppCanvasTest.cs
+    startLine: 278
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test
+  summary: Tests the behavior of the <code>PenSize</code> property setter when an invalid value of zero is assigned.
+  remarks: >-
+    This test ensures that when the <code>PenSize</code> property is set to zero:
+
+    <ul><li>A warning message is logged, indicating that the pen size must be greater than zero.</li><li>The <code>PenSize</code> property is reset to its default value (assumed to be 1).</li></ul>
+  example:
+  - >-
+    <pre><code class="lang-csharp">int invalidPenSize = 0;
+
+    string expectedMessage = "\nError setting pen size: Pen size must be greater than zero.";
+
+    canvas.PenSize = invalidPenSize;
+
+    Assert.AreEqual(1, canvas.PenSize); // Assuming default is set to 1</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void PenSize_SetZero_ShouldLogWarningAndSetDefault()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub PenSize_SetZero_ShouldLogWarningAndSetDefault()
+  overload: ASE_Assignment_Test.MyAppCanvasTest.PenSize_SetZero_ShouldLogWarningAndSetDefault*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.MyAppCanvasTest.PenSize_SetNegativeValue_ShouldLogWarningAndSetDefault
+  commentId: M:ASE_Assignment_Test.MyAppCanvasTest.PenSize_SetNegativeValue_ShouldLogWarningAndSetDefault
+  id: PenSize_SetNegativeValue_ShouldLogWarningAndSetDefault
+  parent: ASE_Assignment_Test.MyAppCanvasTest
+  langs:
+  - csharp
+  - vb
+  name: PenSize_SetNegativeValue_ShouldLogWarningAndSetDefault()
+  nameWithType: MyAppCanvasTest.PenSize_SetNegativeValue_ShouldLogWarningAndSetDefault()
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.PenSize_SetNegativeValue_ShouldLogWarningAndSetDefault()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: PenSize_SetNegativeValue_ShouldLogWarningAndSetDefault
+    path: ASE_Assignment_Test/MyAppCanvasTest.cs
+    startLine: 311
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test
+  summary: Tests the behavior of the <code>PenSize</code> property setter when an invalid negative value is assigned.
+  remarks: >-
+    This test ensures that when the <code>PenSize</code> property is set to a negative value:
+
+    <ul><li>A warning message is logged, indicating that the pen size must be greater than zero.</li><li>The <code>PenSize</code> property is reset to its default value (assumed to be 1).</li></ul>
+  example:
+  - >-
+    <pre><code class="lang-csharp">int invalidPenSize = -3;
+
+    string expectedMessage = "\nError setting pen size: Pen size must be greater than zero.";
+
+    canvas.PenSize = invalidPenSize;
+
+    Assert.AreEqual(1, canvas.PenSize); // Assuming default is set to 1</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void PenSize_SetNegativeValue_ShouldLogWarningAndSetDefault()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub PenSize_SetNegativeValue_ShouldLogWarningAndSetDefault()
+  overload: ASE_Assignment_Test.MyAppCanvasTest.PenSize_SetNegativeValue_ShouldLogWarningAndSetDefault*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.MyAppCanvasTest.Filled_SetToTrue_ShouldEnableFill
+  commentId: M:ASE_Assignment_Test.MyAppCanvasTest.Filled_SetToTrue_ShouldEnableFill
+  id: Filled_SetToTrue_ShouldEnableFill
+  parent: ASE_Assignment_Test.MyAppCanvasTest
+  langs:
+  - csharp
+  - vb
+  name: Filled_SetToTrue_ShouldEnableFill()
+  nameWithType: MyAppCanvasTest.Filled_SetToTrue_ShouldEnableFill()
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.Filled_SetToTrue_ShouldEnableFill()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: Filled_SetToTrue_ShouldEnableFill
+    path: ASE_Assignment_Test/MyAppCanvasTest.cs
+    startLine: 344
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test
+  summary: Tests the behavior of the <code>Filled</code> property setter when set to <code>true</code>.
+  remarks: >-
+    This test ensures that when the <code>Filled</code> property is set to <code>true</code>:
+
+    <ul><li>The <code>Filled</code> property on the <code>canvas</code> object is successfully updated.</li><li>The global configuration for fill (<code>GlobalConfiguration.IsFillEnabled</code>) is also enabled.</li></ul>
+  example:
+  - >-
+    <pre><code class="lang-csharp">bool fillValue = true;
+
+    canvas.Filled = fillValue;
+
+    Assert.IsTrue(canvas.Filled);
+
+    Assert.IsTrue(GlobalConfiguration.IsFillEnabled);</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Filled_SetToTrue_ShouldEnableFill()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Filled_SetToTrue_ShouldEnableFill()
+  overload: ASE_Assignment_Test.MyAppCanvasTest.Filled_SetToTrue_ShouldEnableFill*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.MyAppCanvasTest.Filled_SetToFalse_ShouldDisableFill
+  commentId: M:ASE_Assignment_Test.MyAppCanvasTest.Filled_SetToFalse_ShouldDisableFill
+  id: Filled_SetToFalse_ShouldDisableFill
+  parent: ASE_Assignment_Test.MyAppCanvasTest
+  langs:
+  - csharp
+  - vb
+  name: Filled_SetToFalse_ShouldDisableFill()
+  nameWithType: MyAppCanvasTest.Filled_SetToFalse_ShouldDisableFill()
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.Filled_SetToFalse_ShouldDisableFill()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: Filled_SetToFalse_ShouldDisableFill
+    path: ASE_Assignment_Test/MyAppCanvasTest.cs
+    startLine: 376
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test
+  summary: Tests the behavior of the <code>Filled</code> property setter when set to <code>false</code>.
+  remarks: >-
+    This test ensures that when the <code>Filled</code> property is set to <code>false</code>:
+
+    <ul><li>The <code>Filled</code> property on the <code>canvas</code> object is successfully updated.</li><li>The global configuration for fill (<code>GlobalConfiguration.IsFillEnabled</code>) is also disabled.</li></ul>
+  example:
+  - >-
+    <pre><code class="lang-csharp">bool fillValue = false;
+
+    canvas.Filled = fillValue;
+
+    Assert.IsFalse(canvas.Filled);
+
+    Assert.IsFalse(GlobalConfiguration.IsFillEnabled);</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Filled_SetToFalse_ShouldDisableFill()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Filled_SetToFalse_ShouldDisableFill()
+  overload: ASE_Assignment_Test.MyAppCanvasTest.Filled_SetToFalse_ShouldDisableFill*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.MyAppCanvasTest.Filled_ToggleFillValue_ShouldUpdateBothProperties
+  commentId: M:ASE_Assignment_Test.MyAppCanvasTest.Filled_ToggleFillValue_ShouldUpdateBothProperties
+  id: Filled_ToggleFillValue_ShouldUpdateBothProperties
+  parent: ASE_Assignment_Test.MyAppCanvasTest
+  langs:
+  - csharp
+  - vb
+  name: Filled_ToggleFillValue_ShouldUpdateBothProperties()
+  nameWithType: MyAppCanvasTest.Filled_ToggleFillValue_ShouldUpdateBothProperties()
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.Filled_ToggleFillValue_ShouldUpdateBothProperties()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: Filled_ToggleFillValue_ShouldUpdateBothProperties
+    path: ASE_Assignment_Test/MyAppCanvasTest.cs
+    startLine: 409
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test
+  summary: Tests the behavior of the <code>Filled</code> property when its value is toggled.
+  remarks: >-
+    This test ensures that toggling the <code>Filled</code> property:
+
+    <ul><li>Successfully updates the <code>Filled</code> property on the <code>canvas</code> object.</li><li>Synchronously updates the global configuration for fill (<code>GlobalConfiguration.IsFillEnabled</code>).</li></ul>
+
+    The test initially sets the <code>Filled</code> property to <code>true</code> and then toggles it to <code>false</code>, verifying the updated states.
+  example:
+  - >-
+    <pre><code class="lang-csharp">canvas.Filled = true; // Initially set to true
+
+    canvas.Filled = false; // Toggle to false
+
+    Assert.IsFalse(canvas.Filled);
+
+    Assert.IsFalse(GlobalConfiguration.IsFillEnabled);</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Filled_ToggleFillValue_ShouldUpdateBothProperties()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Filled_ToggleFillValue_ShouldUpdateBothProperties()
+  overload: ASE_Assignment_Test.MyAppCanvasTest.Filled_ToggleFillValue_ShouldUpdateBothProperties*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.MyAppCanvasTest.PenColour_SetValidColor_ShouldUpdatePenColour
+  commentId: M:ASE_Assignment_Test.MyAppCanvasTest.PenColour_SetValidColor_ShouldUpdatePenColour
+  id: PenColour_SetValidColor_ShouldUpdatePenColour
+  parent: ASE_Assignment_Test.MyAppCanvasTest
+  langs:
+  - csharp
+  - vb
+  name: PenColour_SetValidColor_ShouldUpdatePenColour()
+  nameWithType: MyAppCanvasTest.PenColour_SetValidColor_ShouldUpdatePenColour()
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.PenColour_SetValidColor_ShouldUpdatePenColour()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: PenColour_SetValidColor_ShouldUpdatePenColour
+    path: ASE_Assignment_Test/MyAppCanvasTest.cs
+    startLine: 440
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test
+  summary: Tests the behavior of the <code>PenColour</code> property setter when a valid color is assigned.
+  remarks: >-
+    This test ensures that when a valid color is set to the <code>PenColour</code> property:
+
+    <ul><li>The <code>PenColour</code> property on the <code>canvas</code> object is successfully updated to the assigned color.</li><li>No errors or warnings are generated during the update.</li></ul>
+  example:
+  - >-
+    <pre><code class="lang-csharp">Color validColor = Color.Red;
+
+    canvas.PenColour = validColor;
+
+    Assert.AreEqual(validColor, (Color)canvas.PenColour);</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void PenColour_SetValidColor_ShouldUpdatePenColour()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub PenColour_SetValidColor_ShouldUpdatePenColour()
+  overload: ASE_Assignment_Test.MyAppCanvasTest.PenColour_SetValidColor_ShouldUpdatePenColour*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.MyAppCanvasTest.PenColour_SetInvalidType_ShouldLogWarningAndSetDefault
+  commentId: M:ASE_Assignment_Test.MyAppCanvasTest.PenColour_SetInvalidType_ShouldLogWarningAndSetDefault
+  id: PenColour_SetInvalidType_ShouldLogWarningAndSetDefault
+  parent: ASE_Assignment_Test.MyAppCanvasTest
+  langs:
+  - csharp
+  - vb
+  name: PenColour_SetInvalidType_ShouldLogWarningAndSetDefault()
+  nameWithType: MyAppCanvasTest.PenColour_SetInvalidType_ShouldLogWarningAndSetDefault()
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.PenColour_SetInvalidType_ShouldLogWarningAndSetDefault()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: PenColour_SetInvalidType_ShouldLogWarningAndSetDefault
+    path: ASE_Assignment_Test/MyAppCanvasTest.cs
+    startLine: 472
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test
+  summary: Tests the behavior of the <code>PenColour</code> property setter when an invalid type is assigned.
+  remarks: >-
+    This test ensures that when an invalid type (e.g., a string) is assigned to the <code>PenColour</code> property:
+
+    <ul><li>A warning message is logged, indicating the invalid type and prompting the user to provide a valid <code>Color</code> object.</li><li>The <code>PenColour</code> property is reset to its default value (assumed to be <code>Color.Black</code>).</li></ul>
+  example:
+  - >-
+    <pre><code class="lang-csharp">object invalidColor = "Blue"; // Invalid type
+
+    string expectedMessage = "\nInvalid pen color value provided. Please provide a valid Color object.";
+
+    canvas.PenColour = invalidColor;
+
+    Assert.AreEqual(Color.Black, (Color)canvas.PenColour); // Assuming default is set to Black</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void PenColour_SetInvalidType_ShouldLogWarningAndSetDefault()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub PenColour_SetInvalidType_ShouldLogWarningAndSetDefault()
+  overload: ASE_Assignment_Test.MyAppCanvasTest.PenColour_SetInvalidType_ShouldLogWarningAndSetDefault*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.MyAppCanvasTest.Set_ValidDimensions_ShouldInitializeCanvas
+  commentId: M:ASE_Assignment_Test.MyAppCanvasTest.Set_ValidDimensions_ShouldInitializeCanvas
+  id: Set_ValidDimensions_ShouldInitializeCanvas
+  parent: ASE_Assignment_Test.MyAppCanvasTest
+  langs:
+  - csharp
+  - vb
+  name: Set_ValidDimensions_ShouldInitializeCanvas()
+  nameWithType: MyAppCanvasTest.Set_ValidDimensions_ShouldInitializeCanvas()
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.Set_ValidDimensions_ShouldInitializeCanvas()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: Set_ValidDimensions_ShouldInitializeCanvas
+    path: ASE_Assignment_Test/MyAppCanvasTest.cs
+    startLine: 510
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test
+  summary: Tests the <code>Set</code> method of the <code>canvas</code> object to ensure proper initialization with valid dimensions.
+  remarks: >-
+    This test verifies that when the <code>Set</code> method is called with valid dimensions:
+
+    <ul><li>The canvas dimensions (<code>XSIDE</code> and <code>YSIDE</code>) are correctly initialized to the specified values.</li><li>The initial position (<code>Xpos</code> and <code>Ypos</code>) is set to zero.</li><li>No warnings or error messages are logged.</li></ul>
+  example:
+  - >-
+    <pre><code class="lang-csharp">int validXSize = 800;
+
+    int validYSize = 600;
+
+    canvas.Set(validXSize, validYSize);
+
+    Assert.AreEqual(validXSize, canvas.XSIDE);
+
+    Assert.AreEqual(validYSize, canvas.YSIDE);
+
+    Assert.AreEqual(0, canvas.Xpos);
+
+    Assert.AreEqual(0, canvas.Ypos);
+
+    Assert.AreEqual(string.Empty, GlobalConfiguration.OutputExceptionMsg);</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Set_ValidDimensions_ShouldInitializeCanvas()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Set_ValidDimensions_ShouldInitializeCanvas()
+  overload: ASE_Assignment_Test.MyAppCanvasTest.Set_ValidDimensions_ShouldInitializeCanvas*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.MyAppCanvasTest.Set_NegativeDimensions_ShouldLogWarning
+  commentId: M:ASE_Assignment_Test.MyAppCanvasTest.Set_NegativeDimensions_ShouldLogWarning
+  id: Set_NegativeDimensions_ShouldLogWarning
+  parent: ASE_Assignment_Test.MyAppCanvasTest
+  langs:
+  - csharp
+  - vb
+  name: Set_NegativeDimensions_ShouldLogWarning()
+  nameWithType: MyAppCanvasTest.Set_NegativeDimensions_ShouldLogWarning()
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.Set_NegativeDimensions_ShouldLogWarning()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: Set_NegativeDimensions_ShouldLogWarning
+    path: ASE_Assignment_Test/MyAppCanvasTest.cs
+    startLine: 547
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test
+  summary: Tests the <code>Set</code> method of the <code>canvas</code> object to ensure proper handling of negative dimensions.
+  remarks: >-
+    This test verifies that when the <code>Set</code> method is called with negative dimensions:
+
+    <ul><li>A warning message is logged, indicating the invalid dimensions and specifying that both dimensions must be positive.</li><li>The canvas dimensions are not initialized with the invalid values.</li></ul>
+  example:
+  - >-
+    <pre><code class="lang-csharp">int invalidXSize = -500;
+
+    int invalidYSize = -300;
+
+    string expectedMessage = $"\nWarning: Invalid canvas size: Width={invalidXSize}, Height={invalidYSize}. Both dimensions must be positive.";
+
+    canvas.Set(invalidXSize, invalidYSize);
+
+    StringAssert.Contains(GlobalConfiguration.OutputExceptionMsg, expectedMessage);</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Set_NegativeDimensions_ShouldLogWarning()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Set_NegativeDimensions_ShouldLogWarning()
+  overload: ASE_Assignment_Test.MyAppCanvasTest.Set_NegativeDimensions_ShouldLogWarning*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.MyAppCanvasTest.Set_DimensionsExceedingMaximum_ShouldLogWarning
+  commentId: M:ASE_Assignment_Test.MyAppCanvasTest.Set_DimensionsExceedingMaximum_ShouldLogWarning
+  id: Set_DimensionsExceedingMaximum_ShouldLogWarning
+  parent: ASE_Assignment_Test.MyAppCanvasTest
+  langs:
+  - csharp
+  - vb
+  name: Set_DimensionsExceedingMaximum_ShouldLogWarning()
+  nameWithType: MyAppCanvasTest.Set_DimensionsExceedingMaximum_ShouldLogWarning()
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.Set_DimensionsExceedingMaximum_ShouldLogWarning()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: Set_DimensionsExceedingMaximum_ShouldLogWarning
+    path: ASE_Assignment_Test/MyAppCanvasTest.cs
+    startLine: 582
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test
+  summary: Tests the <code>Set</code> method of the <code>canvas</code> object to ensure proper handling of dimensions exceeding the maximum allowed value.
+  remarks: >-
+    This test verifies that when the <code>Set</code> method is called with dimensions exceeding the maximum allowable limit (2000):
+
+    <ul><li>A warning message is logged, indicating the invalid dimensions and specifying the maximum allowed limit.</li><li>The canvas dimensions are not initialized with the invalid values.</li></ul>
+  example:
+  - >-
+    <pre><code class="lang-csharp">int invalidXSize = 2500;
+
+    int invalidYSize = 3000;
+
+    string expectedMessage = $"\nWarning: Invalid canvas size: Width={invalidXSize}, Height={invalidYSize}. Both dimensions must be within 2000.";
+
+    canvas.Set(invalidXSize, invalidYSize);
+
+    StringAssert.Contains(GlobalConfiguration.OutputExceptionMsg, expectedMessage);</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Set_DimensionsExceedingMaximum_ShouldLogWarning()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Set_DimensionsExceedingMaximum_ShouldLogWarning()
+  overload: ASE_Assignment_Test.MyAppCanvasTest.Set_DimensionsExceedingMaximum_ShouldLogWarning*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.MyAppCanvasTest.MoveTo_ValidCoordinates_ShouldUpdatePosition
+  commentId: M:ASE_Assignment_Test.MyAppCanvasTest.MoveTo_ValidCoordinates_ShouldUpdatePosition
+  id: MoveTo_ValidCoordinates_ShouldUpdatePosition
+  parent: ASE_Assignment_Test.MyAppCanvasTest
+  langs:
+  - csharp
+  - vb
+  name: MoveTo_ValidCoordinates_ShouldUpdatePosition()
+  nameWithType: MyAppCanvasTest.MoveTo_ValidCoordinates_ShouldUpdatePosition()
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.MoveTo_ValidCoordinates_ShouldUpdatePosition()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: MoveTo_ValidCoordinates_ShouldUpdatePosition
+    path: ASE_Assignment_Test/MyAppCanvasTest.cs
+    startLine: 617
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test
+  summary: Tests the <code>MoveTo</code> method to ensure the canvas position is correctly updated with valid coordinates.
+  remarks: >-
+    This test verifies that when the <code>MoveTo</code> method is called with valid X and Y coordinates:
+
+    <ul><li>The <code>Xpos</code> and <code>Ypos</code> properties of the <code>canvas</code> object are updated to the specified coordinates.</li><li>No warnings or error messages are logged during the operation.</li></ul>
+  example:
+  - >-
+    <pre><code class="lang-csharp">int newX = 200;
+
+    int newY = 150;
+
+    canvas.MoveTo(newX, newY);
+
+    Assert.AreEqual(newX, canvas.Xpos);
+
+    Assert.AreEqual(newY, canvas.Ypos);
+
+    Assert.AreEqual(string.Empty, GlobalConfiguration.OutputExceptionMsg);</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void MoveTo_ValidCoordinates_ShouldUpdatePosition()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub MoveTo_ValidCoordinates_ShouldUpdatePosition()
+  overload: ASE_Assignment_Test.MyAppCanvasTest.MoveTo_ValidCoordinates_ShouldUpdatePosition*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.MyAppCanvasTest.MoveTo_NegativeCoordinates_ShouldLogWarning
+  commentId: M:ASE_Assignment_Test.MyAppCanvasTest.MoveTo_NegativeCoordinates_ShouldLogWarning
+  id: MoveTo_NegativeCoordinates_ShouldLogWarning
+  parent: ASE_Assignment_Test.MyAppCanvasTest
+  langs:
+  - csharp
+  - vb
+  name: MoveTo_NegativeCoordinates_ShouldLogWarning()
+  nameWithType: MyAppCanvasTest.MoveTo_NegativeCoordinates_ShouldLogWarning()
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.MoveTo_NegativeCoordinates_ShouldLogWarning()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: MoveTo_NegativeCoordinates_ShouldLogWarning
+    path: ASE_Assignment_Test/MyAppCanvasTest.cs
+    startLine: 655
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test
+  summary: Tests the <code>MoveTo</code> method to ensure proper handling of negative coordinates.
+  remarks: >-
+    This test verifies that when the <code>MoveTo</code> method is called with negative X and Y coordinates:
+
+    <ul><li>A warning message is logged, indicating that the specified coordinates are outside the canvas dimensions.</li><li>The <code>Xpos</code> and <code>Ypos</code> properties of the <code>canvas</code> object remain unchanged (defaulted to 0).</li></ul>
+  example:
+  - >-
+    <pre><code class="lang-csharp">int invalidX = -50;
+
+    int invalidY = -75;
+
+    string expectedMessage = $"\nWarning: The specified coordinates ({invalidX}, {invalidY}) are outside the canvas dimensions ({canvas.XSIDE}x{canvas.YSIDE}).";
+
+    canvas.MoveTo(invalidX, invalidY);
+
+    StringAssert.Contains(GlobalConfiguration.OutputExceptionMsg, expectedMessage);
+
+    Assert.AreEqual(0, canvas.Xpos);
+
+    Assert.AreEqual(0, canvas.Ypos);</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void MoveTo_NegativeCoordinates_ShouldLogWarning()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub MoveTo_NegativeCoordinates_ShouldLogWarning()
+  overload: ASE_Assignment_Test.MyAppCanvasTest.MoveTo_NegativeCoordinates_ShouldLogWarning*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.MyAppCanvasTest.MoveTo_ExceedingCanvasBoundaries_ShouldLogWarning
+  commentId: M:ASE_Assignment_Test.MyAppCanvasTest.MoveTo_ExceedingCanvasBoundaries_ShouldLogWarning
+  id: MoveTo_ExceedingCanvasBoundaries_ShouldLogWarning
+  parent: ASE_Assignment_Test.MyAppCanvasTest
+  langs:
+  - csharp
+  - vb
+  name: MoveTo_ExceedingCanvasBoundaries_ShouldLogWarning()
+  nameWithType: MyAppCanvasTest.MoveTo_ExceedingCanvasBoundaries_ShouldLogWarning()
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.MoveTo_ExceedingCanvasBoundaries_ShouldLogWarning()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: MoveTo_ExceedingCanvasBoundaries_ShouldLogWarning
+    path: ASE_Assignment_Test/MyAppCanvasTest.cs
+    startLine: 693
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test
+  summary: Tests the <code>MoveTo</code> method to ensure proper handling of coordinates exceeding the canvas boundaries.
+  remarks: >-
+    This test verifies that when the <code>MoveTo</code> method is called with coordinates that exceed the canvas dimensions:
+
+    <ul><li>A warning message is logged, indicating that the specified coordinates are outside the valid canvas boundaries.</li><li>The <code>Xpos</code> and <code>Ypos</code> properties of the <code>canvas</code> object remain unchanged (defaulted to 0).</li></ul>
+  example:
+  - >-
+    <pre><code class="lang-csharp">int invalidX = canvas.XSIDE + 100;
+
+    int invalidY = canvas.YSIDE + 100;
+
+    string expectedMessage = $"\nWarning: The specified coordinates ({invalidX}, {invalidY}) are outside the canvas dimensions ({canvas.XSIDE}x{canvas.YSIDE}).";
+
+    canvas.MoveTo(invalidX, invalidY);
+
+    StringAssert.Contains(GlobalConfiguration.OutputExceptionMsg, expectedMessage);
+
+    Assert.AreEqual(0, canvas.Xpos);
+
+    Assert.AreEqual(0, canvas.Ypos);</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void MoveTo_ExceedingCanvasBoundaries_ShouldLogWarning()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub MoveTo_ExceedingCanvasBoundaries_ShouldLogWarning()
+  overload: ASE_Assignment_Test.MyAppCanvasTest.MoveTo_ExceedingCanvasBoundaries_ShouldLogWarning*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.MyAppCanvasTest.DrawTo_ValidCoordinates_ShouldDrawLineAndUpdatePosition
+  commentId: M:ASE_Assignment_Test.MyAppCanvasTest.DrawTo_ValidCoordinates_ShouldDrawLineAndUpdatePosition
+  id: DrawTo_ValidCoordinates_ShouldDrawLineAndUpdatePosition
+  parent: ASE_Assignment_Test.MyAppCanvasTest
+  langs:
+  - csharp
+  - vb
+  name: DrawTo_ValidCoordinates_ShouldDrawLineAndUpdatePosition()
+  nameWithType: MyAppCanvasTest.DrawTo_ValidCoordinates_ShouldDrawLineAndUpdatePosition()
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.DrawTo_ValidCoordinates_ShouldDrawLineAndUpdatePosition()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: DrawTo_ValidCoordinates_ShouldDrawLineAndUpdatePosition
+    path: ASE_Assignment_Test/MyAppCanvasTest.cs
+    startLine: 735
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test
+  summary: Tests the <code>DrawTo</code> method to ensure that a line is drawn and the position is updated correctly when valid coordinates are provided.
+  remarks: >-
+    This test verifies that when the <code>DrawTo</code> method is called with valid ending coordinates:
+
+    <ul><li>The <code>canvas</code> draws a line from the current position to the specified ending position.</li><li>The <code>Xpos</code> and <code>Ypos</code> properties are updated to the specified ending coordinates.</li><li>No warnings or error messages are logged during the operation.</li></ul>
+  example:
+  - >-
+    <pre><code class="lang-csharp">int startX = 50;
+
+    int startY = 50;
+
+    int endX = 150;
+
+    int endY = 150;
+
+    canvas.MoveTo(startX, startY);
+
+    canvas.DrawTo(endX, endY);
+
+    Assert.AreEqual(endX, canvas.Xpos);
+
+    Assert.AreEqual(endY, canvas.Ypos);
+
+    Assert.AreEqual(string.Empty, GlobalConfiguration.OutputExceptionMsg);</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void DrawTo_ValidCoordinates_ShouldDrawLineAndUpdatePosition()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub DrawTo_ValidCoordinates_ShouldDrawLineAndUpdatePosition()
+  overload: ASE_Assignment_Test.MyAppCanvasTest.DrawTo_ValidCoordinates_ShouldDrawLineAndUpdatePosition*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.MyAppCanvasTest.DrawTo_NegativeCoordinates_ShouldLogWarning
+  commentId: M:ASE_Assignment_Test.MyAppCanvasTest.DrawTo_NegativeCoordinates_ShouldLogWarning
+  id: DrawTo_NegativeCoordinates_ShouldLogWarning
+  parent: ASE_Assignment_Test.MyAppCanvasTest
+  langs:
+  - csharp
+  - vb
+  name: DrawTo_NegativeCoordinates_ShouldLogWarning()
+  nameWithType: MyAppCanvasTest.DrawTo_NegativeCoordinates_ShouldLogWarning()
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.DrawTo_NegativeCoordinates_ShouldLogWarning()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: DrawTo_NegativeCoordinates_ShouldLogWarning
+    path: ASE_Assignment_Test/MyAppCanvasTest.cs
+    startLine: 777
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test
+  summary: Tests the <code>DrawTo</code> method to ensure proper handling of negative coordinates.
+  remarks: >-
+    This test verifies that when the <code>DrawTo</code> method is called with negative coordinates:
+
+    <ul><li>A warning message is logged, indicating that the specified coordinates are outside the valid canvas dimensions.</li><li>The <code>Xpos</code> and <code>Ypos</code> properties remain unchanged at their current position.</li></ul>
+  example:
+  - >-
+    <pre><code class="lang-csharp">canvas.MoveTo(100, 100);
+
+    int invalidX = -10;
+
+    int invalidY = -20;
+
+    string expectedMessage = $"\nWarning: The specified coordinates ({invalidX}, {invalidY}) are outside the canvas dimensions ({canvas.XSIDE}x{canvas.YSIDE}).";
+
+    canvas.DrawTo(invalidX, invalidY);
+
+    StringAssert.Contains(GlobalConfiguration.OutputExceptionMsg, expectedMessage);
+
+    Assert.AreEqual(100, canvas.Xpos);
+
+    Assert.AreEqual(100, canvas.Ypos);</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void DrawTo_NegativeCoordinates_ShouldLogWarning()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub DrawTo_NegativeCoordinates_ShouldLogWarning()
+  overload: ASE_Assignment_Test.MyAppCanvasTest.DrawTo_NegativeCoordinates_ShouldLogWarning*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.MyAppCanvasTest.DrawTo_ExceedingCanvas_ShouldLogWarning
+  commentId: M:ASE_Assignment_Test.MyAppCanvasTest.DrawTo_ExceedingCanvas_ShouldLogWarning
+  id: DrawTo_ExceedingCanvas_ShouldLogWarning
+  parent: ASE_Assignment_Test.MyAppCanvasTest
+  langs:
+  - csharp
+  - vb
+  name: DrawTo_ExceedingCanvas_ShouldLogWarning()
+  nameWithType: MyAppCanvasTest.DrawTo_ExceedingCanvas_ShouldLogWarning()
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.DrawTo_ExceedingCanvas_ShouldLogWarning()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: DrawTo_ExceedingCanvas_ShouldLogWarning
+    path: ASE_Assignment_Test/MyAppCanvasTest.cs
+    startLine: 817
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test
+  summary: Tests the <code>DrawTo</code> method to ensure proper handling of coordinates that exceed the canvas boundaries.
+  remarks: >-
+    This test verifies that when the <code>DrawTo</code> method is called with coordinates exceeding the canvas dimensions:
+
+    <ul><li>A warning message is logged, indicating that the specified coordinates are outside the valid canvas boundaries.</li><li>The <code>Xpos</code> and <code>Ypos</code> properties remain unchanged at their current position.</li></ul>
+  example:
+  - >-
+    <pre><code class="lang-csharp">canvas.MoveTo(400, 400);
+
+    int invalidX = canvas.XSIDE + 50;
+
+    int invalidY = canvas.YSIDE + 50;
+
+    string expectedMessage = $"\nWarning: The specified coordinates ({invalidX}, {invalidY}) are outside the canvas dimensions ({canvas.XSIDE}x{canvas.YSIDE}).";
+
+    canvas.DrawTo(invalidX, invalidY);
+
+    StringAssert.Contains(GlobalConfiguration.OutputExceptionMsg, expectedMessage);
+
+    Assert.AreEqual(400, canvas.Xpos);
+
+    Assert.AreEqual(400, canvas.Ypos);</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void DrawTo_ExceedingCanvas_ShouldLogWarning()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub DrawTo_ExceedingCanvas_ShouldLogWarning()
+  overload: ASE_Assignment_Test.MyAppCanvasTest.DrawTo_ExceedingCanvas_ShouldLogWarning*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.MyAppCanvasTest.Circle_ValidRadiusFilled_ShouldDrawFilledCircle
+  commentId: M:ASE_Assignment_Test.MyAppCanvasTest.Circle_ValidRadiusFilled_ShouldDrawFilledCircle
+  id: Circle_ValidRadiusFilled_ShouldDrawFilledCircle
+  parent: ASE_Assignment_Test.MyAppCanvasTest
+  langs:
+  - csharp
+  - vb
+  name: Circle_ValidRadiusFilled_ShouldDrawFilledCircle()
+  nameWithType: MyAppCanvasTest.Circle_ValidRadiusFilled_ShouldDrawFilledCircle()
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.Circle_ValidRadiusFilled_ShouldDrawFilledCircle()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: Circle_ValidRadiusFilled_ShouldDrawFilledCircle
+    path: ASE_Assignment_Test/MyAppCanvasTest.cs
+    startLine: 857
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test
+  summary: Tests the <code>Circle</code> method to ensure a filled circle is drawn correctly with a valid radius.
+  remarks: >-
+    This test verifies that when the <code>Circle</code> method is called with a valid radius and the filled option set to <code>true</code>:
+
+    <ul><li>A filled circle is drawn centered at the current position (<code>Xpos</code>, <code>Ypos</code>).</li><li>No warnings or error messages are logged during the operation.</li></ul>
+
+    The test does not check the actual rendering of the circle but ensures there are no configuration or execution errors.
+  example:
+  - >-
+    <pre><code class="lang-csharp">int centerX = 200;
+
+    int centerY = 200;
+
+    int radius = 50;
+
+    bool filled = true;
+
+    canvas.MoveTo(centerX, centerY);
+
+    canvas.Circle(radius, filled);
+
+    Assert.AreEqual(string.Empty, GlobalConfiguration.OutputExceptionMsg);</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Circle_ValidRadiusFilled_ShouldDrawFilledCircle()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Circle_ValidRadiusFilled_ShouldDrawFilledCircle()
+  overload: ASE_Assignment_Test.MyAppCanvasTest.Circle_ValidRadiusFilled_ShouldDrawFilledCircle*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.MyAppCanvasTest.Circle_ValidRadiusOutlined_ShouldDrawOutlinedCircle
+  commentId: M:ASE_Assignment_Test.MyAppCanvasTest.Circle_ValidRadiusOutlined_ShouldDrawOutlinedCircle
+  id: Circle_ValidRadiusOutlined_ShouldDrawOutlinedCircle
+  parent: ASE_Assignment_Test.MyAppCanvasTest
+  langs:
+  - csharp
+  - vb
+  name: Circle_ValidRadiusOutlined_ShouldDrawOutlinedCircle()
+  nameWithType: MyAppCanvasTest.Circle_ValidRadiusOutlined_ShouldDrawOutlinedCircle()
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.Circle_ValidRadiusOutlined_ShouldDrawOutlinedCircle()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: Circle_ValidRadiusOutlined_ShouldDrawOutlinedCircle
+    path: ASE_Assignment_Test/MyAppCanvasTest.cs
+    startLine: 897
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test
+  summary: Tests the <code>Circle</code> method to ensure an outlined circle is drawn correctly with a valid radius.
+  remarks: >-
+    This test verifies that when the <code>Circle</code> method is called with a valid radius and the filled option set to <code>false</code>:
+
+    <ul><li>An outlined circle is drawn centered at the current position (<code>Xpos</code>, <code>Ypos</code>).</li><li>No warnings or error messages are logged during the operation.</li></ul>
+
+    The test does not validate the rendered circle but ensures there are no errors in configuration or execution.
+  example:
+  - >-
+    <pre><code class="lang-csharp">int centerX = 300;
+
+    int centerY = 300;
+
+    int radius = 75;
+
+    bool filled = false;
+
+    canvas.MoveTo(centerX, centerY);
+
+    canvas.Circle(radius, filled);
+
+    Assert.AreEqual(string.Empty, GlobalConfiguration.OutputExceptionMsg);</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Circle_ValidRadiusOutlined_ShouldDrawOutlinedCircle()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Circle_ValidRadiusOutlined_ShouldDrawOutlinedCircle()
+  overload: ASE_Assignment_Test.MyAppCanvasTest.Circle_ValidRadiusOutlined_ShouldDrawOutlinedCircle*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.MyAppCanvasTest.Circle_NegativeRadius_ShouldLogWarning
+  commentId: M:ASE_Assignment_Test.MyAppCanvasTest.Circle_NegativeRadius_ShouldLogWarning
+  id: Circle_NegativeRadius_ShouldLogWarning
+  parent: ASE_Assignment_Test.MyAppCanvasTest
+  langs:
+  - csharp
+  - vb
+  name: Circle_NegativeRadius_ShouldLogWarning()
+  nameWithType: MyAppCanvasTest.Circle_NegativeRadius_ShouldLogWarning()
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.Circle_NegativeRadius_ShouldLogWarning()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: Circle_NegativeRadius_ShouldLogWarning
+    path: ASE_Assignment_Test/MyAppCanvasTest.cs
+    startLine: 938
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test
+  summary: Tests the <code>Circle</code> method to ensure proper handling of a negative radius.
+  remarks: >-
+    This test verifies that when the <code>Circle</code> method is called with a negative radius:
+
+    <ul><li>A warning message is logged, indicating that the radius must be greater than zero.</li><li>The <code>canvas</code> position (<code>Xpos</code>, <code>Ypos</code>) remains unchanged at the current position.</li></ul>
+
+    The test ensures the method does not proceed with drawing and logs the appropriate error message.
+  example:
+  - >-
+    <pre><code class="lang-csharp">canvas.MoveTo(100, 100);
+
+    int invalidRadius = -30;
+
+    bool filled = true;
+
+    string expectedMessage = "\nWarning: Radius must be greater than zero.";
+
+    canvas.Circle(invalidRadius, filled);
+
+    StringAssert.Contains(GlobalConfiguration.OutputExceptionMsg, expectedMessage);
+
+    Assert.AreEqual(100, canvas.Xpos);
+
+    Assert.AreEqual(100, canvas.Ypos);</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Circle_NegativeRadius_ShouldLogWarning()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Circle_NegativeRadius_ShouldLogWarning()
+  overload: ASE_Assignment_Test.MyAppCanvasTest.Circle_NegativeRadius_ShouldLogWarning*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.MyAppCanvasTest.Rect_ValidDimensionsFilled_ShouldDrawFilledRectangle
+  commentId: M:ASE_Assignment_Test.MyAppCanvasTest.Rect_ValidDimensionsFilled_ShouldDrawFilledRectangle
+  id: Rect_ValidDimensionsFilled_ShouldDrawFilledRectangle
+  parent: ASE_Assignment_Test.MyAppCanvasTest
+  langs:
+  - csharp
+  - vb
+  name: Rect_ValidDimensionsFilled_ShouldDrawFilledRectangle()
+  nameWithType: MyAppCanvasTest.Rect_ValidDimensionsFilled_ShouldDrawFilledRectangle()
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.Rect_ValidDimensionsFilled_ShouldDrawFilledRectangle()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: Rect_ValidDimensionsFilled_ShouldDrawFilledRectangle
+    path: ASE_Assignment_Test/MyAppCanvasTest.cs
+    startLine: 979
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test
+  summary: Tests the <code>Rect</code> method to ensure a filled rectangle is drawn correctly with valid dimensions.
+  remarks: >-
+    This test verifies that when the <code>Rect</code> method is called with valid width, height, and the filled option set to <code>true</code>:
+
+    <ul><li>A filled rectangle is drawn starting from the current position (<code>Xpos</code>, <code>Ypos</code>).</li><li>No warnings or error messages are logged during the operation.</li></ul>
+
+    The test ensures the method executes correctly without validating the rendering itself.
+  example:
+  - >-
+    <pre><code class="lang-csharp">int startX = 50;
+
+    int startY = 50;
+
+    int width = 200;
+
+    int height = 100;
+
+    bool filled = true;
+
+    canvas.MoveTo(startX, startY);
+
+    canvas.Rect(width, height, filled);
+
+    Assert.AreEqual(string.Empty, GlobalConfiguration.OutputExceptionMsg);</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Rect_ValidDimensionsFilled_ShouldDrawFilledRectangle()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Rect_ValidDimensionsFilled_ShouldDrawFilledRectangle()
+  overload: ASE_Assignment_Test.MyAppCanvasTest.Rect_ValidDimensionsFilled_ShouldDrawFilledRectangle*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.MyAppCanvasTest.Rect_ValidDimensionsOutlined_ShouldDrawOutlinedRectangle
+  commentId: M:ASE_Assignment_Test.MyAppCanvasTest.Rect_ValidDimensionsOutlined_ShouldDrawOutlinedRectangle
+  id: Rect_ValidDimensionsOutlined_ShouldDrawOutlinedRectangle
+  parent: ASE_Assignment_Test.MyAppCanvasTest
+  langs:
+  - csharp
+  - vb
+  name: Rect_ValidDimensionsOutlined_ShouldDrawOutlinedRectangle()
+  nameWithType: MyAppCanvasTest.Rect_ValidDimensionsOutlined_ShouldDrawOutlinedRectangle()
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.Rect_ValidDimensionsOutlined_ShouldDrawOutlinedRectangle()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: Rect_ValidDimensionsOutlined_ShouldDrawOutlinedRectangle
+    path: ASE_Assignment_Test/MyAppCanvasTest.cs
+    startLine: 1021
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test
+  summary: Tests the <code>Rect</code> method to ensure an outlined rectangle is drawn correctly with valid dimensions.
+  remarks: >-
+    This test verifies that when the <code>Rect</code> method is called with valid width, height, and the filled option set to <code>false</code>:
+
+    <ul><li>An outlined rectangle is drawn starting from the current position (<code>Xpos</code>, <code>Ypos</code>).</li><li>No warnings or error messages are logged during the operation.</li></ul>
+
+    The test ensures the method executes correctly without validating the rendering itself.
+  example:
+  - >-
+    <pre><code class="lang-csharp">int startX = 300;
+
+    int startY = 300;
+
+    int width = 150;
+
+    int height = 150;
+
+    bool filled = false;
+
+    canvas.MoveTo(startX, startY);
+
+    canvas.Rect(width, height, filled);
+
+    Assert.AreEqual(string.Empty, GlobalConfiguration.OutputExceptionMsg);</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Rect_ValidDimensionsOutlined_ShouldDrawOutlinedRectangle()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Rect_ValidDimensionsOutlined_ShouldDrawOutlinedRectangle()
+  overload: ASE_Assignment_Test.MyAppCanvasTest.Rect_ValidDimensionsOutlined_ShouldDrawOutlinedRectangle*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.MyAppCanvasTest.Rect_NegativeDimensions_ShouldLogWarning
+  commentId: M:ASE_Assignment_Test.MyAppCanvasTest.Rect_NegativeDimensions_ShouldLogWarning
+  id: Rect_NegativeDimensions_ShouldLogWarning
+  parent: ASE_Assignment_Test.MyAppCanvasTest
+  langs:
+  - csharp
+  - vb
+  name: Rect_NegativeDimensions_ShouldLogWarning()
+  nameWithType: MyAppCanvasTest.Rect_NegativeDimensions_ShouldLogWarning()
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.Rect_NegativeDimensions_ShouldLogWarning()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: Rect_NegativeDimensions_ShouldLogWarning
+    path: ASE_Assignment_Test/MyAppCanvasTest.cs
+    startLine: 1064
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test
+  summary: Tests the <code>Rect</code> method to ensure proper handling of negative dimensions.
+  remarks: >-
+    This test verifies that when the <code>Rect</code> method is called with negative width and height:
+
+    <ul><li>A warning message is logged, indicating that width and height must be greater than zero.</li><li>The <code>canvas</code> position (<code>Xpos</code>, <code>Ypos</code>) remains unchanged at the current position.</li></ul>
+
+    The test ensures the method does not proceed with drawing and logs the appropriate error message.
+  example:
+  - >-
+    <pre><code class="lang-csharp">canvas.MoveTo(100, 100);
+
+    int invalidWidth = -100;
+
+    int invalidHeight = -50;
+
+    bool filled = true;
+
+    string expectedMessage = "\nWarning: Width and height must be greater than zero.";
+
+    canvas.Rect(invalidWidth, invalidHeight, filled);
+
+    StringAssert.Contains(GlobalConfiguration.OutputExceptionMsg, expectedMessage);
+
+    Assert.AreEqual(100, canvas.Xpos);
+
+    Assert.AreEqual(100, canvas.Ypos);</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Rect_NegativeDimensions_ShouldLogWarning()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Rect_NegativeDimensions_ShouldLogWarning()
+  overload: ASE_Assignment_Test.MyAppCanvasTest.Rect_NegativeDimensions_ShouldLogWarning*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.MyAppCanvasTest.Tri_ValidDimensionsFilled_ShouldDrawFilledTriangle
+  commentId: M:ASE_Assignment_Test.MyAppCanvasTest.Tri_ValidDimensionsFilled_ShouldDrawFilledTriangle
+  id: Tri_ValidDimensionsFilled_ShouldDrawFilledTriangle
+  parent: ASE_Assignment_Test.MyAppCanvasTest
+  langs:
+  - csharp
+  - vb
+  name: Tri_ValidDimensionsFilled_ShouldDrawFilledTriangle()
+  nameWithType: MyAppCanvasTest.Tri_ValidDimensionsFilled_ShouldDrawFilledTriangle()
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.Tri_ValidDimensionsFilled_ShouldDrawFilledTriangle()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: Tri_ValidDimensionsFilled_ShouldDrawFilledTriangle
+    path: ASE_Assignment_Test/MyAppCanvasTest.cs
+    startLine: 1106
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test
+  summary: Tests the <code>Tri</code> method to ensure a filled triangle is drawn correctly with valid dimensions.
+  remarks: >-
+    This test verifies that when the <code>Tri</code> method is called with valid width, height, and the filled option set to <code>true</code>:
+
+    <ul><li>A filled triangle is drawn starting from the current position (<code>Xpos</code>, <code>Ypos</code>).</li><li>No warnings or error messages are logged during the operation.</li></ul>
+
+    The test ensures the method executes correctly without validating the rendering itself.
+  example:
+  - >-
+    <pre><code class="lang-csharp">int startX = 150;
+
+    int startY = 150;
+
+    int width = 100;
+
+    int height = 80;
+
+    bool filled = true;
+
+    canvas.MoveTo(startX, startY);
+
+    canvas.Tri(width, height);
+
+    Assert.AreEqual(string.Empty, GlobalConfiguration.OutputExceptionMsg);</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Tri_ValidDimensionsFilled_ShouldDrawFilledTriangle()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Tri_ValidDimensionsFilled_ShouldDrawFilledTriangle()
+  overload: ASE_Assignment_Test.MyAppCanvasTest.Tri_ValidDimensionsFilled_ShouldDrawFilledTriangle*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.MyAppCanvasTest.Tri_ValidDimensionsOutlined_ShouldDrawOutlinedTriangle
+  commentId: M:ASE_Assignment_Test.MyAppCanvasTest.Tri_ValidDimensionsOutlined_ShouldDrawOutlinedTriangle
+  id: Tri_ValidDimensionsOutlined_ShouldDrawOutlinedTriangle
+  parent: ASE_Assignment_Test.MyAppCanvasTest
+  langs:
+  - csharp
+  - vb
+  name: Tri_ValidDimensionsOutlined_ShouldDrawOutlinedTriangle()
+  nameWithType: MyAppCanvasTest.Tri_ValidDimensionsOutlined_ShouldDrawOutlinedTriangle()
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.Tri_ValidDimensionsOutlined_ShouldDrawOutlinedTriangle()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: Tri_ValidDimensionsOutlined_ShouldDrawOutlinedTriangle
+    path: ASE_Assignment_Test/MyAppCanvasTest.cs
+    startLine: 1148
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test
+  summary: Tests the <code>Tri</code> method to ensure an outlined triangle is drawn correctly with valid dimensions.
+  remarks: >-
+    This test verifies that when the <code>Tri</code> method is called with valid width, height, and the filled option set to <code>false</code>:
+
+    <ul><li>An outlined triangle is drawn starting from the current position (<code>Xpos</code>, <code>Ypos</code>).</li><li>No warnings or error messages are logged during the operation.</li></ul>
+
+    The test ensures the method executes correctly without validating the rendering itself.
+  example:
+  - >-
+    <pre><code class="lang-csharp">int startX = 300;
+
+    int startY = 300;
+
+    int width = 120;
+
+    int height = 90;
+
+    bool filled = false;
+
+    canvas.MoveTo(startX, startY);
+
+    canvas.Tri(width, height);
+
+    Assert.AreEqual(string.Empty, GlobalConfiguration.OutputExceptionMsg);</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Tri_ValidDimensionsOutlined_ShouldDrawOutlinedTriangle()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Tri_ValidDimensionsOutlined_ShouldDrawOutlinedTriangle()
+  overload: ASE_Assignment_Test.MyAppCanvasTest.Tri_ValidDimensionsOutlined_ShouldDrawOutlinedTriangle*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.MyAppCanvasTest.Tri_ExceedingCanvasBoundaries_ShouldLogWarning
+  commentId: M:ASE_Assignment_Test.MyAppCanvasTest.Tri_ExceedingCanvasBoundaries_ShouldLogWarning
+  id: Tri_ExceedingCanvasBoundaries_ShouldLogWarning
+  parent: ASE_Assignment_Test.MyAppCanvasTest
+  langs:
+  - csharp
+  - vb
+  name: Tri_ExceedingCanvasBoundaries_ShouldLogWarning()
+  nameWithType: MyAppCanvasTest.Tri_ExceedingCanvasBoundaries_ShouldLogWarning()
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.Tri_ExceedingCanvasBoundaries_ShouldLogWarning()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: Tri_ExceedingCanvasBoundaries_ShouldLogWarning
+    path: ASE_Assignment_Test/MyAppCanvasTest.cs
+    startLine: 1190
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test
+  summary: Tests the <code>Tri</code> method to ensure proper handling of triangle dimensions that exceed canvas boundaries.
+  remarks: >-
+    This test verifies that when the <code>Tri</code> method is called with dimensions that exceed the canvas boundaries:
+
+    <ul><li>A warning message is logged, indicating that the triangle exceeds the canvas boundaries.</li><li>The <code>canvas</code> position (<code>Xpos</code>, <code>Ypos</code>) remains unchanged at its current position.</li></ul>
+
+    The test ensures the method does not proceed with drawing and logs the appropriate error message.
+  example:
+  - >-
+    <pre><code class="lang-csharp">canvas.MoveTo(canvas.XSIDE - 50, canvas.YSIDE - 50);
+
+    int width = 100;
+
+    int height = 100;
+
+    bool filled = true;
+
+    string expectedMessage = $"\nCanvas error: Triangle exceeds canvas boundaries at position ({canvas.Xpos}, {canvas.Ypos}) with dimensions Width={width}, Height={height}.";
+
+    canvas.Tri(width, height);
+
+    StringAssert.Contains(GlobalConfiguration.OutputExceptionMsg, expectedMessage);
+
+    Assert.AreEqual(canvas.XSIDE - 50, canvas.Xpos);
+
+    Assert.AreEqual(canvas.YSIDE - 50, canvas.Ypos);</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Tri_ExceedingCanvasBoundaries_ShouldLogWarning()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Tri_ExceedingCanvasBoundaries_ShouldLogWarning()
+  overload: ASE_Assignment_Test.MyAppCanvasTest.Tri_ExceedingCanvasBoundaries_ShouldLogWarning*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.MyAppCanvasTest.WriteText_ValidText_ShouldDrawText
+  commentId: M:ASE_Assignment_Test.MyAppCanvasTest.WriteText_ValidText_ShouldDrawText
+  id: WriteText_ValidText_ShouldDrawText
+  parent: ASE_Assignment_Test.MyAppCanvasTest
+  langs:
+  - csharp
+  - vb
+  name: WriteText_ValidText_ShouldDrawText()
+  nameWithType: MyAppCanvasTest.WriteText_ValidText_ShouldDrawText()
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.WriteText_ValidText_ShouldDrawText()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: WriteText_ValidText_ShouldDrawText
+    path: ASE_Assignment_Test/MyAppCanvasTest.cs
+    startLine: 1228
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test
+  summary: Tests the <code>WriteText</code> method to ensure that valid text is drawn correctly on the canvas.
+  remarks: >-
+    This test verifies that when the <code>WriteText</code> method is called with valid text:
+
+    <ul><li>The text is drawn at the current position (<code>Xpos</code>, <code>Ypos</code>).</li><li>No warnings or error messages are logged during the operation.</li></ul>
+
+    The test ensures the method executes correctly without validating the visual rendering of the text.
+  example:
+  - >-
+    <pre><code class="lang-csharp">string validText = "Hello, Canvas!";
+
+    canvas.MoveTo(100, 100);
+
+    canvas.WriteText(validText);
+
+    Assert.AreEqual(string.Empty, GlobalConfiguration.OutputExceptionMsg);</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void WriteText_ValidText_ShouldDrawText()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub WriteText_ValidText_ShouldDrawText()
+  overload: ASE_Assignment_Test.MyAppCanvasTest.WriteText_ValidText_ShouldDrawText*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.MyAppCanvasTest.WriteText_NullText_ShouldLogWarning
+  commentId: M:ASE_Assignment_Test.MyAppCanvasTest.WriteText_NullText_ShouldLogWarning
+  id: WriteText_NullText_ShouldLogWarning
+  parent: ASE_Assignment_Test.MyAppCanvasTest
+  langs:
+  - csharp
+  - vb
+  name: WriteText_NullText_ShouldLogWarning()
+  nameWithType: MyAppCanvasTest.WriteText_NullText_ShouldLogWarning()
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.WriteText_NullText_ShouldLogWarning()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: WriteText_NullText_ShouldLogWarning
+    path: ASE_Assignment_Test/MyAppCanvasTest.cs
+    startLine: 1261
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test
+  summary: Tests the <code>WriteText</code> method to ensure proper handling of a null text input.
+  remarks: >-
+    This test verifies that when the <code>WriteText</code> method is called with a null text input:
+
+    <ul><li>A warning message is logged, indicating that the text input is invalid because it cannot be null, empty, or whitespace.</li><li>The method does not proceed with any drawing operations.</li></ul>
+
+    The test ensures the method validates text input and logs an appropriate error message when invalid.
+  example:
+  - >-
+    <pre><code class="lang-csharp">string invalidText = null;
+
+    string expectedMessage = "\nCanvas error: Invalid text input: Text cannot be null, empty, or whitespace.";
+
+    canvas.WriteText(invalidText);
+
+    StringAssert.Contains(GlobalConfiguration.OutputExceptionMsg, expectedMessage);</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void WriteText_NullText_ShouldLogWarning()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub WriteText_NullText_ShouldLogWarning()
+  overload: ASE_Assignment_Test.MyAppCanvasTest.WriteText_NullText_ShouldLogWarning*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.MyAppCanvasTest.Clear_ShouldResetCanvasToWhite
+  commentId: M:ASE_Assignment_Test.MyAppCanvasTest.Clear_ShouldResetCanvasToWhite
+  id: Clear_ShouldResetCanvasToWhite
+  parent: ASE_Assignment_Test.MyAppCanvasTest
+  langs:
+  - csharp
+  - vb
+  name: Clear_ShouldResetCanvasToWhite()
+  nameWithType: MyAppCanvasTest.Clear_ShouldResetCanvasToWhite()
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.Clear_ShouldResetCanvasToWhite()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: Clear_ShouldResetCanvasToWhite
+    path: ASE_Assignment_Test/MyAppCanvasTest.cs
+    startLine: 1298
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test
+  summary: Tests the <code>Clear</code> method to ensure the canvas is reset to a white background.
+  remarks: >-
+    This test verifies that when the <code>Clear</code> method is called:
+
+    <ul><li>The canvas is cleared, and all previously drawn content is removed.</li><li>The canvas background is reset to white (<code>Color.FromArgb(255, 255, 255, 255)</code>).</li><li>No warnings or error messages are logged during the operation.</li></ul>
+
+    The test ensures the method resets the canvas and validates the color of a pixel in the top-left corner.
+  example:
+  - >-
+    <pre><code class="lang-csharp">canvas.MoveTo(50, 50);
+
+    canvas.WriteText("Before Clear");
+
+    canvas.Clear();
+
+    Bitmap bitmap = (Bitmap)canvas.getBitmap();
+
+    Color pixelColor = bitmap.GetPixel(0, 0); // Top-left corner
+
+    Assert.AreEqual(Color.FromArgb(255, 255, 255, 255), pixelColor);
+
+    Assert.AreEqual(string.Empty, GlobalConfiguration.OutputExceptionMsg);</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Clear_ShouldResetCanvasToWhite()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Clear_ShouldResetCanvasToWhite()
+  overload: ASE_Assignment_Test.MyAppCanvasTest.Clear_ShouldResetCanvasToWhite*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.MyAppCanvasTest.Clear_MultipleTimes_ShouldMaintainWhiteBackground
+  commentId: M:ASE_Assignment_Test.MyAppCanvasTest.Clear_MultipleTimes_ShouldMaintainWhiteBackground
+  id: Clear_MultipleTimes_ShouldMaintainWhiteBackground
+  parent: ASE_Assignment_Test.MyAppCanvasTest
+  langs:
+  - csharp
+  - vb
+  name: Clear_MultipleTimes_ShouldMaintainWhiteBackground()
+  nameWithType: MyAppCanvasTest.Clear_MultipleTimes_ShouldMaintainWhiteBackground()
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.Clear_MultipleTimes_ShouldMaintainWhiteBackground()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: Clear_MultipleTimes_ShouldMaintainWhiteBackground
+    path: ASE_Assignment_Test/MyAppCanvasTest.cs
+    startLine: 1339
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test
+  summary: Tests the <code>Clear</code> method to ensure that the canvas maintains a white background after being cleared multiple times.
+  remarks: >-
+    This test verifies that when the <code>Clear</code> method is called multiple times:
+
+    <ul><li>The canvas is reset to a white background after each clear operation.</li><li>Previously drawn content is removed, and the canvas is consistent in its cleared state.</li><li>No warnings or error messages are logged during the operations.</li></ul>
+
+    The test ensures the canvas remains in a cleared state regardless of how many times <code>Clear</code> is called.
+  example:
+  - >-
+    <pre><code class="lang-csharp">canvas.WriteText("First Clear");
+
+    canvas.Clear();
+
+    canvas.WriteText("Second Clear");
+
+    canvas.Clear();
+
+    Bitmap bitmap = (Bitmap)canvas.getBitmap();
+
+    Color pixelColor = bitmap.GetPixel(0, 0);
+
+    Assert.AreEqual(Color.FromArgb(255, 255, 255, 255), pixelColor);
+
+    Assert.AreEqual(string.Empty, GlobalConfiguration.OutputExceptionMsg);</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Clear_MultipleTimes_ShouldMaintainWhiteBackground()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Clear_MultipleTimes_ShouldMaintainWhiteBackground()
+  overload: ASE_Assignment_Test.MyAppCanvasTest.Clear_MultipleTimes_ShouldMaintainWhiteBackground*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.MyAppCanvasTest.Reset_ShouldSetPositionToZeroAndSetDefaults
+  commentId: M:ASE_Assignment_Test.MyAppCanvasTest.Reset_ShouldSetPositionToZeroAndSetDefaults
+  id: Reset_ShouldSetPositionToZeroAndSetDefaults
+  parent: ASE_Assignment_Test.MyAppCanvasTest
+  langs:
+  - csharp
+  - vb
+  name: Reset_ShouldSetPositionToZeroAndSetDefaults()
+  nameWithType: MyAppCanvasTest.Reset_ShouldSetPositionToZeroAndSetDefaults()
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.Reset_ShouldSetPositionToZeroAndSetDefaults()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: Reset_ShouldSetPositionToZeroAndSetDefaults
+    path: ASE_Assignment_Test/MyAppCanvasTest.cs
+    startLine: 1384
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test
+  summary: Tests the <code>Reset</code> method to ensure it resets the canvas properties to their default values and the position to zero.
+  remarks: >-
+    This test verifies that when the <code>Reset</code> method is called:
+
+    <ul><li>The canvas position (<code>Xpos</code>, <code>Ypos</code>) is reset to (0, 0).</li><li>The <code>PenSize</code> property is reset to its default value (1).</li><li>The <code>Filled</code> property is reset to its default value (<code>false</code>).</li><li>The <code>PenColour</code> property is reset to its default value (<code>Color.Black</code>).</li><li>No warnings or error messages are logged during the operation.</li></ul>
+
+    The test ensures the method properly restores all canvas settings to their defaults.
+  example:
+  - >-
+    <pre><code class="lang-csharp">canvas.MoveTo(200, 200);
+
+    canvas.PenSize = 5;
+
+    canvas.Filled = true;
+
+    canvas.WriteText("Before Reset");
+
+    canvas.Reset();
+
+    Assert.AreEqual(0, canvas.Xpos);
+
+    Assert.AreEqual(0, canvas.Ypos);
+
+    Assert.AreEqual(1, canvas.PenSize); // Default pen size
+
+    Assert.IsFalse(canvas.Filled); // Default fill
+
+    Assert.AreEqual(Color.FromArgb(255, 0, 0, 0), (Color)canvas.PenColour); // Default pen color
+
+    Assert.AreEqual(string.Empty, GlobalConfiguration.OutputExceptionMsg);</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Reset_ShouldSetPositionToZeroAndSetDefaults()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Reset_ShouldSetPositionToZeroAndSetDefaults()
+  overload: ASE_Assignment_Test.MyAppCanvasTest.Reset_ShouldSetPositionToZeroAndSetDefaults*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.MyAppCanvasTest.Reset_AfterMultipleDrawOperations_ShouldClearAndReset
+  commentId: M:ASE_Assignment_Test.MyAppCanvasTest.Reset_AfterMultipleDrawOperations_ShouldClearAndReset
+  id: Reset_AfterMultipleDrawOperations_ShouldClearAndReset
+  parent: ASE_Assignment_Test.MyAppCanvasTest
+  langs:
+  - csharp
+  - vb
+  name: Reset_AfterMultipleDrawOperations_ShouldClearAndReset()
+  nameWithType: MyAppCanvasTest.Reset_AfterMultipleDrawOperations_ShouldClearAndReset()
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.Reset_AfterMultipleDrawOperations_ShouldClearAndReset()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: Reset_AfterMultipleDrawOperations_ShouldClearAndReset
+    path: ASE_Assignment_Test/MyAppCanvasTest.cs
+    startLine: 1435
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test
+  summary: Tests the <code>Reset</code> method to ensure it clears the canvas and resets all properties to their default values after multiple drawing operations.
+  remarks: >-
+    This test verifies that when the <code>Reset</code> method is called after multiple drawing operations:
+
+    <ul><li>The canvas is cleared, removing all drawn content.</li><li>The position (<code>Xpos</code>, <code>Ypos</code>) is reset to (0, 0).</li><li>The <code>PenSize</code> property is reset to its default value (1).</li><li>The <code>Filled</code> property is reset to its default value (<code>false</code>).</li><li>The <code>PenColour</code> property is reset to its default value (<code>Color.Black</code>).</li><li>No warnings or error messages are logged during the operation.</li></ul>
+
+    This test ensures the canvas is fully restored to its default state after being reset, regardless of previous operations.
+  example:
+  - >-
+    <pre><code class="lang-csharp">canvas.MoveTo(100, 100);
+
+    canvas.WriteText("First Line");
+
+    canvas.Circle(50, true);
+
+    canvas.Rect(100, 50, false);
+
+    canvas.Reset();
+
+    Assert.AreEqual(0, canvas.Xpos);
+
+    Assert.AreEqual(0, canvas.Ypos);
+
+    Assert.AreEqual(1, canvas.PenSize); // Default pen size
+
+    Assert.IsFalse(canvas.Filled); // Default fill state
+
+    Assert.AreEqual(Color.FromArgb(255, 0, 0, 0), (Color)canvas.PenColour); // Default pen color
+
+    Assert.AreEqual(string.Empty, GlobalConfiguration.OutputExceptionMsg);</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Reset_AfterMultipleDrawOperations_ShouldClearAndReset()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Reset_AfterMultipleDrawOperations_ShouldClearAndReset()
+  overload: ASE_Assignment_Test.MyAppCanvasTest.Reset_AfterMultipleDrawOperations_ShouldClearAndReset*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.MyAppCanvasTest.SetCanvas_ValidBitmapAndGraphics_ShouldInitializeCanvas
+  commentId: M:ASE_Assignment_Test.MyAppCanvasTest.SetCanvas_ValidBitmapAndGraphics_ShouldInitializeCanvas
+  id: SetCanvas_ValidBitmapAndGraphics_ShouldInitializeCanvas
+  parent: ASE_Assignment_Test.MyAppCanvasTest
+  langs:
+  - csharp
+  - vb
+  name: SetCanvas_ValidBitmapAndGraphics_ShouldInitializeCanvas()
+  nameWithType: MyAppCanvasTest.SetCanvas_ValidBitmapAndGraphics_ShouldInitializeCanvas()
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.SetCanvas_ValidBitmapAndGraphics_ShouldInitializeCanvas()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: SetCanvas_ValidBitmapAndGraphics_ShouldInitializeCanvas
+    path: ASE_Assignment_Test/MyAppCanvasTest.cs
+    startLine: 1478
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test
+  summary: Tests the <code>SetCanvas</code> method to ensure that the canvas is correctly initialized with a valid <code>Bitmap</code> and <code>Graphics</code> object.
+  remarks: >-
+    This test verifies that when the <code>SetCanvas</code> method is called with valid <code>Bitmap</code> and <code>Graphics</code> objects:
+
+    <ul><li>The canvas is initialized with the provided <code>Bitmap</code> object.</li><li>The canvas is initialized with the provided <code>Graphics</code> object.</li><li>No warnings or error messages are logged during the operation.</li></ul>
+
+    This test ensures that the <code>SetCanvas</code> method functions as intended when provided with valid parameters.
+  example:
+  - >-
+    <pre><code class="lang-csharp">Bitmap newBitmap = new Bitmap(300, 300);
+
+    Graphics newGraphics = Graphics.FromImage(newBitmap);
+
+    canvas.SetCanvas(newBitmap, newGraphics);
+
+    Assert.AreEqual(newBitmap, canvas.getBitmap());
+
+    Assert.AreEqual(newGraphics, canvas.GetGraphics());
+
+    Assert.AreEqual(string.Empty, GlobalConfiguration.OutputExceptionMsg);</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void SetCanvas_ValidBitmapAndGraphics_ShouldInitializeCanvas()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub SetCanvas_ValidBitmapAndGraphics_ShouldInitializeCanvas()
+  overload: ASE_Assignment_Test.MyAppCanvasTest.SetCanvas_ValidBitmapAndGraphics_ShouldInitializeCanvas*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.MyAppCanvasTest.SetCanvas_NullBitmap_ShouldLogWarning
+  commentId: M:ASE_Assignment_Test.MyAppCanvasTest.SetCanvas_NullBitmap_ShouldLogWarning
+  id: SetCanvas_NullBitmap_ShouldLogWarning
+  parent: ASE_Assignment_Test.MyAppCanvasTest
+  langs:
+  - csharp
+  - vb
+  name: SetCanvas_NullBitmap_ShouldLogWarning()
+  nameWithType: MyAppCanvasTest.SetCanvas_NullBitmap_ShouldLogWarning()
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.SetCanvas_NullBitmap_ShouldLogWarning()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: SetCanvas_NullBitmap_ShouldLogWarning
+    path: ASE_Assignment_Test/MyAppCanvasTest.cs
+    startLine: 1515
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test
+  summary: Tests the <code>SetCanvas</code> method to ensure proper handling of a null <code>Bitmap</code> object.
+  remarks: >-
+    This test verifies that when the <code>SetCanvas</code> method is called with a null <code>Bitmap</code> object:
+
+    <ul><li>A warning message is logged, indicating that the provided <code>Bitmap</code> object cannot be null.</li><li>The canvas's current <code>Bitmap</code> object is not updated to the null value.</li></ul>
+
+    This test ensures that the method validates the <code>Bitmap</code> parameter and handles null inputs appropriately.
+  example:
+  - >-
+    <pre><code class="lang-csharp">Bitmap nullBitmap = null;
+
+    Graphics newGraphics = Graphics.FromImage(new Bitmap(300, 300));
+
+    string expectedMessage = "\nCanvas error: The provided Bitmap object cannot be null.";
+
+    canvas.SetCanvas(nullBitmap, newGraphics);
+
+    StringAssert.Contains(GlobalConfiguration.OutputExceptionMsg, expectedMessage);
+
+    Assert.AreNotEqual(nullBitmap, canvas.getBitmap());</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void SetCanvas_NullBitmap_ShouldLogWarning()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub SetCanvas_NullBitmap_ShouldLogWarning()
+  overload: ASE_Assignment_Test.MyAppCanvasTest.SetCanvas_NullBitmap_ShouldLogWarning*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.MyAppCanvasTest.SetCanvas_NullGraphics_ShouldLogWarning
+  commentId: M:ASE_Assignment_Test.MyAppCanvasTest.SetCanvas_NullGraphics_ShouldLogWarning
+  id: SetCanvas_NullGraphics_ShouldLogWarning
+  parent: ASE_Assignment_Test.MyAppCanvasTest
+  langs:
+  - csharp
+  - vb
+  name: SetCanvas_NullGraphics_ShouldLogWarning()
+  nameWithType: MyAppCanvasTest.SetCanvas_NullGraphics_ShouldLogWarning()
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.SetCanvas_NullGraphics_ShouldLogWarning()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: SetCanvas_NullGraphics_ShouldLogWarning
+    path: ASE_Assignment_Test/MyAppCanvasTest.cs
+    startLine: 1552
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test
+  summary: Tests the <code>SetCanvas</code> method to ensure proper handling of a null <code>Graphics</code> object.
+  remarks: >-
+    This test verifies that when the <code>SetCanvas</code> method is called with a null <code>Graphics</code> object:
+
+    <ul><li>A warning message is logged, indicating that the provided <code>Graphics</code> object cannot be null.</li><li>The canvas's current <code>Graphics</code> object is not updated to the null value.</li></ul>
+
+    This test ensures that the method validates the <code>Graphics</code> parameter and handles null inputs appropriately.
+  example:
+  - >-
+    <pre><code class="lang-csharp">Bitmap newBitmap = new Bitmap(300, 300);
+
+    Graphics nullGraphics = null;
+
+    string expectedMessage = "\nCanvas error: The provided Graphics object cannot be null.";
+
+    canvas.SetCanvas(newBitmap, nullGraphics);
+
+    StringAssert.Contains(GlobalConfiguration.OutputExceptionMsg, expectedMessage);
+
+    Assert.AreNotEqual(nullGraphics, canvas.GetGraphics());</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void SetCanvas_NullGraphics_ShouldLogWarning()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub SetCanvas_NullGraphics_ShouldLogWarning()
+  overload: ASE_Assignment_Test.MyAppCanvasTest.SetCanvas_NullGraphics_ShouldLogWarning*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.MyAppCanvasTest.getBitmap_AfterDrawing_ShouldReturnUpdatedBitmap
+  commentId: M:ASE_Assignment_Test.MyAppCanvasTest.getBitmap_AfterDrawing_ShouldReturnUpdatedBitmap
+  id: getBitmap_AfterDrawing_ShouldReturnUpdatedBitmap
+  parent: ASE_Assignment_Test.MyAppCanvasTest
+  langs:
+  - csharp
+  - vb
+  name: getBitmap_AfterDrawing_ShouldReturnUpdatedBitmap()
+  nameWithType: MyAppCanvasTest.getBitmap_AfterDrawing_ShouldReturnUpdatedBitmap()
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.getBitmap_AfterDrawing_ShouldReturnUpdatedBitmap()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: getBitmap_AfterDrawing_ShouldReturnUpdatedBitmap
+    path: ASE_Assignment_Test/MyAppCanvasTest.cs
+    startLine: 1590
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test
+  summary: Tests the <code>getBitmap</code> method to ensure it returns the updated bitmap after drawing operations on the canvas.
+  remarks: >-
+    This test verifies that after performing drawing operations on the canvas:
+
+    <ul><li>The <code>getBitmap</code> method returns a non-null <code>Bitmap</code> object.</li><li>The returned <code>Bitmap</code> reflects the updates made by the drawing operations.</li><li>No warnings or error messages are logged during the operation.</li></ul>
+
+    The test ensures the bitmap reflects the current state of the canvas and is properly maintained.
+  example:
+  - >-
+    <pre><code class="lang-csharp">canvas.MoveTo(50, 50);
+
+    canvas.WriteText("Test Text");
+
+    Bitmap returnedBitmap = (Bitmap)canvas.getBitmap();
+
+    Assert.IsNotNull(returnedBitmap);
+
+    Assert.AreEqual(string.Empty, GlobalConfiguration.OutputExceptionMsg);</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void getBitmap_AfterDrawing_ShouldReturnUpdatedBitmap()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub getBitmap_AfterDrawing_ShouldReturnUpdatedBitmap()
+  overload: ASE_Assignment_Test.MyAppCanvasTest.getBitmap_AfterDrawing_ShouldReturnUpdatedBitmap*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+references:
+- uid: ASE_Assignment_Test
+  commentId: N:ASE_Assignment_Test
+  href: ASE_Assignment_Test.html
+  name: ASE_Assignment_Test
+  nameWithType: ASE_Assignment_Test
+  fullName: ASE_Assignment_Test
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ASE_Assignment_Test.MyAppCanvasTest.Setup*
+  commentId: Overload:ASE_Assignment_Test.MyAppCanvasTest.Setup
+  href: ASE_Assignment_Test.MyAppCanvasTest.html#ASE_Assignment_Test_MyAppCanvasTest_Setup
+  name: Setup
+  nameWithType: MyAppCanvasTest.Setup
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.Setup
+- uid: ASE_Assignment_Test.MyAppCanvasTest.Xpos_SetNegativeValue_ShouldLogWarningAndSetDefault*
+  commentId: Overload:ASE_Assignment_Test.MyAppCanvasTest.Xpos_SetNegativeValue_ShouldLogWarningAndSetDefault
+  href: ASE_Assignment_Test.MyAppCanvasTest.html#ASE_Assignment_Test_MyAppCanvasTest_Xpos_SetNegativeValue_ShouldLogWarningAndSetDefault
+  name: Xpos_SetNegativeValue_ShouldLogWarningAndSetDefault
+  nameWithType: MyAppCanvasTest.Xpos_SetNegativeValue_ShouldLogWarningAndSetDefault
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.Xpos_SetNegativeValue_ShouldLogWarningAndSetDefault
+- uid: ASE_Assignment_Test.MyAppCanvasTest.Xpos_SetValueExceedingCanvas_ShouldLogWarningAndSetDefault*
+  commentId: Overload:ASE_Assignment_Test.MyAppCanvasTest.Xpos_SetValueExceedingCanvas_ShouldLogWarningAndSetDefault
+  href: ASE_Assignment_Test.MyAppCanvasTest.html#ASE_Assignment_Test_MyAppCanvasTest_Xpos_SetValueExceedingCanvas_ShouldLogWarningAndSetDefault
+  name: Xpos_SetValueExceedingCanvas_ShouldLogWarningAndSetDefault
+  nameWithType: MyAppCanvasTest.Xpos_SetValueExceedingCanvas_ShouldLogWarningAndSetDefault
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.Xpos_SetValueExceedingCanvas_ShouldLogWarningAndSetDefault
+- uid: ASE_Assignment_Test.MyAppCanvasTest.Ypos_SetNegativeValue_ShouldLogWarningAndSetDefault*
+  commentId: Overload:ASE_Assignment_Test.MyAppCanvasTest.Ypos_SetNegativeValue_ShouldLogWarningAndSetDefault
+  href: ASE_Assignment_Test.MyAppCanvasTest.html#ASE_Assignment_Test_MyAppCanvasTest_Ypos_SetNegativeValue_ShouldLogWarningAndSetDefault
+  name: Ypos_SetNegativeValue_ShouldLogWarningAndSetDefault
+  nameWithType: MyAppCanvasTest.Ypos_SetNegativeValue_ShouldLogWarningAndSetDefault
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.Ypos_SetNegativeValue_ShouldLogWarningAndSetDefault
+- uid: ASE_Assignment_Test.MyAppCanvasTest.Ypos_SetValueExceedingCanvas_ShouldLogWarningAndSetDefault*
+  commentId: Overload:ASE_Assignment_Test.MyAppCanvasTest.Ypos_SetValueExceedingCanvas_ShouldLogWarningAndSetDefault
+  href: ASE_Assignment_Test.MyAppCanvasTest.html#ASE_Assignment_Test_MyAppCanvasTest_Ypos_SetValueExceedingCanvas_ShouldLogWarningAndSetDefault
+  name: Ypos_SetValueExceedingCanvas_ShouldLogWarningAndSetDefault
+  nameWithType: MyAppCanvasTest.Ypos_SetValueExceedingCanvas_ShouldLogWarningAndSetDefault
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.Ypos_SetValueExceedingCanvas_ShouldLogWarningAndSetDefault
+- uid: ASE_Assignment_Test.MyAppCanvasTest.PenSize_SetValidValue_ShouldUpdatePenSize*
+  commentId: Overload:ASE_Assignment_Test.MyAppCanvasTest.PenSize_SetValidValue_ShouldUpdatePenSize
+  href: ASE_Assignment_Test.MyAppCanvasTest.html#ASE_Assignment_Test_MyAppCanvasTest_PenSize_SetValidValue_ShouldUpdatePenSize
+  name: PenSize_SetValidValue_ShouldUpdatePenSize
+  nameWithType: MyAppCanvasTest.PenSize_SetValidValue_ShouldUpdatePenSize
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.PenSize_SetValidValue_ShouldUpdatePenSize
+- uid: ASE_Assignment_Test.MyAppCanvasTest.Xpos_SetValidValue_ShouldUpdatePosition*
+  commentId: Overload:ASE_Assignment_Test.MyAppCanvasTest.Xpos_SetValidValue_ShouldUpdatePosition
+  href: ASE_Assignment_Test.MyAppCanvasTest.html#ASE_Assignment_Test_MyAppCanvasTest_Xpos_SetValidValue_ShouldUpdatePosition
+  name: Xpos_SetValidValue_ShouldUpdatePosition
+  nameWithType: MyAppCanvasTest.Xpos_SetValidValue_ShouldUpdatePosition
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.Xpos_SetValidValue_ShouldUpdatePosition
+- uid: ASE_Assignment_Test.MyAppCanvasTest.Ypos_SetValidValue_ShouldUpdatePosition*
+  commentId: Overload:ASE_Assignment_Test.MyAppCanvasTest.Ypos_SetValidValue_ShouldUpdatePosition
+  href: ASE_Assignment_Test.MyAppCanvasTest.html#ASE_Assignment_Test_MyAppCanvasTest_Ypos_SetValidValue_ShouldUpdatePosition
+  name: Ypos_SetValidValue_ShouldUpdatePosition
+  nameWithType: MyAppCanvasTest.Ypos_SetValidValue_ShouldUpdatePosition
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.Ypos_SetValidValue_ShouldUpdatePosition
+- uid: ASE_Assignment_Test.MyAppCanvasTest.PenSize_SetZero_ShouldLogWarningAndSetDefault*
+  commentId: Overload:ASE_Assignment_Test.MyAppCanvasTest.PenSize_SetZero_ShouldLogWarningAndSetDefault
+  href: ASE_Assignment_Test.MyAppCanvasTest.html#ASE_Assignment_Test_MyAppCanvasTest_PenSize_SetZero_ShouldLogWarningAndSetDefault
+  name: PenSize_SetZero_ShouldLogWarningAndSetDefault
+  nameWithType: MyAppCanvasTest.PenSize_SetZero_ShouldLogWarningAndSetDefault
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.PenSize_SetZero_ShouldLogWarningAndSetDefault
+- uid: ASE_Assignment_Test.MyAppCanvasTest.PenSize_SetNegativeValue_ShouldLogWarningAndSetDefault*
+  commentId: Overload:ASE_Assignment_Test.MyAppCanvasTest.PenSize_SetNegativeValue_ShouldLogWarningAndSetDefault
+  href: ASE_Assignment_Test.MyAppCanvasTest.html#ASE_Assignment_Test_MyAppCanvasTest_PenSize_SetNegativeValue_ShouldLogWarningAndSetDefault
+  name: PenSize_SetNegativeValue_ShouldLogWarningAndSetDefault
+  nameWithType: MyAppCanvasTest.PenSize_SetNegativeValue_ShouldLogWarningAndSetDefault
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.PenSize_SetNegativeValue_ShouldLogWarningAndSetDefault
+- uid: ASE_Assignment_Test.MyAppCanvasTest.Filled_SetToTrue_ShouldEnableFill*
+  commentId: Overload:ASE_Assignment_Test.MyAppCanvasTest.Filled_SetToTrue_ShouldEnableFill
+  href: ASE_Assignment_Test.MyAppCanvasTest.html#ASE_Assignment_Test_MyAppCanvasTest_Filled_SetToTrue_ShouldEnableFill
+  name: Filled_SetToTrue_ShouldEnableFill
+  nameWithType: MyAppCanvasTest.Filled_SetToTrue_ShouldEnableFill
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.Filled_SetToTrue_ShouldEnableFill
+- uid: ASE_Assignment_Test.MyAppCanvasTest.Filled_SetToFalse_ShouldDisableFill*
+  commentId: Overload:ASE_Assignment_Test.MyAppCanvasTest.Filled_SetToFalse_ShouldDisableFill
+  href: ASE_Assignment_Test.MyAppCanvasTest.html#ASE_Assignment_Test_MyAppCanvasTest_Filled_SetToFalse_ShouldDisableFill
+  name: Filled_SetToFalse_ShouldDisableFill
+  nameWithType: MyAppCanvasTest.Filled_SetToFalse_ShouldDisableFill
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.Filled_SetToFalse_ShouldDisableFill
+- uid: ASE_Assignment_Test.MyAppCanvasTest.Filled_ToggleFillValue_ShouldUpdateBothProperties*
+  commentId: Overload:ASE_Assignment_Test.MyAppCanvasTest.Filled_ToggleFillValue_ShouldUpdateBothProperties
+  href: ASE_Assignment_Test.MyAppCanvasTest.html#ASE_Assignment_Test_MyAppCanvasTest_Filled_ToggleFillValue_ShouldUpdateBothProperties
+  name: Filled_ToggleFillValue_ShouldUpdateBothProperties
+  nameWithType: MyAppCanvasTest.Filled_ToggleFillValue_ShouldUpdateBothProperties
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.Filled_ToggleFillValue_ShouldUpdateBothProperties
+- uid: ASE_Assignment_Test.MyAppCanvasTest.PenColour_SetValidColor_ShouldUpdatePenColour*
+  commentId: Overload:ASE_Assignment_Test.MyAppCanvasTest.PenColour_SetValidColor_ShouldUpdatePenColour
+  href: ASE_Assignment_Test.MyAppCanvasTest.html#ASE_Assignment_Test_MyAppCanvasTest_PenColour_SetValidColor_ShouldUpdatePenColour
+  name: PenColour_SetValidColor_ShouldUpdatePenColour
+  nameWithType: MyAppCanvasTest.PenColour_SetValidColor_ShouldUpdatePenColour
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.PenColour_SetValidColor_ShouldUpdatePenColour
+- uid: ASE_Assignment_Test.MyAppCanvasTest.PenColour_SetInvalidType_ShouldLogWarningAndSetDefault*
+  commentId: Overload:ASE_Assignment_Test.MyAppCanvasTest.PenColour_SetInvalidType_ShouldLogWarningAndSetDefault
+  href: ASE_Assignment_Test.MyAppCanvasTest.html#ASE_Assignment_Test_MyAppCanvasTest_PenColour_SetInvalidType_ShouldLogWarningAndSetDefault
+  name: PenColour_SetInvalidType_ShouldLogWarningAndSetDefault
+  nameWithType: MyAppCanvasTest.PenColour_SetInvalidType_ShouldLogWarningAndSetDefault
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.PenColour_SetInvalidType_ShouldLogWarningAndSetDefault
+- uid: ASE_Assignment_Test.MyAppCanvasTest.Set_ValidDimensions_ShouldInitializeCanvas*
+  commentId: Overload:ASE_Assignment_Test.MyAppCanvasTest.Set_ValidDimensions_ShouldInitializeCanvas
+  href: ASE_Assignment_Test.MyAppCanvasTest.html#ASE_Assignment_Test_MyAppCanvasTest_Set_ValidDimensions_ShouldInitializeCanvas
+  name: Set_ValidDimensions_ShouldInitializeCanvas
+  nameWithType: MyAppCanvasTest.Set_ValidDimensions_ShouldInitializeCanvas
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.Set_ValidDimensions_ShouldInitializeCanvas
+- uid: ASE_Assignment_Test.MyAppCanvasTest.Set_NegativeDimensions_ShouldLogWarning*
+  commentId: Overload:ASE_Assignment_Test.MyAppCanvasTest.Set_NegativeDimensions_ShouldLogWarning
+  href: ASE_Assignment_Test.MyAppCanvasTest.html#ASE_Assignment_Test_MyAppCanvasTest_Set_NegativeDimensions_ShouldLogWarning
+  name: Set_NegativeDimensions_ShouldLogWarning
+  nameWithType: MyAppCanvasTest.Set_NegativeDimensions_ShouldLogWarning
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.Set_NegativeDimensions_ShouldLogWarning
+- uid: ASE_Assignment_Test.MyAppCanvasTest.Set_DimensionsExceedingMaximum_ShouldLogWarning*
+  commentId: Overload:ASE_Assignment_Test.MyAppCanvasTest.Set_DimensionsExceedingMaximum_ShouldLogWarning
+  href: ASE_Assignment_Test.MyAppCanvasTest.html#ASE_Assignment_Test_MyAppCanvasTest_Set_DimensionsExceedingMaximum_ShouldLogWarning
+  name: Set_DimensionsExceedingMaximum_ShouldLogWarning
+  nameWithType: MyAppCanvasTest.Set_DimensionsExceedingMaximum_ShouldLogWarning
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.Set_DimensionsExceedingMaximum_ShouldLogWarning
+- uid: ASE_Assignment_Test.MyAppCanvasTest.MoveTo_ValidCoordinates_ShouldUpdatePosition*
+  commentId: Overload:ASE_Assignment_Test.MyAppCanvasTest.MoveTo_ValidCoordinates_ShouldUpdatePosition
+  href: ASE_Assignment_Test.MyAppCanvasTest.html#ASE_Assignment_Test_MyAppCanvasTest_MoveTo_ValidCoordinates_ShouldUpdatePosition
+  name: MoveTo_ValidCoordinates_ShouldUpdatePosition
+  nameWithType: MyAppCanvasTest.MoveTo_ValidCoordinates_ShouldUpdatePosition
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.MoveTo_ValidCoordinates_ShouldUpdatePosition
+- uid: ASE_Assignment_Test.MyAppCanvasTest.MoveTo_NegativeCoordinates_ShouldLogWarning*
+  commentId: Overload:ASE_Assignment_Test.MyAppCanvasTest.MoveTo_NegativeCoordinates_ShouldLogWarning
+  href: ASE_Assignment_Test.MyAppCanvasTest.html#ASE_Assignment_Test_MyAppCanvasTest_MoveTo_NegativeCoordinates_ShouldLogWarning
+  name: MoveTo_NegativeCoordinates_ShouldLogWarning
+  nameWithType: MyAppCanvasTest.MoveTo_NegativeCoordinates_ShouldLogWarning
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.MoveTo_NegativeCoordinates_ShouldLogWarning
+- uid: ASE_Assignment_Test.MyAppCanvasTest.MoveTo_ExceedingCanvasBoundaries_ShouldLogWarning*
+  commentId: Overload:ASE_Assignment_Test.MyAppCanvasTest.MoveTo_ExceedingCanvasBoundaries_ShouldLogWarning
+  href: ASE_Assignment_Test.MyAppCanvasTest.html#ASE_Assignment_Test_MyAppCanvasTest_MoveTo_ExceedingCanvasBoundaries_ShouldLogWarning
+  name: MoveTo_ExceedingCanvasBoundaries_ShouldLogWarning
+  nameWithType: MyAppCanvasTest.MoveTo_ExceedingCanvasBoundaries_ShouldLogWarning
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.MoveTo_ExceedingCanvasBoundaries_ShouldLogWarning
+- uid: ASE_Assignment_Test.MyAppCanvasTest.DrawTo_ValidCoordinates_ShouldDrawLineAndUpdatePosition*
+  commentId: Overload:ASE_Assignment_Test.MyAppCanvasTest.DrawTo_ValidCoordinates_ShouldDrawLineAndUpdatePosition
+  href: ASE_Assignment_Test.MyAppCanvasTest.html#ASE_Assignment_Test_MyAppCanvasTest_DrawTo_ValidCoordinates_ShouldDrawLineAndUpdatePosition
+  name: DrawTo_ValidCoordinates_ShouldDrawLineAndUpdatePosition
+  nameWithType: MyAppCanvasTest.DrawTo_ValidCoordinates_ShouldDrawLineAndUpdatePosition
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.DrawTo_ValidCoordinates_ShouldDrawLineAndUpdatePosition
+- uid: ASE_Assignment_Test.MyAppCanvasTest.DrawTo_NegativeCoordinates_ShouldLogWarning*
+  commentId: Overload:ASE_Assignment_Test.MyAppCanvasTest.DrawTo_NegativeCoordinates_ShouldLogWarning
+  href: ASE_Assignment_Test.MyAppCanvasTest.html#ASE_Assignment_Test_MyAppCanvasTest_DrawTo_NegativeCoordinates_ShouldLogWarning
+  name: DrawTo_NegativeCoordinates_ShouldLogWarning
+  nameWithType: MyAppCanvasTest.DrawTo_NegativeCoordinates_ShouldLogWarning
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.DrawTo_NegativeCoordinates_ShouldLogWarning
+- uid: ASE_Assignment_Test.MyAppCanvasTest.DrawTo_ExceedingCanvas_ShouldLogWarning*
+  commentId: Overload:ASE_Assignment_Test.MyAppCanvasTest.DrawTo_ExceedingCanvas_ShouldLogWarning
+  href: ASE_Assignment_Test.MyAppCanvasTest.html#ASE_Assignment_Test_MyAppCanvasTest_DrawTo_ExceedingCanvas_ShouldLogWarning
+  name: DrawTo_ExceedingCanvas_ShouldLogWarning
+  nameWithType: MyAppCanvasTest.DrawTo_ExceedingCanvas_ShouldLogWarning
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.DrawTo_ExceedingCanvas_ShouldLogWarning
+- uid: ASE_Assignment_Test.MyAppCanvasTest.Circle_ValidRadiusFilled_ShouldDrawFilledCircle*
+  commentId: Overload:ASE_Assignment_Test.MyAppCanvasTest.Circle_ValidRadiusFilled_ShouldDrawFilledCircle
+  href: ASE_Assignment_Test.MyAppCanvasTest.html#ASE_Assignment_Test_MyAppCanvasTest_Circle_ValidRadiusFilled_ShouldDrawFilledCircle
+  name: Circle_ValidRadiusFilled_ShouldDrawFilledCircle
+  nameWithType: MyAppCanvasTest.Circle_ValidRadiusFilled_ShouldDrawFilledCircle
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.Circle_ValidRadiusFilled_ShouldDrawFilledCircle
+- uid: ASE_Assignment_Test.MyAppCanvasTest.Circle_ValidRadiusOutlined_ShouldDrawOutlinedCircle*
+  commentId: Overload:ASE_Assignment_Test.MyAppCanvasTest.Circle_ValidRadiusOutlined_ShouldDrawOutlinedCircle
+  href: ASE_Assignment_Test.MyAppCanvasTest.html#ASE_Assignment_Test_MyAppCanvasTest_Circle_ValidRadiusOutlined_ShouldDrawOutlinedCircle
+  name: Circle_ValidRadiusOutlined_ShouldDrawOutlinedCircle
+  nameWithType: MyAppCanvasTest.Circle_ValidRadiusOutlined_ShouldDrawOutlinedCircle
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.Circle_ValidRadiusOutlined_ShouldDrawOutlinedCircle
+- uid: ASE_Assignment_Test.MyAppCanvasTest.Circle_NegativeRadius_ShouldLogWarning*
+  commentId: Overload:ASE_Assignment_Test.MyAppCanvasTest.Circle_NegativeRadius_ShouldLogWarning
+  href: ASE_Assignment_Test.MyAppCanvasTest.html#ASE_Assignment_Test_MyAppCanvasTest_Circle_NegativeRadius_ShouldLogWarning
+  name: Circle_NegativeRadius_ShouldLogWarning
+  nameWithType: MyAppCanvasTest.Circle_NegativeRadius_ShouldLogWarning
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.Circle_NegativeRadius_ShouldLogWarning
+- uid: ASE_Assignment_Test.MyAppCanvasTest.Rect_ValidDimensionsFilled_ShouldDrawFilledRectangle*
+  commentId: Overload:ASE_Assignment_Test.MyAppCanvasTest.Rect_ValidDimensionsFilled_ShouldDrawFilledRectangle
+  href: ASE_Assignment_Test.MyAppCanvasTest.html#ASE_Assignment_Test_MyAppCanvasTest_Rect_ValidDimensionsFilled_ShouldDrawFilledRectangle
+  name: Rect_ValidDimensionsFilled_ShouldDrawFilledRectangle
+  nameWithType: MyAppCanvasTest.Rect_ValidDimensionsFilled_ShouldDrawFilledRectangle
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.Rect_ValidDimensionsFilled_ShouldDrawFilledRectangle
+- uid: ASE_Assignment_Test.MyAppCanvasTest.Rect_ValidDimensionsOutlined_ShouldDrawOutlinedRectangle*
+  commentId: Overload:ASE_Assignment_Test.MyAppCanvasTest.Rect_ValidDimensionsOutlined_ShouldDrawOutlinedRectangle
+  href: ASE_Assignment_Test.MyAppCanvasTest.html#ASE_Assignment_Test_MyAppCanvasTest_Rect_ValidDimensionsOutlined_ShouldDrawOutlinedRectangle
+  name: Rect_ValidDimensionsOutlined_ShouldDrawOutlinedRectangle
+  nameWithType: MyAppCanvasTest.Rect_ValidDimensionsOutlined_ShouldDrawOutlinedRectangle
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.Rect_ValidDimensionsOutlined_ShouldDrawOutlinedRectangle
+- uid: ASE_Assignment_Test.MyAppCanvasTest.Rect_NegativeDimensions_ShouldLogWarning*
+  commentId: Overload:ASE_Assignment_Test.MyAppCanvasTest.Rect_NegativeDimensions_ShouldLogWarning
+  href: ASE_Assignment_Test.MyAppCanvasTest.html#ASE_Assignment_Test_MyAppCanvasTest_Rect_NegativeDimensions_ShouldLogWarning
+  name: Rect_NegativeDimensions_ShouldLogWarning
+  nameWithType: MyAppCanvasTest.Rect_NegativeDimensions_ShouldLogWarning
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.Rect_NegativeDimensions_ShouldLogWarning
+- uid: ASE_Assignment_Test.MyAppCanvasTest.Tri_ValidDimensionsFilled_ShouldDrawFilledTriangle*
+  commentId: Overload:ASE_Assignment_Test.MyAppCanvasTest.Tri_ValidDimensionsFilled_ShouldDrawFilledTriangle
+  href: ASE_Assignment_Test.MyAppCanvasTest.html#ASE_Assignment_Test_MyAppCanvasTest_Tri_ValidDimensionsFilled_ShouldDrawFilledTriangle
+  name: Tri_ValidDimensionsFilled_ShouldDrawFilledTriangle
+  nameWithType: MyAppCanvasTest.Tri_ValidDimensionsFilled_ShouldDrawFilledTriangle
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.Tri_ValidDimensionsFilled_ShouldDrawFilledTriangle
+- uid: ASE_Assignment_Test.MyAppCanvasTest.Tri_ValidDimensionsOutlined_ShouldDrawOutlinedTriangle*
+  commentId: Overload:ASE_Assignment_Test.MyAppCanvasTest.Tri_ValidDimensionsOutlined_ShouldDrawOutlinedTriangle
+  href: ASE_Assignment_Test.MyAppCanvasTest.html#ASE_Assignment_Test_MyAppCanvasTest_Tri_ValidDimensionsOutlined_ShouldDrawOutlinedTriangle
+  name: Tri_ValidDimensionsOutlined_ShouldDrawOutlinedTriangle
+  nameWithType: MyAppCanvasTest.Tri_ValidDimensionsOutlined_ShouldDrawOutlinedTriangle
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.Tri_ValidDimensionsOutlined_ShouldDrawOutlinedTriangle
+- uid: ASE_Assignment_Test.MyAppCanvasTest.Tri_ExceedingCanvasBoundaries_ShouldLogWarning*
+  commentId: Overload:ASE_Assignment_Test.MyAppCanvasTest.Tri_ExceedingCanvasBoundaries_ShouldLogWarning
+  href: ASE_Assignment_Test.MyAppCanvasTest.html#ASE_Assignment_Test_MyAppCanvasTest_Tri_ExceedingCanvasBoundaries_ShouldLogWarning
+  name: Tri_ExceedingCanvasBoundaries_ShouldLogWarning
+  nameWithType: MyAppCanvasTest.Tri_ExceedingCanvasBoundaries_ShouldLogWarning
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.Tri_ExceedingCanvasBoundaries_ShouldLogWarning
+- uid: ASE_Assignment_Test.MyAppCanvasTest.WriteText_ValidText_ShouldDrawText*
+  commentId: Overload:ASE_Assignment_Test.MyAppCanvasTest.WriteText_ValidText_ShouldDrawText
+  href: ASE_Assignment_Test.MyAppCanvasTest.html#ASE_Assignment_Test_MyAppCanvasTest_WriteText_ValidText_ShouldDrawText
+  name: WriteText_ValidText_ShouldDrawText
+  nameWithType: MyAppCanvasTest.WriteText_ValidText_ShouldDrawText
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.WriteText_ValidText_ShouldDrawText
+- uid: ASE_Assignment_Test.MyAppCanvasTest.WriteText_NullText_ShouldLogWarning*
+  commentId: Overload:ASE_Assignment_Test.MyAppCanvasTest.WriteText_NullText_ShouldLogWarning
+  href: ASE_Assignment_Test.MyAppCanvasTest.html#ASE_Assignment_Test_MyAppCanvasTest_WriteText_NullText_ShouldLogWarning
+  name: WriteText_NullText_ShouldLogWarning
+  nameWithType: MyAppCanvasTest.WriteText_NullText_ShouldLogWarning
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.WriteText_NullText_ShouldLogWarning
+- uid: ASE_Assignment_Test.MyAppCanvasTest.Clear_ShouldResetCanvasToWhite*
+  commentId: Overload:ASE_Assignment_Test.MyAppCanvasTest.Clear_ShouldResetCanvasToWhite
+  href: ASE_Assignment_Test.MyAppCanvasTest.html#ASE_Assignment_Test_MyAppCanvasTest_Clear_ShouldResetCanvasToWhite
+  name: Clear_ShouldResetCanvasToWhite
+  nameWithType: MyAppCanvasTest.Clear_ShouldResetCanvasToWhite
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.Clear_ShouldResetCanvasToWhite
+- uid: ASE_Assignment_Test.MyAppCanvasTest.Clear_MultipleTimes_ShouldMaintainWhiteBackground*
+  commentId: Overload:ASE_Assignment_Test.MyAppCanvasTest.Clear_MultipleTimes_ShouldMaintainWhiteBackground
+  href: ASE_Assignment_Test.MyAppCanvasTest.html#ASE_Assignment_Test_MyAppCanvasTest_Clear_MultipleTimes_ShouldMaintainWhiteBackground
+  name: Clear_MultipleTimes_ShouldMaintainWhiteBackground
+  nameWithType: MyAppCanvasTest.Clear_MultipleTimes_ShouldMaintainWhiteBackground
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.Clear_MultipleTimes_ShouldMaintainWhiteBackground
+- uid: ASE_Assignment_Test.MyAppCanvasTest.Reset_ShouldSetPositionToZeroAndSetDefaults*
+  commentId: Overload:ASE_Assignment_Test.MyAppCanvasTest.Reset_ShouldSetPositionToZeroAndSetDefaults
+  href: ASE_Assignment_Test.MyAppCanvasTest.html#ASE_Assignment_Test_MyAppCanvasTest_Reset_ShouldSetPositionToZeroAndSetDefaults
+  name: Reset_ShouldSetPositionToZeroAndSetDefaults
+  nameWithType: MyAppCanvasTest.Reset_ShouldSetPositionToZeroAndSetDefaults
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.Reset_ShouldSetPositionToZeroAndSetDefaults
+- uid: ASE_Assignment_Test.MyAppCanvasTest.Reset_AfterMultipleDrawOperations_ShouldClearAndReset*
+  commentId: Overload:ASE_Assignment_Test.MyAppCanvasTest.Reset_AfterMultipleDrawOperations_ShouldClearAndReset
+  href: ASE_Assignment_Test.MyAppCanvasTest.html#ASE_Assignment_Test_MyAppCanvasTest_Reset_AfterMultipleDrawOperations_ShouldClearAndReset
+  name: Reset_AfterMultipleDrawOperations_ShouldClearAndReset
+  nameWithType: MyAppCanvasTest.Reset_AfterMultipleDrawOperations_ShouldClearAndReset
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.Reset_AfterMultipleDrawOperations_ShouldClearAndReset
+- uid: ASE_Assignment_Test.MyAppCanvasTest.SetCanvas_ValidBitmapAndGraphics_ShouldInitializeCanvas*
+  commentId: Overload:ASE_Assignment_Test.MyAppCanvasTest.SetCanvas_ValidBitmapAndGraphics_ShouldInitializeCanvas
+  href: ASE_Assignment_Test.MyAppCanvasTest.html#ASE_Assignment_Test_MyAppCanvasTest_SetCanvas_ValidBitmapAndGraphics_ShouldInitializeCanvas
+  name: SetCanvas_ValidBitmapAndGraphics_ShouldInitializeCanvas
+  nameWithType: MyAppCanvasTest.SetCanvas_ValidBitmapAndGraphics_ShouldInitializeCanvas
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.SetCanvas_ValidBitmapAndGraphics_ShouldInitializeCanvas
+- uid: ASE_Assignment_Test.MyAppCanvasTest.SetCanvas_NullBitmap_ShouldLogWarning*
+  commentId: Overload:ASE_Assignment_Test.MyAppCanvasTest.SetCanvas_NullBitmap_ShouldLogWarning
+  href: ASE_Assignment_Test.MyAppCanvasTest.html#ASE_Assignment_Test_MyAppCanvasTest_SetCanvas_NullBitmap_ShouldLogWarning
+  name: SetCanvas_NullBitmap_ShouldLogWarning
+  nameWithType: MyAppCanvasTest.SetCanvas_NullBitmap_ShouldLogWarning
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.SetCanvas_NullBitmap_ShouldLogWarning
+- uid: ASE_Assignment_Test.MyAppCanvasTest.SetCanvas_NullGraphics_ShouldLogWarning*
+  commentId: Overload:ASE_Assignment_Test.MyAppCanvasTest.SetCanvas_NullGraphics_ShouldLogWarning
+  href: ASE_Assignment_Test.MyAppCanvasTest.html#ASE_Assignment_Test_MyAppCanvasTest_SetCanvas_NullGraphics_ShouldLogWarning
+  name: SetCanvas_NullGraphics_ShouldLogWarning
+  nameWithType: MyAppCanvasTest.SetCanvas_NullGraphics_ShouldLogWarning
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.SetCanvas_NullGraphics_ShouldLogWarning
+- uid: ASE_Assignment_Test.MyAppCanvasTest.getBitmap_AfterDrawing_ShouldReturnUpdatedBitmap*
+  commentId: Overload:ASE_Assignment_Test.MyAppCanvasTest.getBitmap_AfterDrawing_ShouldReturnUpdatedBitmap
+  href: ASE_Assignment_Test.MyAppCanvasTest.html#ASE_Assignment_Test_MyAppCanvasTest_getBitmap_AfterDrawing_ShouldReturnUpdatedBitmap
+  name: getBitmap_AfterDrawing_ShouldReturnUpdatedBitmap
+  nameWithType: MyAppCanvasTest.getBitmap_AfterDrawing_ShouldReturnUpdatedBitmap
+  fullName: ASE_Assignment_Test.MyAppCanvasTest.getBitmap_AfterDrawing_ShouldReturnUpdatedBitmap

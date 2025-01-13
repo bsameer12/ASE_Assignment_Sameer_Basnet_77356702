@@ -1,0 +1,1916 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MyAppCanvasTest | ASE_Assignment_Sameer_Basnet_77356702 </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MyAppCanvasTest | ASE_Assignment_Sameer_Basnet_77356702 ">
+      
+      <meta name="description" content="Unit tests for the MyAppCanvas class to validate its functionality, including boundary conditions, error handling, and expected behaviors.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/new/main/apiSpec/new?filename=ASE_Assignment_Test_MyAppCanvasTest.md&amp;value=---%0Auid%3A%20ASE_Assignment_Test.MyAppCanvasTest%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="ASE_Assignment_Sameer_Basnet_77356702">
+            ASE_Assignment_Sameer_Basnet_77356702
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ASE_Assignment_Test.MyAppCanvasTest">
+
+
+
+  <h1 id="ASE_Assignment_Test_MyAppCanvasTest" data-uid="ASE_Assignment_Test.MyAppCanvasTest" class="text-break">
+Class MyAppCanvasTest  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="ASE_Assignment_Test.html">ASE_Assignment_Test</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>ASE_Assignment_Test.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Unit tests for the MyAppCanvas class to validate its functionality,
+including boundary conditions, error handling, and expected behaviors.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestClass]
+public class MyAppCanvasTest</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">MyAppCanvasTest</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="ASE_Assignment_Test_MyAppCanvasTest_Circle_NegativeRadius_ShouldLogWarning_" data-uid="ASE_Assignment_Test.MyAppCanvasTest.Circle_NegativeRadius_ShouldLogWarning*"></a>
+
+  <h3 id="ASE_Assignment_Test_MyAppCanvasTest_Circle_NegativeRadius_ShouldLogWarning" data-uid="ASE_Assignment_Test.MyAppCanvasTest.Circle_NegativeRadius_ShouldLogWarning">
+  Circle_NegativeRadius_ShouldLogWarning()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs/#L939"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the <code>Circle</code> method to ensure proper handling of a negative radius.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Circle_NegativeRadius_ShouldLogWarning()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_Circle_NegativeRadius_ShouldLogWarning_examples">Examples</h4>
+  <pre><code class="lang-csharp">canvas.MoveTo(100, 100);
+int invalidRadius = -30;
+bool filled = true;
+string expectedMessage = "\nWarning: Radius must be greater than zero.";
+canvas.Circle(invalidRadius, filled);
+StringAssert.Contains(GlobalConfiguration.OutputExceptionMsg, expectedMessage);
+Assert.AreEqual(100, canvas.Xpos);
+Assert.AreEqual(100, canvas.Ypos);</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_Circle_NegativeRadius_ShouldLogWarning_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test verifies that when the <code>Circle</code> method is called with a negative radius:</p>
+<ul><li>A warning message is logged, indicating that the radius must be greater than zero.</li><li>The <code>canvas</code> position (<code>Xpos</code>, <code>Ypos</code>) remains unchanged at the current position.</li></ul>
+The test ensures the method does not proceed with drawing and logs the appropriate error message.
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Test_MyAppCanvasTest_Circle_ValidRadiusFilled_ShouldDrawFilledCircle_" data-uid="ASE_Assignment_Test.MyAppCanvasTest.Circle_ValidRadiusFilled_ShouldDrawFilledCircle*"></a>
+
+  <h3 id="ASE_Assignment_Test_MyAppCanvasTest_Circle_ValidRadiusFilled_ShouldDrawFilledCircle" data-uid="ASE_Assignment_Test.MyAppCanvasTest.Circle_ValidRadiusFilled_ShouldDrawFilledCircle">
+  Circle_ValidRadiusFilled_ShouldDrawFilledCircle()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs/#L858"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the <code>Circle</code> method to ensure a filled circle is drawn correctly with a valid radius.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Circle_ValidRadiusFilled_ShouldDrawFilledCircle()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_Circle_ValidRadiusFilled_ShouldDrawFilledCircle_examples">Examples</h4>
+  <pre><code class="lang-csharp">int centerX = 200;
+int centerY = 200;
+int radius = 50;
+bool filled = true;
+canvas.MoveTo(centerX, centerY);
+canvas.Circle(radius, filled);
+Assert.AreEqual(string.Empty, GlobalConfiguration.OutputExceptionMsg);</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_Circle_ValidRadiusFilled_ShouldDrawFilledCircle_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test verifies that when the <code>Circle</code> method is called with a valid radius and the filled option set to <code>true</code>:</p>
+<ul><li>A filled circle is drawn centered at the current position (<code>Xpos</code>, <code>Ypos</code>).</li><li>No warnings or error messages are logged during the operation.</li></ul>
+The test does not check the actual rendering of the circle but ensures there are no configuration or execution errors.
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Test_MyAppCanvasTest_Circle_ValidRadiusOutlined_ShouldDrawOutlinedCircle_" data-uid="ASE_Assignment_Test.MyAppCanvasTest.Circle_ValidRadiusOutlined_ShouldDrawOutlinedCircle*"></a>
+
+  <h3 id="ASE_Assignment_Test_MyAppCanvasTest_Circle_ValidRadiusOutlined_ShouldDrawOutlinedCircle" data-uid="ASE_Assignment_Test.MyAppCanvasTest.Circle_ValidRadiusOutlined_ShouldDrawOutlinedCircle">
+  Circle_ValidRadiusOutlined_ShouldDrawOutlinedCircle()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs/#L898"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the <code>Circle</code> method to ensure an outlined circle is drawn correctly with a valid radius.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Circle_ValidRadiusOutlined_ShouldDrawOutlinedCircle()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_Circle_ValidRadiusOutlined_ShouldDrawOutlinedCircle_examples">Examples</h4>
+  <pre><code class="lang-csharp">int centerX = 300;
+int centerY = 300;
+int radius = 75;
+bool filled = false;
+canvas.MoveTo(centerX, centerY);
+canvas.Circle(radius, filled);
+Assert.AreEqual(string.Empty, GlobalConfiguration.OutputExceptionMsg);</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_Circle_ValidRadiusOutlined_ShouldDrawOutlinedCircle_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test verifies that when the <code>Circle</code> method is called with a valid radius and the filled option set to <code>false</code>:</p>
+<ul><li>An outlined circle is drawn centered at the current position (<code>Xpos</code>, <code>Ypos</code>).</li><li>No warnings or error messages are logged during the operation.</li></ul>
+The test does not validate the rendered circle but ensures there are no errors in configuration or execution.
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Test_MyAppCanvasTest_Clear_MultipleTimes_ShouldMaintainWhiteBackground_" data-uid="ASE_Assignment_Test.MyAppCanvasTest.Clear_MultipleTimes_ShouldMaintainWhiteBackground*"></a>
+
+  <h3 id="ASE_Assignment_Test_MyAppCanvasTest_Clear_MultipleTimes_ShouldMaintainWhiteBackground" data-uid="ASE_Assignment_Test.MyAppCanvasTest.Clear_MultipleTimes_ShouldMaintainWhiteBackground">
+  Clear_MultipleTimes_ShouldMaintainWhiteBackground()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs/#L1340"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the <code>Clear</code> method to ensure that the canvas maintains a white background after being cleared multiple times.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Clear_MultipleTimes_ShouldMaintainWhiteBackground()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_Clear_MultipleTimes_ShouldMaintainWhiteBackground_examples">Examples</h4>
+  <pre><code class="lang-csharp">canvas.WriteText("First Clear");
+canvas.Clear();
+canvas.WriteText("Second Clear");
+canvas.Clear();
+Bitmap bitmap = (Bitmap)canvas.getBitmap();
+Color pixelColor = bitmap.GetPixel(0, 0);
+Assert.AreEqual(Color.FromArgb(255, 255, 255, 255), pixelColor);
+Assert.AreEqual(string.Empty, GlobalConfiguration.OutputExceptionMsg);</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_Clear_MultipleTimes_ShouldMaintainWhiteBackground_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test verifies that when the <code>Clear</code> method is called multiple times:</p>
+<ul><li>The canvas is reset to a white background after each clear operation.</li><li>Previously drawn content is removed, and the canvas is consistent in its cleared state.</li><li>No warnings or error messages are logged during the operations.</li></ul>
+The test ensures the canvas remains in a cleared state regardless of how many times <code>Clear</code> is called.
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Test_MyAppCanvasTest_Clear_ShouldResetCanvasToWhite_" data-uid="ASE_Assignment_Test.MyAppCanvasTest.Clear_ShouldResetCanvasToWhite*"></a>
+
+  <h3 id="ASE_Assignment_Test_MyAppCanvasTest_Clear_ShouldResetCanvasToWhite" data-uid="ASE_Assignment_Test.MyAppCanvasTest.Clear_ShouldResetCanvasToWhite">
+  Clear_ShouldResetCanvasToWhite()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs/#L1299"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the <code>Clear</code> method to ensure the canvas is reset to a white background.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Clear_ShouldResetCanvasToWhite()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_Clear_ShouldResetCanvasToWhite_examples">Examples</h4>
+  <pre><code class="lang-csharp">canvas.MoveTo(50, 50);
+canvas.WriteText("Before Clear");
+canvas.Clear();
+Bitmap bitmap = (Bitmap)canvas.getBitmap();
+Color pixelColor = bitmap.GetPixel(0, 0); // Top-left corner
+Assert.AreEqual(Color.FromArgb(255, 255, 255, 255), pixelColor);
+Assert.AreEqual(string.Empty, GlobalConfiguration.OutputExceptionMsg);</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_Clear_ShouldResetCanvasToWhite_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test verifies that when the <code>Clear</code> method is called:</p>
+<ul><li>The canvas is cleared, and all previously drawn content is removed.</li><li>The canvas background is reset to white (<code>Color.FromArgb(255, 255, 255, 255)</code>).</li><li>No warnings or error messages are logged during the operation.</li></ul>
+The test ensures the method resets the canvas and validates the color of a pixel in the top-left corner.
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Test_MyAppCanvasTest_DrawTo_ExceedingCanvas_ShouldLogWarning_" data-uid="ASE_Assignment_Test.MyAppCanvasTest.DrawTo_ExceedingCanvas_ShouldLogWarning*"></a>
+
+  <h3 id="ASE_Assignment_Test_MyAppCanvasTest_DrawTo_ExceedingCanvas_ShouldLogWarning" data-uid="ASE_Assignment_Test.MyAppCanvasTest.DrawTo_ExceedingCanvas_ShouldLogWarning">
+  DrawTo_ExceedingCanvas_ShouldLogWarning()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs/#L818"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the <code>DrawTo</code> method to ensure proper handling of coordinates that exceed the canvas boundaries.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void DrawTo_ExceedingCanvas_ShouldLogWarning()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_DrawTo_ExceedingCanvas_ShouldLogWarning_examples">Examples</h4>
+  <pre><code class="lang-csharp">canvas.MoveTo(400, 400);
+int invalidX = canvas.XSIDE + 50;
+int invalidY = canvas.YSIDE + 50;
+string expectedMessage = $"\nWarning: The specified coordinates ({invalidX}, {invalidY}) are outside the canvas dimensions ({canvas.XSIDE}x{canvas.YSIDE}).";
+canvas.DrawTo(invalidX, invalidY);
+StringAssert.Contains(GlobalConfiguration.OutputExceptionMsg, expectedMessage);
+Assert.AreEqual(400, canvas.Xpos);
+Assert.AreEqual(400, canvas.Ypos);</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_DrawTo_ExceedingCanvas_ShouldLogWarning_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test verifies that when the <code>DrawTo</code> method is called with coordinates exceeding the canvas dimensions:</p>
+<ul><li>A warning message is logged, indicating that the specified coordinates are outside the valid canvas boundaries.</li><li>The <code>Xpos</code> and <code>Ypos</code> properties remain unchanged at their current position.</li></ul>
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Test_MyAppCanvasTest_DrawTo_NegativeCoordinates_ShouldLogWarning_" data-uid="ASE_Assignment_Test.MyAppCanvasTest.DrawTo_NegativeCoordinates_ShouldLogWarning*"></a>
+
+  <h3 id="ASE_Assignment_Test_MyAppCanvasTest_DrawTo_NegativeCoordinates_ShouldLogWarning" data-uid="ASE_Assignment_Test.MyAppCanvasTest.DrawTo_NegativeCoordinates_ShouldLogWarning">
+  DrawTo_NegativeCoordinates_ShouldLogWarning()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs/#L778"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the <code>DrawTo</code> method to ensure proper handling of negative coordinates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void DrawTo_NegativeCoordinates_ShouldLogWarning()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_DrawTo_NegativeCoordinates_ShouldLogWarning_examples">Examples</h4>
+  <pre><code class="lang-csharp">canvas.MoveTo(100, 100);
+int invalidX = -10;
+int invalidY = -20;
+string expectedMessage = $"\nWarning: The specified coordinates ({invalidX}, {invalidY}) are outside the canvas dimensions ({canvas.XSIDE}x{canvas.YSIDE}).";
+canvas.DrawTo(invalidX, invalidY);
+StringAssert.Contains(GlobalConfiguration.OutputExceptionMsg, expectedMessage);
+Assert.AreEqual(100, canvas.Xpos);
+Assert.AreEqual(100, canvas.Ypos);</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_DrawTo_NegativeCoordinates_ShouldLogWarning_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test verifies that when the <code>DrawTo</code> method is called with negative coordinates:</p>
+<ul><li>A warning message is logged, indicating that the specified coordinates are outside the valid canvas dimensions.</li><li>The <code>Xpos</code> and <code>Ypos</code> properties remain unchanged at their current position.</li></ul>
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Test_MyAppCanvasTest_DrawTo_ValidCoordinates_ShouldDrawLineAndUpdatePosition_" data-uid="ASE_Assignment_Test.MyAppCanvasTest.DrawTo_ValidCoordinates_ShouldDrawLineAndUpdatePosition*"></a>
+
+  <h3 id="ASE_Assignment_Test_MyAppCanvasTest_DrawTo_ValidCoordinates_ShouldDrawLineAndUpdatePosition" data-uid="ASE_Assignment_Test.MyAppCanvasTest.DrawTo_ValidCoordinates_ShouldDrawLineAndUpdatePosition">
+  DrawTo_ValidCoordinates_ShouldDrawLineAndUpdatePosition()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs/#L736"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the <code>DrawTo</code> method to ensure that a line is drawn and the position is updated correctly when valid coordinates are provided.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void DrawTo_ValidCoordinates_ShouldDrawLineAndUpdatePosition()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_DrawTo_ValidCoordinates_ShouldDrawLineAndUpdatePosition_examples">Examples</h4>
+  <pre><code class="lang-csharp">int startX = 50;
+int startY = 50;
+int endX = 150;
+int endY = 150;
+canvas.MoveTo(startX, startY);
+canvas.DrawTo(endX, endY);
+Assert.AreEqual(endX, canvas.Xpos);
+Assert.AreEqual(endY, canvas.Ypos);
+Assert.AreEqual(string.Empty, GlobalConfiguration.OutputExceptionMsg);</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_DrawTo_ValidCoordinates_ShouldDrawLineAndUpdatePosition_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test verifies that when the <code>DrawTo</code> method is called with valid ending coordinates:</p>
+<ul><li>The <code>canvas</code> draws a line from the current position to the specified ending position.</li><li>The <code>Xpos</code> and <code>Ypos</code> properties are updated to the specified ending coordinates.</li><li>No warnings or error messages are logged during the operation.</li></ul>
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Test_MyAppCanvasTest_Filled_SetToFalse_ShouldDisableFill_" data-uid="ASE_Assignment_Test.MyAppCanvasTest.Filled_SetToFalse_ShouldDisableFill*"></a>
+
+  <h3 id="ASE_Assignment_Test_MyAppCanvasTest_Filled_SetToFalse_ShouldDisableFill" data-uid="ASE_Assignment_Test.MyAppCanvasTest.Filled_SetToFalse_ShouldDisableFill">
+  Filled_SetToFalse_ShouldDisableFill()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs/#L377"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the behavior of the <code>Filled</code> property setter when set to <code>false</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Filled_SetToFalse_ShouldDisableFill()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_Filled_SetToFalse_ShouldDisableFill_examples">Examples</h4>
+  <pre><code class="lang-csharp">bool fillValue = false;
+canvas.Filled = fillValue;
+Assert.IsFalse(canvas.Filled);
+Assert.IsFalse(GlobalConfiguration.IsFillEnabled);</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_Filled_SetToFalse_ShouldDisableFill_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test ensures that when the <code>Filled</code> property is set to <code>false</code>:</p>
+<ul><li>The <code>Filled</code> property on the <code>canvas</code> object is successfully updated.</li><li>The global configuration for fill (<code>GlobalConfiguration.IsFillEnabled</code>) is also disabled.</li></ul>
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Test_MyAppCanvasTest_Filled_SetToTrue_ShouldEnableFill_" data-uid="ASE_Assignment_Test.MyAppCanvasTest.Filled_SetToTrue_ShouldEnableFill*"></a>
+
+  <h3 id="ASE_Assignment_Test_MyAppCanvasTest_Filled_SetToTrue_ShouldEnableFill" data-uid="ASE_Assignment_Test.MyAppCanvasTest.Filled_SetToTrue_ShouldEnableFill">
+  Filled_SetToTrue_ShouldEnableFill()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs/#L345"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the behavior of the <code>Filled</code> property setter when set to <code>true</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Filled_SetToTrue_ShouldEnableFill()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_Filled_SetToTrue_ShouldEnableFill_examples">Examples</h4>
+  <pre><code class="lang-csharp">bool fillValue = true;
+canvas.Filled = fillValue;
+Assert.IsTrue(canvas.Filled);
+Assert.IsTrue(GlobalConfiguration.IsFillEnabled);</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_Filled_SetToTrue_ShouldEnableFill_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test ensures that when the <code>Filled</code> property is set to <code>true</code>:</p>
+<ul><li>The <code>Filled</code> property on the <code>canvas</code> object is successfully updated.</li><li>The global configuration for fill (<code>GlobalConfiguration.IsFillEnabled</code>) is also enabled.</li></ul>
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Test_MyAppCanvasTest_Filled_ToggleFillValue_ShouldUpdateBothProperties_" data-uid="ASE_Assignment_Test.MyAppCanvasTest.Filled_ToggleFillValue_ShouldUpdateBothProperties*"></a>
+
+  <h3 id="ASE_Assignment_Test_MyAppCanvasTest_Filled_ToggleFillValue_ShouldUpdateBothProperties" data-uid="ASE_Assignment_Test.MyAppCanvasTest.Filled_ToggleFillValue_ShouldUpdateBothProperties">
+  Filled_ToggleFillValue_ShouldUpdateBothProperties()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs/#L410"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the behavior of the <code>Filled</code> property when its value is toggled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Filled_ToggleFillValue_ShouldUpdateBothProperties()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_Filled_ToggleFillValue_ShouldUpdateBothProperties_examples">Examples</h4>
+  <pre><code class="lang-csharp">canvas.Filled = true; // Initially set to true
+canvas.Filled = false; // Toggle to false
+Assert.IsFalse(canvas.Filled);
+Assert.IsFalse(GlobalConfiguration.IsFillEnabled);</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_Filled_ToggleFillValue_ShouldUpdateBothProperties_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test ensures that toggling the <code>Filled</code> property:</p>
+<ul><li>Successfully updates the <code>Filled</code> property on the <code>canvas</code> object.</li><li>Synchronously updates the global configuration for fill (<code>GlobalConfiguration.IsFillEnabled</code>).</li></ul>
+The test initially sets the <code>Filled</code> property to <code>true</code> and then toggles it to <code>false</code>, verifying the updated states.
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Test_MyAppCanvasTest_MoveTo_ExceedingCanvasBoundaries_ShouldLogWarning_" data-uid="ASE_Assignment_Test.MyAppCanvasTest.MoveTo_ExceedingCanvasBoundaries_ShouldLogWarning*"></a>
+
+  <h3 id="ASE_Assignment_Test_MyAppCanvasTest_MoveTo_ExceedingCanvasBoundaries_ShouldLogWarning" data-uid="ASE_Assignment_Test.MyAppCanvasTest.MoveTo_ExceedingCanvasBoundaries_ShouldLogWarning">
+  MoveTo_ExceedingCanvasBoundaries_ShouldLogWarning()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs/#L694"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the <code>MoveTo</code> method to ensure proper handling of coordinates exceeding the canvas boundaries.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void MoveTo_ExceedingCanvasBoundaries_ShouldLogWarning()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_MoveTo_ExceedingCanvasBoundaries_ShouldLogWarning_examples">Examples</h4>
+  <pre><code class="lang-csharp">int invalidX = canvas.XSIDE + 100;
+int invalidY = canvas.YSIDE + 100;
+string expectedMessage = $"\nWarning: The specified coordinates ({invalidX}, {invalidY}) are outside the canvas dimensions ({canvas.XSIDE}x{canvas.YSIDE}).";
+canvas.MoveTo(invalidX, invalidY);
+StringAssert.Contains(GlobalConfiguration.OutputExceptionMsg, expectedMessage);
+Assert.AreEqual(0, canvas.Xpos);
+Assert.AreEqual(0, canvas.Ypos);</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_MoveTo_ExceedingCanvasBoundaries_ShouldLogWarning_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test verifies that when the <code>MoveTo</code> method is called with coordinates that exceed the canvas dimensions:</p>
+<ul><li>A warning message is logged, indicating that the specified coordinates are outside the valid canvas boundaries.</li><li>The <code>Xpos</code> and <code>Ypos</code> properties of the <code>canvas</code> object remain unchanged (defaulted to 0).</li></ul>
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Test_MyAppCanvasTest_MoveTo_NegativeCoordinates_ShouldLogWarning_" data-uid="ASE_Assignment_Test.MyAppCanvasTest.MoveTo_NegativeCoordinates_ShouldLogWarning*"></a>
+
+  <h3 id="ASE_Assignment_Test_MyAppCanvasTest_MoveTo_NegativeCoordinates_ShouldLogWarning" data-uid="ASE_Assignment_Test.MyAppCanvasTest.MoveTo_NegativeCoordinates_ShouldLogWarning">
+  MoveTo_NegativeCoordinates_ShouldLogWarning()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs/#L656"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the <code>MoveTo</code> method to ensure proper handling of negative coordinates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void MoveTo_NegativeCoordinates_ShouldLogWarning()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_MoveTo_NegativeCoordinates_ShouldLogWarning_examples">Examples</h4>
+  <pre><code class="lang-csharp">int invalidX = -50;
+int invalidY = -75;
+string expectedMessage = $"\nWarning: The specified coordinates ({invalidX}, {invalidY}) are outside the canvas dimensions ({canvas.XSIDE}x{canvas.YSIDE}).";
+canvas.MoveTo(invalidX, invalidY);
+StringAssert.Contains(GlobalConfiguration.OutputExceptionMsg, expectedMessage);
+Assert.AreEqual(0, canvas.Xpos);
+Assert.AreEqual(0, canvas.Ypos);</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_MoveTo_NegativeCoordinates_ShouldLogWarning_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test verifies that when the <code>MoveTo</code> method is called with negative X and Y coordinates:</p>
+<ul><li>A warning message is logged, indicating that the specified coordinates are outside the canvas dimensions.</li><li>The <code>Xpos</code> and <code>Ypos</code> properties of the <code>canvas</code> object remain unchanged (defaulted to 0).</li></ul>
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Test_MyAppCanvasTest_MoveTo_ValidCoordinates_ShouldUpdatePosition_" data-uid="ASE_Assignment_Test.MyAppCanvasTest.MoveTo_ValidCoordinates_ShouldUpdatePosition*"></a>
+
+  <h3 id="ASE_Assignment_Test_MyAppCanvasTest_MoveTo_ValidCoordinates_ShouldUpdatePosition" data-uid="ASE_Assignment_Test.MyAppCanvasTest.MoveTo_ValidCoordinates_ShouldUpdatePosition">
+  MoveTo_ValidCoordinates_ShouldUpdatePosition()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs/#L618"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the <code>MoveTo</code> method to ensure the canvas position is correctly updated with valid coordinates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void MoveTo_ValidCoordinates_ShouldUpdatePosition()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_MoveTo_ValidCoordinates_ShouldUpdatePosition_examples">Examples</h4>
+  <pre><code class="lang-csharp">int newX = 200;
+int newY = 150;
+canvas.MoveTo(newX, newY);
+Assert.AreEqual(newX, canvas.Xpos);
+Assert.AreEqual(newY, canvas.Ypos);
+Assert.AreEqual(string.Empty, GlobalConfiguration.OutputExceptionMsg);</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_MoveTo_ValidCoordinates_ShouldUpdatePosition_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test verifies that when the <code>MoveTo</code> method is called with valid X and Y coordinates:</p>
+<ul><li>The <code>Xpos</code> and <code>Ypos</code> properties of the <code>canvas</code> object are updated to the specified coordinates.</li><li>No warnings or error messages are logged during the operation.</li></ul>
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Test_MyAppCanvasTest_PenColour_SetInvalidType_ShouldLogWarningAndSetDefault_" data-uid="ASE_Assignment_Test.MyAppCanvasTest.PenColour_SetInvalidType_ShouldLogWarningAndSetDefault*"></a>
+
+  <h3 id="ASE_Assignment_Test_MyAppCanvasTest_PenColour_SetInvalidType_ShouldLogWarningAndSetDefault" data-uid="ASE_Assignment_Test.MyAppCanvasTest.PenColour_SetInvalidType_ShouldLogWarningAndSetDefault">
+  PenColour_SetInvalidType_ShouldLogWarningAndSetDefault()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs/#L473"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the behavior of the <code>PenColour</code> property setter when an invalid type is assigned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void PenColour_SetInvalidType_ShouldLogWarningAndSetDefault()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_PenColour_SetInvalidType_ShouldLogWarningAndSetDefault_examples">Examples</h4>
+  <pre><code class="lang-csharp">object invalidColor = "Blue"; // Invalid type
+string expectedMessage = "\nInvalid pen color value provided. Please provide a valid Color object.";
+canvas.PenColour = invalidColor;
+Assert.AreEqual(Color.Black, (Color)canvas.PenColour); // Assuming default is set to Black</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_PenColour_SetInvalidType_ShouldLogWarningAndSetDefault_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test ensures that when an invalid type (e.g., a string) is assigned to the <code>PenColour</code> property:</p>
+<ul><li>A warning message is logged, indicating the invalid type and prompting the user to provide a valid <code>Color</code> object.</li><li>The <code>PenColour</code> property is reset to its default value (assumed to be <code>Color.Black</code>).</li></ul>
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Test_MyAppCanvasTest_PenColour_SetValidColor_ShouldUpdatePenColour_" data-uid="ASE_Assignment_Test.MyAppCanvasTest.PenColour_SetValidColor_ShouldUpdatePenColour*"></a>
+
+  <h3 id="ASE_Assignment_Test_MyAppCanvasTest_PenColour_SetValidColor_ShouldUpdatePenColour" data-uid="ASE_Assignment_Test.MyAppCanvasTest.PenColour_SetValidColor_ShouldUpdatePenColour">
+  PenColour_SetValidColor_ShouldUpdatePenColour()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs/#L441"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the behavior of the <code>PenColour</code> property setter when a valid color is assigned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void PenColour_SetValidColor_ShouldUpdatePenColour()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_PenColour_SetValidColor_ShouldUpdatePenColour_examples">Examples</h4>
+  <pre><code class="lang-csharp">Color validColor = Color.Red;
+canvas.PenColour = validColor;
+Assert.AreEqual(validColor, (Color)canvas.PenColour);</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_PenColour_SetValidColor_ShouldUpdatePenColour_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test ensures that when a valid color is set to the <code>PenColour</code> property:</p>
+<ul><li>The <code>PenColour</code> property on the <code>canvas</code> object is successfully updated to the assigned color.</li><li>No errors or warnings are generated during the update.</li></ul>
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Test_MyAppCanvasTest_PenSize_SetNegativeValue_ShouldLogWarningAndSetDefault_" data-uid="ASE_Assignment_Test.MyAppCanvasTest.PenSize_SetNegativeValue_ShouldLogWarningAndSetDefault*"></a>
+
+  <h3 id="ASE_Assignment_Test_MyAppCanvasTest_PenSize_SetNegativeValue_ShouldLogWarningAndSetDefault" data-uid="ASE_Assignment_Test.MyAppCanvasTest.PenSize_SetNegativeValue_ShouldLogWarningAndSetDefault">
+  PenSize_SetNegativeValue_ShouldLogWarningAndSetDefault()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs/#L312"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the behavior of the <code>PenSize</code> property setter when an invalid negative value is assigned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void PenSize_SetNegativeValue_ShouldLogWarningAndSetDefault()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_PenSize_SetNegativeValue_ShouldLogWarningAndSetDefault_examples">Examples</h4>
+  <pre><code class="lang-csharp">int invalidPenSize = -3;
+string expectedMessage = "\nError setting pen size: Pen size must be greater than zero.";
+canvas.PenSize = invalidPenSize;
+Assert.AreEqual(1, canvas.PenSize); // Assuming default is set to 1</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_PenSize_SetNegativeValue_ShouldLogWarningAndSetDefault_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test ensures that when the <code>PenSize</code> property is set to a negative value:</p>
+<ul><li>A warning message is logged, indicating that the pen size must be greater than zero.</li><li>The <code>PenSize</code> property is reset to its default value (assumed to be 1).</li></ul>
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Test_MyAppCanvasTest_PenSize_SetValidValue_ShouldUpdatePenSize_" data-uid="ASE_Assignment_Test.MyAppCanvasTest.PenSize_SetValidValue_ShouldUpdatePenSize*"></a>
+
+  <h3 id="ASE_Assignment_Test_MyAppCanvasTest_PenSize_SetValidValue_ShouldUpdatePenSize" data-uid="ASE_Assignment_Test.MyAppCanvasTest.PenSize_SetValidValue_ShouldUpdatePenSize">
+  PenSize_SetValidValue_ShouldUpdatePenSize()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs/#L181"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the behavior of the <code>PenSize</code> property setter when a valid value is assigned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void PenSize_SetValidValue_ShouldUpdatePenSize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_PenSize_SetValidValue_ShouldUpdatePenSize_examples">Examples</h4>
+  <pre><code class="lang-csharp">int validPenSize = 5;
+canvas.PenSize = validPenSize;
+Assert.AreEqual(validPenSize, canvas.PenSize);</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_PenSize_SetValidValue_ShouldUpdatePenSize_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test ensures that when a valid pen size value is set to the <code>PenSize</code> property:</p>
+<ul><li>The <code>PenSize</code> property is successfully updated to the assigned value.</li><li>No errors or warnings are logged.</li></ul>
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Test_MyAppCanvasTest_PenSize_SetZero_ShouldLogWarningAndSetDefault_" data-uid="ASE_Assignment_Test.MyAppCanvasTest.PenSize_SetZero_ShouldLogWarningAndSetDefault*"></a>
+
+  <h3 id="ASE_Assignment_Test_MyAppCanvasTest_PenSize_SetZero_ShouldLogWarningAndSetDefault" data-uid="ASE_Assignment_Test.MyAppCanvasTest.PenSize_SetZero_ShouldLogWarningAndSetDefault">
+  PenSize_SetZero_ShouldLogWarningAndSetDefault()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs/#L279"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the behavior of the <code>PenSize</code> property setter when an invalid value of zero is assigned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void PenSize_SetZero_ShouldLogWarningAndSetDefault()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_PenSize_SetZero_ShouldLogWarningAndSetDefault_examples">Examples</h4>
+  <pre><code class="lang-csharp">int invalidPenSize = 0;
+string expectedMessage = "\nError setting pen size: Pen size must be greater than zero.";
+canvas.PenSize = invalidPenSize;
+Assert.AreEqual(1, canvas.PenSize); // Assuming default is set to 1</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_PenSize_SetZero_ShouldLogWarningAndSetDefault_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test ensures that when the <code>PenSize</code> property is set to zero:</p>
+<ul><li>A warning message is logged, indicating that the pen size must be greater than zero.</li><li>The <code>PenSize</code> property is reset to its default value (assumed to be 1).</li></ul>
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Test_MyAppCanvasTest_Rect_NegativeDimensions_ShouldLogWarning_" data-uid="ASE_Assignment_Test.MyAppCanvasTest.Rect_NegativeDimensions_ShouldLogWarning*"></a>
+
+  <h3 id="ASE_Assignment_Test_MyAppCanvasTest_Rect_NegativeDimensions_ShouldLogWarning" data-uid="ASE_Assignment_Test.MyAppCanvasTest.Rect_NegativeDimensions_ShouldLogWarning">
+  Rect_NegativeDimensions_ShouldLogWarning()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs/#L1065"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the <code>Rect</code> method to ensure proper handling of negative dimensions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Rect_NegativeDimensions_ShouldLogWarning()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_Rect_NegativeDimensions_ShouldLogWarning_examples">Examples</h4>
+  <pre><code class="lang-csharp">canvas.MoveTo(100, 100);
+int invalidWidth = -100;
+int invalidHeight = -50;
+bool filled = true;
+string expectedMessage = "\nWarning: Width and height must be greater than zero.";
+canvas.Rect(invalidWidth, invalidHeight, filled);
+StringAssert.Contains(GlobalConfiguration.OutputExceptionMsg, expectedMessage);
+Assert.AreEqual(100, canvas.Xpos);
+Assert.AreEqual(100, canvas.Ypos);</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_Rect_NegativeDimensions_ShouldLogWarning_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test verifies that when the <code>Rect</code> method is called with negative width and height:</p>
+<ul><li>A warning message is logged, indicating that width and height must be greater than zero.</li><li>The <code>canvas</code> position (<code>Xpos</code>, <code>Ypos</code>) remains unchanged at the current position.</li></ul>
+The test ensures the method does not proceed with drawing and logs the appropriate error message.
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Test_MyAppCanvasTest_Rect_ValidDimensionsFilled_ShouldDrawFilledRectangle_" data-uid="ASE_Assignment_Test.MyAppCanvasTest.Rect_ValidDimensionsFilled_ShouldDrawFilledRectangle*"></a>
+
+  <h3 id="ASE_Assignment_Test_MyAppCanvasTest_Rect_ValidDimensionsFilled_ShouldDrawFilledRectangle" data-uid="ASE_Assignment_Test.MyAppCanvasTest.Rect_ValidDimensionsFilled_ShouldDrawFilledRectangle">
+  Rect_ValidDimensionsFilled_ShouldDrawFilledRectangle()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs/#L980"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the <code>Rect</code> method to ensure a filled rectangle is drawn correctly with valid dimensions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Rect_ValidDimensionsFilled_ShouldDrawFilledRectangle()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_Rect_ValidDimensionsFilled_ShouldDrawFilledRectangle_examples">Examples</h4>
+  <pre><code class="lang-csharp">int startX = 50;
+int startY = 50;
+int width = 200;
+int height = 100;
+bool filled = true;
+canvas.MoveTo(startX, startY);
+canvas.Rect(width, height, filled);
+Assert.AreEqual(string.Empty, GlobalConfiguration.OutputExceptionMsg);</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_Rect_ValidDimensionsFilled_ShouldDrawFilledRectangle_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test verifies that when the <code>Rect</code> method is called with valid width, height, and the filled option set to <code>true</code>:</p>
+<ul><li>A filled rectangle is drawn starting from the current position (<code>Xpos</code>, <code>Ypos</code>).</li><li>No warnings or error messages are logged during the operation.</li></ul>
+The test ensures the method executes correctly without validating the rendering itself.
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Test_MyAppCanvasTest_Rect_ValidDimensionsOutlined_ShouldDrawOutlinedRectangle_" data-uid="ASE_Assignment_Test.MyAppCanvasTest.Rect_ValidDimensionsOutlined_ShouldDrawOutlinedRectangle*"></a>
+
+  <h3 id="ASE_Assignment_Test_MyAppCanvasTest_Rect_ValidDimensionsOutlined_ShouldDrawOutlinedRectangle" data-uid="ASE_Assignment_Test.MyAppCanvasTest.Rect_ValidDimensionsOutlined_ShouldDrawOutlinedRectangle">
+  Rect_ValidDimensionsOutlined_ShouldDrawOutlinedRectangle()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs/#L1022"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the <code>Rect</code> method to ensure an outlined rectangle is drawn correctly with valid dimensions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Rect_ValidDimensionsOutlined_ShouldDrawOutlinedRectangle()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_Rect_ValidDimensionsOutlined_ShouldDrawOutlinedRectangle_examples">Examples</h4>
+  <pre><code class="lang-csharp">int startX = 300;
+int startY = 300;
+int width = 150;
+int height = 150;
+bool filled = false;
+canvas.MoveTo(startX, startY);
+canvas.Rect(width, height, filled);
+Assert.AreEqual(string.Empty, GlobalConfiguration.OutputExceptionMsg);</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_Rect_ValidDimensionsOutlined_ShouldDrawOutlinedRectangle_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test verifies that when the <code>Rect</code> method is called with valid width, height, and the filled option set to <code>false</code>:</p>
+<ul><li>An outlined rectangle is drawn starting from the current position (<code>Xpos</code>, <code>Ypos</code>).</li><li>No warnings or error messages are logged during the operation.</li></ul>
+The test ensures the method executes correctly without validating the rendering itself.
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Test_MyAppCanvasTest_Reset_AfterMultipleDrawOperations_ShouldClearAndReset_" data-uid="ASE_Assignment_Test.MyAppCanvasTest.Reset_AfterMultipleDrawOperations_ShouldClearAndReset*"></a>
+
+  <h3 id="ASE_Assignment_Test_MyAppCanvasTest_Reset_AfterMultipleDrawOperations_ShouldClearAndReset" data-uid="ASE_Assignment_Test.MyAppCanvasTest.Reset_AfterMultipleDrawOperations_ShouldClearAndReset">
+  Reset_AfterMultipleDrawOperations_ShouldClearAndReset()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs/#L1436"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the <code>Reset</code> method to ensure it clears the canvas and resets all properties to their default values after multiple drawing operations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Reset_AfterMultipleDrawOperations_ShouldClearAndReset()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_Reset_AfterMultipleDrawOperations_ShouldClearAndReset_examples">Examples</h4>
+  <pre><code class="lang-csharp">canvas.MoveTo(100, 100);
+canvas.WriteText("First Line");
+canvas.Circle(50, true);
+canvas.Rect(100, 50, false);
+canvas.Reset();
+Assert.AreEqual(0, canvas.Xpos);
+Assert.AreEqual(0, canvas.Ypos);
+Assert.AreEqual(1, canvas.PenSize); // Default pen size
+Assert.IsFalse(canvas.Filled); // Default fill state
+Assert.AreEqual(Color.FromArgb(255, 0, 0, 0), (Color)canvas.PenColour); // Default pen color
+Assert.AreEqual(string.Empty, GlobalConfiguration.OutputExceptionMsg);</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_Reset_AfterMultipleDrawOperations_ShouldClearAndReset_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test verifies that when the <code>Reset</code> method is called after multiple drawing operations:</p>
+<ul><li>The canvas is cleared, removing all drawn content.</li><li>The position (<code>Xpos</code>, <code>Ypos</code>) is reset to (0, 0).</li><li>The <code>PenSize</code> property is reset to its default value (1).</li><li>The <code>Filled</code> property is reset to its default value (<code>false</code>).</li><li>The <code>PenColour</code> property is reset to its default value (<code>Color.Black</code>).</li><li>No warnings or error messages are logged during the operation.</li></ul>
+This test ensures the canvas is fully restored to its default state after being reset, regardless of previous operations.
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Test_MyAppCanvasTest_Reset_ShouldSetPositionToZeroAndSetDefaults_" data-uid="ASE_Assignment_Test.MyAppCanvasTest.Reset_ShouldSetPositionToZeroAndSetDefaults*"></a>
+
+  <h3 id="ASE_Assignment_Test_MyAppCanvasTest_Reset_ShouldSetPositionToZeroAndSetDefaults" data-uid="ASE_Assignment_Test.MyAppCanvasTest.Reset_ShouldSetPositionToZeroAndSetDefaults">
+  Reset_ShouldSetPositionToZeroAndSetDefaults()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs/#L1385"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the <code>Reset</code> method to ensure it resets the canvas properties to their default values and the position to zero.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Reset_ShouldSetPositionToZeroAndSetDefaults()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_Reset_ShouldSetPositionToZeroAndSetDefaults_examples">Examples</h4>
+  <pre><code class="lang-csharp">canvas.MoveTo(200, 200);
+canvas.PenSize = 5;
+canvas.Filled = true;
+canvas.WriteText("Before Reset");
+canvas.Reset();
+Assert.AreEqual(0, canvas.Xpos);
+Assert.AreEqual(0, canvas.Ypos);
+Assert.AreEqual(1, canvas.PenSize); // Default pen size
+Assert.IsFalse(canvas.Filled); // Default fill
+Assert.AreEqual(Color.FromArgb(255, 0, 0, 0), (Color)canvas.PenColour); // Default pen color
+Assert.AreEqual(string.Empty, GlobalConfiguration.OutputExceptionMsg);</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_Reset_ShouldSetPositionToZeroAndSetDefaults_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test verifies that when the <code>Reset</code> method is called:</p>
+<ul><li>The canvas position (<code>Xpos</code>, <code>Ypos</code>) is reset to (0, 0).</li><li>The <code>PenSize</code> property is reset to its default value (1).</li><li>The <code>Filled</code> property is reset to its default value (<code>false</code>).</li><li>The <code>PenColour</code> property is reset to its default value (<code>Color.Black</code>).</li><li>No warnings or error messages are logged during the operation.</li></ul>
+The test ensures the method properly restores all canvas settings to their defaults.
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Test_MyAppCanvasTest_SetCanvas_NullBitmap_ShouldLogWarning_" data-uid="ASE_Assignment_Test.MyAppCanvasTest.SetCanvas_NullBitmap_ShouldLogWarning*"></a>
+
+  <h3 id="ASE_Assignment_Test_MyAppCanvasTest_SetCanvas_NullBitmap_ShouldLogWarning" data-uid="ASE_Assignment_Test.MyAppCanvasTest.SetCanvas_NullBitmap_ShouldLogWarning">
+  SetCanvas_NullBitmap_ShouldLogWarning()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs/#L1516"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the <code>SetCanvas</code> method to ensure proper handling of a null <code>Bitmap</code> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void SetCanvas_NullBitmap_ShouldLogWarning()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_SetCanvas_NullBitmap_ShouldLogWarning_examples">Examples</h4>
+  <pre><code class="lang-csharp">Bitmap nullBitmap = null;
+Graphics newGraphics = Graphics.FromImage(new Bitmap(300, 300));
+string expectedMessage = "\nCanvas error: The provided Bitmap object cannot be null.";
+canvas.SetCanvas(nullBitmap, newGraphics);
+StringAssert.Contains(GlobalConfiguration.OutputExceptionMsg, expectedMessage);
+Assert.AreNotEqual(nullBitmap, canvas.getBitmap());</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_SetCanvas_NullBitmap_ShouldLogWarning_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test verifies that when the <code>SetCanvas</code> method is called with a null <code>Bitmap</code> object:</p>
+<ul><li>A warning message is logged, indicating that the provided <code>Bitmap</code> object cannot be null.</li><li>The canvas's current <code>Bitmap</code> object is not updated to the null value.</li></ul>
+This test ensures that the method validates the <code>Bitmap</code> parameter and handles null inputs appropriately.
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Test_MyAppCanvasTest_SetCanvas_NullGraphics_ShouldLogWarning_" data-uid="ASE_Assignment_Test.MyAppCanvasTest.SetCanvas_NullGraphics_ShouldLogWarning*"></a>
+
+  <h3 id="ASE_Assignment_Test_MyAppCanvasTest_SetCanvas_NullGraphics_ShouldLogWarning" data-uid="ASE_Assignment_Test.MyAppCanvasTest.SetCanvas_NullGraphics_ShouldLogWarning">
+  SetCanvas_NullGraphics_ShouldLogWarning()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs/#L1553"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the <code>SetCanvas</code> method to ensure proper handling of a null <code>Graphics</code> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void SetCanvas_NullGraphics_ShouldLogWarning()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_SetCanvas_NullGraphics_ShouldLogWarning_examples">Examples</h4>
+  <pre><code class="lang-csharp">Bitmap newBitmap = new Bitmap(300, 300);
+Graphics nullGraphics = null;
+string expectedMessage = "\nCanvas error: The provided Graphics object cannot be null.";
+canvas.SetCanvas(newBitmap, nullGraphics);
+StringAssert.Contains(GlobalConfiguration.OutputExceptionMsg, expectedMessage);
+Assert.AreNotEqual(nullGraphics, canvas.GetGraphics());</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_SetCanvas_NullGraphics_ShouldLogWarning_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test verifies that when the <code>SetCanvas</code> method is called with a null <code>Graphics</code> object:</p>
+<ul><li>A warning message is logged, indicating that the provided <code>Graphics</code> object cannot be null.</li><li>The canvas's current <code>Graphics</code> object is not updated to the null value.</li></ul>
+This test ensures that the method validates the <code>Graphics</code> parameter and handles null inputs appropriately.
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Test_MyAppCanvasTest_SetCanvas_ValidBitmapAndGraphics_ShouldInitializeCanvas_" data-uid="ASE_Assignment_Test.MyAppCanvasTest.SetCanvas_ValidBitmapAndGraphics_ShouldInitializeCanvas*"></a>
+
+  <h3 id="ASE_Assignment_Test_MyAppCanvasTest_SetCanvas_ValidBitmapAndGraphics_ShouldInitializeCanvas" data-uid="ASE_Assignment_Test.MyAppCanvasTest.SetCanvas_ValidBitmapAndGraphics_ShouldInitializeCanvas">
+  SetCanvas_ValidBitmapAndGraphics_ShouldInitializeCanvas()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs/#L1479"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the <code>SetCanvas</code> method to ensure that the canvas is correctly initialized with a valid <code>Bitmap</code> and <code>Graphics</code> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void SetCanvas_ValidBitmapAndGraphics_ShouldInitializeCanvas()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_SetCanvas_ValidBitmapAndGraphics_ShouldInitializeCanvas_examples">Examples</h4>
+  <pre><code class="lang-csharp">Bitmap newBitmap = new Bitmap(300, 300);
+Graphics newGraphics = Graphics.FromImage(newBitmap);
+canvas.SetCanvas(newBitmap, newGraphics);
+Assert.AreEqual(newBitmap, canvas.getBitmap());
+Assert.AreEqual(newGraphics, canvas.GetGraphics());
+Assert.AreEqual(string.Empty, GlobalConfiguration.OutputExceptionMsg);</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_SetCanvas_ValidBitmapAndGraphics_ShouldInitializeCanvas_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test verifies that when the <code>SetCanvas</code> method is called with valid <code>Bitmap</code> and <code>Graphics</code> objects:</p>
+<ul><li>The canvas is initialized with the provided <code>Bitmap</code> object.</li><li>The canvas is initialized with the provided <code>Graphics</code> object.</li><li>No warnings or error messages are logged during the operation.</li></ul>
+This test ensures that the <code>SetCanvas</code> method functions as intended when provided with valid parameters.
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Test_MyAppCanvasTest_Set_DimensionsExceedingMaximum_ShouldLogWarning_" data-uid="ASE_Assignment_Test.MyAppCanvasTest.Set_DimensionsExceedingMaximum_ShouldLogWarning*"></a>
+
+  <h3 id="ASE_Assignment_Test_MyAppCanvasTest_Set_DimensionsExceedingMaximum_ShouldLogWarning" data-uid="ASE_Assignment_Test.MyAppCanvasTest.Set_DimensionsExceedingMaximum_ShouldLogWarning">
+  Set_DimensionsExceedingMaximum_ShouldLogWarning()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs/#L583"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the <code>Set</code> method of the <code>canvas</code> object to ensure proper handling of dimensions exceeding the maximum allowed value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Set_DimensionsExceedingMaximum_ShouldLogWarning()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_Set_DimensionsExceedingMaximum_ShouldLogWarning_examples">Examples</h4>
+  <pre><code class="lang-csharp">int invalidXSize = 2500;
+int invalidYSize = 3000;
+string expectedMessage = $"\nWarning: Invalid canvas size: Width={invalidXSize}, Height={invalidYSize}. Both dimensions must be within 2000.";
+canvas.Set(invalidXSize, invalidYSize);
+StringAssert.Contains(GlobalConfiguration.OutputExceptionMsg, expectedMessage);</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_Set_DimensionsExceedingMaximum_ShouldLogWarning_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test verifies that when the <code>Set</code> method is called with dimensions exceeding the maximum allowable limit (2000):</p>
+<ul><li>A warning message is logged, indicating the invalid dimensions and specifying the maximum allowed limit.</li><li>The canvas dimensions are not initialized with the invalid values.</li></ul>
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Test_MyAppCanvasTest_Set_NegativeDimensions_ShouldLogWarning_" data-uid="ASE_Assignment_Test.MyAppCanvasTest.Set_NegativeDimensions_ShouldLogWarning*"></a>
+
+  <h3 id="ASE_Assignment_Test_MyAppCanvasTest_Set_NegativeDimensions_ShouldLogWarning" data-uid="ASE_Assignment_Test.MyAppCanvasTest.Set_NegativeDimensions_ShouldLogWarning">
+  Set_NegativeDimensions_ShouldLogWarning()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs/#L548"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the <code>Set</code> method of the <code>canvas</code> object to ensure proper handling of negative dimensions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Set_NegativeDimensions_ShouldLogWarning()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_Set_NegativeDimensions_ShouldLogWarning_examples">Examples</h4>
+  <pre><code class="lang-csharp">int invalidXSize = -500;
+int invalidYSize = -300;
+string expectedMessage = $"\nWarning: Invalid canvas size: Width={invalidXSize}, Height={invalidYSize}. Both dimensions must be positive.";
+canvas.Set(invalidXSize, invalidYSize);
+StringAssert.Contains(GlobalConfiguration.OutputExceptionMsg, expectedMessage);</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_Set_NegativeDimensions_ShouldLogWarning_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test verifies that when the <code>Set</code> method is called with negative dimensions:</p>
+<ul><li>A warning message is logged, indicating the invalid dimensions and specifying that both dimensions must be positive.</li><li>The canvas dimensions are not initialized with the invalid values.</li></ul>
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Test_MyAppCanvasTest_Set_ValidDimensions_ShouldInitializeCanvas_" data-uid="ASE_Assignment_Test.MyAppCanvasTest.Set_ValidDimensions_ShouldInitializeCanvas*"></a>
+
+  <h3 id="ASE_Assignment_Test_MyAppCanvasTest_Set_ValidDimensions_ShouldInitializeCanvas" data-uid="ASE_Assignment_Test.MyAppCanvasTest.Set_ValidDimensions_ShouldInitializeCanvas">
+  Set_ValidDimensions_ShouldInitializeCanvas()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs/#L511"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the <code>Set</code> method of the <code>canvas</code> object to ensure proper initialization with valid dimensions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Set_ValidDimensions_ShouldInitializeCanvas()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_Set_ValidDimensions_ShouldInitializeCanvas_examples">Examples</h4>
+  <pre><code class="lang-csharp">int validXSize = 800;
+int validYSize = 600;
+canvas.Set(validXSize, validYSize);
+Assert.AreEqual(validXSize, canvas.XSIDE);
+Assert.AreEqual(validYSize, canvas.YSIDE);
+Assert.AreEqual(0, canvas.Xpos);
+Assert.AreEqual(0, canvas.Ypos);
+Assert.AreEqual(string.Empty, GlobalConfiguration.OutputExceptionMsg);</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_Set_ValidDimensions_ShouldInitializeCanvas_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test verifies that when the <code>Set</code> method is called with valid dimensions:</p>
+<ul><li>The canvas dimensions (<code>XSIDE</code> and <code>YSIDE</code>) are correctly initialized to the specified values.</li><li>The initial position (<code>Xpos</code> and <code>Ypos</code>) is set to zero.</li><li>No warnings or error messages are logged.</li></ul>
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Test_MyAppCanvasTest_Setup_" data-uid="ASE_Assignment_Test.MyAppCanvasTest.Setup*"></a>
+
+  <h3 id="ASE_Assignment_Test_MyAppCanvasTest_Setup" data-uid="ASE_Assignment_Test.MyAppCanvasTest.Setup">
+  Setup()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Instance of MyAppCanvas used in tests.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestInitialize]
+public void Setup()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Assignment_Test_MyAppCanvasTest_Tri_ExceedingCanvasBoundaries_ShouldLogWarning_" data-uid="ASE_Assignment_Test.MyAppCanvasTest.Tri_ExceedingCanvasBoundaries_ShouldLogWarning*"></a>
+
+  <h3 id="ASE_Assignment_Test_MyAppCanvasTest_Tri_ExceedingCanvasBoundaries_ShouldLogWarning" data-uid="ASE_Assignment_Test.MyAppCanvasTest.Tri_ExceedingCanvasBoundaries_ShouldLogWarning">
+  Tri_ExceedingCanvasBoundaries_ShouldLogWarning()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs/#L1191"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the <code>Tri</code> method to ensure proper handling of triangle dimensions that exceed canvas boundaries.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Tri_ExceedingCanvasBoundaries_ShouldLogWarning()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_Tri_ExceedingCanvasBoundaries_ShouldLogWarning_examples">Examples</h4>
+  <pre><code class="lang-csharp">canvas.MoveTo(canvas.XSIDE - 50, canvas.YSIDE - 50);
+int width = 100;
+int height = 100;
+bool filled = true;
+string expectedMessage = $"\nCanvas error: Triangle exceeds canvas boundaries at position ({canvas.Xpos}, {canvas.Ypos}) with dimensions Width={width}, Height={height}.";
+canvas.Tri(width, height);
+StringAssert.Contains(GlobalConfiguration.OutputExceptionMsg, expectedMessage);
+Assert.AreEqual(canvas.XSIDE - 50, canvas.Xpos);
+Assert.AreEqual(canvas.YSIDE - 50, canvas.Ypos);</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_Tri_ExceedingCanvasBoundaries_ShouldLogWarning_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test verifies that when the <code>Tri</code> method is called with dimensions that exceed the canvas boundaries:</p>
+<ul><li>A warning message is logged, indicating that the triangle exceeds the canvas boundaries.</li><li>The <code>canvas</code> position (<code>Xpos</code>, <code>Ypos</code>) remains unchanged at its current position.</li></ul>
+The test ensures the method does not proceed with drawing and logs the appropriate error message.
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Test_MyAppCanvasTest_Tri_ValidDimensionsFilled_ShouldDrawFilledTriangle_" data-uid="ASE_Assignment_Test.MyAppCanvasTest.Tri_ValidDimensionsFilled_ShouldDrawFilledTriangle*"></a>
+
+  <h3 id="ASE_Assignment_Test_MyAppCanvasTest_Tri_ValidDimensionsFilled_ShouldDrawFilledTriangle" data-uid="ASE_Assignment_Test.MyAppCanvasTest.Tri_ValidDimensionsFilled_ShouldDrawFilledTriangle">
+  Tri_ValidDimensionsFilled_ShouldDrawFilledTriangle()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs/#L1107"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the <code>Tri</code> method to ensure a filled triangle is drawn correctly with valid dimensions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Tri_ValidDimensionsFilled_ShouldDrawFilledTriangle()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_Tri_ValidDimensionsFilled_ShouldDrawFilledTriangle_examples">Examples</h4>
+  <pre><code class="lang-csharp">int startX = 150;
+int startY = 150;
+int width = 100;
+int height = 80;
+bool filled = true;
+canvas.MoveTo(startX, startY);
+canvas.Tri(width, height);
+Assert.AreEqual(string.Empty, GlobalConfiguration.OutputExceptionMsg);</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_Tri_ValidDimensionsFilled_ShouldDrawFilledTriangle_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test verifies that when the <code>Tri</code> method is called with valid width, height, and the filled option set to <code>true</code>:</p>
+<ul><li>A filled triangle is drawn starting from the current position (<code>Xpos</code>, <code>Ypos</code>).</li><li>No warnings or error messages are logged during the operation.</li></ul>
+The test ensures the method executes correctly without validating the rendering itself.
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Test_MyAppCanvasTest_Tri_ValidDimensionsOutlined_ShouldDrawOutlinedTriangle_" data-uid="ASE_Assignment_Test.MyAppCanvasTest.Tri_ValidDimensionsOutlined_ShouldDrawOutlinedTriangle*"></a>
+
+  <h3 id="ASE_Assignment_Test_MyAppCanvasTest_Tri_ValidDimensionsOutlined_ShouldDrawOutlinedTriangle" data-uid="ASE_Assignment_Test.MyAppCanvasTest.Tri_ValidDimensionsOutlined_ShouldDrawOutlinedTriangle">
+  Tri_ValidDimensionsOutlined_ShouldDrawOutlinedTriangle()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs/#L1149"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the <code>Tri</code> method to ensure an outlined triangle is drawn correctly with valid dimensions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Tri_ValidDimensionsOutlined_ShouldDrawOutlinedTriangle()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_Tri_ValidDimensionsOutlined_ShouldDrawOutlinedTriangle_examples">Examples</h4>
+  <pre><code class="lang-csharp">int startX = 300;
+int startY = 300;
+int width = 120;
+int height = 90;
+bool filled = false;
+canvas.MoveTo(startX, startY);
+canvas.Tri(width, height);
+Assert.AreEqual(string.Empty, GlobalConfiguration.OutputExceptionMsg);</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_Tri_ValidDimensionsOutlined_ShouldDrawOutlinedTriangle_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test verifies that when the <code>Tri</code> method is called with valid width, height, and the filled option set to <code>false</code>:</p>
+<ul><li>An outlined triangle is drawn starting from the current position (<code>Xpos</code>, <code>Ypos</code>).</li><li>No warnings or error messages are logged during the operation.</li></ul>
+The test ensures the method executes correctly without validating the rendering itself.
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Test_MyAppCanvasTest_WriteText_NullText_ShouldLogWarning_" data-uid="ASE_Assignment_Test.MyAppCanvasTest.WriteText_NullText_ShouldLogWarning*"></a>
+
+  <h3 id="ASE_Assignment_Test_MyAppCanvasTest_WriteText_NullText_ShouldLogWarning" data-uid="ASE_Assignment_Test.MyAppCanvasTest.WriteText_NullText_ShouldLogWarning">
+  WriteText_NullText_ShouldLogWarning()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs/#L1262"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the <code>WriteText</code> method to ensure proper handling of a null text input.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void WriteText_NullText_ShouldLogWarning()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_WriteText_NullText_ShouldLogWarning_examples">Examples</h4>
+  <pre><code class="lang-csharp">string invalidText = null;
+string expectedMessage = "\nCanvas error: Invalid text input: Text cannot be null, empty, or whitespace.";
+canvas.WriteText(invalidText);
+StringAssert.Contains(GlobalConfiguration.OutputExceptionMsg, expectedMessage);</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_WriteText_NullText_ShouldLogWarning_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test verifies that when the <code>WriteText</code> method is called with a null text input:</p>
+<ul><li>A warning message is logged, indicating that the text input is invalid because it cannot be null, empty, or whitespace.</li><li>The method does not proceed with any drawing operations.</li></ul>
+The test ensures the method validates text input and logs an appropriate error message when invalid.
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Test_MyAppCanvasTest_WriteText_ValidText_ShouldDrawText_" data-uid="ASE_Assignment_Test.MyAppCanvasTest.WriteText_ValidText_ShouldDrawText*"></a>
+
+  <h3 id="ASE_Assignment_Test_MyAppCanvasTest_WriteText_ValidText_ShouldDrawText" data-uid="ASE_Assignment_Test.MyAppCanvasTest.WriteText_ValidText_ShouldDrawText">
+  WriteText_ValidText_ShouldDrawText()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs/#L1229"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the <code>WriteText</code> method to ensure that valid text is drawn correctly on the canvas.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void WriteText_ValidText_ShouldDrawText()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_WriteText_ValidText_ShouldDrawText_examples">Examples</h4>
+  <pre><code class="lang-csharp">string validText = "Hello, Canvas!";
+canvas.MoveTo(100, 100);
+canvas.WriteText(validText);
+Assert.AreEqual(string.Empty, GlobalConfiguration.OutputExceptionMsg);</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_WriteText_ValidText_ShouldDrawText_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test verifies that when the <code>WriteText</code> method is called with valid text:</p>
+<ul><li>The text is drawn at the current position (<code>Xpos</code>, <code>Ypos</code>).</li><li>No warnings or error messages are logged during the operation.</li></ul>
+The test ensures the method executes correctly without validating the visual rendering of the text.
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Test_MyAppCanvasTest_Xpos_SetNegativeValue_ShouldLogWarningAndSetDefault_" data-uid="ASE_Assignment_Test.MyAppCanvasTest.Xpos_SetNegativeValue_ShouldLogWarningAndSetDefault*"></a>
+
+  <h3 id="ASE_Assignment_Test_MyAppCanvasTest_Xpos_SetNegativeValue_ShouldLogWarningAndSetDefault" data-uid="ASE_Assignment_Test.MyAppCanvasTest.Xpos_SetNegativeValue_ShouldLogWarningAndSetDefault">
+  Xpos_SetNegativeValue_ShouldLogWarningAndSetDefault()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the behavior of the <code>Xpos</code> property setter when an invalid negative value is assigned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Xpos_SetNegativeValue_ShouldLogWarningAndSetDefault()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_Xpos_SetNegativeValue_ShouldLogWarningAndSetDefault_examples">Examples</h4>
+  <pre><code class="lang-csharp">int invalidX = -50;
+string expectedMessage = $"\nError setting X position: Invalid X position: {invalidX}. Must be between 0 and {canvas.YSIDE}.";
+canvas.Xpos = invalidX;
+Assert.AreEqual(0, canvas.Xpos);</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_Xpos_SetNegativeValue_ShouldLogWarningAndSetDefault_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test ensures that when a negative value is set to the <code>Xpos</code> property:</p>
+<ul><li>A warning message is logged, specifying the invalid value and the valid range.</li><li>The <code>Xpos</code> property is reset to its default value (assumed to be 0).</li></ul>
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Test_MyAppCanvasTest_Xpos_SetValidValue_ShouldUpdatePosition_" data-uid="ASE_Assignment_Test.MyAppCanvasTest.Xpos_SetValidValue_ShouldUpdatePosition*"></a>
+
+  <h3 id="ASE_Assignment_Test_MyAppCanvasTest_Xpos_SetValidValue_ShouldUpdatePosition" data-uid="ASE_Assignment_Test.MyAppCanvasTest.Xpos_SetValidValue_ShouldUpdatePosition">
+  Xpos_SetValidValue_ShouldUpdatePosition()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs/#L213"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the behavior of the <code>Xpos</code> property setter when a valid value within the canvas boundary is assigned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Xpos_SetValidValue_ShouldUpdatePosition()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_Xpos_SetValidValue_ShouldUpdatePosition_examples">Examples</h4>
+  <pre><code class="lang-csharp">int validX = 100;
+canvas.XSIDE = 500; // Ensure canvas size is set appropriately
+canvas.Xpos = validX;
+Assert.AreEqual(validX, canvas.Xpos);</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_Xpos_SetValidValue_ShouldUpdatePosition_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test ensures that when a valid X position value is set to the <code>Xpos</code> property:</p>
+<ul><li>The <code>Xpos</code> property is successfully updated to the assigned value.</li><li>The value is within the valid range defined by the canvas size (<code>XSIDE</code>).</li></ul>
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Test_MyAppCanvasTest_Xpos_SetValueExceedingCanvas_ShouldLogWarningAndSetDefault_" data-uid="ASE_Assignment_Test.MyAppCanvasTest.Xpos_SetValueExceedingCanvas_ShouldLogWarningAndSetDefault*"></a>
+
+  <h3 id="ASE_Assignment_Test_MyAppCanvasTest_Xpos_SetValueExceedingCanvas_ShouldLogWarningAndSetDefault" data-uid="ASE_Assignment_Test.MyAppCanvasTest.Xpos_SetValueExceedingCanvas_ShouldLogWarningAndSetDefault">
+  Xpos_SetValueExceedingCanvas_ShouldLogWarningAndSetDefault()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the behavior of the <code>Xpos</code> property setter when a value exceeding the canvas boundary is assigned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Xpos_SetValueExceedingCanvas_ShouldLogWarningAndSetDefault()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_Xpos_SetValueExceedingCanvas_ShouldLogWarningAndSetDefault_examples">Examples</h4>
+  <pre><code class="lang-csharp">int invalidX = canvas.YSIDE + 10;
+string expectedMessage = $"\nError setting X position: Invalid X position: {invalidX}. Must be between 0 and {canvas.YSIDE}.";
+canvas.Xpos = invalidX;
+Assert.AreEqual(0, canvas.Xpos);</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_Xpos_SetValueExceedingCanvas_ShouldLogWarningAndSetDefault_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test ensures that when a value greater than the maximum allowable boundary (represented by <code>canvas.YSIDE</code>) is set to the <code>Xpos</code> property:</p>
+<ul><li>A warning message is logged, specifying the invalid value and the valid range.</li><li>The <code>Xpos</code> property is reset to its default value (assumed to be 0).</li></ul>
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Test_MyAppCanvasTest_Ypos_SetNegativeValue_ShouldLogWarningAndSetDefault_" data-uid="ASE_Assignment_Test.MyAppCanvasTest.Ypos_SetNegativeValue_ShouldLogWarningAndSetDefault*"></a>
+
+  <h3 id="ASE_Assignment_Test_MyAppCanvasTest_Ypos_SetNegativeValue_ShouldLogWarningAndSetDefault" data-uid="ASE_Assignment_Test.MyAppCanvasTest.Ypos_SetNegativeValue_ShouldLogWarningAndSetDefault">
+  Ypos_SetNegativeValue_ShouldLogWarningAndSetDefault()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs/#L116"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the behavior of the <code>Ypos</code> property setter when an invalid negative value is assigned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Ypos_SetNegativeValue_ShouldLogWarningAndSetDefault()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_Ypos_SetNegativeValue_ShouldLogWarningAndSetDefault_examples">Examples</h4>
+  <pre><code class="lang-csharp">int invalidY = -75;
+string expectedMessage = $"\nError setting Y position: Invalid Y position: {invalidY}. Must be between 0 and {canvas.YSIDE}.";
+canvas.Ypos = invalidY;
+Assert.AreEqual(0, canvas.Ypos);</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_Ypos_SetNegativeValue_ShouldLogWarningAndSetDefault_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test ensures that when a negative value is set to the <code>Ypos</code> property:</p>
+<ul><li>A warning message is logged, specifying the invalid value and the valid range.</li><li>The <code>Ypos</code> property is reset to its default value (assumed to be 0).</li></ul>
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Test_MyAppCanvasTest_Ypos_SetValidValue_ShouldUpdatePosition_" data-uid="ASE_Assignment_Test.MyAppCanvasTest.Ypos_SetValidValue_ShouldUpdatePosition*"></a>
+
+  <h3 id="ASE_Assignment_Test_MyAppCanvasTest_Ypos_SetValidValue_ShouldUpdatePosition" data-uid="ASE_Assignment_Test.MyAppCanvasTest.Ypos_SetValidValue_ShouldUpdatePosition">
+  Ypos_SetValidValue_ShouldUpdatePosition()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs/#L246"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the behavior of the <code>Ypos</code> property setter when a valid value within the canvas boundary is assigned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Ypos_SetValidValue_ShouldUpdatePosition()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_Ypos_SetValidValue_ShouldUpdatePosition_examples">Examples</h4>
+  <pre><code class="lang-csharp">int validY = 150;
+canvas.YSIDE = 500; // Ensure canvas size is set appropriately
+canvas.Ypos = validY;
+Assert.AreEqual(validY, canvas.Ypos);</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_Ypos_SetValidValue_ShouldUpdatePosition_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test ensures that when a valid Y position value is set to the <code>Ypos</code> property:</p>
+<ul><li>The <code>Ypos</code> property is successfully updated to the assigned value.</li><li>The value is within the valid range defined by the canvas size (<code>YSIDE</code>).</li></ul>
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Test_MyAppCanvasTest_Ypos_SetValueExceedingCanvas_ShouldLogWarningAndSetDefault_" data-uid="ASE_Assignment_Test.MyAppCanvasTest.Ypos_SetValueExceedingCanvas_ShouldLogWarningAndSetDefault*"></a>
+
+  <h3 id="ASE_Assignment_Test_MyAppCanvasTest_Ypos_SetValueExceedingCanvas_ShouldLogWarningAndSetDefault" data-uid="ASE_Assignment_Test.MyAppCanvasTest.Ypos_SetValueExceedingCanvas_ShouldLogWarningAndSetDefault">
+  Ypos_SetValueExceedingCanvas_ShouldLogWarningAndSetDefault()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs/#L149"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the behavior of the <code>Ypos</code> property setter when a value exceeding the canvas boundary is assigned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Ypos_SetValueExceedingCanvas_ShouldLogWarningAndSetDefault()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_Ypos_SetValueExceedingCanvas_ShouldLogWarningAndSetDefault_examples">Examples</h4>
+  <pre><code class="lang-csharp">int invalidY = canvas.YSIDE + 20; // Exceeds YCanvasSize for testing
+string expectedMessage = $"\nError setting Y position: Invalid Y position: {invalidY}. Must be between 0 and {canvas.YSIDE}.";
+canvas.Ypos = invalidY;
+Assert.AreEqual(0, canvas.Ypos);</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_Ypos_SetValueExceedingCanvas_ShouldLogWarningAndSetDefault_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test ensures that when a value greater than the maximum allowable boundary (represented by <code>canvas.YSIDE</code>) is set to the <code>Ypos</code> property:</p>
+<ul><li>A warning message is logged, specifying the invalid value and the valid range.</li><li>The <code>Ypos</code> property is reset to its default value (assumed to be 0).</li></ul>
+</div>
+
+
+
+
+  <a id="ASE_Assignment_Test_MyAppCanvasTest_getBitmap_AfterDrawing_ShouldReturnUpdatedBitmap_" data-uid="ASE_Assignment_Test.MyAppCanvasTest.getBitmap_AfterDrawing_ShouldReturnUpdatedBitmap*"></a>
+
+  <h3 id="ASE_Assignment_Test_MyAppCanvasTest_getBitmap_AfterDrawing_ShouldReturnUpdatedBitmap" data-uid="ASE_Assignment_Test.MyAppCanvasTest.getBitmap_AfterDrawing_ShouldReturnUpdatedBitmap">
+  getBitmap_AfterDrawing_ShouldReturnUpdatedBitmap()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs/#L1591"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the <code>getBitmap</code> method to ensure it returns the updated bitmap after drawing operations on the canvas.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void getBitmap_AfterDrawing_ShouldReturnUpdatedBitmap()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_getBitmap_AfterDrawing_ShouldReturnUpdatedBitmap_examples">Examples</h4>
+  <pre><code class="lang-csharp">canvas.MoveTo(50, 50);
+canvas.WriteText("Test Text");
+Bitmap returnedBitmap = (Bitmap)canvas.getBitmap();
+Assert.IsNotNull(returnedBitmap);
+Assert.AreEqual(string.Empty, GlobalConfiguration.OutputExceptionMsg);</code></pre>
+
+
+  <h4 class="section" id="ASE_Assignment_Test_MyAppCanvasTest_getBitmap_AfterDrawing_ShouldReturnUpdatedBitmap_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This test verifies that after performing drawing operations on the canvas:</p>
+<ul><li>The <code>getBitmap</code> method returns a non-null <code>Bitmap</code> object.</li><li>The returned <code>Bitmap</code> reflects the updates made by the drawing operations.</li><li>No warnings or error messages are logged during the operation.</li></ul>
+The test ensures the bitmap reflects the current state of the canvas and is properly maintained.
+</div>
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12/blob/main/ASE_Assignment/ASE_Assignment_Test/MyAppCanvasTest.cs/#L14" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

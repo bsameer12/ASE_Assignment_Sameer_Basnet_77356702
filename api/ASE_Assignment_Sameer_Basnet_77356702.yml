@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: ASE_Assignment_Sameer_Basnet_77356702
+  commentId: N:ASE_Assignment_Sameer_Basnet_77356702
+  id: ASE_Assignment_Sameer_Basnet_77356702
+  children:
+  - ASE_Assignment_Sameer_Basnet_77356702.AboutUs
+  - ASE_Assignment_Sameer_Basnet_77356702.Form1
+  - ASE_Assignment_Sameer_Basnet_77356702.UserGuide
+  langs:
+  - csharp
+  - vb
+  name: ASE_Assignment_Sameer_Basnet_77356702
+  nameWithType: ASE_Assignment_Sameer_Basnet_77356702
+  fullName: ASE_Assignment_Sameer_Basnet_77356702
+  type: Namespace
+  assemblies:
+  - ASE_Assignment_Sameer_Basnet_77356702
+references:
+- uid: ASE_Assignment_Sameer_Basnet_77356702.AboutUs
+  commentId: T:ASE_Assignment_Sameer_Basnet_77356702.AboutUs
+  href: ASE_Assignment_Sameer_Basnet_77356702.AboutUs.html
+  name: AboutUs
+  nameWithType: AboutUs
+  fullName: ASE_Assignment_Sameer_Basnet_77356702.AboutUs
+- uid: ASE_Assignment_Sameer_Basnet_77356702.Form1
+  commentId: T:ASE_Assignment_Sameer_Basnet_77356702.Form1
+  href: ASE_Assignment_Sameer_Basnet_77356702.Form1.html
+  name: Form1
+  nameWithType: Form1
+  fullName: ASE_Assignment_Sameer_Basnet_77356702.Form1
+- uid: ASE_Assignment_Sameer_Basnet_77356702.UserGuide
+  commentId: T:ASE_Assignment_Sameer_Basnet_77356702.UserGuide
+  href: ASE_Assignment_Sameer_Basnet_77356702.UserGuide.html
+  name: UserGuide
+  nameWithType: UserGuide
+  fullName: ASE_Assignment_Sameer_Basnet_77356702.UserGuide

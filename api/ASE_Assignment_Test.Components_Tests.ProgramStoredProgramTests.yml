@@ -1,0 +1,724 @@
+### YamlMime:ManagedReference
+items:
+- uid: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests
+  commentId: T:ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests
+  id: ProgramStoredProgramTests
+  parent: ASE_Assignment_Test.Components_Tests
+  children:
+  - ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Setup
+  - ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_AddVariable_Duplicate_ShouldNotStore
+  - ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_AddVariable_ShouldStoreVariable
+  - ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_EvaluateExpression_Invalid_ShouldThrowException
+  - ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_EvaluateExpression_ShouldReturnResult
+  - ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_InitializeProgram_ShouldSetDefaults
+  - ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_PopEmptyStack_ShouldThrowException
+  - ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_PushPopConditionalCommands_ShouldHandleStack
+  - ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_UpdateVariable_ShouldUpdateValue
+  langs:
+  - csharp
+  - vb
+  name: ProgramStoredProgramTests
+  nameWithType: ProgramStoredProgramTests
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests
+  type: Class
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/ProgramStoredProgramTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: ProgramStoredProgramTests
+    path: ASE_Assignment_Test/Components_Tests/ProgramStoredProgramTests.cs
+    startLine: 18
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  summary: >-
+    Test class for validating the functionality of the  class.
+
+    This class uses the MSTest framework to verify methods and properties of <xref href="ASE_Assignment.Components.ProgramStoredProgram" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: >-
+      [TestClass]
+
+      public class ProgramStoredProgramTests
+    content.vb: >-
+      <TestClass>
+
+      Public Class ProgramStoredProgramTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Setup
+  commentId: M:ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Setup
+  id: Setup
+  parent: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests
+  langs:
+  - csharp
+  - vb
+  name: Setup()
+  nameWithType: ProgramStoredProgramTests.Setup()
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Setup()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/ProgramStoredProgramTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: Setup
+    path: ASE_Assignment_Test/Components_Tests/ProgramStoredProgramTests.cs
+    startLine: 33
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  summary: Initializes the test setup by creating mock dependencies and the instance of <xref href="ASE_Assignment.Components.ProgramStoredProgram" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: >-
+      [TestInitialize]
+
+      public void Setup()
+    content.vb: >-
+      <TestInitialize>
+
+      Public Sub Setup()
+  overload: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Setup*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_InitializeProgram_ShouldSetDefaults
+  commentId: M:ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_InitializeProgram_ShouldSetDefaults
+  id: Test_InitializeProgram_ShouldSetDefaults
+  parent: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests
+  langs:
+  - csharp
+  - vb
+  name: Test_InitializeProgram_ShouldSetDefaults()
+  nameWithType: ProgramStoredProgramTests.Test_InitializeProgram_ShouldSetDefaults()
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_InitializeProgram_ShouldSetDefaults()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/ProgramStoredProgramTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: Test_InitializeProgram_ShouldSetDefaults
+    path: ASE_Assignment_Test/Components_Tests/ProgramStoredProgramTests.cs
+    startLine: 43
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  summary: Tests if the <xref href="ASE_Assignment.Components.ProgramStoredProgram" data-throw-if-not-resolved="false"></xref> is correctly initialized with default values.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Test_InitializeProgram_ShouldSetDefaults()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Test_InitializeProgram_ShouldSetDefaults()
+  overload: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_InitializeProgram_ShouldSetDefaults*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_AddVariable_ShouldStoreVariable
+  commentId: M:ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_AddVariable_ShouldStoreVariable
+  id: Test_AddVariable_ShouldStoreVariable
+  parent: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests
+  langs:
+  - csharp
+  - vb
+  name: Test_AddVariable_ShouldStoreVariable()
+  nameWithType: ProgramStoredProgramTests.Test_AddVariable_ShouldStoreVariable()
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_AddVariable_ShouldStoreVariable()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/ProgramStoredProgramTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: Test_AddVariable_ShouldStoreVariable
+    path: ASE_Assignment_Test/Components_Tests/ProgramStoredProgramTests.cs
+    startLine: 53
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  summary: Tests if a variable can be successfully added and retrieved from the program.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Test_AddVariable_ShouldStoreVariable()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Test_AddVariable_ShouldStoreVariable()
+  overload: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_AddVariable_ShouldStoreVariable*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_AddVariable_Duplicate_ShouldNotStore
+  commentId: M:ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_AddVariable_Duplicate_ShouldNotStore
+  id: Test_AddVariable_Duplicate_ShouldNotStore
+  parent: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests
+  langs:
+  - csharp
+  - vb
+  name: Test_AddVariable_Duplicate_ShouldNotStore()
+  nameWithType: ProgramStoredProgramTests.Test_AddVariable_Duplicate_ShouldNotStore()
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_AddVariable_Duplicate_ShouldNotStore()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/ProgramStoredProgramTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: Test_AddVariable_Duplicate_ShouldNotStore
+    path: ASE_Assignment_Test/Components_Tests/ProgramStoredProgramTests.cs
+    startLine: 66
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  summary: Tests that adding a duplicate variable does not overwrite the original value.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Test_AddVariable_Duplicate_ShouldNotStore()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Test_AddVariable_Duplicate_ShouldNotStore()
+  overload: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_AddVariable_Duplicate_ShouldNotStore*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_UpdateVariable_ShouldUpdateValue
+  commentId: M:ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_UpdateVariable_ShouldUpdateValue
+  id: Test_UpdateVariable_ShouldUpdateValue
+  parent: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests
+  langs:
+  - csharp
+  - vb
+  name: Test_UpdateVariable_ShouldUpdateValue()
+  nameWithType: ProgramStoredProgramTests.Test_UpdateVariable_ShouldUpdateValue()
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_UpdateVariable_ShouldUpdateValue()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/ProgramStoredProgramTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: Test_UpdateVariable_ShouldUpdateValue
+    path: ASE_Assignment_Test/Components_Tests/ProgramStoredProgramTests.cs
+    startLine: 81
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  summary: Tests that adding a duplicate variable does not overwrite the original value.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Test_UpdateVariable_ShouldUpdateValue()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Test_UpdateVariable_ShouldUpdateValue()
+  overload: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_UpdateVariable_ShouldUpdateValue*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_EvaluateExpression_ShouldReturnResult
+  commentId: M:ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_EvaluateExpression_ShouldReturnResult
+  id: Test_EvaluateExpression_ShouldReturnResult
+  parent: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests
+  langs:
+  - csharp
+  - vb
+  name: Test_EvaluateExpression_ShouldReturnResult()
+  nameWithType: ProgramStoredProgramTests.Test_EvaluateExpression_ShouldReturnResult()
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_EvaluateExpression_ShouldReturnResult()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/ProgramStoredProgramTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: Test_EvaluateExpression_ShouldReturnResult
+    path: ASE_Assignment_Test/Components_Tests/ProgramStoredProgramTests.cs
+    startLine: 96
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  summary: Tests if the value of an existing variable can be updated correctly.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Test_EvaluateExpression_ShouldReturnResult()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Test_EvaluateExpression_ShouldReturnResult()
+  overload: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_EvaluateExpression_ShouldReturnResult*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_PushPopConditionalCommands_ShouldHandleStack
+  commentId: M:ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_PushPopConditionalCommands_ShouldHandleStack
+  id: Test_PushPopConditionalCommands_ShouldHandleStack
+  parent: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests
+  langs:
+  - csharp
+  - vb
+  name: Test_PushPopConditionalCommands_ShouldHandleStack()
+  nameWithType: ProgramStoredProgramTests.Test_PushPopConditionalCommands_ShouldHandleStack()
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_PushPopConditionalCommands_ShouldHandleStack()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/ProgramStoredProgramTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: Test_PushPopConditionalCommands_ShouldHandleStack
+    path: ASE_Assignment_Test/Components_Tests/ProgramStoredProgramTests.cs
+    startLine: 110
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  summary: Tests if conditional commands can be pushed to and popped from the stack correctly.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Test_PushPopConditionalCommands_ShouldHandleStack()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Test_PushPopConditionalCommands_ShouldHandleStack()
+  overload: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_PushPopConditionalCommands_ShouldHandleStack*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_PopEmptyStack_ShouldThrowException
+  commentId: M:ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_PopEmptyStack_ShouldThrowException
+  id: Test_PopEmptyStack_ShouldThrowException
+  parent: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests
+  langs:
+  - csharp
+  - vb
+  name: Test_PopEmptyStack_ShouldThrowException()
+  nameWithType: ProgramStoredProgramTests.Test_PopEmptyStack_ShouldThrowException()
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_PopEmptyStack_ShouldThrowException()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/ProgramStoredProgramTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: Test_PopEmptyStack_ShouldThrowException
+    path: ASE_Assignment_Test/Components_Tests/ProgramStoredProgramTests.cs
+    startLine: 124
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  summary: Tests if an exception is thrown when attempting to pop from an empty stack.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Test_PopEmptyStack_ShouldThrowException()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Test_PopEmptyStack_ShouldThrowException()
+  overload: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_PopEmptyStack_ShouldThrowException*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_EvaluateExpression_Invalid_ShouldThrowException
+  commentId: M:ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_EvaluateExpression_Invalid_ShouldThrowException
+  id: Test_EvaluateExpression_Invalid_ShouldThrowException
+  parent: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests
+  langs:
+  - csharp
+  - vb
+  name: Test_EvaluateExpression_Invalid_ShouldThrowException()
+  nameWithType: ProgramStoredProgramTests.Test_EvaluateExpression_Invalid_ShouldThrowException()
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_EvaluateExpression_Invalid_ShouldThrowException()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/ProgramStoredProgramTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: Test_EvaluateExpression_Invalid_ShouldThrowException
+    path: ASE_Assignment_Test/Components_Tests/ProgramStoredProgramTests.cs
+    startLine: 133
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  summary: Tests if an exception is thrown when attempting to pop from an empty stack.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Test_EvaluateExpression_Invalid_ShouldThrowException()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Test_EvaluateExpression_Invalid_ShouldThrowException()
+  overload: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_EvaluateExpression_Invalid_ShouldThrowException*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+references:
+- uid: ASE_Assignment.Components.ProgramStoredProgram
+  commentId: T:ASE_Assignment.Components.ProgramStoredProgram
+  href: ASE_Assignment.Components.ProgramStoredProgram.html
+  name: ProgramStoredProgram
+  nameWithType: ProgramStoredProgram
+  fullName: ASE_Assignment.Components.ProgramStoredProgram
+- uid: ASE_Assignment_Test.Components_Tests
+  commentId: N:ASE_Assignment_Test.Components_Tests
+  href: ASE_Assignment_Test.html
+  name: ASE_Assignment_Test.Components_Tests
+  nameWithType: ASE_Assignment_Test.Components_Tests
+  fullName: ASE_Assignment_Test.Components_Tests
+  spec.csharp:
+  - uid: ASE_Assignment_Test
+    name: ASE_Assignment_Test
+    href: ASE_Assignment_Test.html
+  - name: .
+  - uid: ASE_Assignment_Test.Components_Tests
+    name: Components_Tests
+    href: ASE_Assignment_Test.Components_Tests.html
+  spec.vb:
+  - uid: ASE_Assignment_Test
+    name: ASE_Assignment_Test
+    href: ASE_Assignment_Test.html
+  - name: .
+  - uid: ASE_Assignment_Test.Components_Tests
+    name: Components_Tests
+    href: ASE_Assignment_Test.Components_Tests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Setup*
+  commentId: Overload:ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Setup
+  href: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.html#ASE_Assignment_Test_Components_Tests_ProgramStoredProgramTests_Setup
+  name: Setup
+  nameWithType: ProgramStoredProgramTests.Setup
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Setup
+- uid: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_InitializeProgram_ShouldSetDefaults*
+  commentId: Overload:ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_InitializeProgram_ShouldSetDefaults
+  href: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.html#ASE_Assignment_Test_Components_Tests_ProgramStoredProgramTests_Test_InitializeProgram_ShouldSetDefaults
+  name: Test_InitializeProgram_ShouldSetDefaults
+  nameWithType: ProgramStoredProgramTests.Test_InitializeProgram_ShouldSetDefaults
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_InitializeProgram_ShouldSetDefaults
+- uid: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_AddVariable_ShouldStoreVariable*
+  commentId: Overload:ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_AddVariable_ShouldStoreVariable
+  href: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.html#ASE_Assignment_Test_Components_Tests_ProgramStoredProgramTests_Test_AddVariable_ShouldStoreVariable
+  name: Test_AddVariable_ShouldStoreVariable
+  nameWithType: ProgramStoredProgramTests.Test_AddVariable_ShouldStoreVariable
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_AddVariable_ShouldStoreVariable
+- uid: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_AddVariable_Duplicate_ShouldNotStore*
+  commentId: Overload:ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_AddVariable_Duplicate_ShouldNotStore
+  href: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.html#ASE_Assignment_Test_Components_Tests_ProgramStoredProgramTests_Test_AddVariable_Duplicate_ShouldNotStore
+  name: Test_AddVariable_Duplicate_ShouldNotStore
+  nameWithType: ProgramStoredProgramTests.Test_AddVariable_Duplicate_ShouldNotStore
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_AddVariable_Duplicate_ShouldNotStore
+- uid: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_UpdateVariable_ShouldUpdateValue*
+  commentId: Overload:ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_UpdateVariable_ShouldUpdateValue
+  href: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.html#ASE_Assignment_Test_Components_Tests_ProgramStoredProgramTests_Test_UpdateVariable_ShouldUpdateValue
+  name: Test_UpdateVariable_ShouldUpdateValue
+  nameWithType: ProgramStoredProgramTests.Test_UpdateVariable_ShouldUpdateValue
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_UpdateVariable_ShouldUpdateValue
+- uid: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_EvaluateExpression_ShouldReturnResult*
+  commentId: Overload:ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_EvaluateExpression_ShouldReturnResult
+  href: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.html#ASE_Assignment_Test_Components_Tests_ProgramStoredProgramTests_Test_EvaluateExpression_ShouldReturnResult
+  name: Test_EvaluateExpression_ShouldReturnResult
+  nameWithType: ProgramStoredProgramTests.Test_EvaluateExpression_ShouldReturnResult
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_EvaluateExpression_ShouldReturnResult
+- uid: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_PushPopConditionalCommands_ShouldHandleStack*
+  commentId: Overload:ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_PushPopConditionalCommands_ShouldHandleStack
+  href: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.html#ASE_Assignment_Test_Components_Tests_ProgramStoredProgramTests_Test_PushPopConditionalCommands_ShouldHandleStack
+  name: Test_PushPopConditionalCommands_ShouldHandleStack
+  nameWithType: ProgramStoredProgramTests.Test_PushPopConditionalCommands_ShouldHandleStack
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_PushPopConditionalCommands_ShouldHandleStack
+- uid: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_PopEmptyStack_ShouldThrowException*
+  commentId: Overload:ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_PopEmptyStack_ShouldThrowException
+  href: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.html#ASE_Assignment_Test_Components_Tests_ProgramStoredProgramTests_Test_PopEmptyStack_ShouldThrowException
+  name: Test_PopEmptyStack_ShouldThrowException
+  nameWithType: ProgramStoredProgramTests.Test_PopEmptyStack_ShouldThrowException
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_PopEmptyStack_ShouldThrowException
+- uid: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_EvaluateExpression_Invalid_ShouldThrowException*
+  commentId: Overload:ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_EvaluateExpression_Invalid_ShouldThrowException
+  href: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.html#ASE_Assignment_Test_Components_Tests_ProgramStoredProgramTests_Test_EvaluateExpression_Invalid_ShouldThrowException
+  name: Test_EvaluateExpression_Invalid_ShouldThrowException
+  nameWithType: ProgramStoredProgramTests.Test_EvaluateExpression_Invalid_ShouldThrowException
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramStoredProgramTests.Test_EvaluateExpression_Invalid_ShouldThrowException

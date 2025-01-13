@@ -4,7 +4,7 @@ items:
   commentId: N:ASE_Assignment.AppCanvas
   id: ASE_Assignment.AppCanvas
   children:
-  - ASE_Assignment.AppCanvas.MyAppCanvas
+  - ASE_Assignment.AppCanvas.DrawingCanvas
   langs:
   - csharp
   - vb
@@ -15,13 +15,13 @@ items:
   assemblies:
   - ASE_Assignment
 references:
-- uid: ASE_Assignment.AppCanvas.MyAppCanvas
-  commentId: T:ASE_Assignment.AppCanvas.MyAppCanvas
+- uid: ASE_Assignment.AppCanvas.DrawingCanvas
+  commentId: T:ASE_Assignment.AppCanvas.DrawingCanvas
   parent: ASE_Assignment.AppCanvas
-  href: ASE_Assignment.AppCanvas.MyAppCanvas.html
-  name: MyAppCanvas
-  nameWithType: MyAppCanvas
-  fullName: ASE_Assignment.AppCanvas.MyAppCanvas
+  href: ASE_Assignment.AppCanvas.DrawingCanvas.html
+  name: DrawingCanvas
+  nameWithType: DrawingCanvas
+  fullName: ASE_Assignment.AppCanvas.DrawingCanvas
 - uid: ASE_Assignment.AppCanvas
   commentId: N:ASE_Assignment.AppCanvas
   href: ASE_Assignment.html

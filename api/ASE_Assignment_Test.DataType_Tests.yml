@@ -1,0 +1,44 @@
+### YamlMime:ManagedReference
+items:
+- uid: ASE_Assignment_Test.DataType_Tests
+  commentId: N:ASE_Assignment_Test.DataType_Tests
+  id: ASE_Assignment_Test.DataType_Tests
+  children:
+  - ASE_Assignment_Test.DataType_Tests.DataTypeArrayTests
+  - ASE_Assignment_Test.DataType_Tests.DataTypeBooleanTests
+  - ASE_Assignment_Test.DataType_Tests.DataTypeIntTests
+  - ASE_Assignment_Test.DataType_Tests.DataTypeRealTests
+  langs:
+  - csharp
+  - vb
+  name: ASE_Assignment_Test.DataType_Tests
+  nameWithType: ASE_Assignment_Test.DataType_Tests
+  fullName: ASE_Assignment_Test.DataType_Tests
+  type: Namespace
+  assemblies:
+  - ASE_Assignment_Test
+references:
+- uid: ASE_Assignment_Test.DataType_Tests.DataTypeArrayTests
+  commentId: T:ASE_Assignment_Test.DataType_Tests.DataTypeArrayTests
+  href: ASE_Assignment_Test.DataType_Tests.DataTypeArrayTests.html
+  name: DataTypeArrayTests
+  nameWithType: DataTypeArrayTests
+  fullName: ASE_Assignment_Test.DataType_Tests.DataTypeArrayTests
+- uid: ASE_Assignment_Test.DataType_Tests.DataTypeBooleanTests
+  commentId: T:ASE_Assignment_Test.DataType_Tests.DataTypeBooleanTests
+  href: ASE_Assignment_Test.DataType_Tests.DataTypeBooleanTests.html
+  name: DataTypeBooleanTests
+  nameWithType: DataTypeBooleanTests
+  fullName: ASE_Assignment_Test.DataType_Tests.DataTypeBooleanTests
+- uid: ASE_Assignment_Test.DataType_Tests.DataTypeIntTests
+  commentId: T:ASE_Assignment_Test.DataType_Tests.DataTypeIntTests
+  href: ASE_Assignment_Test.DataType_Tests.DataTypeIntTests.html
+  name: DataTypeIntTests
+  nameWithType: DataTypeIntTests
+  fullName: ASE_Assignment_Test.DataType_Tests.DataTypeIntTests
+- uid: ASE_Assignment_Test.DataType_Tests.DataTypeRealTests
+  commentId: T:ASE_Assignment_Test.DataType_Tests.DataTypeRealTests
+  href: ASE_Assignment_Test.DataType_Tests.DataTypeRealTests.html
+  name: DataTypeRealTests
+  nameWithType: DataTypeRealTests
+  fullName: ASE_Assignment_Test.DataType_Tests.DataTypeRealTests

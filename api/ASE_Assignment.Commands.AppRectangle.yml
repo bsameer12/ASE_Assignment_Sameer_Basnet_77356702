@@ -18,11 +18,11 @@ items:
   type: Class
   source:
     remote:
-      path: ASE_Assignment/ASE_Assignment/Commands/AppRectanglecs.cs
+      path: ASE_Assignment/ASE_Assignment/Commands/CommandRectanglecs.cs
       branch: main
       repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
     id: AppRectangle
-    path: ASE_Assignment/Commands/AppRectanglecs.cs
+    path: ASE_Assignment/Commands/CommandRectanglecs.cs
     startLine: 17
   assemblies:
   - ASE_Assignment
@@ -85,11 +85,11 @@ items:
   type: Constructor
   source:
     remote:
-      path: ASE_Assignment/ASE_Assignment/Commands/AppRectanglecs.cs
+      path: ASE_Assignment/ASE_Assignment/Commands/CommandRectanglecs.cs
       branch: main
       repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
     id: .ctor
-    path: ASE_Assignment/Commands/AppRectanglecs.cs
+    path: ASE_Assignment/Commands/CommandRectanglecs.cs
     startLine: 25
   assemblies:
   - ASE_Assignment
@@ -116,11 +116,11 @@ items:
   type: Constructor
   source:
     remote:
-      path: ASE_Assignment/ASE_Assignment/Commands/AppRectanglecs.cs
+      path: ASE_Assignment/ASE_Assignment/Commands/CommandRectanglecs.cs
       branch: main
       repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
     id: .ctor
-    path: ASE_Assignment/Commands/AppRectanglecs.cs
+    path: ASE_Assignment/Commands/CommandRectanglecs.cs
     startLine: 36
   assemblies:
   - ASE_Assignment
@@ -161,11 +161,11 @@ items:
   type: Method
   source:
     remote:
-      path: ASE_Assignment/ASE_Assignment/Commands/AppRectanglecs.cs
+      path: ASE_Assignment/ASE_Assignment/Commands/CommandRectanglecs.cs
       branch: main
       repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
     id: Execute
-    path: ASE_Assignment/Commands/AppRectanglecs.cs
+    path: ASE_Assignment/Commands/CommandRectanglecs.cs
     startLine: 47
   assemblies:
   - ASE_Assignment
@@ -197,11 +197,11 @@ items:
   type: Method
   source:
     remote:
-      path: ASE_Assignment/ASE_Assignment/Commands/AppRectanglecs.cs
+      path: ASE_Assignment/ASE_Assignment/Commands/CommandRectanglecs.cs
       branch: main
       repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
     id: CheckParameters
-    path: ASE_Assignment/Commands/AppRectanglecs.cs
+    path: ASE_Assignment/Commands/CommandRectanglecs.cs
     startLine: 77
   assemblies:
   - ASE_Assignment

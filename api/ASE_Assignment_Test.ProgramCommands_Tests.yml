@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: ASE_Assignment_Test.ProgramCommands_Tests
+  commentId: N:ASE_Assignment_Test.ProgramCommands_Tests
+  id: ASE_Assignment_Test.ProgramCommands_Tests
+  children:
+  - ASE_Assignment_Test.ProgramCommands_Tests.ProgramCommandsTests
+  langs:
+  - csharp
+  - vb
+  name: ASE_Assignment_Test.ProgramCommands_Tests
+  nameWithType: ASE_Assignment_Test.ProgramCommands_Tests
+  fullName: ASE_Assignment_Test.ProgramCommands_Tests
+  type: Namespace
+  assemblies:
+  - ASE_Assignment_Test
+references:
+- uid: ASE_Assignment_Test.ProgramCommands_Tests.ProgramCommandsTests
+  commentId: T:ASE_Assignment_Test.ProgramCommands_Tests.ProgramCommandsTests
+  href: ASE_Assignment_Test.ProgramCommands_Tests.ProgramCommandsTests.html
+  name: ProgramCommandsTests
+  nameWithType: ProgramCommandsTests
+  fullName: ASE_Assignment_Test.ProgramCommands_Tests.ProgramCommandsTests

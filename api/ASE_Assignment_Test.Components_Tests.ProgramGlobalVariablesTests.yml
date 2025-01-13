@@ -1,0 +1,627 @@
+### YamlMime:ManagedReference
+items:
+- uid: ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests
+  commentId: T:ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests
+  id: ProgramGlobalVariablesTests
+  parent: ASE_Assignment_Test.Components_Tests
+  children:
+  - ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests.TestSetAndGetIsFillEnabled
+  - ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests.TestSetAndGetMaxX
+  - ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests.TestSetAndGetMaxY
+  - ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests.TestSetAndGetOutputExceptionMsg
+  - ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests.TestSetAndGetPenSize
+  - ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests.canvas
+  langs:
+  - csharp
+  - vb
+  name: ProgramGlobalVariablesTests
+  nameWithType: ProgramGlobalVariablesTests
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests
+  type: Class
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/ProgramGlobalVariablesTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: ProgramGlobalVariablesTests
+    path: ASE_Assignment_Test/Components_Tests/ProgramGlobalVariablesTests.cs
+    startLine: 13
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  summary: Unit tests for the <code>ProgramGlobalVariables</code> class to verify the functionality of its properties.
+  example: []
+  syntax:
+    content: >-
+      [TestClass]
+
+      public class ProgramGlobalVariablesTests
+    content.vb: >-
+      <TestClass>
+
+      Public Class ProgramGlobalVariablesTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests.canvas
+  commentId: F:ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests.canvas
+  id: canvas
+  parent: ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests
+  langs:
+  - csharp
+  - vb
+  name: canvas
+  nameWithType: ProgramGlobalVariablesTests.canvas
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests.canvas
+  type: Field
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/ProgramGlobalVariablesTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: canvas
+    path: ASE_Assignment_Test/Components_Tests/ProgramGlobalVariablesTests.cs
+    startLine: 16
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  syntax:
+    content: public DrawingCanvas canvas
+    return:
+      type: ASE_Assignment.AppCanvas.DrawingCanvas
+    content.vb: Public canvas As DrawingCanvas
+- uid: ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests.TestSetAndGetMaxX
+  commentId: M:ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests.TestSetAndGetMaxX
+  id: TestSetAndGetMaxX
+  parent: ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests
+  langs:
+  - csharp
+  - vb
+  name: TestSetAndGetMaxX()
+  nameWithType: ProgramGlobalVariablesTests.TestSetAndGetMaxX()
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests.TestSetAndGetMaxX()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/ProgramGlobalVariablesTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: TestSetAndGetMaxX
+    path: ASE_Assignment_Test/Components_Tests/ProgramGlobalVariablesTests.cs
+    startLine: 31
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  summary: Tests setting and getting the <code>MaxX</code> property to ensure it returns the correct value.
+  remarks: This test validates that the <code>MaxX</code> property correctly stores and retrieves the value assigned to it.
+  example:
+  - >-
+    <pre><code class="lang-csharp">int newMaxX = 800;
+
+    ProgramGlobalVariables.MaxX = newMaxX;
+
+    Assert.AreEqual(newMaxX, ProgramGlobalVariables.MaxX);</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestSetAndGetMaxX()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestSetAndGetMaxX()
+  overload: ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests.TestSetAndGetMaxX*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests.TestSetAndGetMaxY
+  commentId: M:ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests.TestSetAndGetMaxY
+  id: TestSetAndGetMaxY
+  parent: ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests
+  langs:
+  - csharp
+  - vb
+  name: TestSetAndGetMaxY()
+  nameWithType: ProgramGlobalVariablesTests.TestSetAndGetMaxY()
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests.TestSetAndGetMaxY()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/ProgramGlobalVariablesTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: TestSetAndGetMaxY
+    path: ASE_Assignment_Test/Components_Tests/ProgramGlobalVariablesTests.cs
+    startLine: 57
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  summary: Tests setting and getting the <code>MaxY</code> property to ensure it returns the correct value.
+  remarks: This test ensures that the <code>MaxY</code> property retains and returns the value assigned to it.
+  example:
+  - >-
+    <pre><code class="lang-csharp">int newMaxY = 600;
+
+    ProgramGlobalVariables.MaxY = newMaxY;
+
+    Assert.AreEqual(newMaxY, ProgramGlobalVariables.MaxY);</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestSetAndGetMaxY()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestSetAndGetMaxY()
+  overload: ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests.TestSetAndGetMaxY*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests.TestSetAndGetIsFillEnabled
+  commentId: M:ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests.TestSetAndGetIsFillEnabled
+  id: TestSetAndGetIsFillEnabled
+  parent: ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests
+  langs:
+  - csharp
+  - vb
+  name: TestSetAndGetIsFillEnabled()
+  nameWithType: ProgramGlobalVariablesTests.TestSetAndGetIsFillEnabled()
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests.TestSetAndGetIsFillEnabled()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/ProgramGlobalVariablesTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: TestSetAndGetIsFillEnabled
+    path: ASE_Assignment_Test/Components_Tests/ProgramGlobalVariablesTests.cs
+    startLine: 83
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  summary: Tests setting and getting the <code>IsFillEnabled</code> property to ensure it returns the correct value.
+  remarks: This test verifies that the <code>IsFillEnabled</code> property behaves as expected when toggled on or off.
+  example:
+  - >-
+    <pre><code class="lang-csharp">bool newFillState = true;
+
+    ProgramGlobalVariables.IsFillEnabled = newFillState;
+
+    Assert.AreEqual(newFillState, ProgramGlobalVariables.IsFillEnabled);</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestSetAndGetIsFillEnabled()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestSetAndGetIsFillEnabled()
+  overload: ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests.TestSetAndGetIsFillEnabled*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests.TestSetAndGetPenSize
+  commentId: M:ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests.TestSetAndGetPenSize
+  id: TestSetAndGetPenSize
+  parent: ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests
+  langs:
+  - csharp
+  - vb
+  name: TestSetAndGetPenSize()
+  nameWithType: ProgramGlobalVariablesTests.TestSetAndGetPenSize()
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests.TestSetAndGetPenSize()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/ProgramGlobalVariablesTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: TestSetAndGetPenSize
+    path: ASE_Assignment_Test/Components_Tests/ProgramGlobalVariablesTests.cs
+    startLine: 109
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  summary: Tests setting and getting the <code>PenSize</code> property to ensure it returns the correct value.
+  remarks: This test ensures that the <code>PenSize</code> property retains and returns the correct value assigned to it.
+  example:
+  - >-
+    <pre><code class="lang-csharp">int newPenSize = 5;
+
+    ProgramGlobalVariables.PenSize = newPenSize;
+
+    Assert.AreEqual(newPenSize, ProgramGlobalVariables.PenSize);</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestSetAndGetPenSize()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestSetAndGetPenSize()
+  overload: ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests.TestSetAndGetPenSize*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests.TestSetAndGetOutputExceptionMsg
+  commentId: M:ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests.TestSetAndGetOutputExceptionMsg
+  id: TestSetAndGetOutputExceptionMsg
+  parent: ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests
+  langs:
+  - csharp
+  - vb
+  name: TestSetAndGetOutputExceptionMsg()
+  nameWithType: ProgramGlobalVariablesTests.TestSetAndGetOutputExceptionMsg()
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests.TestSetAndGetOutputExceptionMsg()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/ProgramGlobalVariablesTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: TestSetAndGetOutputExceptionMsg
+    path: ASE_Assignment_Test/Components_Tests/ProgramGlobalVariablesTests.cs
+    startLine: 135
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  summary: Tests setting and getting the <code>OutputExceptionMsg</code> property to ensure it returns the correct value.
+  remarks: This test verifies that the <code>OutputExceptionMsg</code> property correctly stores and retrieves the value assigned to it.
+  example:
+  - >-
+    <pre><code class="lang-csharp">string newMessage = "An error occurred.";
+
+    ProgramGlobalVariables.OutputExceptionMsg = newMessage;
+
+    Assert.AreEqual(newMessage, ProgramGlobalVariables.OutputExceptionMsg);</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestSetAndGetOutputExceptionMsg()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestSetAndGetOutputExceptionMsg()
+  overload: ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests.TestSetAndGetOutputExceptionMsg*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+references:
+- uid: ASE_Assignment_Test.Components_Tests
+  commentId: N:ASE_Assignment_Test.Components_Tests
+  href: ASE_Assignment_Test.html
+  name: ASE_Assignment_Test.Components_Tests
+  nameWithType: ASE_Assignment_Test.Components_Tests
+  fullName: ASE_Assignment_Test.Components_Tests
+  spec.csharp:
+  - uid: ASE_Assignment_Test
+    name: ASE_Assignment_Test
+    href: ASE_Assignment_Test.html
+  - name: .
+  - uid: ASE_Assignment_Test.Components_Tests
+    name: Components_Tests
+    href: ASE_Assignment_Test.Components_Tests.html
+  spec.vb:
+  - uid: ASE_Assignment_Test
+    name: ASE_Assignment_Test
+    href: ASE_Assignment_Test.html
+  - name: .
+  - uid: ASE_Assignment_Test.Components_Tests
+    name: Components_Tests
+    href: ASE_Assignment_Test.Components_Tests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ASE_Assignment.AppCanvas.DrawingCanvas
+  commentId: T:ASE_Assignment.AppCanvas.DrawingCanvas
+  parent: ASE_Assignment.AppCanvas
+  href: ASE_Assignment.AppCanvas.DrawingCanvas.html
+  name: DrawingCanvas
+  nameWithType: DrawingCanvas
+  fullName: ASE_Assignment.AppCanvas.DrawingCanvas
+- uid: ASE_Assignment.AppCanvas
+  commentId: N:ASE_Assignment.AppCanvas
+  href: ASE_Assignment.html
+  name: ASE_Assignment.AppCanvas
+  nameWithType: ASE_Assignment.AppCanvas
+  fullName: ASE_Assignment.AppCanvas
+  spec.csharp:
+  - uid: ASE_Assignment
+    name: ASE_Assignment
+    href: ASE_Assignment.html
+  - name: .
+  - uid: ASE_Assignment.AppCanvas
+    name: AppCanvas
+    href: ASE_Assignment.AppCanvas.html
+  spec.vb:
+  - uid: ASE_Assignment
+    name: ASE_Assignment
+    href: ASE_Assignment.html
+  - name: .
+  - uid: ASE_Assignment.AppCanvas
+    name: AppCanvas
+    href: ASE_Assignment.AppCanvas.html
+- uid: ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests.TestSetAndGetMaxX*
+  commentId: Overload:ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests.TestSetAndGetMaxX
+  href: ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests.html#ASE_Assignment_Test_Components_Tests_ProgramGlobalVariablesTests_TestSetAndGetMaxX
+  name: TestSetAndGetMaxX
+  nameWithType: ProgramGlobalVariablesTests.TestSetAndGetMaxX
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests.TestSetAndGetMaxX
+- uid: ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests.TestSetAndGetMaxY*
+  commentId: Overload:ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests.TestSetAndGetMaxY
+  href: ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests.html#ASE_Assignment_Test_Components_Tests_ProgramGlobalVariablesTests_TestSetAndGetMaxY
+  name: TestSetAndGetMaxY
+  nameWithType: ProgramGlobalVariablesTests.TestSetAndGetMaxY
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests.TestSetAndGetMaxY
+- uid: ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests.TestSetAndGetIsFillEnabled*
+  commentId: Overload:ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests.TestSetAndGetIsFillEnabled
+  href: ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests.html#ASE_Assignment_Test_Components_Tests_ProgramGlobalVariablesTests_TestSetAndGetIsFillEnabled
+  name: TestSetAndGetIsFillEnabled
+  nameWithType: ProgramGlobalVariablesTests.TestSetAndGetIsFillEnabled
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests.TestSetAndGetIsFillEnabled
+- uid: ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests.TestSetAndGetPenSize*
+  commentId: Overload:ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests.TestSetAndGetPenSize
+  href: ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests.html#ASE_Assignment_Test_Components_Tests_ProgramGlobalVariablesTests_TestSetAndGetPenSize
+  name: TestSetAndGetPenSize
+  nameWithType: ProgramGlobalVariablesTests.TestSetAndGetPenSize
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests.TestSetAndGetPenSize
+- uid: ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests.TestSetAndGetOutputExceptionMsg*
+  commentId: Overload:ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests.TestSetAndGetOutputExceptionMsg
+  href: ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests.html#ASE_Assignment_Test_Components_Tests_ProgramGlobalVariablesTests_TestSetAndGetOutputExceptionMsg
+  name: TestSetAndGetOutputExceptionMsg
+  nameWithType: ProgramGlobalVariablesTests.TestSetAndGetOutputExceptionMsg
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramGlobalVariablesTests.TestSetAndGetOutputExceptionMsg

@@ -1,0 +1,1400 @@
+### YamlMime:ManagedReference
+items:
+- uid: ASE_Assignment.Commands.CommandPoke
+  commentId: T:ASE_Assignment.Commands.CommandPoke
+  id: CommandPoke
+  parent: ASE_Assignment.Commands
+  children:
+  - ASE_Assignment.Commands.CommandPoke.#ctor
+  - ASE_Assignment.Commands.CommandPoke.CheckParameters(System.String[])
+  - ASE_Assignment.Commands.CommandPoke.Compile
+  - ASE_Assignment.Commands.CommandPoke.Execute
+  - ASE_Assignment.Commands.CommandPoke.Set(BOOSE.StoredProgram,System.String)
+  langs:
+  - csharp
+  - vb
+  name: CommandPoke
+  nameWithType: CommandPoke
+  fullName: ASE_Assignment.Commands.CommandPoke
+  type: Class
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment/Commands/CommandPoke.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: CommandPoke
+    path: ASE_Assignment/Commands/CommandPoke.cs
+    startLine: 18
+  assemblies:
+  - ASE_Assignment
+  namespace: ASE_Assignment.Commands
+  summary: Represents a "Poke" command that sets a value in a specific cell of an array.
+  remarks: >-
+    The <xref href="ASE_Assignment.Commands.CommandPoke" data-throw-if-not-resolved="false"></xref> class extends the functionality of the <xref href="ASE_Assignment.DataTypes.DataTypeArray" data-throw-if-not-resolved="false"></xref> class to implement
+
+    the "Poke" operation, which writes values into integer or real (double) arrays. It provides methods
+
+    for parameter validation, compilation, and execution of the Poke operation.
+  example: []
+  syntax:
+    content: 'public class CommandPoke : DataTypeArray, ICommand'
+    content.vb: Public Class CommandPoke Inherits DataTypeArray Implements ICommand
+  inheritance:
+  - System.Object
+  - BOOSE.Command
+  - BOOSE.Evaluation
+  - ASE_Assignment.DataTypes.DataTypeArray
+  implements:
+  - BOOSE.ICommand
+  inheritedMembers:
+  - ASE_Assignment.DataTypes.DataTypeArray.PEEK
+  - ASE_Assignment.DataTypes.DataTypeArray.POKE
+  - ASE_Assignment.DataTypes.DataTypeArray.type
+  - ASE_Assignment.DataTypes.DataTypeArray.IntValue
+  - ASE_Assignment.DataTypes.DataTypeArray.RealValue
+  - ASE_Assignment.DataTypes.DataTypeArray.rowsCount
+  - ASE_Assignment.DataTypes.DataTypeArray.columnsCount
+  - ASE_Assignment.DataTypes.DataTypeArray.intArray
+  - ASE_Assignment.DataTypes.DataTypeArray.realArray
+  - ASE_Assignment.DataTypes.DataTypeArray.pokeValue
+  - ASE_Assignment.DataTypes.DataTypeArray.peekValue
+  - ASE_Assignment.DataTypes.DataTypeArray.rowExpression
+  - ASE_Assignment.DataTypes.DataTypeArray.columnExpression
+  - ASE_Assignment.DataTypes.DataTypeArray.rowCurrent
+  - ASE_Assignment.DataTypes.DataTypeArray.columnCurrent
+  - ASE_Assignment.DataTypes.DataTypeArray.Rows
+  - ASE_Assignment.DataTypes.DataTypeArray.Columns
+  - ASE_Assignment.DataTypes.DataTypeArray.ArrayRestrictions
+  - ASE_Assignment.DataTypes.DataTypeArray.ReduceRestrictionCounter
+  - ASE_Assignment.DataTypes.DataTypeArray.ProcessArrayParametersCompile(System.Boolean)
+  - ASE_Assignment.DataTypes.DataTypeArray.ProcessArrayParametersExecute(System.Boolean)
+  - ASE_Assignment.DataTypes.DataTypeArray.SetIntArray(System.Int32,System.Int32,System.Int32)
+  - ASE_Assignment.DataTypes.DataTypeArray.SetRealArray(System.Double,System.Int32,System.Int32)
+  - ASE_Assignment.DataTypes.DataTypeArray.GetIntArray(System.Int32,System.Int32)
+  - ASE_Assignment.DataTypes.DataTypeArray.GetRealArray(System.Int32,System.Int32)
+  - BOOSE.Evaluation.expression
+  - BOOSE.Evaluation.evaluatedExpression
+  - BOOSE.Evaluation.varName
+  - BOOSE.Evaluation.value
+  - BOOSE.Evaluation.ProcessExpression(System.String)
+  - BOOSE.Evaluation.Expression
+  - BOOSE.Evaluation.VarName
+  - BOOSE.Evaluation.Value
+  - BOOSE.Evaluation.Local
+  - BOOSE.Command.program
+  - BOOSE.Command.parameterList
+  - BOOSE.Command.parameters
+  - BOOSE.Command.paramsint
+  - BOOSE.Command.ProcessParameters(System.String)
+  - BOOSE.Command.ToString
+  - BOOSE.Command.Program
+  - BOOSE.Command.Name
+  - BOOSE.Command.ParameterList
+  - BOOSE.Command.Parameters
+  - BOOSE.Command.Paramsint
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: ASE_Assignment.Commands.CommandPoke.#ctor
+  commentId: M:ASE_Assignment.Commands.CommandPoke.#ctor
+  id: '#ctor'
+  parent: ASE_Assignment.Commands.CommandPoke
+  langs:
+  - csharp
+  - vb
+  name: CommandPoke()
+  nameWithType: CommandPoke.CommandPoke()
+  fullName: ASE_Assignment.Commands.CommandPoke.CommandPoke()
+  type: Constructor
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment/Commands/CommandPoke.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: .ctor
+    path: ASE_Assignment/Commands/CommandPoke.cs
+    startLine: 27
+  assemblies:
+  - ASE_Assignment
+  namespace: ASE_Assignment.Commands
+  summary: Initializes a new instance of the <xref href="ASE_Assignment.Commands.CommandPoke" data-throw-if-not-resolved="false"></xref> class and adjusts the restriction counter.
+  remarks: >-
+    This constructor ensures that the instance restriction counter is adjusted appropriately, allowing
+
+    the creation of multiple "Poke" commands without limitations imposed by the base class.
+  example: []
+  syntax:
+    content: public CommandPoke()
+    content.vb: Public Sub New()
+  overload: ASE_Assignment.Commands.CommandPoke.#ctor*
+  nameWithType.vb: CommandPoke.New()
+  fullName.vb: ASE_Assignment.Commands.CommandPoke.New()
+  name.vb: New()
+- uid: ASE_Assignment.Commands.CommandPoke.CheckParameters(System.String[])
+  commentId: M:ASE_Assignment.Commands.CommandPoke.CheckParameters(System.String[])
+  id: CheckParameters(System.String[])
+  parent: ASE_Assignment.Commands.CommandPoke
+  langs:
+  - csharp
+  - vb
+  name: CheckParameters(string[])
+  nameWithType: CommandPoke.CheckParameters(string[])
+  fullName: ASE_Assignment.Commands.CommandPoke.CheckParameters(string[])
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment/Commands/CommandPoke.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: CheckParameters
+    path: ASE_Assignment/Commands/CommandPoke.cs
+    startLine: 49
+  assemblies:
+  - ASE_Assignment
+  namespace: ASE_Assignment.Commands
+  summary: Validates the parameters for the "Poke" command.
+  remarks: >-
+    This method ensures that the parameter list for the "Poke" operation is valid. The parameters
+
+    must include:
+
+    <ul><li>The array name.</li><li>The row index of the target cell.</li><li>An optional column index for multi-dimensional arrays.</li></ul>
+
+    If the parameter list is invalid, a <xref href="BOOSE.CommandException" data-throw-if-not-resolved="false"></xref> is thrown.
+  example: []
+  syntax:
+    content: public override void CheckParameters(string[] parameter)
+    parameters:
+    - id: parameter
+      type: System.String[]
+      description: An array of parameters to validate.
+    content.vb: Public Overrides Sub CheckParameters(parameter As String())
+  overridden: ASE_Assignment.DataTypes.DataTypeArray.CheckParameters(System.String[])
+  overload: ASE_Assignment.Commands.CommandPoke.CheckParameters*
+  exceptions:
+  - type: BOOSE.CommandException
+    commentId: T:BOOSE.CommandException
+    description: Thrown when the parameter list contains an invalid number of elements.
+  nameWithType.vb: CommandPoke.CheckParameters(String())
+  fullName.vb: ASE_Assignment.Commands.CommandPoke.CheckParameters(String())
+  name.vb: CheckParameters(String())
+- uid: ASE_Assignment.Commands.CommandPoke.Compile
+  commentId: M:ASE_Assignment.Commands.CommandPoke.Compile
+  id: Compile
+  parent: ASE_Assignment.Commands.CommandPoke
+  langs:
+  - csharp
+  - vb
+  name: Compile()
+  nameWithType: CommandPoke.Compile()
+  fullName: ASE_Assignment.Commands.CommandPoke.Compile()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment/Commands/CommandPoke.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: Compile
+    path: ASE_Assignment/Commands/CommandPoke.cs
+    startLine: 65
+  assemblies:
+  - ASE_Assignment
+  namespace: ASE_Assignment.Commands
+  summary: Compiles the "Poke" command by processing the array parameters.
+  remarks: >-
+    This method prepares the "Poke" command for execution by parsing and validating the parameters.
+
+    It ensures that the "Poke" operation adheres to its specific behavior.
+  example: []
+  syntax:
+    content: public override void Compile()
+    content.vb: Public Overrides Sub Compile()
+  overridden: ASE_Assignment.DataTypes.DataTypeArray.Compile
+  overload: ASE_Assignment.Commands.CommandPoke.Compile*
+- uid: ASE_Assignment.Commands.CommandPoke.Execute
+  commentId: M:ASE_Assignment.Commands.CommandPoke.Execute
+  id: Execute
+  parent: ASE_Assignment.Commands.CommandPoke
+  langs:
+  - csharp
+  - vb
+  name: Execute()
+  nameWithType: CommandPoke.Execute()
+  fullName: ASE_Assignment.Commands.CommandPoke.Execute()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment/Commands/CommandPoke.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: Execute
+    path: ASE_Assignment/Commands/CommandPoke.cs
+    startLine: 77
+  assemblies:
+  - ASE_Assignment
+  namespace: ASE_Assignment.Commands
+  summary: Compiles the "Poke" command by processing the array parameters.
+  remarks: >-
+    This method prepares the "Poke" command for execution by parsing and validating the parameters.
+
+    It ensures that the "Poke" operation adheres to its specific behavior.
+  example: []
+  syntax:
+    content: public override void Execute()
+    content.vb: Public Overrides Sub Execute()
+  overridden: ASE_Assignment.DataTypes.DataTypeArray.Execute
+  overload: ASE_Assignment.Commands.CommandPoke.Execute*
+- uid: ASE_Assignment.Commands.CommandPoke.Set(BOOSE.StoredProgram,System.String)
+  commentId: M:ASE_Assignment.Commands.CommandPoke.Set(BOOSE.StoredProgram,System.String)
+  id: Set(BOOSE.StoredProgram,System.String)
+  parent: ASE_Assignment.Commands.CommandPoke
+  langs:
+  - csharp
+  - vb
+  name: Set(StoredProgram, string)
+  nameWithType: CommandPoke.Set(StoredProgram, string)
+  fullName: ASE_Assignment.Commands.CommandPoke.Set(BOOSE.StoredProgram, string)
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment/Commands/CommandPoke.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: Set
+    path: ASE_Assignment/Commands/CommandPoke.cs
+    startLine: 91
+  assemblies:
+  - ASE_Assignment
+  namespace: ASE_Assignment.Commands
+  summary: Sets the program and parameter list for the "Poke" command.
+  remarks: >-
+    This method initializes the "Poke" command by associating it with the specified program and
+
+    parsing the provided parameters. It calls the base class implementation for additional setup.
+  example: []
+  syntax:
+    content: public override void Set(StoredProgram program, string paramsList)
+    parameters:
+    - id: program
+      type: BOOSE.StoredProgram
+      description: The <xref href="BOOSE.StoredProgram" data-throw-if-not-resolved="false"></xref> instance to associate with this command.
+    - id: paramsList
+      type: System.String
+      description: The list of parameters for the "Poke" command.
+    content.vb: Public Overrides Sub [Set](program As StoredProgram, paramsList As String)
+  overridden: BOOSE.Command.Set(BOOSE.StoredProgram,System.String)
+  overload: ASE_Assignment.Commands.CommandPoke.Set*
+  nameWithType.vb: CommandPoke.Set(StoredProgram, String)
+  fullName.vb: ASE_Assignment.Commands.CommandPoke.Set(BOOSE.StoredProgram, String)
+  name.vb: Set(StoredProgram, String)
+references:
+- uid: ASE_Assignment.Commands.CommandPoke
+  commentId: T:ASE_Assignment.Commands.CommandPoke
+  href: ASE_Assignment.Commands.CommandPoke.html
+  name: CommandPoke
+  nameWithType: CommandPoke
+  fullName: ASE_Assignment.Commands.CommandPoke
+- uid: ASE_Assignment.DataTypes.DataTypeArray
+  commentId: T:ASE_Assignment.DataTypes.DataTypeArray
+  parent: ASE_Assignment.DataTypes
+  href: ASE_Assignment.DataTypes.DataTypeArray.html
+  name: DataTypeArray
+  nameWithType: DataTypeArray
+  fullName: ASE_Assignment.DataTypes.DataTypeArray
+- uid: ASE_Assignment.Commands
+  commentId: N:ASE_Assignment.Commands
+  href: ASE_Assignment.html
+  name: ASE_Assignment.Commands
+  nameWithType: ASE_Assignment.Commands
+  fullName: ASE_Assignment.Commands
+  spec.csharp:
+  - uid: ASE_Assignment
+    name: ASE_Assignment
+    href: ASE_Assignment.html
+  - name: .
+  - uid: ASE_Assignment.Commands
+    name: Commands
+    href: ASE_Assignment.Commands.html
+  spec.vb:
+  - uid: ASE_Assignment
+    name: ASE_Assignment
+    href: ASE_Assignment.html
+  - name: .
+  - uid: ASE_Assignment.Commands
+    name: Commands
+    href: ASE_Assignment.Commands.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: BOOSE.Command
+  commentId: T:BOOSE.Command
+  parent: BOOSE
+  isExternal: true
+  name: Command
+  nameWithType: Command
+  fullName: BOOSE.Command
+- uid: BOOSE.Evaluation
+  commentId: T:BOOSE.Evaluation
+  parent: BOOSE
+  isExternal: true
+  name: Evaluation
+  nameWithType: Evaluation
+  fullName: BOOSE.Evaluation
+- uid: BOOSE.ICommand
+  commentId: T:BOOSE.ICommand
+  parent: BOOSE
+  isExternal: true
+  name: ICommand
+  nameWithType: ICommand
+  fullName: BOOSE.ICommand
+- uid: ASE_Assignment.DataTypes.DataTypeArray.PEEK
+  commentId: F:ASE_Assignment.DataTypes.DataTypeArray.PEEK
+  parent: ASE_Assignment.DataTypes.DataTypeArray
+  href: ASE_Assignment.DataTypes.DataTypeArray.html#ASE_Assignment_DataTypes_DataTypeArray_PEEK
+  name: PEEK
+  nameWithType: DataTypeArray.PEEK
+  fullName: ASE_Assignment.DataTypes.DataTypeArray.PEEK
+- uid: ASE_Assignment.DataTypes.DataTypeArray.POKE
+  commentId: F:ASE_Assignment.DataTypes.DataTypeArray.POKE
+  parent: ASE_Assignment.DataTypes.DataTypeArray
+  href: ASE_Assignment.DataTypes.DataTypeArray.html#ASE_Assignment_DataTypes_DataTypeArray_POKE
+  name: POKE
+  nameWithType: DataTypeArray.POKE
+  fullName: ASE_Assignment.DataTypes.DataTypeArray.POKE
+- uid: ASE_Assignment.DataTypes.DataTypeArray.type
+  commentId: F:ASE_Assignment.DataTypes.DataTypeArray.type
+  parent: ASE_Assignment.DataTypes.DataTypeArray
+  href: ASE_Assignment.DataTypes.DataTypeArray.html#ASE_Assignment_DataTypes_DataTypeArray_type
+  name: type
+  nameWithType: DataTypeArray.type
+  fullName: ASE_Assignment.DataTypes.DataTypeArray.type
+- uid: ASE_Assignment.DataTypes.DataTypeArray.IntValue
+  commentId: F:ASE_Assignment.DataTypes.DataTypeArray.IntValue
+  parent: ASE_Assignment.DataTypes.DataTypeArray
+  href: ASE_Assignment.DataTypes.DataTypeArray.html#ASE_Assignment_DataTypes_DataTypeArray_IntValue
+  name: IntValue
+  nameWithType: DataTypeArray.IntValue
+  fullName: ASE_Assignment.DataTypes.DataTypeArray.IntValue
+- uid: ASE_Assignment.DataTypes.DataTypeArray.RealValue
+  commentId: F:ASE_Assignment.DataTypes.DataTypeArray.RealValue
+  parent: ASE_Assignment.DataTypes.DataTypeArray
+  href: ASE_Assignment.DataTypes.DataTypeArray.html#ASE_Assignment_DataTypes_DataTypeArray_RealValue
+  name: RealValue
+  nameWithType: DataTypeArray.RealValue
+  fullName: ASE_Assignment.DataTypes.DataTypeArray.RealValue
+- uid: ASE_Assignment.DataTypes.DataTypeArray.rowsCount
+  commentId: F:ASE_Assignment.DataTypes.DataTypeArray.rowsCount
+  parent: ASE_Assignment.DataTypes.DataTypeArray
+  href: ASE_Assignment.DataTypes.DataTypeArray.html#ASE_Assignment_DataTypes_DataTypeArray_rowsCount
+  name: rowsCount
+  nameWithType: DataTypeArray.rowsCount
+  fullName: ASE_Assignment.DataTypes.DataTypeArray.rowsCount
+- uid: ASE_Assignment.DataTypes.DataTypeArray.columnsCount
+  commentId: F:ASE_Assignment.DataTypes.DataTypeArray.columnsCount
+  parent: ASE_Assignment.DataTypes.DataTypeArray
+  href: ASE_Assignment.DataTypes.DataTypeArray.html#ASE_Assignment_DataTypes_DataTypeArray_columnsCount
+  name: columnsCount
+  nameWithType: DataTypeArray.columnsCount
+  fullName: ASE_Assignment.DataTypes.DataTypeArray.columnsCount
+- uid: ASE_Assignment.DataTypes.DataTypeArray.intArray
+  commentId: F:ASE_Assignment.DataTypes.DataTypeArray.intArray
+  parent: ASE_Assignment.DataTypes.DataTypeArray
+  href: ASE_Assignment.DataTypes.DataTypeArray.html#ASE_Assignment_DataTypes_DataTypeArray_intArray
+  name: intArray
+  nameWithType: DataTypeArray.intArray
+  fullName: ASE_Assignment.DataTypes.DataTypeArray.intArray
+- uid: ASE_Assignment.DataTypes.DataTypeArray.realArray
+  commentId: F:ASE_Assignment.DataTypes.DataTypeArray.realArray
+  parent: ASE_Assignment.DataTypes.DataTypeArray
+  href: ASE_Assignment.DataTypes.DataTypeArray.html#ASE_Assignment_DataTypes_DataTypeArray_realArray
+  name: realArray
+  nameWithType: DataTypeArray.realArray
+  fullName: ASE_Assignment.DataTypes.DataTypeArray.realArray
+- uid: ASE_Assignment.DataTypes.DataTypeArray.pokeValue
+  commentId: F:ASE_Assignment.DataTypes.DataTypeArray.pokeValue
+  parent: ASE_Assignment.DataTypes.DataTypeArray
+  href: ASE_Assignment.DataTypes.DataTypeArray.html#ASE_Assignment_DataTypes_DataTypeArray_pokeValue
+  name: pokeValue
+  nameWithType: DataTypeArray.pokeValue
+  fullName: ASE_Assignment.DataTypes.DataTypeArray.pokeValue
+- uid: ASE_Assignment.DataTypes.DataTypeArray.peekValue
+  commentId: F:ASE_Assignment.DataTypes.DataTypeArray.peekValue
+  parent: ASE_Assignment.DataTypes.DataTypeArray
+  href: ASE_Assignment.DataTypes.DataTypeArray.html#ASE_Assignment_DataTypes_DataTypeArray_peekValue
+  name: peekValue
+  nameWithType: DataTypeArray.peekValue
+  fullName: ASE_Assignment.DataTypes.DataTypeArray.peekValue
+- uid: ASE_Assignment.DataTypes.DataTypeArray.rowExpression
+  commentId: F:ASE_Assignment.DataTypes.DataTypeArray.rowExpression
+  parent: ASE_Assignment.DataTypes.DataTypeArray
+  href: ASE_Assignment.DataTypes.DataTypeArray.html#ASE_Assignment_DataTypes_DataTypeArray_rowExpression
+  name: rowExpression
+  nameWithType: DataTypeArray.rowExpression
+  fullName: ASE_Assignment.DataTypes.DataTypeArray.rowExpression
+- uid: ASE_Assignment.DataTypes.DataTypeArray.columnExpression
+  commentId: F:ASE_Assignment.DataTypes.DataTypeArray.columnExpression
+  parent: ASE_Assignment.DataTypes.DataTypeArray
+  href: ASE_Assignment.DataTypes.DataTypeArray.html#ASE_Assignment_DataTypes_DataTypeArray_columnExpression
+  name: columnExpression
+  nameWithType: DataTypeArray.columnExpression
+  fullName: ASE_Assignment.DataTypes.DataTypeArray.columnExpression
+- uid: ASE_Assignment.DataTypes.DataTypeArray.rowCurrent
+  commentId: F:ASE_Assignment.DataTypes.DataTypeArray.rowCurrent
+  parent: ASE_Assignment.DataTypes.DataTypeArray
+  href: ASE_Assignment.DataTypes.DataTypeArray.html#ASE_Assignment_DataTypes_DataTypeArray_rowCurrent
+  name: rowCurrent
+  nameWithType: DataTypeArray.rowCurrent
+  fullName: ASE_Assignment.DataTypes.DataTypeArray.rowCurrent
+- uid: ASE_Assignment.DataTypes.DataTypeArray.columnCurrent
+  commentId: F:ASE_Assignment.DataTypes.DataTypeArray.columnCurrent
+  parent: ASE_Assignment.DataTypes.DataTypeArray
+  href: ASE_Assignment.DataTypes.DataTypeArray.html#ASE_Assignment_DataTypes_DataTypeArray_columnCurrent
+  name: columnCurrent
+  nameWithType: DataTypeArray.columnCurrent
+  fullName: ASE_Assignment.DataTypes.DataTypeArray.columnCurrent
+- uid: ASE_Assignment.DataTypes.DataTypeArray.Rows
+  commentId: P:ASE_Assignment.DataTypes.DataTypeArray.Rows
+  parent: ASE_Assignment.DataTypes.DataTypeArray
+  href: ASE_Assignment.DataTypes.DataTypeArray.html#ASE_Assignment_DataTypes_DataTypeArray_Rows
+  name: Rows
+  nameWithType: DataTypeArray.Rows
+  fullName: ASE_Assignment.DataTypes.DataTypeArray.Rows
+- uid: ASE_Assignment.DataTypes.DataTypeArray.Columns
+  commentId: P:ASE_Assignment.DataTypes.DataTypeArray.Columns
+  parent: ASE_Assignment.DataTypes.DataTypeArray
+  href: ASE_Assignment.DataTypes.DataTypeArray.html#ASE_Assignment_DataTypes_DataTypeArray_Columns
+  name: Columns
+  nameWithType: DataTypeArray.Columns
+  fullName: ASE_Assignment.DataTypes.DataTypeArray.Columns
+- uid: ASE_Assignment.DataTypes.DataTypeArray.ArrayRestrictions
+  commentId: M:ASE_Assignment.DataTypes.DataTypeArray.ArrayRestrictions
+  parent: ASE_Assignment.DataTypes.DataTypeArray
+  href: ASE_Assignment.DataTypes.DataTypeArray.html#ASE_Assignment_DataTypes_DataTypeArray_ArrayRestrictions
+  name: ArrayRestrictions()
+  nameWithType: DataTypeArray.ArrayRestrictions()
+  fullName: ASE_Assignment.DataTypes.DataTypeArray.ArrayRestrictions()
+  spec.csharp:
+  - uid: ASE_Assignment.DataTypes.DataTypeArray.ArrayRestrictions
+    name: ArrayRestrictions
+    href: ASE_Assignment.DataTypes.DataTypeArray.html#ASE_Assignment_DataTypes_DataTypeArray_ArrayRestrictions
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: ASE_Assignment.DataTypes.DataTypeArray.ArrayRestrictions
+    name: ArrayRestrictions
+    href: ASE_Assignment.DataTypes.DataTypeArray.html#ASE_Assignment_DataTypes_DataTypeArray_ArrayRestrictions
+  - name: (
+  - name: )
+- uid: ASE_Assignment.DataTypes.DataTypeArray.ReduceRestrictionCounter
+  commentId: M:ASE_Assignment.DataTypes.DataTypeArray.ReduceRestrictionCounter
+  parent: ASE_Assignment.DataTypes.DataTypeArray
+  href: ASE_Assignment.DataTypes.DataTypeArray.html#ASE_Assignment_DataTypes_DataTypeArray_ReduceRestrictionCounter
+  name: ReduceRestrictionCounter()
+  nameWithType: DataTypeArray.ReduceRestrictionCounter()
+  fullName: ASE_Assignment.DataTypes.DataTypeArray.ReduceRestrictionCounter()
+  spec.csharp:
+  - uid: ASE_Assignment.DataTypes.DataTypeArray.ReduceRestrictionCounter
+    name: ReduceRestrictionCounter
+    href: ASE_Assignment.DataTypes.DataTypeArray.html#ASE_Assignment_DataTypes_DataTypeArray_ReduceRestrictionCounter
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: ASE_Assignment.DataTypes.DataTypeArray.ReduceRestrictionCounter
+    name: ReduceRestrictionCounter
+    href: ASE_Assignment.DataTypes.DataTypeArray.html#ASE_Assignment_DataTypes_DataTypeArray_ReduceRestrictionCounter
+  - name: (
+  - name: )
+- uid: ASE_Assignment.DataTypes.DataTypeArray.ProcessArrayParametersCompile(System.Boolean)
+  commentId: M:ASE_Assignment.DataTypes.DataTypeArray.ProcessArrayParametersCompile(System.Boolean)
+  parent: ASE_Assignment.DataTypes.DataTypeArray
+  isExternal: true
+  href: ASE_Assignment.DataTypes.DataTypeArray.html#ASE_Assignment_DataTypes_DataTypeArray_ProcessArrayParametersCompile_System_Boolean_
+  name: ProcessArrayParametersCompile(bool)
+  nameWithType: DataTypeArray.ProcessArrayParametersCompile(bool)
+  fullName: ASE_Assignment.DataTypes.DataTypeArray.ProcessArrayParametersCompile(bool)
+  nameWithType.vb: DataTypeArray.ProcessArrayParametersCompile(Boolean)
+  fullName.vb: ASE_Assignment.DataTypes.DataTypeArray.ProcessArrayParametersCompile(Boolean)
+  name.vb: ProcessArrayParametersCompile(Boolean)
+  spec.csharp:
+  - uid: ASE_Assignment.DataTypes.DataTypeArray.ProcessArrayParametersCompile(System.Boolean)
+    name: ProcessArrayParametersCompile
+    href: ASE_Assignment.DataTypes.DataTypeArray.html#ASE_Assignment_DataTypes_DataTypeArray_ProcessArrayParametersCompile_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: ASE_Assignment.DataTypes.DataTypeArray.ProcessArrayParametersCompile(System.Boolean)
+    name: ProcessArrayParametersCompile
+    href: ASE_Assignment.DataTypes.DataTypeArray.html#ASE_Assignment_DataTypes_DataTypeArray_ProcessArrayParametersCompile_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: ASE_Assignment.DataTypes.DataTypeArray.ProcessArrayParametersExecute(System.Boolean)
+  commentId: M:ASE_Assignment.DataTypes.DataTypeArray.ProcessArrayParametersExecute(System.Boolean)
+  parent: ASE_Assignment.DataTypes.DataTypeArray
+  isExternal: true
+  href: ASE_Assignment.DataTypes.DataTypeArray.html#ASE_Assignment_DataTypes_DataTypeArray_ProcessArrayParametersExecute_System_Boolean_
+  name: ProcessArrayParametersExecute(bool)
+  nameWithType: DataTypeArray.ProcessArrayParametersExecute(bool)
+  fullName: ASE_Assignment.DataTypes.DataTypeArray.ProcessArrayParametersExecute(bool)
+  nameWithType.vb: DataTypeArray.ProcessArrayParametersExecute(Boolean)
+  fullName.vb: ASE_Assignment.DataTypes.DataTypeArray.ProcessArrayParametersExecute(Boolean)
+  name.vb: ProcessArrayParametersExecute(Boolean)
+  spec.csharp:
+  - uid: ASE_Assignment.DataTypes.DataTypeArray.ProcessArrayParametersExecute(System.Boolean)
+    name: ProcessArrayParametersExecute
+    href: ASE_Assignment.DataTypes.DataTypeArray.html#ASE_Assignment_DataTypes_DataTypeArray_ProcessArrayParametersExecute_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: ASE_Assignment.DataTypes.DataTypeArray.ProcessArrayParametersExecute(System.Boolean)
+    name: ProcessArrayParametersExecute
+    href: ASE_Assignment.DataTypes.DataTypeArray.html#ASE_Assignment_DataTypes_DataTypeArray_ProcessArrayParametersExecute_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: ASE_Assignment.DataTypes.DataTypeArray.SetIntArray(System.Int32,System.Int32,System.Int32)
+  commentId: M:ASE_Assignment.DataTypes.DataTypeArray.SetIntArray(System.Int32,System.Int32,System.Int32)
+  parent: ASE_Assignment.DataTypes.DataTypeArray
+  isExternal: true
+  href: ASE_Assignment.DataTypes.DataTypeArray.html#ASE_Assignment_DataTypes_DataTypeArray_SetIntArray_System_Int32_System_Int32_System_Int32_
+  name: SetIntArray(int, int, int)
+  nameWithType: DataTypeArray.SetIntArray(int, int, int)
+  fullName: ASE_Assignment.DataTypes.DataTypeArray.SetIntArray(int, int, int)
+  nameWithType.vb: DataTypeArray.SetIntArray(Integer, Integer, Integer)
+  fullName.vb: ASE_Assignment.DataTypes.DataTypeArray.SetIntArray(Integer, Integer, Integer)
+  name.vb: SetIntArray(Integer, Integer, Integer)
+  spec.csharp:
+  - uid: ASE_Assignment.DataTypes.DataTypeArray.SetIntArray(System.Int32,System.Int32,System.Int32)
+    name: SetIntArray
+    href: ASE_Assignment.DataTypes.DataTypeArray.html#ASE_Assignment_DataTypes_DataTypeArray_SetIntArray_System_Int32_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: ASE_Assignment.DataTypes.DataTypeArray.SetIntArray(System.Int32,System.Int32,System.Int32)
+    name: SetIntArray
+    href: ASE_Assignment.DataTypes.DataTypeArray.html#ASE_Assignment_DataTypes_DataTypeArray_SetIntArray_System_Int32_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: ASE_Assignment.DataTypes.DataTypeArray.SetRealArray(System.Double,System.Int32,System.Int32)
+  commentId: M:ASE_Assignment.DataTypes.DataTypeArray.SetRealArray(System.Double,System.Int32,System.Int32)
+  parent: ASE_Assignment.DataTypes.DataTypeArray
+  isExternal: true
+  href: ASE_Assignment.DataTypes.DataTypeArray.html#ASE_Assignment_DataTypes_DataTypeArray_SetRealArray_System_Double_System_Int32_System_Int32_
+  name: SetRealArray(double, int, int)
+  nameWithType: DataTypeArray.SetRealArray(double, int, int)
+  fullName: ASE_Assignment.DataTypes.DataTypeArray.SetRealArray(double, int, int)
+  nameWithType.vb: DataTypeArray.SetRealArray(Double, Integer, Integer)
+  fullName.vb: ASE_Assignment.DataTypes.DataTypeArray.SetRealArray(Double, Integer, Integer)
+  name.vb: SetRealArray(Double, Integer, Integer)
+  spec.csharp:
+  - uid: ASE_Assignment.DataTypes.DataTypeArray.SetRealArray(System.Double,System.Int32,System.Int32)
+    name: SetRealArray
+    href: ASE_Assignment.DataTypes.DataTypeArray.html#ASE_Assignment_DataTypes_DataTypeArray_SetRealArray_System_Double_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: ASE_Assignment.DataTypes.DataTypeArray.SetRealArray(System.Double,System.Int32,System.Int32)
+    name: SetRealArray
+    href: ASE_Assignment.DataTypes.DataTypeArray.html#ASE_Assignment_DataTypes_DataTypeArray_SetRealArray_System_Double_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: ASE_Assignment.DataTypes.DataTypeArray.GetIntArray(System.Int32,System.Int32)
+  commentId: M:ASE_Assignment.DataTypes.DataTypeArray.GetIntArray(System.Int32,System.Int32)
+  parent: ASE_Assignment.DataTypes.DataTypeArray
+  isExternal: true
+  href: ASE_Assignment.DataTypes.DataTypeArray.html#ASE_Assignment_DataTypes_DataTypeArray_GetIntArray_System_Int32_System_Int32_
+  name: GetIntArray(int, int)
+  nameWithType: DataTypeArray.GetIntArray(int, int)
+  fullName: ASE_Assignment.DataTypes.DataTypeArray.GetIntArray(int, int)
+  nameWithType.vb: DataTypeArray.GetIntArray(Integer, Integer)
+  fullName.vb: ASE_Assignment.DataTypes.DataTypeArray.GetIntArray(Integer, Integer)
+  name.vb: GetIntArray(Integer, Integer)
+  spec.csharp:
+  - uid: ASE_Assignment.DataTypes.DataTypeArray.GetIntArray(System.Int32,System.Int32)
+    name: GetIntArray
+    href: ASE_Assignment.DataTypes.DataTypeArray.html#ASE_Assignment_DataTypes_DataTypeArray_GetIntArray_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: ASE_Assignment.DataTypes.DataTypeArray.GetIntArray(System.Int32,System.Int32)
+    name: GetIntArray
+    href: ASE_Assignment.DataTypes.DataTypeArray.html#ASE_Assignment_DataTypes_DataTypeArray_GetIntArray_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: ASE_Assignment.DataTypes.DataTypeArray.GetRealArray(System.Int32,System.Int32)
+  commentId: M:ASE_Assignment.DataTypes.DataTypeArray.GetRealArray(System.Int32,System.Int32)
+  parent: ASE_Assignment.DataTypes.DataTypeArray
+  isExternal: true
+  href: ASE_Assignment.DataTypes.DataTypeArray.html#ASE_Assignment_DataTypes_DataTypeArray_GetRealArray_System_Int32_System_Int32_
+  name: GetRealArray(int, int)
+  nameWithType: DataTypeArray.GetRealArray(int, int)
+  fullName: ASE_Assignment.DataTypes.DataTypeArray.GetRealArray(int, int)
+  nameWithType.vb: DataTypeArray.GetRealArray(Integer, Integer)
+  fullName.vb: ASE_Assignment.DataTypes.DataTypeArray.GetRealArray(Integer, Integer)
+  name.vb: GetRealArray(Integer, Integer)
+  spec.csharp:
+  - uid: ASE_Assignment.DataTypes.DataTypeArray.GetRealArray(System.Int32,System.Int32)
+    name: GetRealArray
+    href: ASE_Assignment.DataTypes.DataTypeArray.html#ASE_Assignment_DataTypes_DataTypeArray_GetRealArray_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: ASE_Assignment.DataTypes.DataTypeArray.GetRealArray(System.Int32,System.Int32)
+    name: GetRealArray
+    href: ASE_Assignment.DataTypes.DataTypeArray.html#ASE_Assignment_DataTypes_DataTypeArray_GetRealArray_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: BOOSE.Evaluation.expression
+  commentId: F:BOOSE.Evaluation.expression
+  parent: BOOSE.Evaluation
+  isExternal: true
+  name: expression
+  nameWithType: Evaluation.expression
+  fullName: BOOSE.Evaluation.expression
+- uid: BOOSE.Evaluation.evaluatedExpression
+  commentId: F:BOOSE.Evaluation.evaluatedExpression
+  parent: BOOSE.Evaluation
+  isExternal: true
+  name: evaluatedExpression
+  nameWithType: Evaluation.evaluatedExpression
+  fullName: BOOSE.Evaluation.evaluatedExpression
+- uid: BOOSE.Evaluation.varName
+  commentId: F:BOOSE.Evaluation.varName
+  parent: BOOSE.Evaluation
+  isExternal: true
+  name: varName
+  nameWithType: Evaluation.varName
+  fullName: BOOSE.Evaluation.varName
+- uid: BOOSE.Evaluation.value
+  commentId: F:BOOSE.Evaluation.value
+  parent: BOOSE.Evaluation
+  isExternal: true
+  name: value
+  nameWithType: Evaluation.value
+  fullName: BOOSE.Evaluation.value
+- uid: BOOSE.Evaluation.ProcessExpression(System.String)
+  commentId: M:BOOSE.Evaluation.ProcessExpression(System.String)
+  parent: BOOSE.Evaluation
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: ProcessExpression(string)
+  nameWithType: Evaluation.ProcessExpression(string)
+  fullName: BOOSE.Evaluation.ProcessExpression(string)
+  nameWithType.vb: Evaluation.ProcessExpression(String)
+  fullName.vb: BOOSE.Evaluation.ProcessExpression(String)
+  name.vb: ProcessExpression(String)
+  spec.csharp:
+  - uid: BOOSE.Evaluation.ProcessExpression(System.String)
+    name: ProcessExpression
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: BOOSE.Evaluation.ProcessExpression(System.String)
+    name: ProcessExpression
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: BOOSE.Evaluation.Expression
+  commentId: P:BOOSE.Evaluation.Expression
+  parent: BOOSE.Evaluation
+  isExternal: true
+  name: Expression
+  nameWithType: Evaluation.Expression
+  fullName: BOOSE.Evaluation.Expression
+- uid: BOOSE.Evaluation.VarName
+  commentId: P:BOOSE.Evaluation.VarName
+  parent: BOOSE.Evaluation
+  isExternal: true
+  name: VarName
+  nameWithType: Evaluation.VarName
+  fullName: BOOSE.Evaluation.VarName
+- uid: BOOSE.Evaluation.Value
+  commentId: P:BOOSE.Evaluation.Value
+  parent: BOOSE.Evaluation
+  isExternal: true
+  name: Value
+  nameWithType: Evaluation.Value
+  fullName: BOOSE.Evaluation.Value
+- uid: BOOSE.Evaluation.Local
+  commentId: P:BOOSE.Evaluation.Local
+  parent: BOOSE.Evaluation
+  isExternal: true
+  name: Local
+  nameWithType: Evaluation.Local
+  fullName: BOOSE.Evaluation.Local
+- uid: BOOSE.Command.program
+  commentId: F:BOOSE.Command.program
+  parent: BOOSE.Command
+  isExternal: true
+  name: program
+  nameWithType: Command.program
+  fullName: BOOSE.Command.program
+- uid: BOOSE.Command.parameterList
+  commentId: F:BOOSE.Command.parameterList
+  parent: BOOSE.Command
+  isExternal: true
+  name: parameterList
+  nameWithType: Command.parameterList
+  fullName: BOOSE.Command.parameterList
+- uid: BOOSE.Command.parameters
+  commentId: F:BOOSE.Command.parameters
+  parent: BOOSE.Command
+  isExternal: true
+  name: parameters
+  nameWithType: Command.parameters
+  fullName: BOOSE.Command.parameters
+- uid: BOOSE.Command.paramsint
+  commentId: F:BOOSE.Command.paramsint
+  parent: BOOSE.Command
+  isExternal: true
+  name: paramsint
+  nameWithType: Command.paramsint
+  fullName: BOOSE.Command.paramsint
+- uid: BOOSE.Command.ProcessParameters(System.String)
+  commentId: M:BOOSE.Command.ProcessParameters(System.String)
+  parent: BOOSE.Command
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: ProcessParameters(string)
+  nameWithType: Command.ProcessParameters(string)
+  fullName: BOOSE.Command.ProcessParameters(string)
+  nameWithType.vb: Command.ProcessParameters(String)
+  fullName.vb: BOOSE.Command.ProcessParameters(String)
+  name.vb: ProcessParameters(String)
+  spec.csharp:
+  - uid: BOOSE.Command.ProcessParameters(System.String)
+    name: ProcessParameters
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: BOOSE.Command.ProcessParameters(System.String)
+    name: ProcessParameters
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: BOOSE.Command.ToString
+  commentId: M:BOOSE.Command.ToString
+  parent: BOOSE.Command
+  isExternal: true
+  name: ToString()
+  nameWithType: Command.ToString()
+  fullName: BOOSE.Command.ToString()
+  spec.csharp:
+  - uid: BOOSE.Command.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BOOSE.Command.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+- uid: BOOSE.Command.Program
+  commentId: P:BOOSE.Command.Program
+  parent: BOOSE.Command
+  isExternal: true
+  name: Program
+  nameWithType: Command.Program
+  fullName: BOOSE.Command.Program
+- uid: BOOSE.Command.Name
+  commentId: P:BOOSE.Command.Name
+  parent: BOOSE.Command
+  isExternal: true
+  name: Name
+  nameWithType: Command.Name
+  fullName: BOOSE.Command.Name
+- uid: BOOSE.Command.ParameterList
+  commentId: P:BOOSE.Command.ParameterList
+  parent: BOOSE.Command
+  isExternal: true
+  name: ParameterList
+  nameWithType: Command.ParameterList
+  fullName: BOOSE.Command.ParameterList
+- uid: BOOSE.Command.Parameters
+  commentId: P:BOOSE.Command.Parameters
+  parent: BOOSE.Command
+  isExternal: true
+  name: Parameters
+  nameWithType: Command.Parameters
+  fullName: BOOSE.Command.Parameters
+- uid: BOOSE.Command.Paramsint
+  commentId: P:BOOSE.Command.Paramsint
+  parent: BOOSE.Command
+  isExternal: true
+  name: Paramsint
+  nameWithType: Command.Paramsint
+  fullName: BOOSE.Command.Paramsint
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: ASE_Assignment.DataTypes
+  commentId: N:ASE_Assignment.DataTypes
+  href: ASE_Assignment.html
+  name: ASE_Assignment.DataTypes
+  nameWithType: ASE_Assignment.DataTypes
+  fullName: ASE_Assignment.DataTypes
+  spec.csharp:
+  - uid: ASE_Assignment
+    name: ASE_Assignment
+    href: ASE_Assignment.html
+  - name: .
+  - uid: ASE_Assignment.DataTypes
+    name: DataTypes
+    href: ASE_Assignment.DataTypes.html
+  spec.vb:
+  - uid: ASE_Assignment
+    name: ASE_Assignment
+    href: ASE_Assignment.html
+  - name: .
+  - uid: ASE_Assignment.DataTypes
+    name: DataTypes
+    href: ASE_Assignment.DataTypes.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BOOSE
+  commentId: N:BOOSE
+  isExternal: true
+  name: BOOSE
+  nameWithType: BOOSE
+  fullName: BOOSE
+- uid: ASE_Assignment.Commands.CommandPoke.#ctor*
+  commentId: Overload:ASE_Assignment.Commands.CommandPoke.#ctor
+  href: ASE_Assignment.Commands.CommandPoke.html#ASE_Assignment_Commands_CommandPoke__ctor
+  name: CommandPoke
+  nameWithType: CommandPoke.CommandPoke
+  fullName: ASE_Assignment.Commands.CommandPoke.CommandPoke
+  nameWithType.vb: CommandPoke.New
+  fullName.vb: ASE_Assignment.Commands.CommandPoke.New
+  name.vb: New
+- uid: BOOSE.CommandException
+  commentId: T:BOOSE.CommandException
+  parent: BOOSE
+  isExternal: true
+  name: CommandException
+  nameWithType: CommandException
+  fullName: BOOSE.CommandException
+- uid: ASE_Assignment.DataTypes.DataTypeArray.CheckParameters(System.String[])
+  commentId: M:ASE_Assignment.DataTypes.DataTypeArray.CheckParameters(System.String[])
+  parent: ASE_Assignment.DataTypes.DataTypeArray
+  isExternal: true
+  href: ASE_Assignment.DataTypes.DataTypeArray.html#ASE_Assignment_DataTypes_DataTypeArray_CheckParameters_System_String___
+  name: CheckParameters(string[])
+  nameWithType: DataTypeArray.CheckParameters(string[])
+  fullName: ASE_Assignment.DataTypes.DataTypeArray.CheckParameters(string[])
+  nameWithType.vb: DataTypeArray.CheckParameters(String())
+  fullName.vb: ASE_Assignment.DataTypes.DataTypeArray.CheckParameters(String())
+  name.vb: CheckParameters(String())
+  spec.csharp:
+  - uid: ASE_Assignment.DataTypes.DataTypeArray.CheckParameters(System.String[])
+    name: CheckParameters
+    href: ASE_Assignment.DataTypes.DataTypeArray.html#ASE_Assignment_DataTypes_DataTypeArray_CheckParameters_System_String___
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: ASE_Assignment.DataTypes.DataTypeArray.CheckParameters(System.String[])
+    name: CheckParameters
+    href: ASE_Assignment.DataTypes.DataTypeArray.html#ASE_Assignment_DataTypes_DataTypeArray_CheckParameters_System_String___
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+  - name: )
+- uid: ASE_Assignment.Commands.CommandPoke.CheckParameters*
+  commentId: Overload:ASE_Assignment.Commands.CommandPoke.CheckParameters
+  href: ASE_Assignment.Commands.CommandPoke.html#ASE_Assignment_Commands_CommandPoke_CheckParameters_System_String___
+  name: CheckParameters
+  nameWithType: CommandPoke.CheckParameters
+  fullName: ASE_Assignment.Commands.CommandPoke.CheckParameters
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: ASE_Assignment.DataTypes.DataTypeArray.Compile
+  commentId: M:ASE_Assignment.DataTypes.DataTypeArray.Compile
+  parent: ASE_Assignment.DataTypes.DataTypeArray
+  href: ASE_Assignment.DataTypes.DataTypeArray.html#ASE_Assignment_DataTypes_DataTypeArray_Compile
+  name: Compile()
+  nameWithType: DataTypeArray.Compile()
+  fullName: ASE_Assignment.DataTypes.DataTypeArray.Compile()
+  spec.csharp:
+  - uid: ASE_Assignment.DataTypes.DataTypeArray.Compile
+    name: Compile
+    href: ASE_Assignment.DataTypes.DataTypeArray.html#ASE_Assignment_DataTypes_DataTypeArray_Compile
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: ASE_Assignment.DataTypes.DataTypeArray.Compile
+    name: Compile
+    href: ASE_Assignment.DataTypes.DataTypeArray.html#ASE_Assignment_DataTypes_DataTypeArray_Compile
+  - name: (
+  - name: )
+- uid: ASE_Assignment.Commands.CommandPoke.Compile*
+  commentId: Overload:ASE_Assignment.Commands.CommandPoke.Compile
+  href: ASE_Assignment.Commands.CommandPoke.html#ASE_Assignment_Commands_CommandPoke_Compile
+  name: Compile
+  nameWithType: CommandPoke.Compile
+  fullName: ASE_Assignment.Commands.CommandPoke.Compile
+- uid: ASE_Assignment.DataTypes.DataTypeArray.Execute
+  commentId: M:ASE_Assignment.DataTypes.DataTypeArray.Execute
+  parent: ASE_Assignment.DataTypes.DataTypeArray
+  href: ASE_Assignment.DataTypes.DataTypeArray.html#ASE_Assignment_DataTypes_DataTypeArray_Execute
+  name: Execute()
+  nameWithType: DataTypeArray.Execute()
+  fullName: ASE_Assignment.DataTypes.DataTypeArray.Execute()
+  spec.csharp:
+  - uid: ASE_Assignment.DataTypes.DataTypeArray.Execute
+    name: Execute
+    href: ASE_Assignment.DataTypes.DataTypeArray.html#ASE_Assignment_DataTypes_DataTypeArray_Execute
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: ASE_Assignment.DataTypes.DataTypeArray.Execute
+    name: Execute
+    href: ASE_Assignment.DataTypes.DataTypeArray.html#ASE_Assignment_DataTypes_DataTypeArray_Execute
+  - name: (
+  - name: )
+- uid: ASE_Assignment.Commands.CommandPoke.Execute*
+  commentId: Overload:ASE_Assignment.Commands.CommandPoke.Execute
+  href: ASE_Assignment.Commands.CommandPoke.html#ASE_Assignment_Commands_CommandPoke_Execute
+  name: Execute
+  nameWithType: CommandPoke.Execute
+  fullName: ASE_Assignment.Commands.CommandPoke.Execute
+- uid: BOOSE.StoredProgram
+  commentId: T:BOOSE.StoredProgram
+  parent: BOOSE
+  isExternal: true
+  name: StoredProgram
+  nameWithType: StoredProgram
+  fullName: BOOSE.StoredProgram
+- uid: BOOSE.Command.Set(BOOSE.StoredProgram,System.String)
+  commentId: M:BOOSE.Command.Set(BOOSE.StoredProgram,System.String)
+  parent: BOOSE.Command
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Set(StoredProgram, string)
+  nameWithType: Command.Set(StoredProgram, string)
+  fullName: BOOSE.Command.Set(BOOSE.StoredProgram, string)
+  nameWithType.vb: Command.Set(StoredProgram, String)
+  fullName.vb: BOOSE.Command.Set(BOOSE.StoredProgram, String)
+  name.vb: Set(StoredProgram, String)
+  spec.csharp:
+  - uid: BOOSE.Command.Set(BOOSE.StoredProgram,System.String)
+    name: Set
+    isExternal: true
+  - name: (
+  - uid: BOOSE.StoredProgram
+    name: StoredProgram
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: BOOSE.Command.Set(BOOSE.StoredProgram,System.String)
+    name: Set
+    isExternal: true
+  - name: (
+  - uid: BOOSE.StoredProgram
+    name: StoredProgram
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: ASE_Assignment.Commands.CommandPoke.Set*
+  commentId: Overload:ASE_Assignment.Commands.CommandPoke.Set
+  href: ASE_Assignment.Commands.CommandPoke.html#ASE_Assignment_Commands_CommandPoke_Set_BOOSE_StoredProgram_System_String_
+  name: Set
+  nameWithType: CommandPoke.Set
+  fullName: ASE_Assignment.Commands.CommandPoke.Set
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

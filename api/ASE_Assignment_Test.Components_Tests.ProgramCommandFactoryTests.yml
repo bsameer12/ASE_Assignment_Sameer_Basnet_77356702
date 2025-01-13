@@ -1,0 +1,1766 @@
+### YamlMime:ManagedReference
+items:
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests
+  commentId: T:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests
+  id: ProgramCommandFactoryTests
+  parent: ASE_Assignment_Test.Components_Tests
+  children:
+  - ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.SetUp
+  - ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Array
+  - ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Boolean
+  - ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Call
+  - ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Cast
+  - ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Circle_ShouldReturnAppCircle
+  - ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Clear_ShouldReturnClear
+  - ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_DrawTo_ShouldReturnAppDrawTo
+  - ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Else
+  - ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_End
+  - ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Evaluation
+  - ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Fill_ShouldReturnFill
+  - ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_For
+  - ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_If
+  - ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Int
+  - ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_InvalidCommand_ShouldThrowFactoryException
+  - ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Method
+  - ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_MoveTo_ShouldReturnAppMoveTo
+  - ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Peek
+  - ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_PenColour_ShouldReturnAppPenColour
+  - ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_PenSize_ShouldReturnPenSize
+  - ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Poke
+  - ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Real
+  - ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Rect_ShouldReturnAppRectangle
+  - ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Reset_ShouldReturnReset
+  - ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Tri_ShouldReturnTriangle
+  - ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_While
+  - ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_WriteTo_ShouldReturnWriteTo
+  langs:
+  - csharp
+  - vb
+  name: ProgramCommandFactoryTests
+  nameWithType: ProgramCommandFactoryTests
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests
+  type: Class
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: ProgramCommandFactoryTests
+    path: ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+    startLine: 15
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  summary: Unit tests for the <code>AppCommandFactory</code> class to verify that it correctly creates instances of command objects based on input strings.
+  example: []
+  syntax:
+    content: >-
+      [TestClass]
+
+      public class ProgramCommandFactoryTests
+    content.vb: >-
+      <TestClass>
+
+      Public Class ProgramCommandFactoryTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.SetUp
+  commentId: M:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.SetUp
+  id: SetUp
+  parent: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests
+  langs:
+  - csharp
+  - vb
+  name: SetUp()
+  nameWithType: ProgramCommandFactoryTests.SetUp()
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.SetUp()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: SetUp
+    path: ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+    startLine: 23
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  summary: Initializes the <code>AppCommandFactory</code> instance before each test.
+  example: []
+  syntax:
+    content: >-
+      [TestInitialize]
+
+      public void SetUp()
+    content.vb: >-
+      <TestInitialize>
+
+      Public Sub SetUp()
+  overload: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.SetUp*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Circle_ShouldReturnAppCircle
+  commentId: M:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Circle_ShouldReturnAppCircle
+  id: TestMakeCommand_Circle_ShouldReturnAppCircle
+  parent: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests
+  langs:
+  - csharp
+  - vb
+  name: TestMakeCommand_Circle_ShouldReturnAppCircle()
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_Circle_ShouldReturnAppCircle()
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Circle_ShouldReturnAppCircle()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: TestMakeCommand_Circle_ShouldReturnAppCircle
+    path: ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+    startLine: 42
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  summary: Tests the <code>MakeCommand</code> method to ensure it returns an <code>AppCircle</code> object for the "circle" command.
+  remarks: This test verifies that the factory creates the correct command object for drawing a circle.
+  example:
+  - >-
+    <pre><code class="lang-csharp">string command = "circle";
+
+    ICommand result = factory.MakeCommand(command);
+
+    Assert.IsInstanceOfType(result, typeof(AppCircle));</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestMakeCommand_Circle_ShouldReturnAppCircle()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestMakeCommand_Circle_ShouldReturnAppCircle()
+  overload: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Circle_ShouldReturnAppCircle*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_MoveTo_ShouldReturnAppMoveTo
+  commentId: M:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_MoveTo_ShouldReturnAppMoveTo
+  id: TestMakeCommand_MoveTo_ShouldReturnAppMoveTo
+  parent: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests
+  langs:
+  - csharp
+  - vb
+  name: TestMakeCommand_MoveTo_ShouldReturnAppMoveTo()
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_MoveTo_ShouldReturnAppMoveTo()
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_MoveTo_ShouldReturnAppMoveTo()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: TestMakeCommand_MoveTo_ShouldReturnAppMoveTo
+    path: ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+    startLine: 63
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  summary: Tests the <code>MakeCommand</code> method to ensure it returns an <code>CommandMoveTo</code> object for the "moveto" command.
+  remarks: This test verifies that the factory creates the correct command object for moving to a specific position.
+  example:
+  - >-
+    <pre><code class="lang-csharp">string command = "moveto";
+
+    ICommand result = factory.MakeCommand(command);
+
+    Assert.IsInstanceOfType(result, typeof(CommandMoveTo));</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestMakeCommand_MoveTo_ShouldReturnAppMoveTo()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestMakeCommand_MoveTo_ShouldReturnAppMoveTo()
+  overload: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_MoveTo_ShouldReturnAppMoveTo*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Rect_ShouldReturnAppRectangle
+  commentId: M:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Rect_ShouldReturnAppRectangle
+  id: TestMakeCommand_Rect_ShouldReturnAppRectangle
+  parent: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests
+  langs:
+  - csharp
+  - vb
+  name: TestMakeCommand_Rect_ShouldReturnAppRectangle()
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_Rect_ShouldReturnAppRectangle()
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Rect_ShouldReturnAppRectangle()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: TestMakeCommand_Rect_ShouldReturnAppRectangle
+    path: ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+    startLine: 84
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  summary: Tests the <code>MakeCommand</code> method to ensure it returns an <code>AppRectangle</code> object for the "rect" command.
+  remarks: This test verifies that the factory creates the correct command object for drawing a rectangle.
+  example:
+  - >-
+    <pre><code class="lang-csharp">string command = "rect";
+
+    ICommand result = factory.MakeCommand(command);
+
+    Assert.IsInstanceOfType(result, typeof(AppRectangle));</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestMakeCommand_Rect_ShouldReturnAppRectangle()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestMakeCommand_Rect_ShouldReturnAppRectangle()
+  overload: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Rect_ShouldReturnAppRectangle*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Tri_ShouldReturnTriangle
+  commentId: M:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Tri_ShouldReturnTriangle
+  id: TestMakeCommand_Tri_ShouldReturnTriangle
+  parent: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests
+  langs:
+  - csharp
+  - vb
+  name: TestMakeCommand_Tri_ShouldReturnTriangle()
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_Tri_ShouldReturnTriangle()
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Tri_ShouldReturnTriangle()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: TestMakeCommand_Tri_ShouldReturnTriangle
+    path: ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+    startLine: 105
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  summary: Tests the <code>MakeCommand</code> method to ensure it returns a <code>Triangle</code> object for the "tri" command.
+  remarks: This test verifies that the factory creates the correct command object for drawing a triangle.
+  example:
+  - >-
+    <pre><code class="lang-csharp">string command = "tri";
+
+    ICommand result = factory.MakeCommand(command);
+
+    Assert.IsInstanceOfType(result, typeof(Triangle));</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestMakeCommand_Tri_ShouldReturnTriangle()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestMakeCommand_Tri_ShouldReturnTriangle()
+  overload: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Tri_ShouldReturnTriangle*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_WriteTo_ShouldReturnWriteTo
+  commentId: M:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_WriteTo_ShouldReturnWriteTo
+  id: TestMakeCommand_WriteTo_ShouldReturnWriteTo
+  parent: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests
+  langs:
+  - csharp
+  - vb
+  name: TestMakeCommand_WriteTo_ShouldReturnWriteTo()
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_WriteTo_ShouldReturnWriteTo()
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_WriteTo_ShouldReturnWriteTo()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: TestMakeCommand_WriteTo_ShouldReturnWriteTo
+    path: ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+    startLine: 126
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  summary: Tests the <code>MakeCommand</code> method to ensure it returns a <code>WriteTo</code> object for the "writeto" command.
+  remarks: This test verifies that the factory creates the correct command object for writing text.
+  example:
+  - >-
+    <pre><code class="lang-csharp">string command = "writeto";
+
+    ICommand result = factory.MakeCommand(command);
+
+    Assert.IsInstanceOfType(result, typeof(WriteTo));</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestMakeCommand_WriteTo_ShouldReturnWriteTo()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestMakeCommand_WriteTo_ShouldReturnWriteTo()
+  overload: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_WriteTo_ShouldReturnWriteTo*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_DrawTo_ShouldReturnAppDrawTo
+  commentId: M:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_DrawTo_ShouldReturnAppDrawTo
+  id: TestMakeCommand_DrawTo_ShouldReturnAppDrawTo
+  parent: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests
+  langs:
+  - csharp
+  - vb
+  name: TestMakeCommand_DrawTo_ShouldReturnAppDrawTo()
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_DrawTo_ShouldReturnAppDrawTo()
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_DrawTo_ShouldReturnAppDrawTo()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: TestMakeCommand_DrawTo_ShouldReturnAppDrawTo
+    path: ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+    startLine: 147
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  summary: Tests the <code>MakeCommand</code> method to ensure it returns an <code>CommandDrawTo</code> object for the "drawto" command.
+  remarks: This test verifies that the factory creates the correct command object for drawing to a specific position.
+  example:
+  - >-
+    <pre><code class="lang-csharp">string command = "drawto";
+
+    ICommand result = factory.MakeCommand(command);
+
+    Assert.IsInstanceOfType(result, typeof(CommandDrawTo));</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestMakeCommand_DrawTo_ShouldReturnAppDrawTo()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestMakeCommand_DrawTo_ShouldReturnAppDrawTo()
+  overload: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_DrawTo_ShouldReturnAppDrawTo*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_PenColour_ShouldReturnAppPenColour
+  commentId: M:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_PenColour_ShouldReturnAppPenColour
+  id: TestMakeCommand_PenColour_ShouldReturnAppPenColour
+  parent: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests
+  langs:
+  - csharp
+  - vb
+  name: TestMakeCommand_PenColour_ShouldReturnAppPenColour()
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_PenColour_ShouldReturnAppPenColour()
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_PenColour_ShouldReturnAppPenColour()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: TestMakeCommand_PenColour_ShouldReturnAppPenColour
+    path: ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+    startLine: 168
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  summary: Tests the <code>MakeCommand</code> method to ensure it returns an <code>CommandPenColour</code> object for the "pencolour" command.
+  remarks: This test verifies that the factory creates the correct command object for setting the pen color.
+  example:
+  - >-
+    <pre><code class="lang-csharp">string command = "pencolour";
+
+    ICommand result = factory.MakeCommand(command);
+
+    Assert.IsInstanceOfType(result, typeof(CommandPenColour));</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestMakeCommand_PenColour_ShouldReturnAppPenColour()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestMakeCommand_PenColour_ShouldReturnAppPenColour()
+  overload: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_PenColour_ShouldReturnAppPenColour*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Fill_ShouldReturnFill
+  commentId: M:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Fill_ShouldReturnFill
+  id: TestMakeCommand_Fill_ShouldReturnFill
+  parent: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests
+  langs:
+  - csharp
+  - vb
+  name: TestMakeCommand_Fill_ShouldReturnFill()
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_Fill_ShouldReturnFill()
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Fill_ShouldReturnFill()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: TestMakeCommand_Fill_ShouldReturnFill
+    path: ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+    startLine: 189
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  summary: Tests the <code>MakeCommand</code> method to ensure it returns a <code>CommandFill</code> object for the "fill" command.
+  remarks: This test verifies that the factory creates the correct command object for enabling or disabling fill.
+  example:
+  - >-
+    <pre><code class="lang-csharp">string command = "fill";
+
+    ICommand result = factory.MakeCommand(command);
+
+    Assert.IsInstanceOfType(result, typeof(CommandFill));</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestMakeCommand_Fill_ShouldReturnFill()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestMakeCommand_Fill_ShouldReturnFill()
+  overload: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Fill_ShouldReturnFill*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_PenSize_ShouldReturnPenSize
+  commentId: M:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_PenSize_ShouldReturnPenSize
+  id: TestMakeCommand_PenSize_ShouldReturnPenSize
+  parent: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests
+  langs:
+  - csharp
+  - vb
+  name: TestMakeCommand_PenSize_ShouldReturnPenSize()
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_PenSize_ShouldReturnPenSize()
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_PenSize_ShouldReturnPenSize()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: TestMakeCommand_PenSize_ShouldReturnPenSize
+    path: ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+    startLine: 210
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  summary: Tests the <code>MakeCommand</code> method to ensure it returns a <code>PenSize</code> object for the "pensize" command.
+  remarks: This test verifies that the factory creates the correct command object for setting the pen size.
+  example:
+  - >-
+    <pre><code class="lang-csharp">string command = "pensize";
+
+    ICommand result = factory.MakeCommand(command);
+
+    Assert.IsInstanceOfType(result, typeof(PenSize));</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestMakeCommand_PenSize_ShouldReturnPenSize()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestMakeCommand_PenSize_ShouldReturnPenSize()
+  overload: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_PenSize_ShouldReturnPenSize*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Clear_ShouldReturnClear
+  commentId: M:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Clear_ShouldReturnClear
+  id: TestMakeCommand_Clear_ShouldReturnClear
+  parent: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests
+  langs:
+  - csharp
+  - vb
+  name: TestMakeCommand_Clear_ShouldReturnClear()
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_Clear_ShouldReturnClear()
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Clear_ShouldReturnClear()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: TestMakeCommand_Clear_ShouldReturnClear
+    path: ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+    startLine: 231
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  summary: Tests the <code>MakeCommand</code> method to ensure it returns a <code>Clear</code> object for the "clear" command.
+  remarks: This test verifies that the factory creates the correct command object for clearing the canvas.
+  example:
+  - >-
+    <pre><code class="lang-csharp">string command = "clear";
+
+    ICommand result = factory.MakeCommand(command);
+
+    Assert.IsInstanceOfType(result, typeof(Clear));</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestMakeCommand_Clear_ShouldReturnClear()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestMakeCommand_Clear_ShouldReturnClear()
+  overload: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Clear_ShouldReturnClear*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Reset_ShouldReturnReset
+  commentId: M:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Reset_ShouldReturnReset
+  id: TestMakeCommand_Reset_ShouldReturnReset
+  parent: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests
+  langs:
+  - csharp
+  - vb
+  name: TestMakeCommand_Reset_ShouldReturnReset()
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_Reset_ShouldReturnReset()
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Reset_ShouldReturnReset()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: TestMakeCommand_Reset_ShouldReturnReset
+    path: ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+    startLine: 252
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  summary: Tests the <code>MakeCommand</code> method to ensure it returns a <code>CommandReset</code> object for the "reset" command.
+  remarks: This test verifies that the factory creates the correct command object for resetting the canvas.
+  example:
+  - >-
+    <pre><code class="lang-csharp">string command = "reset";
+
+    ICommand result = factory.MakeCommand(command);
+
+    Assert.IsInstanceOfType(result, typeof(CommandReset));</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestMakeCommand_Reset_ShouldReturnReset()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestMakeCommand_Reset_ShouldReturnReset()
+  overload: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Reset_ShouldReturnReset*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Array
+  commentId: M:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Array
+  id: TestMakeCommand_Array
+  parent: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests
+  langs:
+  - csharp
+  - vb
+  name: TestMakeCommand_Array()
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_Array()
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Array()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: TestMakeCommand_Array
+    path: ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+    startLine: 274
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  summary: Tests the <code>MakeCommand</code> method to ensure it returns a <code>DataTypeArray</code> object for the "array" command.
+  remarks: This test verifies that the factory creates the correct command object for handling array data types.
+  example:
+  - >-
+    <pre><code class="lang-csharp">string command = "array";
+
+    ICommand result = factory.MakeCommand(command);
+
+    Assert.IsInstanceOfType(result, typeof(DataTypeArray));</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestMakeCommand_Array()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestMakeCommand_Array()
+  overload: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Array*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Int
+  commentId: M:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Int
+  id: TestMakeCommand_Int
+  parent: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests
+  langs:
+  - csharp
+  - vb
+  name: TestMakeCommand_Int()
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_Int()
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Int()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: TestMakeCommand_Int
+    path: ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+    startLine: 295
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  summary: Tests the <code>MakeCommand</code> method to ensure it returns a <code>DataTypeInt</code> object for the "int" command.
+  remarks: This test verifies that the factory creates the correct command object for handling integer data types.
+  example:
+  - >-
+    <pre><code class="lang-csharp">string command = "int";
+
+    ICommand result = factory.MakeCommand(command);
+
+    Assert.IsInstanceOfType(result, typeof(DataTypeInt));</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestMakeCommand_Int()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestMakeCommand_Int()
+  overload: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Int*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Real
+  commentId: M:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Real
+  id: TestMakeCommand_Real
+  parent: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests
+  langs:
+  - csharp
+  - vb
+  name: TestMakeCommand_Real()
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_Real()
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Real()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: TestMakeCommand_Real
+    path: ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+    startLine: 316
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  summary: Tests the <code>MakeCommand</code> method to ensure it returns a <code>DataTypeReal</code> object for the "real" command.
+  remarks: This test verifies that the factory creates the correct command object for handling real number data types.
+  example:
+  - >-
+    <pre><code class="lang-csharp">string command = "real";
+
+    ICommand result = factory.MakeCommand(command);
+
+    Assert.IsInstanceOfType(result, typeof(DataTypeReal));</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestMakeCommand_Real()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestMakeCommand_Real()
+  overload: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Real*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Peek
+  commentId: M:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Peek
+  id: TestMakeCommand_Peek
+  parent: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests
+  langs:
+  - csharp
+  - vb
+  name: TestMakeCommand_Peek()
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_Peek()
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Peek()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: TestMakeCommand_Peek
+    path: ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+    startLine: 337
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  summary: Tests the <code>MakeCommand</code> method to ensure it returns a <code>CommandPeek</code> object for the "peek" command.
+  remarks: This test verifies that the factory creates the correct command object for peeking at values in a data structure.
+  example:
+  - >-
+    <pre><code class="lang-csharp">string command = "peek";
+
+    ICommand result = factory.MakeCommand(command);
+
+    Assert.IsInstanceOfType(result, typeof(CommandPeek));</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestMakeCommand_Peek()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestMakeCommand_Peek()
+  overload: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Peek*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Poke
+  commentId: M:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Poke
+  id: TestMakeCommand_Poke
+  parent: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests
+  langs:
+  - csharp
+  - vb
+  name: TestMakeCommand_Poke()
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_Poke()
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Poke()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: TestMakeCommand_Poke
+    path: ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+    startLine: 358
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  summary: Tests the <code>MakeCommand</code> method to ensure it returns a <code>CommandPoke</code> object for the "poke" command.
+  remarks: This test verifies that the factory creates the correct command object for poking values into a data structure.
+  example:
+  - >-
+    <pre><code class="lang-csharp">string command = "poke";
+
+    ICommand result = factory.MakeCommand(command);
+
+    Assert.IsInstanceOfType(result, typeof(CommandPoke));</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestMakeCommand_Poke()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestMakeCommand_Poke()
+  overload: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Poke*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_If
+  commentId: M:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_If
+  id: TestMakeCommand_If
+  parent: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests
+  langs:
+  - csharp
+  - vb
+  name: TestMakeCommand_If()
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_If()
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_If()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: TestMakeCommand_If
+    path: ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+    startLine: 379
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  summary: Tests the <code>MakeCommand</code> method to ensure it returns a <code>CommandIf</code> object for the "if" command.
+  remarks: This test verifies that the factory creates the correct command object for conditional branching using "if".
+  example:
+  - >-
+    <pre><code class="lang-csharp">string command = "if";
+
+    ICommand result = factory.MakeCommand(command);
+
+    Assert.IsInstanceOfType(result, typeof(CommandIf));</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestMakeCommand_If()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestMakeCommand_If()
+  overload: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_If*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Else
+  commentId: M:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Else
+  id: TestMakeCommand_Else
+  parent: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests
+  langs:
+  - csharp
+  - vb
+  name: TestMakeCommand_Else()
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_Else()
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Else()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: TestMakeCommand_Else
+    path: ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+    startLine: 400
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  summary: Tests the <code>MakeCommand</code> method to ensure it returns a <code>CommandElse</code> object for the "else" command.
+  remarks: This test verifies that the factory creates the correct command object for conditional branching using "else".
+  example:
+  - >-
+    <pre><code class="lang-csharp">string command = "else";
+
+    ICommand result = factory.MakeCommand(command);
+
+    Assert.IsInstanceOfType(result, typeof(CommandElse));</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestMakeCommand_Else()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestMakeCommand_Else()
+  overload: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Else*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_End
+  commentId: M:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_End
+  id: TestMakeCommand_End
+  parent: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests
+  langs:
+  - csharp
+  - vb
+  name: TestMakeCommand_End()
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_End()
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_End()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: TestMakeCommand_End
+    path: ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+    startLine: 421
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  summary: Tests the <code>MakeCommand</code> method to ensure it returns a <code>CommandEnd</code> object for the "end" command.
+  remarks: This test verifies that the factory creates the correct command object for ending blocks of code.
+  example:
+  - >-
+    <pre><code class="lang-csharp">string command = "end";
+
+    ICommand result = factory.MakeCommand(command);
+
+    Assert.IsInstanceOfType(result, typeof(CommandEnd));</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestMakeCommand_End()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestMakeCommand_End()
+  overload: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_End*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_While
+  commentId: M:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_While
+  id: TestMakeCommand_While
+  parent: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests
+  langs:
+  - csharp
+  - vb
+  name: TestMakeCommand_While()
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_While()
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_While()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: TestMakeCommand_While
+    path: ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+    startLine: 442
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  summary: Tests the <code>MakeCommand</code> method to ensure it returns a <code>CommandWhile</code> object for the "while" command.
+  remarks: This test verifies that the factory creates the correct command object for "while" loops.
+  example:
+  - >-
+    <pre><code class="lang-csharp">string command = "while";
+
+    ICommand result = factory.MakeCommand(command);
+
+    Assert.IsInstanceOfType(result, typeof(CommandWhile));</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestMakeCommand_While()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestMakeCommand_While()
+  overload: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_While*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_For
+  commentId: M:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_For
+  id: TestMakeCommand_For
+  parent: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests
+  langs:
+  - csharp
+  - vb
+  name: TestMakeCommand_For()
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_For()
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_For()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: TestMakeCommand_For
+    path: ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+    startLine: 463
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  summary: Tests the <code>MakeCommand</code> method to ensure it returns a <code>CommandFor</code> object for the "for" command.
+  remarks: This test verifies that the factory creates the correct command object for "for" loops.
+  example:
+  - >-
+    <pre><code class="lang-csharp">string command = "for";
+
+    ICommand result = factory.MakeCommand(command);
+
+    Assert.IsInstanceOfType(result, typeof(CommandFor));</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestMakeCommand_For()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestMakeCommand_For()
+  overload: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_For*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Method
+  commentId: M:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Method
+  id: TestMakeCommand_Method
+  parent: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests
+  langs:
+  - csharp
+  - vb
+  name: TestMakeCommand_Method()
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_Method()
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Method()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: TestMakeCommand_Method
+    path: ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+    startLine: 484
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  summary: Tests the <code>MakeCommand</code> method to ensure it returns a <code>CommandMethod</code> object for the "method" command.
+  remarks: This test verifies that the factory creates the correct command object for defining methods.
+  example:
+  - >-
+    <pre><code class="lang-csharp">string command = "method";
+
+    ICommand result = factory.MakeCommand(command);
+
+    Assert.IsInstanceOfType(result, typeof(CommandMethod));</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestMakeCommand_Method()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestMakeCommand_Method()
+  overload: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Method*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Call
+  commentId: M:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Call
+  id: TestMakeCommand_Call
+  parent: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests
+  langs:
+  - csharp
+  - vb
+  name: TestMakeCommand_Call()
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_Call()
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Call()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: TestMakeCommand_Call
+    path: ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+    startLine: 505
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  summary: Tests the <code>MakeCommand</code> method to ensure it returns a <code>Call</code> object for the "call" command.
+  remarks: This test verifies that the factory creates the correct command object for invoking method calls.
+  example:
+  - >-
+    <pre><code class="lang-csharp">string command = "call";
+
+    ICommand result = factory.MakeCommand(command);
+
+    Assert.IsInstanceOfType(result, typeof(Call));</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestMakeCommand_Call()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestMakeCommand_Call()
+  overload: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Call*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Boolean
+  commentId: M:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Boolean
+  id: TestMakeCommand_Boolean
+  parent: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests
+  langs:
+  - csharp
+  - vb
+  name: TestMakeCommand_Boolean()
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_Boolean()
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Boolean()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: TestMakeCommand_Boolean
+    path: ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+    startLine: 526
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  summary: Tests the <code>MakeCommand</code> method to ensure it returns a <code>DataTypeBoolean</code> object for the "boolean" command.
+  remarks: This test verifies that the factory creates the correct command object for boolean data types.
+  example:
+  - >-
+    <pre><code class="lang-csharp">string command = "boolean";
+
+    ICommand result = factory.MakeCommand(command);
+
+    Assert.IsInstanceOfType(result, typeof(DataTypeBoolean));</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestMakeCommand_Boolean()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestMakeCommand_Boolean()
+  overload: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Boolean*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Evaluation
+  commentId: M:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Evaluation
+  id: TestMakeCommand_Evaluation
+  parent: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests
+  langs:
+  - csharp
+  - vb
+  name: TestMakeCommand_Evaluation()
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_Evaluation()
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Evaluation()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: TestMakeCommand_Evaluation
+    path: ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+    startLine: 547
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  summary: Tests the <code>MakeCommand</code> method to ensure it returns an <code>Evaluation</code> object for the "evaluation" command.
+  remarks: This test verifies that the factory creates the correct command object for evaluating expressions.
+  example:
+  - >-
+    <pre><code class="lang-csharp">string command = "evaluation";
+
+    ICommand result = factory.MakeCommand(command);
+
+    Assert.IsInstanceOfType(result, typeof(Evaluation));</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestMakeCommand_Evaluation()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestMakeCommand_Evaluation()
+  overload: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Evaluation*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Cast
+  commentId: M:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Cast
+  id: TestMakeCommand_Cast
+  parent: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests
+  langs:
+  - csharp
+  - vb
+  name: TestMakeCommand_Cast()
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_Cast()
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Cast()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: TestMakeCommand_Cast
+    path: ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+    startLine: 568
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  summary: Tests the <code>MakeCommand</code> method to ensure it returns a <code>CommandCast</code> object for the "cast" command.
+  remarks: This test verifies that the factory creates the correct command object for type casting.
+  example:
+  - >-
+    <pre><code class="lang-csharp">string command = "cast";
+
+    ICommand result = factory.MakeCommand(command);
+
+    Assert.IsInstanceOfType(result, typeof(CommandCast));</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestMakeCommand_Cast()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestMakeCommand_Cast()
+  overload: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Cast*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_InvalidCommand_ShouldThrowFactoryException
+  commentId: M:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_InvalidCommand_ShouldThrowFactoryException
+  id: TestMakeCommand_InvalidCommand_ShouldThrowFactoryException
+  parent: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests
+  langs:
+  - csharp
+  - vb
+  name: TestMakeCommand_InvalidCommand_ShouldThrowFactoryException()
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_InvalidCommand_ShouldThrowFactoryException()
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_InvalidCommand_ShouldThrowFactoryException()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: TestMakeCommand_InvalidCommand_ShouldThrowFactoryException
+    path: ASE_Assignment_Test/Components_Tests/ProgramCommandFactoryTests.cs
+    startLine: 589
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.Components_Tests
+  summary: Tests the <code>MakeCommand</code> method to ensure it throws a <code>FactoryException</code> for an invalid command.
+  remarks: This test validates that the factory handles unknown commands by throwing a <code>FactoryException</code>.
+  example:
+  - >-
+    <pre><code class="lang-csharp">string command = "invalidcommand";
+
+    factory.MakeCommand(command); // Should throw FactoryException</code></pre>
+  syntax:
+    content: >-
+      [TestMethod]
+
+      [ExpectedException(typeof(FactoryException))]
+
+      public void TestMakeCommand_InvalidCommand_ShouldThrowFactoryException()
+    content.vb: >-
+      <TestMethod>
+
+      <ExpectedException(GetType(FactoryException))>
+
+      Public Sub TestMakeCommand_InvalidCommand_ShouldThrowFactoryException()
+  overload: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_InvalidCommand_ShouldThrowFactoryException*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: BOOSE.FactoryException
+references:
+- uid: ASE_Assignment_Test.Components_Tests
+  commentId: N:ASE_Assignment_Test.Components_Tests
+  href: ASE_Assignment_Test.html
+  name: ASE_Assignment_Test.Components_Tests
+  nameWithType: ASE_Assignment_Test.Components_Tests
+  fullName: ASE_Assignment_Test.Components_Tests
+  spec.csharp:
+  - uid: ASE_Assignment_Test
+    name: ASE_Assignment_Test
+    href: ASE_Assignment_Test.html
+  - name: .
+  - uid: ASE_Assignment_Test.Components_Tests
+    name: Components_Tests
+    href: ASE_Assignment_Test.Components_Tests.html
+  spec.vb:
+  - uid: ASE_Assignment_Test
+    name: ASE_Assignment_Test
+    href: ASE_Assignment_Test.html
+  - name: .
+  - uid: ASE_Assignment_Test.Components_Tests
+    name: Components_Tests
+    href: ASE_Assignment_Test.Components_Tests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.SetUp*
+  commentId: Overload:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.SetUp
+  href: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.html#ASE_Assignment_Test_Components_Tests_ProgramCommandFactoryTests_SetUp
+  name: SetUp
+  nameWithType: ProgramCommandFactoryTests.SetUp
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.SetUp
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Circle_ShouldReturnAppCircle*
+  commentId: Overload:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Circle_ShouldReturnAppCircle
+  href: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.html#ASE_Assignment_Test_Components_Tests_ProgramCommandFactoryTests_TestMakeCommand_Circle_ShouldReturnAppCircle
+  name: TestMakeCommand_Circle_ShouldReturnAppCircle
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_Circle_ShouldReturnAppCircle
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Circle_ShouldReturnAppCircle
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_MoveTo_ShouldReturnAppMoveTo*
+  commentId: Overload:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_MoveTo_ShouldReturnAppMoveTo
+  href: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.html#ASE_Assignment_Test_Components_Tests_ProgramCommandFactoryTests_TestMakeCommand_MoveTo_ShouldReturnAppMoveTo
+  name: TestMakeCommand_MoveTo_ShouldReturnAppMoveTo
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_MoveTo_ShouldReturnAppMoveTo
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_MoveTo_ShouldReturnAppMoveTo
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Rect_ShouldReturnAppRectangle*
+  commentId: Overload:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Rect_ShouldReturnAppRectangle
+  href: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.html#ASE_Assignment_Test_Components_Tests_ProgramCommandFactoryTests_TestMakeCommand_Rect_ShouldReturnAppRectangle
+  name: TestMakeCommand_Rect_ShouldReturnAppRectangle
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_Rect_ShouldReturnAppRectangle
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Rect_ShouldReturnAppRectangle
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Tri_ShouldReturnTriangle*
+  commentId: Overload:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Tri_ShouldReturnTriangle
+  href: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.html#ASE_Assignment_Test_Components_Tests_ProgramCommandFactoryTests_TestMakeCommand_Tri_ShouldReturnTriangle
+  name: TestMakeCommand_Tri_ShouldReturnTriangle
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_Tri_ShouldReturnTriangle
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Tri_ShouldReturnTriangle
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_WriteTo_ShouldReturnWriteTo*
+  commentId: Overload:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_WriteTo_ShouldReturnWriteTo
+  href: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.html#ASE_Assignment_Test_Components_Tests_ProgramCommandFactoryTests_TestMakeCommand_WriteTo_ShouldReturnWriteTo
+  name: TestMakeCommand_WriteTo_ShouldReturnWriteTo
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_WriteTo_ShouldReturnWriteTo
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_WriteTo_ShouldReturnWriteTo
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_DrawTo_ShouldReturnAppDrawTo*
+  commentId: Overload:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_DrawTo_ShouldReturnAppDrawTo
+  href: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.html#ASE_Assignment_Test_Components_Tests_ProgramCommandFactoryTests_TestMakeCommand_DrawTo_ShouldReturnAppDrawTo
+  name: TestMakeCommand_DrawTo_ShouldReturnAppDrawTo
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_DrawTo_ShouldReturnAppDrawTo
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_DrawTo_ShouldReturnAppDrawTo
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_PenColour_ShouldReturnAppPenColour*
+  commentId: Overload:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_PenColour_ShouldReturnAppPenColour
+  href: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.html#ASE_Assignment_Test_Components_Tests_ProgramCommandFactoryTests_TestMakeCommand_PenColour_ShouldReturnAppPenColour
+  name: TestMakeCommand_PenColour_ShouldReturnAppPenColour
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_PenColour_ShouldReturnAppPenColour
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_PenColour_ShouldReturnAppPenColour
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Fill_ShouldReturnFill*
+  commentId: Overload:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Fill_ShouldReturnFill
+  href: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.html#ASE_Assignment_Test_Components_Tests_ProgramCommandFactoryTests_TestMakeCommand_Fill_ShouldReturnFill
+  name: TestMakeCommand_Fill_ShouldReturnFill
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_Fill_ShouldReturnFill
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Fill_ShouldReturnFill
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_PenSize_ShouldReturnPenSize*
+  commentId: Overload:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_PenSize_ShouldReturnPenSize
+  href: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.html#ASE_Assignment_Test_Components_Tests_ProgramCommandFactoryTests_TestMakeCommand_PenSize_ShouldReturnPenSize
+  name: TestMakeCommand_PenSize_ShouldReturnPenSize
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_PenSize_ShouldReturnPenSize
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_PenSize_ShouldReturnPenSize
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Clear_ShouldReturnClear*
+  commentId: Overload:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Clear_ShouldReturnClear
+  href: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.html#ASE_Assignment_Test_Components_Tests_ProgramCommandFactoryTests_TestMakeCommand_Clear_ShouldReturnClear
+  name: TestMakeCommand_Clear_ShouldReturnClear
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_Clear_ShouldReturnClear
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Clear_ShouldReturnClear
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Reset_ShouldReturnReset*
+  commentId: Overload:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Reset_ShouldReturnReset
+  href: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.html#ASE_Assignment_Test_Components_Tests_ProgramCommandFactoryTests_TestMakeCommand_Reset_ShouldReturnReset
+  name: TestMakeCommand_Reset_ShouldReturnReset
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_Reset_ShouldReturnReset
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Reset_ShouldReturnReset
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Array*
+  commentId: Overload:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Array
+  href: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.html#ASE_Assignment_Test_Components_Tests_ProgramCommandFactoryTests_TestMakeCommand_Array
+  name: TestMakeCommand_Array
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_Array
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Array
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Int*
+  commentId: Overload:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Int
+  href: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.html#ASE_Assignment_Test_Components_Tests_ProgramCommandFactoryTests_TestMakeCommand_Int
+  name: TestMakeCommand_Int
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_Int
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Int
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Real*
+  commentId: Overload:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Real
+  href: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.html#ASE_Assignment_Test_Components_Tests_ProgramCommandFactoryTests_TestMakeCommand_Real
+  name: TestMakeCommand_Real
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_Real
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Real
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Peek*
+  commentId: Overload:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Peek
+  href: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.html#ASE_Assignment_Test_Components_Tests_ProgramCommandFactoryTests_TestMakeCommand_Peek
+  name: TestMakeCommand_Peek
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_Peek
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Peek
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Poke*
+  commentId: Overload:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Poke
+  href: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.html#ASE_Assignment_Test_Components_Tests_ProgramCommandFactoryTests_TestMakeCommand_Poke
+  name: TestMakeCommand_Poke
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_Poke
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Poke
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_If*
+  commentId: Overload:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_If
+  href: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.html#ASE_Assignment_Test_Components_Tests_ProgramCommandFactoryTests_TestMakeCommand_If
+  name: TestMakeCommand_If
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_If
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_If
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Else*
+  commentId: Overload:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Else
+  href: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.html#ASE_Assignment_Test_Components_Tests_ProgramCommandFactoryTests_TestMakeCommand_Else
+  name: TestMakeCommand_Else
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_Else
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Else
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_End*
+  commentId: Overload:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_End
+  href: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.html#ASE_Assignment_Test_Components_Tests_ProgramCommandFactoryTests_TestMakeCommand_End
+  name: TestMakeCommand_End
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_End
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_End
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_While*
+  commentId: Overload:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_While
+  href: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.html#ASE_Assignment_Test_Components_Tests_ProgramCommandFactoryTests_TestMakeCommand_While
+  name: TestMakeCommand_While
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_While
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_While
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_For*
+  commentId: Overload:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_For
+  href: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.html#ASE_Assignment_Test_Components_Tests_ProgramCommandFactoryTests_TestMakeCommand_For
+  name: TestMakeCommand_For
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_For
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_For
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Method*
+  commentId: Overload:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Method
+  href: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.html#ASE_Assignment_Test_Components_Tests_ProgramCommandFactoryTests_TestMakeCommand_Method
+  name: TestMakeCommand_Method
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_Method
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Method
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Call*
+  commentId: Overload:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Call
+  href: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.html#ASE_Assignment_Test_Components_Tests_ProgramCommandFactoryTests_TestMakeCommand_Call
+  name: TestMakeCommand_Call
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_Call
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Call
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Boolean*
+  commentId: Overload:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Boolean
+  href: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.html#ASE_Assignment_Test_Components_Tests_ProgramCommandFactoryTests_TestMakeCommand_Boolean
+  name: TestMakeCommand_Boolean
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_Boolean
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Boolean
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Evaluation*
+  commentId: Overload:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Evaluation
+  href: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.html#ASE_Assignment_Test_Components_Tests_ProgramCommandFactoryTests_TestMakeCommand_Evaluation
+  name: TestMakeCommand_Evaluation
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_Evaluation
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Evaluation
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Cast*
+  commentId: Overload:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Cast
+  href: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.html#ASE_Assignment_Test_Components_Tests_ProgramCommandFactoryTests_TestMakeCommand_Cast
+  name: TestMakeCommand_Cast
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_Cast
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_Cast
+- uid: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_InvalidCommand_ShouldThrowFactoryException*
+  commentId: Overload:ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_InvalidCommand_ShouldThrowFactoryException
+  href: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.html#ASE_Assignment_Test_Components_Tests_ProgramCommandFactoryTests_TestMakeCommand_InvalidCommand_ShouldThrowFactoryException
+  name: TestMakeCommand_InvalidCommand_ShouldThrowFactoryException
+  nameWithType: ProgramCommandFactoryTests.TestMakeCommand_InvalidCommand_ShouldThrowFactoryException
+  fullName: ASE_Assignment_Test.Components_Tests.ProgramCommandFactoryTests.TestMakeCommand_InvalidCommand_ShouldThrowFactoryException

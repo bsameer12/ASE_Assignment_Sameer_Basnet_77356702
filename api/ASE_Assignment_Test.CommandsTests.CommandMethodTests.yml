@@ -1,0 +1,461 @@
+### YamlMime:ManagedReference
+items:
+- uid: ASE_Assignment_Test.CommandsTests.CommandMethodTests
+  commentId: T:ASE_Assignment_Test.CommandsTests.CommandMethodTests
+  id: CommandMethodTests
+  parent: ASE_Assignment_Test.CommandsTests
+  children:
+  - ASE_Assignment_Test.CommandsTests.CommandMethodTests.AppMethod_OverrideRestrictions_ShouldSucceed
+  - ASE_Assignment_Test.CommandsTests.CommandMethodTests.ResetOrDecreaseMethodCount_ValidValue_ShouldUpdateField
+  - ASE_Assignment_Test.CommandsTests.CommandMethodTests.TestInitialize
+  langs:
+  - csharp
+  - vb
+  name: CommandMethodTests
+  nameWithType: CommandMethodTests
+  fullName: ASE_Assignment_Test.CommandsTests.CommandMethodTests
+  type: Class
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/CommandsTests/CommandMethodTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: CommandMethodTests
+    path: ASE_Assignment_Test/CommandsTests/CommandMethodTests.cs
+    startLine: 20
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.CommandsTests
+  summary: Provides unit tests for the <xref href="ASE_Assignment.Commands.CommandMethod" data-throw-if-not-resolved="false"></xref> class.
+  remarks: >-
+    This test class validates the functionality of the <xref href="ASE_Assignment.Commands.CommandMethod" data-throw-if-not-resolved="false"></xref> class, 
+
+    including its ability to override restrictions on method counts and manipulate 
+
+    private static fields using reflection.
+  example: []
+  syntax:
+    content: >-
+      [TestClass]
+
+      public class CommandMethodTests
+    content.vb: >-
+      <TestClass>
+
+      Public Class CommandMethodTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.CommandsTests.CommandMethodTests.TestInitialize
+  commentId: M:ASE_Assignment_Test.CommandsTests.CommandMethodTests.TestInitialize
+  id: TestInitialize
+  parent: ASE_Assignment_Test.CommandsTests.CommandMethodTests
+  langs:
+  - csharp
+  - vb
+  name: TestInitialize()
+  nameWithType: CommandMethodTests.TestInitialize()
+  fullName: ASE_Assignment_Test.CommandsTests.CommandMethodTests.TestInitialize()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/CommandsTests/CommandMethodTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: TestInitialize
+    path: ASE_Assignment_Test/CommandsTests/CommandMethodTests.cs
+    startLine: 35
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.CommandsTests
+  summary: Initializes the test environment before each test case.
+  remarks: >-
+    This method creates a new instance of the <xref href="ASE_Assignment.Commands.CommandMethod" data-throw-if-not-resolved="false"></xref> class 
+
+    to ensure each test has a fresh and isolated environment.
+  example: []
+  syntax:
+    content: >-
+      [TestInitialize]
+
+      public void TestInitialize()
+    content.vb: >-
+      <TestInitialize>
+
+      Public Sub TestInitialize()
+  overload: ASE_Assignment_Test.CommandsTests.CommandMethodTests.TestInitialize*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.CommandsTests.CommandMethodTests.AppMethod_OverrideRestrictions_ShouldSucceed
+  commentId: M:ASE_Assignment_Test.CommandsTests.CommandMethodTests.AppMethod_OverrideRestrictions_ShouldSucceed
+  id: AppMethod_OverrideRestrictions_ShouldSucceed
+  parent: ASE_Assignment_Test.CommandsTests.CommandMethodTests
+  langs:
+  - csharp
+  - vb
+  name: AppMethod_OverrideRestrictions_ShouldSucceed()
+  nameWithType: CommandMethodTests.AppMethod_OverrideRestrictions_ShouldSucceed()
+  fullName: ASE_Assignment_Test.CommandsTests.CommandMethodTests.AppMethod_OverrideRestrictions_ShouldSucceed()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/CommandsTests/CommandMethodTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: AppMethod_OverrideRestrictions_ShouldSucceed
+    path: ASE_Assignment_Test/CommandsTests/CommandMethodTests.cs
+    startLine: 45
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.CommandsTests
+  summary: Tests that the restriction logic for methods is overridden successfully.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void AppMethod_OverrideRestrictions_ShouldSucceed()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub AppMethod_OverrideRestrictions_ShouldSucceed()
+  overload: ASE_Assignment_Test.CommandsTests.CommandMethodTests.AppMethod_OverrideRestrictions_ShouldSucceed*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.CommandsTests.CommandMethodTests.ResetOrDecreaseMethodCount_ValidValue_ShouldUpdateField
+  commentId: M:ASE_Assignment_Test.CommandsTests.CommandMethodTests.ResetOrDecreaseMethodCount_ValidValue_ShouldUpdateField
+  id: ResetOrDecreaseMethodCount_ValidValue_ShouldUpdateField
+  parent: ASE_Assignment_Test.CommandsTests.CommandMethodTests
+  langs:
+  - csharp
+  - vb
+  name: ResetOrDecreaseMethodCount_ValidValue_ShouldUpdateField()
+  nameWithType: CommandMethodTests.ResetOrDecreaseMethodCount_ValidValue_ShouldUpdateField()
+  fullName: ASE_Assignment_Test.CommandsTests.CommandMethodTests.ResetOrDecreaseMethodCount_ValidValue_ShouldUpdateField()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/CommandsTests/CommandMethodTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: ResetOrDecreaseMethodCount_ValidValue_ShouldUpdateField
+    path: ASE_Assignment_Test/CommandsTests/CommandMethodTests.cs
+    startLine: 59
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.CommandsTests
+  summary: Tests that the private static field `꿒` in the `Method` class can be reset or decreased.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void ResetOrDecreaseMethodCount_ValidValue_ShouldUpdateField()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub ResetOrDecreaseMethodCount_ValidValue_ShouldUpdateField()
+  overload: ASE_Assignment_Test.CommandsTests.CommandMethodTests.ResetOrDecreaseMethodCount_ValidValue_ShouldUpdateField*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+references:
+- uid: ASE_Assignment.Commands.CommandMethod
+  commentId: T:ASE_Assignment.Commands.CommandMethod
+  href: ASE_Assignment.Commands.CommandMethod.html
+  name: CommandMethod
+  nameWithType: CommandMethod
+  fullName: ASE_Assignment.Commands.CommandMethod
+- uid: ASE_Assignment_Test.CommandsTests
+  commentId: N:ASE_Assignment_Test.CommandsTests
+  href: ASE_Assignment_Test.html
+  name: ASE_Assignment_Test.CommandsTests
+  nameWithType: ASE_Assignment_Test.CommandsTests
+  fullName: ASE_Assignment_Test.CommandsTests
+  spec.csharp:
+  - uid: ASE_Assignment_Test
+    name: ASE_Assignment_Test
+    href: ASE_Assignment_Test.html
+  - name: .
+  - uid: ASE_Assignment_Test.CommandsTests
+    name: CommandsTests
+    href: ASE_Assignment_Test.CommandsTests.html
+  spec.vb:
+  - uid: ASE_Assignment_Test
+    name: ASE_Assignment_Test
+    href: ASE_Assignment_Test.html
+  - name: .
+  - uid: ASE_Assignment_Test.CommandsTests
+    name: CommandsTests
+    href: ASE_Assignment_Test.CommandsTests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ASE_Assignment_Test.CommandsTests.CommandMethodTests.TestInitialize*
+  commentId: Overload:ASE_Assignment_Test.CommandsTests.CommandMethodTests.TestInitialize
+  href: ASE_Assignment_Test.CommandsTests.CommandMethodTests.html#ASE_Assignment_Test_CommandsTests_CommandMethodTests_TestInitialize
+  name: TestInitialize
+  nameWithType: CommandMethodTests.TestInitialize
+  fullName: ASE_Assignment_Test.CommandsTests.CommandMethodTests.TestInitialize
+- uid: ASE_Assignment_Test.CommandsTests.CommandMethodTests.AppMethod_OverrideRestrictions_ShouldSucceed*
+  commentId: Overload:ASE_Assignment_Test.CommandsTests.CommandMethodTests.AppMethod_OverrideRestrictions_ShouldSucceed
+  href: ASE_Assignment_Test.CommandsTests.CommandMethodTests.html#ASE_Assignment_Test_CommandsTests_CommandMethodTests_AppMethod_OverrideRestrictions_ShouldSucceed
+  name: AppMethod_OverrideRestrictions_ShouldSucceed
+  nameWithType: CommandMethodTests.AppMethod_OverrideRestrictions_ShouldSucceed
+  fullName: ASE_Assignment_Test.CommandsTests.CommandMethodTests.AppMethod_OverrideRestrictions_ShouldSucceed
+- uid: ASE_Assignment_Test.CommandsTests.CommandMethodTests.ResetOrDecreaseMethodCount_ValidValue_ShouldUpdateField*
+  commentId: Overload:ASE_Assignment_Test.CommandsTests.CommandMethodTests.ResetOrDecreaseMethodCount_ValidValue_ShouldUpdateField
+  href: ASE_Assignment_Test.CommandsTests.CommandMethodTests.html#ASE_Assignment_Test_CommandsTests_CommandMethodTests_ResetOrDecreaseMethodCount_ValidValue_ShouldUpdateField
+  name: ResetOrDecreaseMethodCount_ValidValue_ShouldUpdateField
+  nameWithType: CommandMethodTests.ResetOrDecreaseMethodCount_ValidValue_ShouldUpdateField
+  fullName: ASE_Assignment_Test.CommandsTests.CommandMethodTests.ResetOrDecreaseMethodCount_ValidValue_ShouldUpdateField

@@ -95,18 +95,14 @@
 Classes
 </h3>
     <dl class="jumplist">
-      <dt><a class="xref" href="ASE_Assignment.Components.AppArray.html">AppArray</a></dt>
-      <dd><p>Represents an array implementation for performing operations such as read (PEEK) and write (POKE).
-Provides support for both integer and double data types and handles multi-dimensional arrays.</p>
+      <dt><a class="xref" href="ASE_Assignment.Components.GlobalProgramVariables.html">GlobalProgramVariables</a></dt>
+      <dd><p>A static configuration class for global settings that influence canvas drawing operations.
+This class contains properties for managing canvas dimensions, drawing modes, pen settings,
+and exception messages.</p>
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="ASE_Assignment.Components.AppBoolean.html">AppBoolean</a></dt>
-      <dd><p>Represents a custom boolean class that overrides restrictions on instance creation.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="ASE_Assignment.Components.AppCommandFactory.html">AppCommandFactory</a></dt>
+      <dt><a class="xref" href="ASE_Assignment.Components.ProgramCommandFactory.html">ProgramCommandFactory</a></dt>
       <dd><p>AppCommandFactory is a concrete implementation of the CommandFactory class.
 This factory is responsible for creating specific commands based on the provided command string.
 It overrides the MakeCommand method to handle specific types of commands.
@@ -114,62 +110,24 @@ If an invalid command is passed, it logs the error using FactoryException and pr
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="ASE_Assignment.Components.AppCompoundCommand.html">AppCompoundCommand</a></dt>
+      <dt><a class="xref" href="ASE_Assignment.Components.ProgramCompoundCommand.html">ProgramCompoundCommand</a></dt>
       <dd><p>Represents a compound command that extends the functionality of <span class="xref">BOOSE.ConditionalCommand</span>.</p>
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="ASE_Assignment.Components.AppConditionalCommand.html">AppConditionalCommand</a></dt>
+      <dt><a class="xref" href="ASE_Assignment.Components.ProgramConditionalCommand.html">ProgramConditionalCommand</a></dt>
       <dd><p>Represents a conditional command with functionality to reset or decrease a count
 using reflection to access a private static field.</p>
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="ASE_Assignment.Components.AppEnd.html">AppEnd</a></dt>
-      <dd><p>Represents the &quot;End&quot; command in a control flow structure.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="ASE_Assignment.Components.AppInt.html">AppInt</a></dt>
-      <dd><p>Represents an integer variable with no restrictions on instance creation.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="ASE_Assignment.Components.AppMethod.html">AppMethod</a></dt>
-      <dd><p>Represents an application-specific method class that overrides restrictions on method counts
-and provides functionality to reset or decrease private static fields.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="ASE_Assignment.Components.AppPeek.html">AppPeek</a></dt>
-      <dd><p>Represents a &quot;Peek&quot; command that retrieves a value from a specific cell in an array.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="ASE_Assignment.Components.AppPoke.html">AppPoke</a></dt>
-      <dd><p>Represents a &quot;Poke&quot; command that sets a value in a specific cell of an array.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="ASE_Assignment.Components.AppPraser.html">AppPraser</a></dt>
+      <dt><a class="xref" href="ASE_Assignment.Components.ProgramParser.html">ProgramParser</a></dt>
       <dd><p>Represents a parser for interpreting and compiling a program into executable commands.</p>
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="ASE_Assignment.Components.AppReal.html">AppReal</a></dt>
-      <dd><p>Represents a real (double) variable with no restrictions on the number of instances.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="ASE_Assignment.Components.AppStoredProgram.html">AppStoredProgram</a></dt>
+      <dt><a class="xref" href="ASE_Assignment.Components.ProgramStoredProgram.html">ProgramStoredProgram</a></dt>
       <dd><p>Represents a stored program that can be executed on a canvas, supporting variables, methods, and conditional commands.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="ASE_Assignment.Components.GlobalConfiguration.html">GlobalConfiguration</a></dt>
-      <dd><p>A static configuration class for global settings that influence canvas drawing operations.
-This class contains properties for managing canvas dimensions, drawing modes, pen settings,
-and exception messages.</p>
 </dd>
     </dl>
 

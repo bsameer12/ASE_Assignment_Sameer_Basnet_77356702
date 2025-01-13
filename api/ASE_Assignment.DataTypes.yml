@@ -1,0 +1,67 @@
+### YamlMime:ManagedReference
+items:
+- uid: ASE_Assignment.DataTypes
+  commentId: N:ASE_Assignment.DataTypes
+  id: ASE_Assignment.DataTypes
+  children:
+  - ASE_Assignment.DataTypes.DataTypeArray
+  - ASE_Assignment.DataTypes.DataTypeBoolean
+  - ASE_Assignment.DataTypes.DataTypeInt
+  - ASE_Assignment.DataTypes.DataTypeReal
+  langs:
+  - csharp
+  - vb
+  name: ASE_Assignment.DataTypes
+  nameWithType: ASE_Assignment.DataTypes
+  fullName: ASE_Assignment.DataTypes
+  type: Namespace
+  assemblies:
+  - ASE_Assignment
+references:
+- uid: ASE_Assignment.DataTypes.DataTypeArray
+  commentId: T:ASE_Assignment.DataTypes.DataTypeArray
+  parent: ASE_Assignment.DataTypes
+  href: ASE_Assignment.DataTypes.DataTypeArray.html
+  name: DataTypeArray
+  nameWithType: DataTypeArray
+  fullName: ASE_Assignment.DataTypes.DataTypeArray
+- uid: ASE_Assignment.DataTypes.DataTypeBoolean
+  commentId: T:ASE_Assignment.DataTypes.DataTypeBoolean
+  href: ASE_Assignment.DataTypes.DataTypeBoolean.html
+  name: DataTypeBoolean
+  nameWithType: DataTypeBoolean
+  fullName: ASE_Assignment.DataTypes.DataTypeBoolean
+- uid: ASE_Assignment.DataTypes.DataTypeInt
+  commentId: T:ASE_Assignment.DataTypes.DataTypeInt
+  href: ASE_Assignment.DataTypes.DataTypeInt.html
+  name: DataTypeInt
+  nameWithType: DataTypeInt
+  fullName: ASE_Assignment.DataTypes.DataTypeInt
+- uid: ASE_Assignment.DataTypes.DataTypeReal
+  commentId: T:ASE_Assignment.DataTypes.DataTypeReal
+  href: ASE_Assignment.DataTypes.DataTypeReal.html
+  name: DataTypeReal
+  nameWithType: DataTypeReal
+  fullName: ASE_Assignment.DataTypes.DataTypeReal
+- uid: ASE_Assignment.DataTypes
+  commentId: N:ASE_Assignment.DataTypes
+  href: ASE_Assignment.html
+  name: ASE_Assignment.DataTypes
+  nameWithType: ASE_Assignment.DataTypes
+  fullName: ASE_Assignment.DataTypes
+  spec.csharp:
+  - uid: ASE_Assignment
+    name: ASE_Assignment
+    href: ASE_Assignment.html
+  - name: .
+  - uid: ASE_Assignment.DataTypes
+    name: DataTypes
+    href: ASE_Assignment.DataTypes.html
+  spec.vb:
+  - uid: ASE_Assignment
+    name: ASE_Assignment
+    href: ASE_Assignment.html
+  - name: .
+  - uid: ASE_Assignment.DataTypes
+    name: DataTypes
+    href: ASE_Assignment.DataTypes.html

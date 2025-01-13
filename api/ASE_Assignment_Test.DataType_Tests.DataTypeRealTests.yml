@@ -1,0 +1,541 @@
+### YamlMime:ManagedReference
+items:
+- uid: ASE_Assignment_Test.DataType_Tests.DataTypeRealTests
+  commentId: T:ASE_Assignment_Test.DataType_Tests.DataTypeRealTests
+  id: DataTypeRealTests
+  parent: ASE_Assignment_Test.DataType_Tests
+  children:
+  - ASE_Assignment_Test.DataType_Tests.DataTypeRealTests.AppReal_CreateLargeNumberOfInstances_ShouldNotThrowExceptions
+  - ASE_Assignment_Test.DataType_Tests.DataTypeRealTests.AppReal_CreateMultipleInstances_ShouldNotThrowExceptions
+  - ASE_Assignment_Test.DataType_Tests.DataTypeRealTests.AppReal_RestrictionsMethod_ShouldNotThrowExceptions
+  - ASE_Assignment_Test.DataType_Tests.DataTypeRealTests.AppReal_SetAndGetValue_ShouldHandleDoubleValues
+  - ASE_Assignment_Test.DataType_Tests.DataTypeRealTests.AppReal_ShouldInheritBaseRealFunctionality
+  langs:
+  - csharp
+  - vb
+  name: DataTypeRealTests
+  nameWithType: DataTypeRealTests
+  fullName: ASE_Assignment_Test.DataType_Tests.DataTypeRealTests
+  type: Class
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/DataType_Tests/DataTypeRealTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: DataTypeRealTests
+    path: ASE_Assignment_Test/DataType_Tests/DataTypeRealTests.cs
+    startLine: 12
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.DataType_Tests
+  summary: Unit tests for the <xref href="ASE_Assignment.DataTypes.DataTypeReal" data-throw-if-not-resolved="false"></xref> class to validate its functionality and unrestricted behavior.
+  example: []
+  syntax:
+    content: >-
+      [TestClass]
+
+      public class DataTypeRealTests
+    content.vb: >-
+      <TestClass>
+
+      Public Class DataTypeRealTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.DataType_Tests.DataTypeRealTests.AppReal_CreateMultipleInstances_ShouldNotThrowExceptions
+  commentId: M:ASE_Assignment_Test.DataType_Tests.DataTypeRealTests.AppReal_CreateMultipleInstances_ShouldNotThrowExceptions
+  id: AppReal_CreateMultipleInstances_ShouldNotThrowExceptions
+  parent: ASE_Assignment_Test.DataType_Tests.DataTypeRealTests
+  langs:
+  - csharp
+  - vb
+  name: AppReal_CreateMultipleInstances_ShouldNotThrowExceptions()
+  nameWithType: DataTypeRealTests.AppReal_CreateMultipleInstances_ShouldNotThrowExceptions()
+  fullName: ASE_Assignment_Test.DataType_Tests.DataTypeRealTests.AppReal_CreateMultipleInstances_ShouldNotThrowExceptions()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/DataType_Tests/DataTypeRealTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: AppReal_CreateMultipleInstances_ShouldNotThrowExceptions
+    path: ASE_Assignment_Test/DataType_Tests/DataTypeRealTests.cs
+    startLine: 18
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.DataType_Tests
+  summary: Tests the creation of multiple instances of the <xref href="ASE_Assignment.DataTypes.DataTypeReal" data-throw-if-not-resolved="false"></xref> class to ensure no restrictions are imposed.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void AppReal_CreateMultipleInstances_ShouldNotThrowExceptions()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub AppReal_CreateMultipleInstances_ShouldNotThrowExceptions()
+  overload: ASE_Assignment_Test.DataType_Tests.DataTypeRealTests.AppReal_CreateMultipleInstances_ShouldNotThrowExceptions*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.DataType_Tests.DataTypeRealTests.AppReal_RestrictionsMethod_ShouldNotThrowExceptions
+  commentId: M:ASE_Assignment_Test.DataType_Tests.DataTypeRealTests.AppReal_RestrictionsMethod_ShouldNotThrowExceptions
+  id: AppReal_RestrictionsMethod_ShouldNotThrowExceptions
+  parent: ASE_Assignment_Test.DataType_Tests.DataTypeRealTests
+  langs:
+  - csharp
+  - vb
+  name: AppReal_RestrictionsMethod_ShouldNotThrowExceptions()
+  nameWithType: DataTypeRealTests.AppReal_RestrictionsMethod_ShouldNotThrowExceptions()
+  fullName: ASE_Assignment_Test.DataType_Tests.DataTypeRealTests.AppReal_RestrictionsMethod_ShouldNotThrowExceptions()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/DataType_Tests/DataTypeRealTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: AppReal_RestrictionsMethod_ShouldNotThrowExceptions
+    path: ASE_Assignment_Test/DataType_Tests/DataTypeRealTests.cs
+    startLine: 37
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.DataType_Tests
+  summary: Tests that the Restrictions method does not throw exceptions when called.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void AppReal_RestrictionsMethod_ShouldNotThrowExceptions()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub AppReal_RestrictionsMethod_ShouldNotThrowExceptions()
+  overload: ASE_Assignment_Test.DataType_Tests.DataTypeRealTests.AppReal_RestrictionsMethod_ShouldNotThrowExceptions*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.DataType_Tests.DataTypeRealTests.AppReal_ShouldInheritBaseRealFunctionality
+  commentId: M:ASE_Assignment_Test.DataType_Tests.DataTypeRealTests.AppReal_ShouldInheritBaseRealFunctionality
+  id: AppReal_ShouldInheritBaseRealFunctionality
+  parent: ASE_Assignment_Test.DataType_Tests.DataTypeRealTests
+  langs:
+  - csharp
+  - vb
+  name: AppReal_ShouldInheritBaseRealFunctionality()
+  nameWithType: DataTypeRealTests.AppReal_ShouldInheritBaseRealFunctionality()
+  fullName: ASE_Assignment_Test.DataType_Tests.DataTypeRealTests.AppReal_ShouldInheritBaseRealFunctionality()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/DataType_Tests/DataTypeRealTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: AppReal_ShouldInheritBaseRealFunctionality
+    path: ASE_Assignment_Test/DataType_Tests/DataTypeRealTests.cs
+    startLine: 50
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.DataType_Tests
+  summary: Tests that the <xref href="ASE_Assignment.DataTypes.DataTypeReal" data-throw-if-not-resolved="false"></xref> class inherits functionality from the base Real class.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void AppReal_ShouldInheritBaseRealFunctionality()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub AppReal_ShouldInheritBaseRealFunctionality()
+  overload: ASE_Assignment_Test.DataType_Tests.DataTypeRealTests.AppReal_ShouldInheritBaseRealFunctionality*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.DataType_Tests.DataTypeRealTests.AppReal_SetAndGetValue_ShouldHandleDoubleValues
+  commentId: M:ASE_Assignment_Test.DataType_Tests.DataTypeRealTests.AppReal_SetAndGetValue_ShouldHandleDoubleValues
+  id: AppReal_SetAndGetValue_ShouldHandleDoubleValues
+  parent: ASE_Assignment_Test.DataType_Tests.DataTypeRealTests
+  langs:
+  - csharp
+  - vb
+  name: AppReal_SetAndGetValue_ShouldHandleDoubleValues()
+  nameWithType: DataTypeRealTests.AppReal_SetAndGetValue_ShouldHandleDoubleValues()
+  fullName: ASE_Assignment_Test.DataType_Tests.DataTypeRealTests.AppReal_SetAndGetValue_ShouldHandleDoubleValues()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/DataType_Tests/DataTypeRealTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: AppReal_SetAndGetValue_ShouldHandleDoubleValues
+    path: ASE_Assignment_Test/DataType_Tests/DataTypeRealTests.cs
+    startLine: 67
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.DataType_Tests
+  summary: Tests setting and getting the value of the <xref href="ASE_Assignment.DataTypes.DataTypeReal" data-throw-if-not-resolved="false"></xref> class to ensure it handles double values correctly.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void AppReal_SetAndGetValue_ShouldHandleDoubleValues()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub AppReal_SetAndGetValue_ShouldHandleDoubleValues()
+  overload: ASE_Assignment_Test.DataType_Tests.DataTypeRealTests.AppReal_SetAndGetValue_ShouldHandleDoubleValues*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test.DataType_Tests.DataTypeRealTests.AppReal_CreateLargeNumberOfInstances_ShouldNotThrowExceptions
+  commentId: M:ASE_Assignment_Test.DataType_Tests.DataTypeRealTests.AppReal_CreateLargeNumberOfInstances_ShouldNotThrowExceptions
+  id: AppReal_CreateLargeNumberOfInstances_ShouldNotThrowExceptions
+  parent: ASE_Assignment_Test.DataType_Tests.DataTypeRealTests
+  langs:
+  - csharp
+  - vb
+  name: AppReal_CreateLargeNumberOfInstances_ShouldNotThrowExceptions()
+  nameWithType: DataTypeRealTests.AppReal_CreateLargeNumberOfInstances_ShouldNotThrowExceptions()
+  fullName: ASE_Assignment_Test.DataType_Tests.DataTypeRealTests.AppReal_CreateLargeNumberOfInstances_ShouldNotThrowExceptions()
+  type: Method
+  source:
+    remote:
+      path: ASE_Assignment/ASE_Assignment_Test/DataType_Tests/DataTypeRealTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-bsameer12.git
+    id: AppReal_CreateLargeNumberOfInstances_ShouldNotThrowExceptions
+    path: ASE_Assignment_Test/DataType_Tests/DataTypeRealTests.cs
+    startLine: 84
+  assemblies:
+  - ASE_Assignment_Test
+  namespace: ASE_Assignment_Test.DataType_Tests
+  summary: Tests that creating a large number of <xref href="ASE_Assignment.DataTypes.DataTypeReal" data-throw-if-not-resolved="false"></xref> instances does not result in performance degradation or errors.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void AppReal_CreateLargeNumberOfInstances_ShouldNotThrowExceptions()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub AppReal_CreateLargeNumberOfInstances_ShouldNotThrowExceptions()
+  overload: ASE_Assignment_Test.DataType_Tests.DataTypeRealTests.AppReal_CreateLargeNumberOfInstances_ShouldNotThrowExceptions*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+references:
+- uid: ASE_Assignment.DataTypes.DataTypeReal
+  commentId: T:ASE_Assignment.DataTypes.DataTypeReal
+  href: ASE_Assignment.DataTypes.DataTypeReal.html
+  name: DataTypeReal
+  nameWithType: DataTypeReal
+  fullName: ASE_Assignment.DataTypes.DataTypeReal
+- uid: ASE_Assignment_Test.DataType_Tests
+  commentId: N:ASE_Assignment_Test.DataType_Tests
+  href: ASE_Assignment_Test.html
+  name: ASE_Assignment_Test.DataType_Tests
+  nameWithType: ASE_Assignment_Test.DataType_Tests
+  fullName: ASE_Assignment_Test.DataType_Tests
+  spec.csharp:
+  - uid: ASE_Assignment_Test
+    name: ASE_Assignment_Test
+    href: ASE_Assignment_Test.html
+  - name: .
+  - uid: ASE_Assignment_Test.DataType_Tests
+    name: DataType_Tests
+    href: ASE_Assignment_Test.DataType_Tests.html
+  spec.vb:
+  - uid: ASE_Assignment_Test
+    name: ASE_Assignment_Test
+    href: ASE_Assignment_Test.html
+  - name: .
+  - uid: ASE_Assignment_Test.DataType_Tests
+    name: DataType_Tests
+    href: ASE_Assignment_Test.DataType_Tests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ASE_Assignment_Test.DataType_Tests.DataTypeRealTests.AppReal_CreateMultipleInstances_ShouldNotThrowExceptions*
+  commentId: Overload:ASE_Assignment_Test.DataType_Tests.DataTypeRealTests.AppReal_CreateMultipleInstances_ShouldNotThrowExceptions
+  href: ASE_Assignment_Test.DataType_Tests.DataTypeRealTests.html#ASE_Assignment_Test_DataType_Tests_DataTypeRealTests_AppReal_CreateMultipleInstances_ShouldNotThrowExceptions
+  name: AppReal_CreateMultipleInstances_ShouldNotThrowExceptions
+  nameWithType: DataTypeRealTests.AppReal_CreateMultipleInstances_ShouldNotThrowExceptions
+  fullName: ASE_Assignment_Test.DataType_Tests.DataTypeRealTests.AppReal_CreateMultipleInstances_ShouldNotThrowExceptions
+- uid: ASE_Assignment_Test.DataType_Tests.DataTypeRealTests.AppReal_RestrictionsMethod_ShouldNotThrowExceptions*
+  commentId: Overload:ASE_Assignment_Test.DataType_Tests.DataTypeRealTests.AppReal_RestrictionsMethod_ShouldNotThrowExceptions
+  href: ASE_Assignment_Test.DataType_Tests.DataTypeRealTests.html#ASE_Assignment_Test_DataType_Tests_DataTypeRealTests_AppReal_RestrictionsMethod_ShouldNotThrowExceptions
+  name: AppReal_RestrictionsMethod_ShouldNotThrowExceptions
+  nameWithType: DataTypeRealTests.AppReal_RestrictionsMethod_ShouldNotThrowExceptions
+  fullName: ASE_Assignment_Test.DataType_Tests.DataTypeRealTests.AppReal_RestrictionsMethod_ShouldNotThrowExceptions
+- uid: ASE_Assignment_Test.DataType_Tests.DataTypeRealTests.AppReal_ShouldInheritBaseRealFunctionality*
+  commentId: Overload:ASE_Assignment_Test.DataType_Tests.DataTypeRealTests.AppReal_ShouldInheritBaseRealFunctionality
+  href: ASE_Assignment_Test.DataType_Tests.DataTypeRealTests.html#ASE_Assignment_Test_DataType_Tests_DataTypeRealTests_AppReal_ShouldInheritBaseRealFunctionality
+  name: AppReal_ShouldInheritBaseRealFunctionality
+  nameWithType: DataTypeRealTests.AppReal_ShouldInheritBaseRealFunctionality
+  fullName: ASE_Assignment_Test.DataType_Tests.DataTypeRealTests.AppReal_ShouldInheritBaseRealFunctionality
+- uid: ASE_Assignment_Test.DataType_Tests.DataTypeRealTests.AppReal_SetAndGetValue_ShouldHandleDoubleValues*
+  commentId: Overload:ASE_Assignment_Test.DataType_Tests.DataTypeRealTests.AppReal_SetAndGetValue_ShouldHandleDoubleValues
+  href: ASE_Assignment_Test.DataType_Tests.DataTypeRealTests.html#ASE_Assignment_Test_DataType_Tests_DataTypeRealTests_AppReal_SetAndGetValue_ShouldHandleDoubleValues
+  name: AppReal_SetAndGetValue_ShouldHandleDoubleValues
+  nameWithType: DataTypeRealTests.AppReal_SetAndGetValue_ShouldHandleDoubleValues
+  fullName: ASE_Assignment_Test.DataType_Tests.DataTypeRealTests.AppReal_SetAndGetValue_ShouldHandleDoubleValues
+- uid: ASE_Assignment_Test.DataType_Tests.DataTypeRealTests.AppReal_CreateLargeNumberOfInstances_ShouldNotThrowExceptions*
+  commentId: Overload:ASE_Assignment_Test.DataType_Tests.DataTypeRealTests.AppReal_CreateLargeNumberOfInstances_ShouldNotThrowExceptions
+  href: ASE_Assignment_Test.DataType_Tests.DataTypeRealTests.html#ASE_Assignment_Test_DataType_Tests_DataTypeRealTests_AppReal_CreateLargeNumberOfInstances_ShouldNotThrowExceptions
+  name: AppReal_CreateLargeNumberOfInstances_ShouldNotThrowExceptions
+  nameWithType: DataTypeRealTests.AppReal_CreateLargeNumberOfInstances_ShouldNotThrowExceptions
+  fullName: ASE_Assignment_Test.DataType_Tests.DataTypeRealTests.AppReal_CreateLargeNumberOfInstances_ShouldNotThrowExceptions
